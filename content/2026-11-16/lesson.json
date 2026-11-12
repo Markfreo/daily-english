@@ -1,0 +1,78 @@
+{
+  "date": "2026-11-16",
+  "weekday": "週一",
+  "theme": "職場會議",
+  "title": "Weekly Quality Meeting",
+  "titleZh": "每週品質會議",
+  "scene": "Mia 主持每週品質會議，Tom 報告上週的狀況。",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Mia": {"voice": "af_heart", "accent": "美式"},
+    "Tom": {"voice": "bm_george", "accent": "英式"}
+  },
+  "lines": [
+    {"s": "Mia", "en": "Good morning, everyone. Let's get started. Tom, could you go over last week's numbers first?", "zh": "早安各位，我們開始吧。Tom，可以先幫大家過一下上週的數字嗎？"},
+    {"s": "Tom", "en": "Sure. Our defect rate went down from two percent to one point five percent.", "zh": "好的。我們的不良率從百分之二降到百分之一點五。"},
+    {"s": "Mia", "en": "That's good news. What do you think made the difference?", "zh": "這是好消息。你覺得是什麼帶來改變？"},
+    {"s": "Tom", "en": "We changed the inspection steps on Line B, so we catch problems earlier now.", "zh": "我們改了 B 線的檢驗步驟，所以現在能更早抓到問題。"},
+    {"s": "Mia", "en": "Great. Are we still on track for the customer audit next month?", "zh": "很好。下個月的客戶稽核，我們的進度還正常嗎？"},
+    {"s": "Tom", "en": "Mostly, yes. But we're a little behind on the training records.", "zh": "大致上是。但教育訓練紀錄有點落後。"},
+    {"s": "Mia", "en": "How far behind are we?", "zh": "落後多少？"},
+    {"s": "Tom", "en": "About a week. Some new operators haven't finished their training yet.", "zh": "大約一週。有些新進作業員還沒完成訓練。"},
+    {"s": "Mia", "en": "OK. Could you send me a list of the people who still need training?", "zh": "好。你可以把還需要訓練的人員名單寄給我嗎？"},
+    {"s": "Tom", "en": "No problem. I'll send it to you by this afternoon.", "zh": "沒問題。我今天下午前寄給你。"},
+    {"s": "Mia", "en": "Thanks. Next, let's talk about the customer complaint from last Thursday.", "zh": "謝謝。接下來談上週四的客訴。"},
+    {"s": "Tom", "en": "Right. The customer found scratches on some of the boards in their shipment.", "zh": "對。客戶在收到的貨裡，發現有些板子有刮傷。"},
+    {"s": "Mia", "en": "How many boards were affected?", "zh": "有多少片受影響？"},
+    {"s": "Tom", "en": "Twelve out of five hundred.", "zh": "五百片裡有十二片。"},
+    {"s": "Mia", "en": "Do we know what caused the scratches?", "zh": "知道刮傷的原因嗎？"},
+    {"s": "Tom", "en": "We think it happened during packing. The trays were not cleaned properly.", "zh": "我們認為是包裝時發生的。托盤沒有清潔乾淨。"},
+    {"s": "Mia", "en": "I see. Have we replied to the customer yet?", "zh": "了解。我們回覆客戶了嗎？"},
+    {"s": "Tom", "en": "Not yet. I'm thinking of sending them a first report tomorrow.", "zh": "還沒。我在想明天先寄一份初步報告給他們。"},
+    {"s": "Mia", "en": "Good. Could you include some photos and the next steps in the report?", "zh": "好。報告裡可以附上一些照片和後續步驟嗎？"},
+    {"s": "Tom", "en": "Sure. I'll also explain how we're going to stop it from happening again.", "zh": "好。我也會說明我們要怎麼防止再發生。"},
+    {"s": "Mia", "en": "Perfect. Customers always want to know that part.", "zh": "很好。客戶都很想知道這部分。"},
+    {"s": "Tom", "en": "Should I copy you on the email?", "zh": "寄信時要副本給你嗎？"},
+    {"s": "Mia", "en": "Yes, please. And let's follow up on this in next week's meeting.", "zh": "要，麻煩了。我們下週會議再追蹤這件事。"},
+    {"s": "Tom", "en": "Got it.", "zh": "了解。"},
+    {"s": "Mia", "en": "One last thing. The new measuring machine arrives on Friday.", "zh": "最後一件事。新的量測機台週五到。"},
+    {"s": "Tom", "en": "Oh, finally! Who's going to set it up?", "zh": "喔，終於！誰要負責架設？"},
+    {"s": "Mia", "en": "The supplier will send an engineer. Could you work with him on Friday afternoon?", "zh": "供應商會派一位工程師來。你週五下午可以跟他一起作業嗎？"},
+    {"s": "Tom", "en": "Friday afternoon works for me. I'll prepare the test samples before he arrives.", "zh": "週五下午我可以。我會在他來之前準備好測試樣品。"},
+    {"s": "Mia", "en": "Great, thank you. That's everything for today. Does anyone have any questions?", "zh": "太好了，謝謝。今天就這些。大家有問題嗎？"},
+    {"s": "Tom", "en": "No, I think we covered everything.", "zh": "沒有，我想我們都談到了。"},
+    {"s": "Mia", "en": "OK. Thanks, everyone. Have a good week, and see you next Monday.", "zh": "好。謝謝大家。祝大家這週順利，下週一見。"}
+  ],
+  "quiz": [
+    {"q": "What happened to the defect rate?", "options": ["It went up to two percent.", "It went down to one point five percent.", "It stayed the same.", "It went down to one percent."], "answer": 1, "line": 1, "why": "Tom 說不良率從 2% 降到 1.5%。"},
+    {"q": "What caused the scratches on the boards?", "options": ["The truck during shipping", "Dirty trays during packing", "The new machine on Line B", "The customer's inspection"], "answer": 1, "line": 15, "why": "It happened during packing. The trays were not cleaned properly."},
+    {"q": "When will Tom work with the supplier's engineer?", "options": ["Monday morning", "Thursday afternoon", "Friday afternoon", "Next month"], "answer": 2, "line": 27, "why": "Friday afternoon works for me."}
+  ],
+  "words": [
+    {"w": "go over", "pos": "片語・動詞", "zh": "過一遍、檢查一次", "ex1": "Tom, could you go over last week's numbers first?", "line": 0, "ex2": "Let's go over the inspection results before the meeting.", "ex2zh": "開會前我們先把檢驗結果過一遍。", "toeic": false},
+    {"w": "on track", "pos": "片語・形容詞", "zh": "進度正常、照計畫進行", "ex1": "Are we still on track for the customer audit next month?", "line": 4, "ex2": "The project is on track to finish by the end of the month.", "ex2zh": "專案進度正常，月底可以完成。", "toeic": false},
+    {"w": "follow up on", "pos": "片語・動詞", "zh": "追蹤、後續處理", "ex1": "And let's follow up on this in next week's meeting.", "line": 22, "ex2": "I'll follow up on the customer's request tomorrow.", "ex2zh": "我明天會追蹤客戶的要求。", "toeic": false},
+    {"w": "defect", "pos": "名詞", "zh": "瑕疵、不良", "ex1": "Our defect rate went down from two percent to one point five percent.", "line": 1, "ex2": "We found a small defect on the surface of the board.", "ex2zh": "我們在板子表面發現一個小瑕疵。", "toeic": true},
+    {"w": "shipment", "pos": "名詞", "zh": "一批貨、出貨", "ex1": "The customer found scratches on some of the boards in their shipment.", "line": 11, "ex2": "The next shipment will leave the factory on Monday.", "ex2zh": "下一批貨會在星期一出廠。", "toeic": true}
+  ],
+  "speaking": {
+    "pattern": "Could you + 原形動詞 ...?",
+    "patternZh": "可以請你……嗎？（禮貌地請別人幫忙）",
+    "fromLine": 8,
+    "task": "",
+    "example": ""
+  },
+  "reorder": [
+    {"zh": "你可以把還需要訓練的人員名單寄給我嗎？", "chunks": ["Could you", "send me", "a list of", "the people", "who still need training?"], "line": 8},
+    {"zh": "報告裡可以附上一些照片和後續步驟嗎？", "chunks": ["Could you", "include", "some photos", "and the next steps", "in the report?"], "line": 18},
+    {"zh": "你可以在明天之前回覆客戶嗎？", "chunks": ["Could you", "reply to", "the customer", "by tomorrow?"], "line": null, "audio": "reorder_2"}
+  ],
+  "part2": [
+    {"q": "Where should I put the inspection report?", "opts": ["On my desk, please.", "Yes, it was inspected.", "At three o'clock."], "answer": 0, "why": "問 Where（哪裡），要回答地點。B 重複了 inspect 這個字，是陷阱。", "zh": "檢驗報告要放哪裡？"},
+    {"q": "How long will the audit take?", "opts": ["About two days.", "The auditor is from Japan.", "It's a very long list."], "answer": 0, "why": "How long 問「多久」，要回答時間長度。C 用了 long，是陷阱。", "zh": "稽核要多久？"},
+    {"q": "Would you like me to call the supplier?", "opts": ["Yes, that would be helpful.", "I like the supplier.", "He called yesterday."], "answer": 0, "why": "Would you like me to... 是「要不要我幫你……」，回答接受或拒絕最自然。", "zh": "要我打電話給供應商嗎？"},
+    {"q": "Why don't we meet on Thursday instead?", "opts": ["Because it's Thursday.", "Sure, Thursday is fine.", "We met last week."], "answer": 1, "why": "Why don't we... 是「我們何不……」的建議，不是問原因，所以不用 Because 回答。", "zh": "我們何不改成星期四開會？"},
+    {"q": "Which machine needs to be repaired?", "opts": ["Yesterday morning.", "The repair was expensive.", "The one next to the window."], "answer": 2, "why": "Which 問「哪一個」，要指出是哪一台。B 重複了 repair，是陷阱。", "zh": "哪一台機器需要修理？"}
+  ]
+}

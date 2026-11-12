@@ -1,0 +1,420 @@
+{
+  "date": "2026-11-13",
+  "weekday": "週五",
+  "theme": "日常閒聊",
+  "title": "Friday Plans",
+  "titleZh": "週五下午，聊週末計畫",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Emma": {
+      "voice": "af_heart",
+      "accent": "美式"
+    },
+    "James": {
+      "voice": "bm_george",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Emma",
+      "en": "Hey James, it's finally Friday! Any plans for the weekend?",
+      "zh": "嘿 James，終於星期五了！週末有什麼計畫嗎？"
+    },
+    {
+      "s": "James",
+      "en": "Not really. I'm a bit worn out after this week, to be honest.",
+      "zh": "其實沒有。老實說，這週過完我有點累壞了。"
+    },
+    {
+      "s": "Emma",
+      "en": "I know what you mean. That deadline on Wednesday was crazy.",
+      "zh": "我懂你的意思。星期三那個截止期限真的很誇張。"
+    },
+    {
+      "s": "James",
+      "en": "Yeah. I stayed at the office until nine o'clock two nights in a row.",
+      "zh": "對啊。我連續兩個晚上待在公司到九點。"
+    },
+    {
+      "s": "Emma",
+      "en": "Oh no. So you probably just want to rest, right?",
+      "zh": "天啊。所以你大概只想休息，對吧？"
+    },
+    {
+      "s": "James",
+      "en": "Saturday, definitely. I'm thinking of sleeping in and doing nothing at all.",
+      "zh": "星期六絕對是。我在想要睡到自然醒，什麼都不做。"
+    },
+    {
+      "s": "Emma",
+      "en": "That sounds nice. I wish I could do that.",
+      "zh": "聽起來真好。真希望我也可以這樣。"
+    },
+    {
+      "s": "James",
+      "en": "Why? What are you doing this weekend?",
+      "zh": "為什麼？你這個週末要做什麼？"
+    },
+    {
+      "s": "Emma",
+      "en": "My sister is visiting from Taichung. We haven't seen each other since summer.",
+      "zh": "我妹妹要從台中來找我。我們從夏天之後就沒見過面了。"
+    },
+    {
+      "s": "James",
+      "en": "Oh, that's great! You must have a lot to catch up on.",
+      "zh": "喔，太好了！你們一定有很多近況要聊。"
+    },
+    {
+      "s": "Emma",
+      "en": "We do. We talk on the phone, but it's not the same.",
+      "zh": "是啊。我們會講電話，但感覺不一樣。"
+    },
+    {
+      "s": "James",
+      "en": "So what are you two going to do?",
+      "zh": "那你們兩個要做什麼？"
+    },
+    {
+      "s": "Emma",
+      "en": "I'm thinking of taking her to the night market on Saturday evening.",
+      "zh": "我在想星期六晚上帶她去逛夜市。"
+    },
+    {
+      "s": "James",
+      "en": "Good idea. Which one?",
+      "zh": "好主意。哪一個夜市？"
+    },
+    {
+      "s": "Emma",
+      "en": "Probably the one near the train station. The food there is really good.",
+      "zh": "大概是火車站附近那個。那裡的東西很好吃。"
+    },
+    {
+      "s": "James",
+      "en": "I've been there once. The fried chicken was amazing.",
+      "zh": "我去過一次。那裡的炸雞超棒。"
+    },
+    {
+      "s": "Emma",
+      "en": "Right? And on Sunday, we might go hiking if the weather is nice.",
+      "zh": "對吧？然後星期天如果天氣好，我們可能會去爬山。"
+    },
+    {
+      "s": "James",
+      "en": "Have you checked the weather forecast?",
+      "zh": "你看過天氣預報了嗎？"
+    },
+    {
+      "s": "Emma",
+      "en": "Not yet. I hope it doesn't rain again. Last weekend it rained all day.",
+      "zh": "還沒。希望不要又下雨。上個週末下了一整天。"
+    },
+    {
+      "s": "James",
+      "en": "Yeah, I remember. I had to cancel my plans too.",
+      "zh": "對，我記得。我也只好取消我的計畫。"
+    },
+    {
+      "s": "Emma",
+      "en": "What were you going to do?",
+      "zh": "你原本要做什麼？"
+    },
+    {
+      "s": "James",
+      "en": "A few friends and I wanted to get together for a barbecue.",
+      "zh": "我跟幾個朋友本來想聚一聚烤肉。"
+    },
+    {
+      "s": "Emma",
+      "en": "Oh, that's too bad. Did you reschedule it?",
+      "zh": "喔，真可惜。你們有改期嗎？"
+    },
+    {
+      "s": "James",
+      "en": "We did. Actually, it's on Sunday afternoon now.",
+      "zh": "有啊。其實現在改到星期天下午。"
+    },
+    {
+      "s": "Emma",
+      "en": "Wait, so you do have plans this weekend!",
+      "zh": "等等，所以你這週末明明就有計畫嘛！"
+    },
+    {
+      "s": "James",
+      "en": "Ha, I guess you're right. I forgot about that.",
+      "zh": "哈，好像是耶。我忘了這件事。"
+    },
+    {
+      "s": "Emma",
+      "en": "Where is the barbecue?",
+      "zh": "烤肉在哪裡？"
+    },
+    {
+      "s": "James",
+      "en": "At my friend's place. He has a small garden on the roof.",
+      "zh": "在我朋友家。他在屋頂有一個小花園。"
+    },
+    {
+      "s": "Emma",
+      "en": "A rooftop barbecue? That sounds like fun.",
+      "zh": "屋頂烤肉？聽起來很好玩。"
+    },
+    {
+      "s": "James",
+      "en": "It usually is. Hey, if you and your sister are free, you could join us.",
+      "zh": "通常都很好玩。欸，如果你跟你妹妹有空，可以一起來。"
+    },
+    {
+      "s": "Emma",
+      "en": "Really? Are you sure your friends won't mind?",
+      "zh": "真的嗎？你確定你朋友不會介意？"
+    },
+    {
+      "s": "James",
+      "en": "Not at all. The more, the merrier. Just bring something to drink.",
+      "zh": "完全不會。人越多越好玩。帶點喝的來就好。"
+    },
+    {
+      "s": "Emma",
+      "en": "That's so kind of you. Let me ask my sister first.",
+      "zh": "你人真好。我先問一下我妹妹。"
+    },
+    {
+      "s": "James",
+      "en": "Sure. No rush. Just send me a message by Saturday night.",
+      "zh": "好啊。不急。星期六晚上之前傳個訊息給我就好。"
+    },
+    {
+      "s": "Emma",
+      "en": "OK, I will. But what about hiking?",
+      "zh": "好，我會的。那爬山怎麼辦？"
+    },
+    {
+      "s": "James",
+      "en": "You can hike in the morning and come to the barbecue later. It starts at three.",
+      "zh": "你們可以早上去爬山，之後再來烤肉。三點開始。"
+    },
+    {
+      "s": "Emma",
+      "en": "That could work. We usually finish hiking before lunch.",
+      "zh": "這樣可以。我們通常午餐前就爬完了。"
+    },
+    {
+      "s": "James",
+      "en": "Perfect. Then it sounds like a plan.",
+      "zh": "太好了。那就這麼說定了。"
+    },
+    {
+      "s": "Emma",
+      "en": "Great. Thanks, James. Now I'm really looking forward to the weekend.",
+      "zh": "太好了。謝啦，James。現在我真的很期待週末了。"
+    },
+    {
+      "s": "James",
+      "en": "Me too. Now we just need to finish this report before five.",
+      "zh": "我也是。現在我們只要在五點前把這份報告做完就好。"
+    },
+    {
+      "s": "Emma",
+      "en": "Right. Back to work, then!",
+      "zh": "對。那就回去工作吧！"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Why is James tired?",
+      "options": [
+        "He went hiking last weekend.",
+        "He worked late because of a deadline.",
+        "He was sick on Wednesday.",
+        "His sister visited him."
+      ],
+      "answer": 1,
+      "line": 3,
+      "why": "James 說他連續兩晚在公司待到九點，因為星期三有截止期限。"
+    },
+    {
+      "q": "Who is visiting Emma this weekend?",
+      "options": [
+        "Her friend from work",
+        "Her mother",
+        "Her sister from Taichung",
+        "James's friend"
+      ],
+      "answer": 2,
+      "line": 8,
+      "why": "My sister is visiting from Taichung."
+    },
+    {
+      "q": "What time does the barbecue start?",
+      "options": [
+        "At noon",
+        "At three",
+        "At five",
+        "At nine"
+      ],
+      "answer": 1,
+      "line": 35,
+      "why": "It starts at three."
+    }
+  ],
+  "words": [
+    {
+      "w": "worn out",
+      "pos": "片語・形容詞",
+      "zh": "筋疲力盡、累壞了",
+      "ex1": "I'm a bit worn out after this week, to be honest.",
+      "line": 1,
+      "ex2": "After the customer audit, the whole team was worn out.",
+      "ex2zh": "客戶稽核結束後，整個團隊都累壞了。",
+      "toeic": false
+    },
+    {
+      "w": "catch up on",
+      "pos": "片語・動詞",
+      "zh": "聊近況、補上（進度）",
+      "ex1": "You must have a lot to catch up on.",
+      "line": 9,
+      "ex2": "I need to catch up on my emails after the business trip.",
+      "ex2zh": "出差回來我得把信補看完。",
+      "toeic": false
+    },
+    {
+      "w": "get together",
+      "pos": "片語・動詞",
+      "zh": "聚在一起、聚會",
+      "ex1": "A few friends and I wanted to get together for a barbecue.",
+      "line": 21,
+      "ex2": "The QA team gets together every Monday to review last week's issues.",
+      "ex2zh": "品保團隊每週一聚在一起檢討上週的問題。",
+      "toeic": false
+    },
+    {
+      "w": "deadline",
+      "pos": "名詞",
+      "zh": "截止期限",
+      "ex1": "That deadline on Wednesday was crazy.",
+      "line": 2,
+      "ex2": "The deadline for the 8D report is this Friday.",
+      "ex2zh": "8D 報告的截止期限是這週五。",
+      "toeic": true
+    },
+    {
+      "w": "reschedule",
+      "pos": "動詞",
+      "zh": "重新安排時間、改期",
+      "ex1": "Oh, that's too bad. Did you reschedule it?",
+      "line": 22,
+      "ex2": "Can we reschedule the meeting to Tuesday morning?",
+      "ex2zh": "我們可以把會議改到星期二早上嗎？",
+      "toeic": true
+    }
+  ],
+  "speaking": {
+    "pattern": "I'm thinking of + V-ing",
+    "patternZh": "我在想要……（說還沒完全決定的計畫）",
+    "fromLine": 12,
+    "task": "用 I'm thinking of... 說說你這個週末想做什麼，再加一句原因（用 because）。",
+    "example": "I'm thinking of going to Daxi Old Street this weekend because I want to try some local food."
+  },
+  "part2": [
+    {
+      "q": "When is the deadline for the quality report?",
+      "opts": [
+        "It's on the second floor.",
+        "By Friday afternoon.",
+        "Yes, I reported it."
+      ],
+      "answer": 1,
+      "why": "問 When（什麼時候），要回答時間。C 用了 reported 跟 report 發音很像，是多益常見的陷阱。",
+      "zh": "品質報告的截止期限是什麼時候？"
+    },
+    {
+      "q": "Who's going to visit the customer next week?",
+      "opts": [
+        "Mr. Chen and his manager.",
+        "Next Wednesday.",
+        "It was a great visit."
+      ],
+      "answer": 0,
+      "why": "問 Who（誰），要回答人。B 回答的是時間。",
+      "zh": "下週誰要去拜訪客戶？"
+    },
+    {
+      "q": "Why was the shipment delayed?",
+      "opts": [
+        "By truck.",
+        "Because of the typhoon.",
+        "About two hundred boxes."
+      ],
+      "answer": 1,
+      "why": "問 Why（為什麼），最常見的回答是 Because...。",
+      "zh": "這批貨為什麼延遲了？"
+    },
+    {
+      "q": "Could we reschedule the meeting to Monday?",
+      "opts": [
+        "Sure, Monday works for me.",
+        "The meeting room is full.",
+        "I met him yesterday."
+      ],
+      "answer": 0,
+      "why": "這是請求，回答「可以／不行」最自然。C 的 met 跟 meeting 發音像，是陷阱。",
+      "zh": "我們可以把會議改到星期一嗎？"
+    },
+    {
+      "q": "Have you checked the inspection results yet?",
+      "opts": [
+        "It's a new machine.",
+        "Not yet. I'll do it after lunch.",
+        "Check, please."
+      ],
+      "answer": 1,
+      "why": "問「做了沒」，回答 Not yet / Yes, I have。C 重複了 check 這個字，是陷阱。",
+      "zh": "你檢查檢驗結果了嗎？"
+    }
+  ],
+  "reorder": [
+    {
+      "zh": "我在想要睡到自然醒，什麼都不做。",
+      "chunks": [
+        "I'm",
+        "thinking of",
+        "sleeping in",
+        "and",
+        "doing",
+        "nothing at all."
+      ],
+      "line": 5
+    },
+    {
+      "zh": "我在想星期六晚上帶她去逛夜市。",
+      "chunks": [
+        "I'm thinking of",
+        "taking",
+        "her",
+        "to",
+        "the night market",
+        "on Saturday evening."
+      ],
+      "line": 12
+    },
+    {
+      "zh": "我在想跟主管請下週一天假。",
+      "chunks": [
+        "I'm thinking of",
+        "asking",
+        "my manager",
+        "for",
+        "a day off",
+        "next week."
+      ],
+      "line": null,
+      "audio": "reorder_2"
+    }
+  ],
+  "scene": "Emma 和 James 在辦公室聊週末。"
+}
