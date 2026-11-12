@@ -1,0 +1,391 @@
+{
+  "date": "2026-11-18",
+  "weekday": "週三",
+  "theme": "客戶溝通",
+  "title": "Bad Circuit Boards",
+  "titleZh": "電路板出問題了",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Grace": {
+      "voice": "af_sarah",
+      "accent": "美式"
+    },
+    "Daniel": {
+      "voice": "bm_george",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Daniel",
+      "en": "Hello Grace. Thanks for taking my call.",
+      "zh": "哈囉 Grace。謝謝你接我的電話。"
+    },
+    {
+      "s": "Grace",
+      "en": "Of course, Daniel. I got your email about the circuit boards.",
+      "zh": "當然，Daniel。我收到你寫的關於電路板的郵件了。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Yes. We found a problem in the last order. About five percent of the boards don't work.",
+      "zh": "是的。我們在上一張訂單發現問題。大約百分之五的板子不能用。"
+    },
+    {
+      "s": "Grace",
+      "en": "I'm very sorry to hear that. Can you tell me what happens exactly?",
+      "zh": "聽到這個我很抱歉。你可以告訴我到底發生什麼事嗎？"
+    },
+    {
+      "s": "Daniel",
+      "en": "Some boards don't turn on at all. Others turn on, but they stop after a few minutes.",
+      "zh": "有些板子完全打不開。有些打得開，但幾分鐘後就停了。"
+    },
+    {
+      "s": "Grace",
+      "en": "I see. Did you check the batch number?",
+      "zh": "我了解了。你有確認批號嗎？"
+    },
+    {
+      "s": "Daniel",
+      "en": "Yes, it's B-2047. We received them on the second of November.",
+      "zh": "有，是 B-2047。我們十一月二號收到的。"
+    },
+    {
+      "s": "Grace",
+      "en": "Thank you. Let me write that down.",
+      "zh": "謝謝你。讓我記下來。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Our production line stopped for half a day because of this. That cost us a lot.",
+      "zh": "我們的產線因此停了半天。這讓我們損失很多。"
+    },
+    {
+      "s": "Grace",
+      "en": "I understand. That must be very frustrating. I apologize for the trouble.",
+      "zh": "我明白。那一定非常令人沮喪。造成困擾，我向你道歉。"
+    },
+    {
+      "s": "Daniel",
+      "en": "I appreciate that. But what are you going to do about it?",
+      "zh": "我很感謝。但你們打算怎麼處理？"
+    },
+    {
+      "s": "Grace",
+      "en": "First, we'll look into the problem today. I'll ask my team to test the same batch in our lab.",
+      "zh": "首先，我們今天就會調查這個問題。我會請團隊在實驗室測試同一批貨。"
+    },
+    {
+      "s": "Daniel",
+      "en": "How long will that take?",
+      "zh": "那要多久？"
+    },
+    {
+      "s": "Grace",
+      "en": "We should know more by tomorrow afternoon. We need to find the root cause.",
+      "zh": "我們明天下午前應該會知道更多。我們得找出根本原因。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Okay. What about the boards I already have?",
+      "zh": "好。那我手上已經有的板子呢？"
+    },
+    {
+      "s": "Grace",
+      "en": "Please send us ten of the bad boards. We'll make sure the courier picks them up tomorrow morning.",
+      "zh": "請寄十片壞掉的板子給我們。我們會確保快遞明天早上去取件。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Good. And I need working boards soon. My next delivery date is in ten days.",
+      "zh": "好。而且我很快就需要能用的板子。我下一次交貨日在十天後。"
+    },
+    {
+      "s": "Grace",
+      "en": "We'll send a replacement for every bad board at no cost.",
+      "zh": "每一片壞掉的板子，我們都會免費寄替換品。"
+    },
+    {
+      "s": "Daniel",
+      "en": "That's fair. When can you ship them?",
+      "zh": "這很合理。你們什麼時候能出貨？"
+    },
+    {
+      "s": "Grace",
+      "en": "Within five working days. We'll make sure every board passes a full inspection before it ships.",
+      "zh": "五個工作天內。我們會確保每片板子出貨前都通過完整檢驗。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Five days is a bit long. Can you make it faster?",
+      "zh": "五天有點久。可以再快一點嗎？"
+    },
+    {
+      "s": "Grace",
+      "en": "Let me talk to the factory manager. I'll get back to you this afternoon.",
+      "zh": "讓我跟廠長談談。我今天下午會再回覆你。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Thank you. I'd also like a written report.",
+      "zh": "謝謝。我也想要一份書面報告。"
+    },
+    {
+      "s": "Grace",
+      "en": "Absolutely. It will include the cause and our plan to prevent it.",
+      "zh": "沒問題。裡面會包含原因，以及我們的預防計畫。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Good. This is the first problem we've had with your company.",
+      "zh": "好。這是我們跟貴公司合作以來第一次出問題。"
+    },
+    {
+      "s": "Grace",
+      "en": "I know, and we want to keep it that way. Your trust is very important to us.",
+      "zh": "我知道，我們也希望維持這樣。你的信任對我們非常重要。"
+    },
+    {
+      "s": "Daniel",
+      "en": "I hope so. My manager is a little upset.",
+      "zh": "希望如此。我的主管有點不高興。"
+    },
+    {
+      "s": "Grace",
+      "en": "Would you like me to explain the situation to your manager?",
+      "zh": "需要我向你的主管說明狀況嗎？"
+    },
+    {
+      "s": "Daniel",
+      "en": "Yes, please. That would be helpful.",
+      "zh": "好的，麻煩你。那會很有幫助。"
+    },
+    {
+      "s": "Grace",
+      "en": "I'll send her an email today and include my phone number.",
+      "zh": "我今天會寄信給她，並附上我的電話。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Great. What's the best way to contact you?",
+      "zh": "太好了。用什麼方式聯絡你最好？"
+    },
+    {
+      "s": "Grace",
+      "en": "You can call me anytime on my direct line, or send an email.",
+      "zh": "你可以隨時打我的直撥電話，或寄電子郵件。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Okay. I'll wait for your call this afternoon.",
+      "zh": "好。我今天下午等你的電話。"
+    },
+    {
+      "s": "Grace",
+      "en": "Yes. I'll call before four o'clock.",
+      "zh": "好的。我四點前會打給你。"
+    },
+    {
+      "s": "Daniel",
+      "en": "Thanks, Grace. I feel a little better now.",
+      "zh": "謝謝你，Grace。我現在感覺好一點了。"
+    },
+    {
+      "s": "Grace",
+      "en": "I'm glad. Thank you for your patience, Daniel. Goodbye.",
+      "zh": "我很高興。謝謝你的耐心，Daniel。再見。"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What is the problem with the circuit boards?",
+      "options": [
+        "They arrived late.",
+        "They are the wrong size.",
+        "They cost too much.",
+        "Some of them do not work."
+      ],
+      "answer": 3,
+      "line": 2,
+      "why": "Daniel 說大約百分之五的板子不能用。"
+    },
+    {
+      "q": "What will Grace's company send for free?",
+      "options": [
+        "A new price list",
+        "A visit from the manager",
+        "Replacement boards",
+        "A discount code"
+      ],
+      "answer": 2,
+      "line": 17,
+      "why": "We'll send a replacement for every bad board at no cost."
+    },
+    {
+      "q": "When will Grace call Daniel back?",
+      "options": [
+        "Tomorrow morning",
+        "Before four o'clock today",
+        "Within five days",
+        "Next week"
+      ],
+      "answer": 1,
+      "line": 33,
+      "why": "她說會在今天四點前打給他。"
+    }
+  ],
+  "words": [
+    {
+      "w": "look into",
+      "pos": "片語・動詞",
+      "zh": "調查、查看",
+      "ex1": "First, we'll look into the problem today. I'll ask my team to test the same batch in our lab.",
+      "line": 11,
+      "ex2": "The QA team will look into the customer complaint today.",
+      "ex2zh": "品保團隊今天會調查這個客訴。",
+      "toeic": false
+    },
+    {
+      "w": "root cause",
+      "pos": "名詞片語",
+      "zh": "根本原因",
+      "ex1": "We should know more by tomorrow afternoon. We need to find the root cause.",
+      "line": 13,
+      "ex2": "We found the root cause of the defect in the soldering step.",
+      "ex2zh": "我們在焊接步驟找到了瑕疵的根本原因。",
+      "toeic": false
+    },
+    {
+      "w": "get back to",
+      "pos": "片語・動詞",
+      "zh": "（之後）回覆某人",
+      "ex1": "Let me talk to the factory manager. I'll get back to you this afternoon.",
+      "line": 21,
+      "ex2": "I'll get back to the customer after the lab test.",
+      "ex2zh": "實驗室測試完後，我會回覆客戶。",
+      "toeic": false
+    },
+    {
+      "w": "replacement",
+      "pos": "名詞",
+      "zh": "替換品、更換",
+      "ex1": "We'll send a replacement for every bad board at no cost.",
+      "line": 17,
+      "ex2": "The supplier agreed to send a replacement within a week.",
+      "ex2zh": "供應商同意一週內寄來替換品。",
+      "toeic": true
+    },
+    {
+      "w": "inspection",
+      "pos": "名詞",
+      "zh": "檢驗、檢查",
+      "ex1": "Within five working days. We'll make sure every board passes a full inspection before it ships.",
+      "line": 19,
+      "ex2": "Every shipment must pass an inspection before it leaves the factory.",
+      "ex2zh": "每批貨離開工廠前都必須通過檢驗。",
+      "toeic": true
+    }
+  ],
+  "speaking": {
+    "pattern": "We'll make sure (that) + 句子",
+    "patternZh": "我們會確保……（承諾一定會做到）",
+    "fromLine": 15,
+    "task": "",
+    "example": ""
+  },
+  "part2": [
+    {
+      "q": "Where is the quality report?",
+      "opts": [
+        "It's in the shared folder.",
+        "Yes, I'm a quality manager.",
+        "At nine o'clock."
+      ],
+      "answer": 0,
+      "why": "問 Where（哪裡），要回答地點。B 重複 quality 是陷阱，C 是時間。",
+      "zh": "品質報告在哪裡？"
+    },
+    {
+      "q": "How many samples did you test?",
+      "opts": [
+        "In the lab upstairs.",
+        "About twenty of them.",
+        "Yes, it passed."
+      ],
+      "answer": 1,
+      "why": "How many 問數量，答 About twenty。A 是地點，C 用 Yes 回答不通順。",
+      "zh": "你測試了幾個樣品？"
+    },
+    {
+      "q": "Would you like me to call the customer?",
+      "opts": [
+        "The customer was upset.",
+        "I called him yesterday.",
+        "Yes, please do."
+      ],
+      "answer": 2,
+      "why": "Would you like me to 是提供協助，答 Yes, please do 最自然。A 重複 customer、B 重複 call 都是陷阱。",
+      "zh": "需要我打電話給客戶嗎？"
+    },
+    {
+      "q": "Why was the shipment delayed?",
+      "opts": [
+        "Because of a typhoon.",
+        "By truck, I think.",
+        "It's next to the door."
+      ],
+      "answer": 0,
+      "why": "問 Why 要回答原因，Because 開頭。B 是 How 的答案，C 是地點。",
+      "zh": "這批貨為什麼延誤？"
+    },
+    {
+      "q": "Should we repair the machine or buy a new one?",
+      "opts": [
+        "Yes, the machine is new.",
+        "I repaired it last year.",
+        "Let's check the cost first."
+      ],
+      "answer": 2,
+      "why": "選擇問句不能用 Yes/No 回答。A、B 重複 machine 和 repair 是陷阱，C 是合理的回應。",
+      "zh": "我們該修理機器還是買新的？"
+    }
+  ],
+  "reorder": [
+    {
+      "zh": "我們會確保每片板子出貨前都通過完整檢驗。",
+      "chunks": [
+        "We'll make sure",
+        "every board",
+        "passes",
+        "a full inspection",
+        "before it ships."
+      ],
+      "line": 19
+    },
+    {
+      "zh": "我們會確保快遞明天早上去取件。",
+      "chunks": [
+        "We'll make sure",
+        "the courier",
+        "picks them up",
+        "tomorrow morning."
+      ],
+      "line": 15
+    },
+    {
+      "zh": "我們會確保客戶星期五收到報告。",
+      "chunks": [
+        "We'll make sure",
+        "the customer",
+        "gets",
+        "the report",
+        "on Friday."
+      ],
+      "line": null,
+      "audio": "reorder_2"
+    }
+  ],
+  "scene": "客戶 Daniel 打電話來抱怨電路板有瑕疵，品保人員 Grace 負責處理。"
+}

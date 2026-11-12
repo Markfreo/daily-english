@@ -1,0 +1,400 @@
+{
+  "date": "2026-11-17",
+  "weekday": "週二",
+  "theme": "日常閒聊",
+  "title": "Trip to Kyoto",
+  "titleZh": "京都旅行回來",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Chloe": {
+      "voice": "af_bella",
+      "accent": "美式"
+    },
+    "Oliver": {
+      "voice": "bm_lewis",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Oliver",
+      "en": "Hi Chloe, welcome back! How was your trip to Kyoto?",
+      "zh": "嗨 Chloe，歡迎回來！你的京都之旅怎麼樣？"
+    },
+    {
+      "s": "Chloe",
+      "en": "It was wonderful, thanks. I'm still a little tired, though.",
+      "zh": "很棒，謝謝。不過我還是有點累。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Was it your first time in Japan?",
+      "zh": "那是你第一次去日本嗎？"
+    },
+    {
+      "s": "Chloe",
+      "en": "Yes, it was. Have you ever been there?",
+      "zh": "是的。你有去過嗎？"
+    },
+    {
+      "s": "Oliver",
+      "en": "Yes, twice. I went to Tokyo and Osaka, but never Kyoto.",
+      "zh": "有，去過兩次。我去過東京和大阪，但從沒去過京都。"
+    },
+    {
+      "s": "Chloe",
+      "en": "You should go. The old temples are beautiful.",
+      "zh": "你應該去。那些古老的寺廟很美。"
+    },
+    {
+      "s": "Oliver",
+      "en": "What was your favorite place?",
+      "zh": "你最喜歡哪個地方？"
+    },
+    {
+      "s": "Chloe",
+      "en": "A small temple on a hill. I happened to run into a friendly guide there.",
+      "zh": "山丘上的一間小寺廟。我在那裡剛好碰到一位很親切的導遊。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Really? What did he tell you?",
+      "zh": "真的嗎？他跟你說了什麼？"
+    },
+    {
+      "s": "Chloe",
+      "en": "He told us the history of the temple. It was over a thousand years old.",
+      "zh": "他告訴我們這間寺廟的歷史。它有一千多年了。"
+    },
+    {
+      "s": "Oliver",
+      "en": "That's amazing. Did you plan everything before you left?",
+      "zh": "太驚人了。你出發前有把一切都規劃好嗎？"
+    },
+    {
+      "s": "Chloe",
+      "en": "I made a simple itinerary, but I didn't follow it very well.",
+      "zh": "我做了一份簡單的行程表，但沒有照著走得很好。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Why not?",
+      "zh": "為什麼？"
+    },
+    {
+      "s": "Chloe",
+      "en": "Well, the trains were confusing at first. It took me a while to figure out the map.",
+      "zh": "嗯，一開始電車很讓人搞不懂。我花了好一陣子才弄懂地圖。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Ha, I know that feeling. Tokyo's station was the same for me.",
+      "zh": "哈，我懂那種感覺。東京的車站對我來說也一樣。"
+    },
+    {
+      "s": "Chloe",
+      "en": "Yes! I got lost on the first day. I thought I would end up in the wrong city.",
+      "zh": "對！我第一天就迷路了。我還以為會跑到錯的城市去。"
+    },
+    {
+      "s": "Oliver",
+      "en": "But you didn't, right?",
+      "zh": "但你沒有，對吧？"
+    },
+    {
+      "s": "Chloe",
+      "en": "No. A kind woman helped me find the right platform.",
+      "zh": "沒有。一位好心的女士幫我找到正確的月台。"
+    },
+    {
+      "s": "Oliver",
+      "en": "People in Japan are so helpful. Have you ever tried to speak Japanese?",
+      "zh": "日本人真的很樂於助人。你有試過說日文嗎？"
+    },
+    {
+      "s": "Chloe",
+      "en": "Only a little. I learned some basic words before the trip.",
+      "zh": "只有一點點。出發前我學了一些基本單字。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Like what?",
+      "zh": "像是什麼？"
+    },
+    {
+      "s": "Chloe",
+      "en": "Things like \"thank you\" and \"delicious\". They made everyone smile.",
+      "zh": "像是「謝謝」和「好吃」。這些讓大家都笑了。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Nice. What about the food? Did you try anything new?",
+      "zh": "不錯。那食物呢？你有試什麼新東西嗎？"
+    },
+    {
+      "s": "Chloe",
+      "en": "Everything was new! I had a bowl of hot noodles at a small shop near the hotel.",
+      "zh": "每樣都是新的！我在飯店附近的小店吃了一碗熱騰騰的麵。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Was it good?",
+      "zh": "好吃嗎？"
+    },
+    {
+      "s": "Chloe",
+      "en": "It was the best I've ever had. I went back three times.",
+      "zh": "那是我吃過最好吃的。我回去了三次。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Three times! I'd do the same thing.",
+      "zh": "三次！我也會那樣做。"
+    },
+    {
+      "s": "Chloe",
+      "en": "Have you ever eaten at a place that was so good that you didn't want to leave?",
+      "zh": "你有沒有在某家店吃得太好，好到不想離開過？"
+    },
+    {
+      "s": "Oliver",
+      "en": "Yes, once in Osaka. I stayed there for two hours.",
+      "zh": "有，在大阪有一次。我在那裡待了兩個小時。"
+    },
+    {
+      "s": "Chloe",
+      "en": "That's how I felt. Next time, I want to visit in autumn.",
+      "zh": "我就是那種感覺。下次我想秋天去。"
+    },
+    {
+      "s": "Oliver",
+      "en": "What would you recommend for the best time to go?",
+      "zh": "你會建議什麼時候去最好？"
+    },
+    {
+      "s": "Chloe",
+      "en": "Mid-November. The red leaves are gorgeous then.",
+      "zh": "十一月中旬。那時候的紅葉美極了。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Sounds perfect. Maybe I'll book a trip for next autumn.",
+      "zh": "聽起來太棒了。也許我明年秋天就訂行程。"
+    },
+    {
+      "s": "Chloe",
+      "en": "Do it! You won't regret it.",
+      "zh": "去吧！你不會後悔的。"
+    },
+    {
+      "s": "Oliver",
+      "en": "Now I just have to save some money.",
+      "zh": "現在我只要存點錢就好。"
+    },
+    {
+      "s": "Chloe",
+      "en": "Same here. My wallet is empty after this trip!",
+      "zh": "我也是。這趟旅行之後我的錢包空空的！"
+    },
+    {
+      "s": "Oliver",
+      "en": "Ha! Well, thanks for the stories. I feel like I traveled too.",
+      "zh": "哈！謝謝你分享這些故事。我覺得自己好像也去旅行了。"
+    },
+    {
+      "s": "Chloe",
+      "en": "Anytime. I'll show you my photos at lunch.",
+      "zh": "隨時都可以。午餐時我給你看我的照片。"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What was difficult for Chloe at first?",
+      "options": [
+        "The food",
+        "The weather",
+        "The hotel",
+        "The trains"
+      ],
+      "answer": 3,
+      "line": 13,
+      "why": "Chloe 說一開始電車很讓人搞不懂，她花了一陣子才弄懂地圖。"
+    },
+    {
+      "q": "How many times did Chloe go back to the noodle shop?",
+      "options": [
+        "Once",
+        "Twice",
+        "Three times",
+        "Four times"
+      ],
+      "answer": 2,
+      "line": 25,
+      "why": "I went back three times."
+    },
+    {
+      "q": "When does Chloe suggest going to Kyoto?",
+      "options": [
+        "In spring",
+        "In mid-November",
+        "In summer",
+        "In January"
+      ],
+      "answer": 1,
+      "line": 31,
+      "why": "她說十一月中旬的紅葉很美。"
+    }
+  ],
+  "words": [
+    {
+      "w": "run into",
+      "pos": "片語・動詞",
+      "zh": "巧遇、碰到",
+      "ex1": "A small temple on a hill. I happened to run into a friendly guide there.",
+      "line": 7,
+      "ex2": "I ran into our supplier at the trade show last week.",
+      "ex2zh": "我上週在展覽上巧遇我們的供應商。",
+      "toeic": false
+    },
+    {
+      "w": "end up",
+      "pos": "片語・動詞",
+      "zh": "最後落得、結果變成",
+      "ex1": "Yes! I got lost on the first day. I thought I would end up in the wrong city.",
+      "line": 15,
+      "ex2": "If we skip the test, we may end up with more defects.",
+      "ex2zh": "如果我們跳過測試，最後可能會有更多瑕疵品。",
+      "toeic": false
+    },
+    {
+      "w": "figure out",
+      "pos": "片語・動詞",
+      "zh": "想出、弄清楚",
+      "ex1": "Well, the trains were confusing at first. It took me a while to figure out the map.",
+      "line": 13,
+      "ex2": "We need to figure out why the machine keeps stopping.",
+      "ex2zh": "我們得查出這台機器為什麼一直停機。",
+      "toeic": false
+    },
+    {
+      "w": "itinerary",
+      "pos": "名詞",
+      "zh": "行程表",
+      "ex1": "I made a simple itinerary, but I didn't follow it very well.",
+      "line": 11,
+      "ex2": "Please send me your itinerary before the business trip.",
+      "ex2zh": "出差前請把你的行程表寄給我。",
+      "toeic": true
+    },
+    {
+      "w": "recommend",
+      "pos": "動詞",
+      "zh": "推薦、建議",
+      "ex1": "What would you recommend for the best time to go?",
+      "line": 30,
+      "ex2": "I recommend that we check every board twice.",
+      "ex2zh": "我建議每片電路板都檢查兩次。",
+      "toeic": true
+    }
+  ],
+  "speaking": {
+    "pattern": "Have you ever + 過去分詞 ...?",
+    "patternZh": "你有沒有……過？（問對方的經驗）",
+    "fromLine": 18,
+    "task": "",
+    "example": ""
+  },
+  "part2": [
+    {
+      "q": "When is the shipment leaving the factory?",
+      "opts": [
+        "Yes, it was a long trip.",
+        "In the warehouse.",
+        "On Thursday morning."
+      ],
+      "answer": 2,
+      "why": "問 When（何時），要回答時間。B 是地點（Where 的答案），A 的 trip 跟 ship 聯想是陷阱。",
+      "zh": "這批貨什麼時候離開工廠？"
+    },
+    {
+      "q": "Could you send me the meeting schedule?",
+      "opts": [
+        "Sure, I'll email it now.",
+        "In the meeting room.",
+        "No, it's on Monday."
+      ],
+      "answer": 0,
+      "why": "Could you 是請求，答 Sure 最自然。B 重複 meeting 是陷阱，C 的 No 不通順。",
+      "zh": "你可以把會議時間表寄給我嗎？"
+    },
+    {
+      "q": "Why don't we move the meeting to Friday?",
+      "opts": [
+        "Because the printer is broken.",
+        "That works for me.",
+        "Yes, I moved last year."
+      ],
+      "answer": 1,
+      "why": "Why don't we 是建議，不是真的問原因。That works for me 是同意。A 把它當成 Why 來回答是陷阱。",
+      "zh": "我們何不把會議改到星期五？"
+    },
+    {
+      "q": "Do you want tea or coffee?",
+      "opts": [
+        "Yes, I do.",
+        "I just came from the store.",
+        "Tea would be great."
+      ],
+      "answer": 2,
+      "why": "選擇問句（A or B）不能用 Yes/No 回答，直接選一個。",
+      "zh": "你想喝茶還是咖啡？"
+    },
+    {
+      "q": "Who is in charge of the training session?",
+      "opts": [
+        "Ms. Lin from the HR team.",
+        "It's in room 204.",
+        "About two hours."
+      ],
+      "answer": 0,
+      "why": "問 Who（誰），要回答人。B 是地點，C 是時間長度。",
+      "zh": "誰負責這次教育訓練？"
+    }
+  ],
+  "reorder": [
+    {
+      "zh": "你有沒有在好到不想離開的地方吃過飯？",
+      "chunks": [
+        "Have you ever",
+        "eaten at",
+        "a place",
+        "that was so good",
+        "that you didn't want to leave?"
+      ],
+      "line": 27
+    },
+    {
+      "zh": "你有試過說日文嗎？",
+      "chunks": [
+        "Have you ever",
+        "tried to",
+        "speak",
+        "Japanese?"
+      ],
+      "line": 18
+    },
+    {
+      "zh": "你有沒有跟外國客戶合作過？",
+      "chunks": [
+        "Have you ever",
+        "worked with",
+        "a customer",
+        "from another country?"
+      ],
+      "line": null,
+      "audio": "reorder_2"
+    }
+  ],
+  "scene": "Chloe 剛從京都旅行回來，Oliver 在辦公室問她旅途的種種。"
+}
