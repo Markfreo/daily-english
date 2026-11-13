@@ -1,0 +1,194 @@
+{
+  "date": "2026-11-20",
+  "weekday": "週五",
+  "theme": "輕鬆話題",
+  "title": "Robot Waiter",
+  "titleZh": "咖啡店的機器人服務生",
+  "scene": "Nina 和 Oliver 在辦公室休息時間，聊著網路上看到的機器人咖啡店新聞。",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Nina": {"voice": "af_bella", "accent": "美式"},
+    "Oliver": {"voice": "bm_lewis", "accent": "英式"}
+  },
+  "lines": [
+    {"s": "Nina", "en": "Hey Oliver, did you see the news this morning?", "zh": "嘿 Oliver，你今天早上有看到新聞嗎？"},
+    {"s": "Oliver", "en": "No, I didn't. What happened?", "zh": "沒有。發生什麼事了？"},
+    {"s": "Nina", "en": "I heard that a coffee shop in Seoul now has a robot waiter.", "zh": "我聽說首爾有一間咖啡店現在有機器人服務生。"},
+    {"s": "Oliver", "en": "A robot? Really? I heard that it brings the drinks to your table.", "zh": "機器人？真的嗎？我聽說它會把飲料送到你的桌上。"},
+    {"s": "Nina", "en": "Yes! It's easy to come across videos of it online.", "zh": "對！在網路上很容易看到它的影片。"},
+    {"s": "Oliver", "en": "Wow. Did you watch one?", "zh": "哇。你有看嗎？"},
+    {"s": "Nina", "en": "Yes, last night. It moved very slowly, but everyone was smiling.", "zh": "有，昨晚看的。它動得很慢，但大家都在笑。"},
+    {"s": "Oliver", "en": "That's funny. Did it say anything?", "zh": "真有趣。它有說什麼嗎？"},
+    {"s": "Nina", "en": "Yes, it said, \"Enjoy your coffee,\" in a very cute voice.", "zh": "有，它用很可愛的聲音說：「請享用咖啡。」"},
+    {"s": "Oliver", "en": "I love it. Would you want one in our office?", "zh": "我喜歡。你會想在我們辦公室放一台嗎？"},
+    {"s": "Nina", "en": "Maybe. It would be convenient when we are too busy to leave our desks.", "zh": "也許吧。我們忙到離不開座位的時候會很方便。"},
+    {"s": "Oliver", "en": "True. But I think it would spill the coffee on my keyboard.", "zh": "也對。但我覺得它會把咖啡灑在我的鍵盤上。"},
+    {"s": "Nina", "en": "Ha! That's what happened in the video, actually.", "zh": "哈！其實影片裡就發生了這種事。"},
+    {"s": "Oliver", "en": "No way. What happened?", "zh": "不會吧。發生什麼事？"},
+    {"s": "Nina", "en": "A man asked for a cup of tea. The robot stopped in front of him and shook a little.", "zh": "有個男人點了一杯茶。機器人停在他面前，還抖了一下。"},
+    {"s": "Oliver", "en": "Then what?", "zh": "然後呢？"},
+    {"s": "Nina", "en": "The tea went all over the table. The robot said, \"Sorry, sorry!\"", "zh": "茶灑得整張桌子都是。機器人說：「對不起，對不起！」"},
+    {"s": "Oliver", "en": "That is so funny. Did the man get angry?", "zh": "太好笑了。那個男人生氣了嗎？"},
+    {"s": "Nina", "en": "No, he laughed. Then the staff came and cleaned everything up.", "zh": "沒有，他笑了。然後店員過來把一切清理乾淨。"},
+    {"s": "Oliver", "en": "Good for him. I'd be a bit upset if it was my laptop.", "zh": "他真好。如果是我的筆電，我會有點不高興。"},
+    {"s": "Nina", "en": "Me too. The café said it will keep an eye on the robot from now on.", "zh": "我也是。咖啡店說之後會多盯著那個機器人。"},
+    {"s": "Oliver", "en": "I should hope so. Does the robot work every day?", "zh": "希望如此。機器人每天都上班嗎？"},
+    {"s": "Nina", "en": "I heard that it only works on weekends, because that's when the shop is busy.", "zh": "我聽說它只在週末上班，因為那時店裡最忙。"},
+    {"s": "Oliver", "en": "Smart. So the staff can focus on making the coffee.", "zh": "聰明。這樣店員就可以專心做咖啡。"},
+    {"s": "Nina", "en": "Exactly. The owner will announce soon that she wants two more robots.", "zh": "沒錯。老闆很快會宣布她想再買兩台機器人。"},
+    {"s": "Oliver", "en": "Two more? I wonder how that will turn out.", "zh": "再兩台？不知道結果會變怎樣。"},
+    {"s": "Nina", "en": "I think it will turn out well. People love new things.", "zh": "我覺得結果會不錯。大家都喜歡新鮮的東西。"},
+    {"s": "Oliver", "en": "Maybe. I like talking to real people, though.", "zh": "也許吧。不過我喜歡跟真人聊天。"},
+    {"s": "Nina", "en": "Me too. A robot can't ask, \"How was your day?\"", "zh": "我也是。機器人不會問：「你今天過得如何？」"},
+    {"s": "Oliver", "en": "Right. Or remember my favorite drink.", "zh": "對。也不會記得我最愛喝的飲料。"},
+    {"s": "Nina", "en": "Well, I heard that some robots can learn names now.", "zh": "嗯，我聽說有些機器人現在可以學會記名字了。"},
+    {"s": "Oliver", "en": "Now that is a bit scary. Next they will ask for my phone number.", "zh": "這就有點可怕了。接下來它們會跟我要電話號碼。"},
+    {"s": "Nina", "en": "Ha ha! Maybe they will want to be friends on social media.", "zh": "哈哈！也許它們還會想在社群媒體上加好友。"},
+    {"s": "Oliver", "en": "Please. I already have too many messages to answer.", "zh": "拜託。我要回的訊息已經夠多了。"},
+    {"s": "Nina", "en": "Same here. Anyway, do you want to go and see the robot one day?", "zh": "我也是。話說回來，你哪天想去看看那個機器人嗎？"},
+    {"s": "Oliver", "en": "Sure. If I ever go to Seoul, I'll try it.", "zh": "好啊。如果我去首爾，我會去試試。"},
+    {"s": "Nina", "en": "Good. Send me a photo if you do.", "zh": "好。如果你去了，傳張照片給我。"},
+    {"s": "Oliver", "en": "Of course. I'll take a video, too, for the whole team.", "zh": "當然。我也會拍影片給全部同事看。"},
+    {"s": "Nina", "en": "Great. Now, shall we get back to our own coffee?", "zh": "太好了。那我們該回去喝我們自己的咖啡了吧？"},
+    {"s": "Oliver", "en": "Yes. I need one badly before the next meeting.", "zh": "好。下次開會前我超需要來一杯。"},
+    {"s": "Nina", "en": "Come on, I'll buy. See, no robot needed!", "zh": "走吧，我請客。你看，不需要機器人！"}
+  ],
+  "quiz": [
+    {
+      "q": "What does the robot in the coffee shop do?",
+      "options": ["It makes the coffee.", "It brings drinks to the tables.", "It takes money from customers.", "It cleans the floor."],
+      "answer": 1,
+      "line": 3,
+      "why": "Oliver 說他聽說機器人會把飲料送到桌上。"
+    },
+    {
+      "q": "What went wrong in the video?",
+      "options": ["The robot broke a cup.", "The robot forgot the order.", "The robot got angry.", "The robot spilled the tea."],
+      "answer": 3,
+      "line": 16,
+      "why": "The tea went all over the table.（茶灑得整張桌子都是。）"
+    },
+    {
+      "q": "When does the robot work?",
+      "options": ["Only on weekends", "Every morning", "Only at night", "Every day of the week"],
+      "answer": 0,
+      "line": 22,
+      "why": "I heard that it only works on weekends."
+    }
+  ],
+  "words": [
+    {
+      "w": "come across",
+      "pos": "片語・動詞",
+      "zh": "偶然發現、無意間看到",
+      "ex1": "It's easy to come across videos of it online.",
+      "line": 4,
+      "ex2": "I came across an old inspection report in the file cabinet.",
+      "ex2zh": "我在檔案櫃裡無意間找到一份舊的檢驗報告。",
+      "toeic": false
+    },
+    {
+      "w": "keep an eye on",
+      "pos": "片語・動詞",
+      "zh": "留意、盯著看",
+      "ex1": "The café said it will keep an eye on the robot from now on.",
+      "line": 20,
+      "ex2": "Please keep an eye on the temperature of the oven during the test.",
+      "ex2zh": "測試期間請留意烤箱的溫度。",
+      "toeic": false
+    },
+    {
+      "w": "turn out",
+      "pos": "片語・動詞",
+      "zh": "結果是、最後變成",
+      "ex1": "I wonder how that will turn out.",
+      "line": 25,
+      "ex2": "The new test method turned out to be faster than the old one.",
+      "ex2zh": "新的測試方法結果比舊的更快。",
+      "toeic": false
+    },
+    {
+      "w": "convenient",
+      "pos": "形容詞",
+      "zh": "方便的",
+      "ex1": "It would be convenient when we are too busy to leave our desks.",
+      "line": 10,
+      "ex2": "Is Thursday afternoon convenient for the factory visit?",
+      "ex2zh": "星期四下午參觀工廠方便嗎？",
+      "toeic": true
+    },
+    {
+      "w": "announce",
+      "pos": "動詞",
+      "zh": "宣布、公布",
+      "ex1": "The owner will announce soon that she wants two more robots.",
+      "line": 24,
+      "ex2": "The company will announce the new quality policy next week.",
+      "ex2zh": "公司下週會公布新的品質政策。",
+      "toeic": true
+    }
+  ],
+  "speaking": {
+    "pattern": "I heard that + 句子",
+    "patternZh": "我聽說……（轉述聽來的消息）",
+    "fromLine": 2,
+    "task": "用 I heard that... 說一個你最近聽到的有趣消息，再加一句你的感想。",
+    "example": "I heard that a new coffee shop opened near my office. I want to try it this weekend."
+  },
+  "reorder": [
+    {
+      "zh": "我聽說首爾有一間咖啡店現在有機器人服務生。",
+      "chunks": ["I heard that", "a coffee shop", "in Seoul", "now has", "a robot waiter."],
+      "line": 2
+    },
+    {
+      "zh": "我聽說它只在週末上班，因為那時店裡最忙。",
+      "chunks": ["I heard that", "it", "only works", "on weekends,", "because that's when", "the shop is busy."],
+      "line": 22
+    },
+    {
+      "zh": "我聽說新機器下週一會到。",
+      "chunks": ["I heard that", "the new machine", "will arrive", "next Monday."],
+      "line": null,
+      "audio": "reorder_2"
+    }
+  ],
+  "part2": [
+    {
+      "q": "When will the new inspection machine arrive?",
+      "opts": ["In the factory.", "It's very expensive.", "Early next week."],
+      "answer": 2,
+      "why": "問 When（什麼時候），要回答時間。A 回答的是地點，B 回答的是價格。",
+      "zh": "新的檢驗機器什麼時候會到？"
+    },
+    {
+      "q": "Is Thursday afternoon convenient for you?",
+      "opts": ["Yes, that works for me.", "The afternoon tea was great.", "I'll take the train."],
+      "answer": 0,
+      "why": "這是 Yes/No 問句，問時間方不方便。B 重複了 afternoon，是陷阱。",
+      "zh": "星期四下午你方便嗎？"
+    },
+    {
+      "q": "Why don't we announce the schedule today?",
+      "opts": ["At the front desk.", "Good idea. I'll send an email.", "Because it was late."],
+      "answer": 1,
+      "why": "Why don't we 是建議，不是真的問原因，要回答同意或不同意。C 用 Because 回答是陷阱。",
+      "zh": "我們何不今天就公布時程？"
+    },
+    {
+      "q": "Could you keep an eye on the test results?",
+      "opts": ["Yes, the eye doctor is here.", "I saw the results yesterday.", "Sure, I'll check them every hour."],
+      "answer": 2,
+      "why": "這是請求，回答 Sure 最自然。A 的 eye doctor 是利用 eye 的聲音陷阱。",
+      "zh": "你可以幫忙留意測試結果嗎？"
+    },
+    {
+      "q": "Do you want to ship by air or by sea?",
+      "opts": ["By air, please. It's urgent.", "Yes, I do.", "About three days."],
+      "answer": 0,
+      "why": "這是選擇問句（A or B），要選一個。B 的 Yes 不能回答 or 問句。",
+      "zh": "你想用空運還是海運出貨？"
+    }
+  ]
+}
