@@ -1,0 +1,953 @@
+{
+ "date": "2026-11-24",
+ "weekday": "週二",
+ "theme": "日常閒聊",
+ "title": "Starting to Run",
+ "titleZh": "開始跑步",
+ "level": "B1",
+ "speed": "慢速",
+ "speakers": {
+  "Lily": {
+   "voice": "af_heart",
+   "accent": "美式"
+  },
+  "Ben": {
+   "voice": "bm_george",
+   "accent": "英式"
+  }
+ },
+ "lines": [
+  {
+   "s": "Ben",
+   "en": "Hey Lily! You look really happy today.",
+   "zh": "嗨 Lily！你今天看起來真開心。",
+   "mood": "happy"
+  },
+  {
+   "s": "Lily",
+   "en": "I am! I decided to take up running last month.",
+   "zh": "是啊！我上個月決定開始跑步。",
+   "mood": "happy"
+  },
+  {
+   "s": "Ben",
+   "en": "Really? I thought you hated exercise.",
+   "zh": "真的嗎？我以為你討厭運動。",
+   "mood": "surprised"
+  },
+  {
+   "s": "Lily",
+   "en": "I did, but now I work out three times a week.",
+   "zh": "以前是，但現在我一週運動三次。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Ben",
+   "en": "Wow. Is it hard?",
+   "zh": "哇。會很辛苦嗎？",
+   "mood": "surprised"
+  },
+  {
+   "s": "Lily",
+   "en": "At first, yes. My legs hurt for two days.",
+   "zh": "一開始會。我的腿痛了兩天。",
+   "mood": "sad"
+  },
+  {
+   "s": "Ben",
+   "en": "Running is very popular these days.",
+   "zh": "最近跑步很流行。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Lily",
+   "en": "It is, and it helps me improve my sleep.",
+   "zh": "對啊，而且它讓我睡得更好。",
+   "mood": "happy"
+  },
+  {
+   "s": "Ben",
+   "en": "Maybe I should try it too.",
+   "zh": "也許我也該試試。",
+   "mood": "confused"
+  },
+  {
+   "s": "Lily",
+   "en": "Join me! I'll come over to your place on Saturday.",
+   "zh": "加入我吧！我週六去你家找你。",
+   "mood": "happy"
+  },
+  {
+   "s": "Ben",
+   "en": "But I'm not fit. I'll be so slow.",
+   "zh": "可是我體能不好，我會跑得很慢。",
+   "mood": "sad"
+  },
+  {
+   "s": "Lily",
+   "en": "Don't worry. I'm slow too!",
+   "zh": "別擔心，我也很慢！",
+   "mood": "happy"
+  },
+  {
+   "s": "Ben",
+   "en": "Haha, okay. It's a deal.",
+   "zh": "哈哈，好吧，一言為定。",
+   "mood": "happy"
+  },
+  {
+   "s": "Lily",
+   "en": "Great! See you at seven.",
+   "zh": "太好了！七點見。",
+   "mood": "happy"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "What did Lily start last month?",
+   "options": [
+    "Swimming",
+    "Cooking",
+    "Running",
+    "Dancing"
+   ],
+   "answer": 2,
+   "line": 1,
+   "why": "Lily 說她上個月決定開始跑步（take up running）。"
+  },
+  {
+   "q": "How often does Lily work out now?",
+   "options": [
+    "Every day",
+    "Once a week",
+    "Twice a month",
+    "Three times a week"
+   ],
+   "answer": 3,
+   "line": 3,
+   "why": "now I work out three times a week，一週三次。"
+  },
+  {
+   "q": "What does Ben worry about?",
+   "options": [
+    "Being too slow",
+    "Being too tired",
+    "The weather",
+    "The cost"
+   ],
+   "answer": 0,
+   "line": 10,
+   "why": "Ben 說 I'm not fit. I'll be so slow，擔心自己跑太慢。"
+  }
+ ],
+ "words": [
+  {
+   "w": "take up",
+   "pos": "片語・動詞",
+   "zh": "開始從事（興趣）",
+   "ex1": "I am! I decided to take up running last month.",
+   "line": 1,
+   "ex2": "Many engineers take up yoga to reduce stress.",
+   "ex2zh": "很多工程師開始練瑜伽來減壓。",
+   "toeic": false,
+   "hook": "take 拿起＋up 往上：把一個新興趣「拿起來」＝開始做",
+   "img": "pic/word_0.png",
+   "pic": "a man picking up a pair of running shoes from the floor with an excited face"
+  },
+  {
+   "w": "work out",
+   "pos": "片語・動詞",
+   "zh": "運動、健身",
+   "ex1": "I did, but now I work out three times a week.",
+   "line": 3,
+   "ex2": "Our team likes to work out together after work.",
+   "ex2zh": "我們團隊下班後喜歡一起運動。",
+   "toeic": false,
+   "hook": "work 工作＋out 流出：把汗「做出來」＝運動健身",
+   "img": "pic/word_1.png",
+   "pic": "a smiling woman lifting dumbbells in a gym with sweat drops flying"
+  },
+  {
+   "w": "come over",
+   "pos": "片語・動詞",
+   "zh": "（到某人家）過來",
+   "ex1": "Join me! I'll come over to your place on Saturday.",
+   "line": 9,
+   "ex2": "Can you come over to the factory this afternoon?",
+   "ex2zh": "你今天下午可以過來工廠一趟嗎？",
+   "toeic": false,
+   "hook": "come 來＋over 越過：越過馬路、跨過圍牆來找你＝過來拜訪",
+   "img": "pic/word_2.png",
+   "pic": "a woman walking across a small bridge towards a friend's house, waving"
+  },
+  {
+   "w": "popular",
+   "pos": "形容詞",
+   "zh": "受歡迎的、流行的",
+   "ex1": "Running is very popular these days.",
+   "line": 6,
+   "ex2": "This model is popular with our overseas customers.",
+   "ex2zh": "這個型號很受海外客戶歡迎。",
+   "toeic": true,
+   "hook": "諧音「怕不怕累」→ 很多人排隊搶著要＝受歡迎（或記 pop＝流行音樂）",
+   "img": "pic/word_3.png",
+   "pic": "a street musician surrounded by a large happy crowd clapping and cheering"
+  },
+  {
+   "w": "improve",
+   "pos": "動詞",
+   "zh": "改善、提升",
+   "ex1": "It is, and it helps me improve my sleep.",
+   "line": 7,
+   "ex2": "We need to improve the quality of our packaging.",
+   "ex2zh": "我們需要改善包裝的品質。",
+   "toeic": true,
+   "hook": "im 使成為＋prove 證明有價值：讓東西變得更好、更有價值＝改善",
+   "img": "pic/word_4.png",
+   "pic": "a person climbing up a staircase of growing bars towards a smiling sun"
+  }
+ ],
+ "part2": [
+  {
+   "q": "What time does the shipment arrive?",
+   "opts": [
+    "By air, I think.",
+    "Around three o'clock.",
+    "It arrived yesterday."
+   ],
+   "answer": 1,
+   "why": "問 What time 要回答時間點。A 是運送方式（How），C 時態不對。",
+   "zh": "這批貨幾點到？"
+  },
+  {
+   "q": "Have you finished the inspection report?",
+   "opts": [
+    "Yes, I sent it this morning.",
+    "The inspector is new.",
+    "In the second room."
+   ],
+   "answer": 0,
+   "why": "Have you finished 是 Yes/No 問句，答 Yes 並補充。B 重複 inspect 的字根是陷阱，C 是地點。",
+   "zh": "你寫完檢驗報告了嗎？"
+  },
+  {
+   "q": "How about lunch at noon?",
+   "opts": [
+    "It's a long lunch.",
+    "Yes, he called at noon.",
+    "Sounds good to me."
+   ],
+   "answer": 2,
+   "why": "How about 是提議，答 Sounds good 表示同意。A 重複 lunch、B 重複 noon 都是陷阱。",
+   "zh": "中午吃午餐如何？"
+  },
+  {
+   "q": "Where should I put these samples?",
+   "opts": [
+    "About ten of them.",
+    "On the shelf by the window.",
+    "They are very small."
+   ],
+   "answer": 1,
+   "why": "問 Where 要回答地點：On the shelf。A 是數量，C 是描述。",
+   "zh": "這些樣品我該放哪裡？"
+  },
+  {
+   "q": "Why is the printer not working?",
+   "opts": [
+    "It's out of paper.",
+    "In the supply room.",
+    "Yes, it works well."
+   ],
+   "answer": 0,
+   "why": "問 Why 要回答原因，It's out of paper 就是原因。B 是地點，C 用 Yes 不通順。",
+   "zh": "印表機為什麼不能用？"
+  }
+ ],
+ "scene": "Lily 和 Ben 在公園碰面，Lily 說她最近開始跑步，邀請 Ben 一起試試。",
+ "place": "park",
+ "grammar": {
+  "topic": "conj",
+  "topicZh": "連接詞",
+  "tip": "先看空格前後兩半句的關係：相反用 but／although，結果用 so，原因用 because，選擇用 or，時間用 when／after，成對用 both…and。",
+  "items": [
+   {
+    "q": "The traffic was terrible, _____ I arrived late.",
+    "opts": [
+     "but",
+     "so",
+     "or",
+     "although"
+    ],
+    "answer": 1,
+    "why": "前半是原因（交通很糟），後半是結果（遲到），結果用 so。",
+    "zh": "交通很糟，所以我遲到了。"
+   },
+   {
+    "q": "_____ it rained, the outdoor event continued.",
+    "opts": [
+     "Because",
+     "So",
+     "Or",
+     "Although"
+    ],
+    "answer": 3,
+    "why": "下雨，活動「仍然」繼續，前後是轉折，用 Although（雖然）。Because 表示原因，意思不通。",
+    "zh": "雖然下雨，戶外活動還是繼續。"
+   },
+   {
+    "q": "Please call me _____ you finish the report.",
+    "opts": [
+     "but",
+     "or",
+     "when",
+     "so"
+    ],
+    "answer": 2,
+    "why": "「當你完成報告時」，表示時間，用 when。",
+    "zh": "你完成報告時請打給我。"
+   },
+   {
+    "q": "I stayed home _____ I was sick.",
+    "opts": [
+     "because",
+     "so",
+     "but",
+     "or"
+    ],
+    "answer": 0,
+    "why": "待在家是結果，生病是原因，原因用 because。",
+    "zh": "我待在家，因為我生病了。"
+   },
+   {
+    "q": "Both the manager _____ the engineer joined the call.",
+    "opts": [
+     "or",
+     "and",
+     "but",
+     "so"
+    ],
+    "answer": 1,
+    "why": "Both 一定要搭配 and：both A and B（A 和 B 兩個都）。",
+    "zh": "經理和工程師都加入了通話。"
+   }
+  ]
+ },
+ "gloss": {
+  "air": [
+   "名詞",
+   "（by air）空運",
+   "空氣",
+   "We ship small parts by air.",
+   "我們用空運寄小零件。"
+  ],
+  "although": [
+   "連接詞",
+   "雖然",
+   "",
+   "Although it was late, we kept working.",
+   "雖然很晚，我們還是繼續工作。"
+  ],
+  "am": [
+   "助動詞",
+   "是（I am）",
+   "",
+   "I am ready to start.",
+   "我準備好開始了。"
+  ],
+  "around": [
+   "介系詞",
+   "大約（時間）",
+   "周圍",
+   "The call is around noon.",
+   "通話大約在中午。"
+  ],
+  "arrive": [
+   "動詞",
+   "到達",
+   "",
+   "The guests arrive at six.",
+   "客人六點到。"
+  ],
+  "arrived": [
+   "動詞",
+   "到了（arrive 的過去式）",
+   "",
+   "The package arrived late.",
+   "包裹很晚才到。"
+  ],
+  "being": [
+   "動詞",
+   "是、成為（be 的動名詞）",
+   "",
+   "Being late is not good.",
+   "遲到不好。"
+  ],
+  "ben": [
+   "人名",
+   "Ben（班）",
+   "",
+   "Ben plays soccer on Sundays.",
+   "Ben 週日踢足球。"
+  ],
+  "both": [
+   "副詞",
+   "兩者都（both…and）",
+   "代名詞：兩者",
+   "Both teams passed the test.",
+   "兩個團隊都通過測試。"
+  ],
+  "continued": [
+   "動詞",
+   "繼續了（continue 的過去式）",
+   "",
+   "The meeting continued after lunch.",
+   "會議午餐後繼續進行。"
+  ],
+  "cooking": [
+   "名詞",
+   "烹飪、做菜",
+   "",
+   "Cooking is my hobby.",
+   "做菜是我的興趣。"
+  ],
+  "cost": [
+   "名詞",
+   "費用、成本",
+   "動詞：花費",
+   "The cost is too high.",
+   "費用太高了。"
+  ],
+  "dancing": [
+   "名詞",
+   "跳舞",
+   "",
+   "Dancing is good exercise.",
+   "跳舞是很好的運動。"
+  ],
+  "deal": [
+   "名詞",
+   "（It's a deal）一言為定",
+   "交易",
+   "We made a deal with the supplier.",
+   "我們和供應商談成了一筆交易。"
+  ],
+  "decided": [
+   "動詞",
+   "決定了（decide 的過去式）",
+   "",
+   "She decided to join the team.",
+   "她決定加入團隊。"
+  ],
+  "engineer": [
+   "名詞",
+   "工程師",
+   "",
+   "The engineer fixed the machine.",
+   "工程師修好了機器。"
+  ],
+  "engineers": [
+   "名詞",
+   "工程師（engineer 的複數）",
+   "",
+   "The engineers meet every Monday.",
+   "工程師們每週一開會。"
+  ],
+  "event": [
+   "名詞",
+   "活動",
+   "",
+   "The company event is on Friday.",
+   "公司活動在週五。"
+  ],
+  "exercise": [
+   "名詞",
+   "運動",
+   "動詞：做運動；練習",
+   "Exercise helps me sleep.",
+   "運動幫助我入睡。"
+  ],
+  "finish": [
+   "動詞",
+   "完成",
+   "",
+   "I will finish this by noon.",
+   "我中午前會做完。"
+  ],
+  "finished": [
+   "動詞",
+   "完成了（finish 的過去式／過去分詞）",
+   "",
+   "We finished the test early.",
+   "我們提早完成測試。"
+  ],
+  "fit": [
+   "形容詞",
+   "體能好的、健康的",
+   "合身的",
+   "He stays fit by cycling.",
+   "他靠騎單車保持健康。"
+  ],
+  "haha": [
+   "感嘆詞",
+   "哈哈",
+   "",
+   "Haha, that's funny.",
+   "哈哈，真好笑。"
+  ],
+  "happy": [
+   "形容詞",
+   "開心的",
+   "",
+   "We are happy with the result.",
+   "我們對結果很滿意。"
+  ],
+  "hard": [
+   "形容詞",
+   "辛苦的、困難的",
+   "硬的",
+   "The test was very hard.",
+   "這個考試很難。"
+  ],
+  "hated": [
+   "動詞",
+   "討厭（hate 的過去式）",
+   "",
+   "He hated waiting in line.",
+   "他討厭排隊。"
+  ],
+  "helps": [
+   "動詞",
+   "有幫助（help 的第三人稱）",
+   "",
+   "Music helps me focus.",
+   "音樂幫助我專心。"
+  ],
+  "hey": [
+   "感嘆詞",
+   "嘿（打招呼）",
+   "",
+   "Hey, how are you?",
+   "嘿，你好嗎？"
+  ],
+  "home": [
+   "副詞",
+   "在家、回家",
+   "名詞：家",
+   "She went home early.",
+   "她提早回家了。"
+  ],
+  "hurt": [
+   "動詞",
+   "痛、受傷",
+   "形容詞：受傷的",
+   "My back hurts after work.",
+   "下班後我的背會痛。"
+  ],
+  "improve": [
+   "動詞",
+   "改善、提升",
+   "",
+   "We want to improve our service.",
+   "我們想改善服務。"
+  ],
+  "inspection": [
+   "名詞",
+   "檢驗、檢查",
+   "",
+   "The inspection found no problem.",
+   "檢驗沒有發現問題。"
+  ],
+  "inspector": [
+   "名詞",
+   "檢驗員",
+   "",
+   "The inspector checked every board.",
+   "檢驗員檢查了每片板子。"
+  ],
+  "join": [
+   "動詞",
+   "加入、一起參加",
+   "",
+   "Please join us for lunch.",
+   "請和我們一起吃午餐。"
+  ],
+  "joined": [
+   "動詞",
+   "加入了（join 的過去式）",
+   "",
+   "She joined the call late.",
+   "她很晚才加入通話。"
+  ],
+  "legs": [
+   "名詞",
+   "腿（leg 的複數）",
+   "",
+   "My legs are tired.",
+   "我的腿很累。"
+  ],
+  "likes": [
+   "動詞",
+   "喜歡（like 的第三人稱）",
+   "",
+   "He likes working in a team.",
+   "他喜歡團隊合作。"
+  ],
+  "lily": [
+   "人名",
+   "Lily（莉莉）",
+   "",
+   "Lily is a QA engineer.",
+   "Lily 是品保工程師。"
+  ],
+  "model": [
+   "名詞",
+   "型號、機種",
+   "模特兒",
+   "The new model sells well.",
+   "新型號賣得很好。"
+  ],
+  "okay": [
+   "形容詞",
+   "好吧、沒問題",
+   "",
+   "Okay, let's begin.",
+   "好，我們開始吧。"
+  ],
+  "outdoor": [
+   "形容詞",
+   "戶外的",
+   "",
+   "We held an outdoor lunch.",
+   "我們辦了戶外午餐。"
+  ],
+  "over": [
+   "副詞",
+   "（come over）過來",
+   "在……上方",
+   "Can you come over now?",
+   "你現在能過來嗎？"
+  ],
+  "overseas": [
+   "形容詞",
+   "海外的",
+   "",
+   "We have many overseas customers.",
+   "我們有很多海外客戶。"
+  ],
+  "packaging": [
+   "名詞",
+   "包裝",
+   "",
+   "The packaging was damaged.",
+   "包裝受損了。"
+  ],
+  "paper": [
+   "名詞",
+   "紙張",
+   "論文；報紙",
+   "We need more paper.",
+   "我們需要更多紙。"
+  ],
+  "printer": [
+   "名詞",
+   "印表機",
+   "",
+   "The printer is on the second floor.",
+   "印表機在二樓。"
+  ],
+  "put": [
+   "動詞",
+   "放、擺",
+   "",
+   "Please put the box here.",
+   "請把箱子放這裡。"
+  ],
+  "rained": [
+   "動詞",
+   "下雨了（rain 的過去式）",
+   "",
+   "It rained all day.",
+   "下了一整天的雨。"
+  ],
+  "reduce": [
+   "動詞",
+   "減少、降低",
+   "",
+   "We want to reduce waste.",
+   "我們想減少浪費。"
+  ],
+  "running": [
+   "名詞",
+   "跑步",
+   "動詞：跑、運轉",
+   "Running is good for health.",
+   "跑步有益健康。"
+  ],
+  "samples": [
+   "名詞",
+   "樣品（sample 的複數）",
+   "",
+   "We sent three samples.",
+   "我們寄了三個樣品。"
+  ],
+  "saturday": [
+   "名詞",
+   "星期六",
+   "",
+   "We close early on Saturday.",
+   "我們週六提早關門。"
+  ],
+  "second": [
+   "形容詞",
+   "第二的",
+   "名詞：秒",
+   "Take the second door.",
+   "走第二扇門。"
+  ],
+  "seven": [
+   "數字",
+   "七",
+   "",
+   "The shop opens at seven.",
+   "店七點開門。"
+  ],
+  "shelf": [
+   "名詞",
+   "架子",
+   "",
+   "The files are on the top shelf.",
+   "檔案在最上層架子上。"
+  ],
+  "sick": [
+   "形容詞",
+   "生病的",
+   "",
+   "He is sick today.",
+   "他今天生病了。"
+  ],
+  "sleep": [
+   "名詞",
+   "睡眠",
+   "動詞：睡覺",
+   "I need more sleep.",
+   "我需要更多睡眠。"
+  ],
+  "slow": [
+   "形容詞",
+   "慢的",
+   "",
+   "The internet is slow today.",
+   "今天網路很慢。"
+  ],
+  "small": [
+   "形容詞",
+   "小的",
+   "",
+   "This room is too small.",
+   "這個房間太小了。"
+  ],
+  "so": [
+   "副詞",
+   "（so slow）這麼、很",
+   "連接詞：所以",
+   "The line is so long.",
+   "隊伍好長。"
+  ],
+  "sounds": [
+   "動詞",
+   "聽起來（sound 的第三人稱）",
+   "",
+   "That sounds interesting.",
+   "聽起來很有趣。"
+  ],
+  "start": [
+   "動詞",
+   "開始",
+   "",
+   "When did you start working here?",
+   "你什麼時候開始在這裡工作？"
+  ],
+  "stayed": [
+   "動詞",
+   "待了（stay 的過去式）",
+   "",
+   "She stayed at the office late.",
+   "她在辦公室待到很晚。"
+  ],
+  "stress": [
+   "名詞",
+   "壓力",
+   "",
+   "Too much stress is bad.",
+   "壓力太大不好。"
+  ],
+  "supply": [
+   "名詞",
+   "（supply room）用品、供應",
+   "動詞：供應",
+   "The supply room is on the first floor.",
+   "用品室在一樓。"
+  ],
+  "swimming": [
+   "名詞",
+   "游泳",
+   "",
+   "Swimming is fun in summer.",
+   "夏天游泳很有趣。"
+  ],
+  "take": [
+   "動詞",
+   "（take up）開始從事",
+   "拿；花費",
+   "It takes ten minutes.",
+   "這要花十分鐘。"
+  ],
+  "terrible": [
+   "形容詞",
+   "很糟的",
+   "",
+   "The weather was terrible.",
+   "天氣很糟。"
+  ],
+  "these": [
+   "代名詞",
+   "這些",
+   "",
+   "These boards are ready.",
+   "這些板子準備好了。"
+  ],
+  "thought": [
+   "動詞",
+   "以為、認為（think 的過去式）",
+   "",
+   "I thought the shop was closed.",
+   "我以為店關了。"
+  ],
+  "traffic": [
+   "名詞",
+   "交通、車流",
+   "",
+   "Traffic is heavy at five.",
+   "五點車很多。"
+  ],
+  "well": [
+   "副詞",
+   "好地",
+   "名詞：井",
+   "She speaks English well.",
+   "她英文說得好。"
+  ],
+  "window": [
+   "名詞",
+   "窗戶",
+   "",
+   "Please close the window.",
+   "請關上窗戶。"
+  ],
+  "work": [
+   "動詞",
+   "（work out）運動",
+   "工作",
+   "I work out after dinner.",
+   "我晚餐後運動。"
+  ],
+  "working": [
+   "動詞",
+   "運作、工作中（work 的進行式）",
+   "",
+   "The machine is working again.",
+   "機器又能運作了。"
+  ],
+  "works": [
+   "動詞",
+   "運作（work 的第三人稱）",
+   "行得通",
+   "The new tool works well.",
+   "新工具運作良好。"
+  ],
+  "wow": [
+   "感嘆詞",
+   "哇",
+   "",
+   "Wow, that's fast!",
+   "哇，好快！"
+  ],
+  "yoga": [
+   "名詞",
+   "瑜伽",
+   "",
+   "Yoga helps me relax.",
+   "瑜伽幫我放鬆。"
+  ]
+ },
+ "phrases": [
+  {
+   "p": "take up",
+   "forms": [
+    "take up",
+    "took up",
+    "taking up"
+   ],
+   "pos": "片語・動詞",
+   "zh": "開始從事（興趣）",
+   "ex": "She wants to take up painting.",
+   "exzh": "她想開始學畫畫。"
+  },
+  {
+   "p": "work out",
+   "forms": [
+    "work out",
+    "works out",
+    "working out"
+   ],
+   "pos": "片語・動詞",
+   "zh": "運動、健身",
+   "ex": "I work out in the morning.",
+   "exzh": "我早上運動。"
+  },
+  {
+   "p": "come over",
+   "forms": [
+    "come over",
+    "comes over",
+    "coming over"
+   ],
+   "pos": "片語・動詞",
+   "zh": "（到某人家）過來",
+   "ex": "Please come over after dinner.",
+   "exzh": "晚餐後請過來。"
+  },
+  {
+   "p": "at first",
+   "forms": [
+    "at first"
+   ],
+   "pos": "片語",
+   "zh": "一開始",
+   "ex": "At first, the work was hard.",
+   "exzh": "一開始，這份工作很難。"
+  },
+  {
+   "p": "these days",
+   "forms": [
+    "these days"
+   ],
+   "pos": "片語",
+   "zh": "最近、這幾天",
+   "ex": "He is busy these days.",
+   "exzh": "他最近很忙。"
+  },
+  {
+   "p": "a deal",
+   "forms": [
+    "it's a deal",
+    "a deal"
+   ],
+   "pos": "片語",
+   "zh": "一言為定、成交",
+   "ex": "Ten dollars? It's a deal.",
+   "exzh": "十美元？成交。"
+  }
+ ]
+}

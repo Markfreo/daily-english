@@ -1,0 +1,842 @@
+{
+ "date": "2026-11-23",
+ "weekday": "週一",
+ "theme": "職場會議",
+ "title": "New Test Machine",
+ "titleZh": "新的測試機器",
+ "level": "B1",
+ "speed": "慢速",
+ "speakers": {
+  "Jack": {
+   "voice": "am_eric",
+   "accent": "美式"
+  },
+  "Sophie": {
+   "voice": "bf_isabella",
+   "accent": "英式"
+  }
+ },
+ "lines": [
+  {
+   "s": "Jack",
+   "en": "Good morning, Sophie. Let's start with the agenda.",
+   "zh": "早安 Sophie。我們從議程開始吧。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Sophie",
+   "en": "Sure. First, the new test machine arrived.",
+   "zh": "好的。首先，新的測試機器到貨了。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Jack",
+   "en": "Great! Is it ready to use?",
+   "zh": "太好了！可以用了嗎？",
+   "mood": "happy"
+  },
+  {
+   "s": "Sophie",
+   "en": "Not yet. Can I bring up a small problem?",
+   "zh": "還不行。我可以提一個小問題嗎？",
+   "mood": "confused"
+  },
+  {
+   "s": "Jack",
+   "en": "Of course. What is it?",
+   "zh": "當然。是什麼問題？",
+   "mood": "neutral"
+  },
+  {
+   "s": "Sophie",
+   "en": "The manual is in German. Nobody can read it.",
+   "zh": "說明書是德文的，沒有人看得懂。",
+   "mood": "sad"
+  },
+  {
+   "s": "Jack",
+   "en": "Really? That's a surprise.",
+   "zh": "真的嗎？這真讓人意外。",
+   "mood": "surprised"
+  },
+  {
+   "s": "Sophie",
+   "en": "I asked the supplier for an English one.",
+   "zh": "我已經向供應商要英文版了。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Jack",
+   "en": "Good. Please wrap up the setup by Friday.",
+   "zh": "好。請在週五前完成安裝。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Sophie",
+   "en": "I'll try, but I need the manager to approve the training cost.",
+   "zh": "我會試試看，但需要經理核准訓練費用。",
+   "mood": "confused"
+  },
+  {
+   "s": "Jack",
+   "en": "How much is it?",
+   "zh": "要多少錢？",
+   "mood": "neutral"
+  },
+  {
+   "s": "Sophie",
+   "en": "About five hundred dollars.",
+   "zh": "大約五百美元。",
+   "mood": "neutral"
+  },
+  {
+   "s": "Jack",
+   "en": "That's fine. I'll sign off on it today.",
+   "zh": "沒問題。我今天就簽核。",
+   "mood": "happy"
+  },
+  {
+   "s": "Sophie",
+   "en": "Thank you! That helps a lot.",
+   "zh": "謝謝你！幫了大忙。",
+   "mood": "happy"
+  },
+  {
+   "s": "Jack",
+   "en": "Okay, that's all for today's meeting.",
+   "zh": "好，今天的會議就到這裡。",
+   "mood": "neutral"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "What is wrong with the manual?",
+   "options": [
+    "It is too long.",
+    "It is in German.",
+    "It is missing.",
+    "It is very old."
+   ],
+   "answer": 1,
+   "line": 5,
+   "why": "Sophie 說說明書是德文的，沒人看得懂。"
+  },
+  {
+   "q": "What did Sophie ask the supplier for?",
+   "options": [
+    "A new machine",
+    "A lower price",
+    "A longer deadline",
+    "An English manual"
+   ],
+   "answer": 3,
+   "line": 7,
+   "why": "I asked the supplier for an English one. one 指的是 manual。"
+  },
+  {
+   "q": "When will Jack sign off on the cost?",
+   "options": [
+    "Next week",
+    "By Friday",
+    "Today",
+    "Tomorrow"
+   ],
+   "answer": 2,
+   "line": 12,
+   "why": "Jack 說 I'll sign off on it today，今天就簽核。"
+  }
+ ],
+ "words": [
+  {
+   "w": "bring up",
+   "pos": "片語・動詞",
+   "zh": "提出（話題）",
+   "ex1": "Not yet. Can I bring up a small problem?",
+   "line": 3,
+   "ex2": "Please bring up the delay at tomorrow's meeting.",
+   "ex2zh": "請在明天的會議上提出延誤的問題。",
+   "toeic": false,
+   "hook": "bring 帶＋up 上來：把問題「帶上」桌面＝提出來討論",
+   "img": "pic/word_0.png",
+   "pic": "a woman in a meeting room lifting a glowing question mark up onto the meeting table while colleagues look at it"
+  },
+  {
+   "w": "wrap up",
+   "pos": "片語・動詞",
+   "zh": "完成、結束",
+   "ex1": "Good. Please wrap up the setup by Friday.",
+   "line": 8,
+   "ex2": "Let's wrap up the audit report before the weekend.",
+   "ex2zh": "我們在週末前把稽核報告完成吧。",
+   "toeic": false,
+   "hook": "wrap 包裝＋up 完成：把禮物包好綁上蝴蝶結＝收尾完成",
+   "img": "pic/word_1.png",
+   "pic": "a person tying a ribbon on a finished gift box with a satisfied smile"
+  },
+  {
+   "w": "sign off on",
+   "pos": "片語・動詞",
+   "zh": "簽核、正式批准",
+   "ex1": "That's fine. I'll sign off on it today.",
+   "line": 12,
+   "ex2": "The manager must sign off on the budget first.",
+   "ex2zh": "經理必須先簽核預算。",
+   "toeic": false,
+   "hook": "sign 簽名＋off 離手：簽完名，事情就離開你的手＝批准放行",
+   "img": "pic/word_2.png",
+   "pic": "a manager signing a paper with a big pen while a stamp-like green check mark glows beside the hand"
+  },
+  {
+   "w": "agenda",
+   "pos": "名詞",
+   "zh": "議程",
+   "ex1": "Good morning, Sophie. Let's start with the agenda.",
+   "line": 0,
+   "ex2": "The agenda for Monday's meeting has five items.",
+   "ex2zh": "週一會議的議程有五個項目。",
+   "toeic": true,
+   "hook": "諧音「A 賤打」：開會前先 A 好每件事，一項一項「打」勾＝議程",
+   "img": "pic/word_3.png",
+   "pic": "a man at a whiteboard pointing at a numbered list of five check boxes with colorful dots instead of words"
+  },
+  {
+   "w": "approve",
+   "pos": "動詞",
+   "zh": "核准、批准",
+   "ex1": "I'll try, but I need the manager to approve the training cost.",
+   "line": 9,
+   "ex2": "The customer did not approve the new design.",
+   "ex2zh": "客戶沒有核准新設計。",
+   "toeic": true,
+   "hook": "ap 朝向＋prove 證明：證明沒問題，上面就點頭＝核准",
+   "img": "pic/word_4.png",
+   "pic": "a boss giving a big thumbs up to an employee holding a small circuit board"
+  }
+ ],
+ "part2": [
+  {
+   "q": "When is the next team meeting?",
+   "opts": [
+    "In the meeting room.",
+    "On Tuesday afternoon.",
+    "Yes, it was long."
+   ],
+   "answer": 1,
+   "why": "問 When 要回答時間。A 是地點（Where），C 用 Yes 回答不通順。",
+   "zh": "下一次團隊會議是什麼時候？"
+  },
+  {
+   "q": "Could you send me the agenda?",
+   "opts": [
+    "Yes, at ten o'clock.",
+    "I don't have a pen.",
+    "Sure, I'll email it now."
+   ],
+   "answer": 2,
+   "why": "Could you 是請求，答 Sure 最自然。A 回答時間、B 完全不相關。",
+   "zh": "可以把議程寄給我嗎？"
+  },
+  {
+   "q": "Who is leading the project?",
+   "opts": [
+    "Ms. Lin is.",
+    "About three months.",
+    "It's a big project."
+   ],
+   "answer": 0,
+   "why": "問 Who 要回答人。B 是時間長度，C 重複 project 是陷阱。",
+   "zh": "誰負責帶領這個專案？"
+  },
+  {
+   "q": "Why don't we move the meeting to Thursday?",
+   "opts": [
+    "I met him on Thursday.",
+    "Thursday works for me.",
+    "The meeting was moved yesterday."
+   ],
+   "answer": 1,
+   "why": "Why don't we 是提議，不是在問原因。答 Thursday works for me 表示同意。A、C 重複 Thursday／moved 是陷阱。",
+   "zh": "我們何不把會議改到週四？"
+  },
+  {
+   "q": "Do you want tea or coffee?",
+   "opts": [
+    "Yes, I do.",
+    "It's very hot.",
+    "Coffee would be great."
+   ],
+   "answer": 2,
+   "why": "選擇問句（A or B）不能用 Yes/No 回答。C 直接選了 coffee。",
+   "zh": "你要茶還是咖啡？"
+  }
+ ],
+ "scene": "Jack 在會議室主持每週會議，Sophie 報告新的測試機器到貨了，但說明書是德文。",
+ "place": "meeting_room",
+ "grammar": {
+  "topic": "prep",
+  "topicZh": "介系詞",
+  "tip": "時間點用 at（at nine）、星期和日期用 on（on Friday）、一段時間之後用 in（in three days）、持續一段時間用 for（for two hours）。形容詞和動詞常有固定搭配，例如 responsible for。",
+  "items": [
+   {
+    "q": "The meeting starts _____ nine o'clock.",
+    "opts": [
+     "in",
+     "at",
+     "on",
+     "of"
+    ],
+    "answer": 1,
+    "why": "幾點幾分的「時間點」用 at。on 用於星期或日期，in 用於月份或一段時間之後。",
+    "zh": "會議九點開始。"
+   },
+   {
+    "q": "Please send the report _____ Friday.",
+    "opts": [
+     "on",
+     "in",
+     "at",
+     "to"
+    ],
+    "answer": 0,
+    "why": "星期幾前面用 on：on Friday。",
+    "zh": "請在週五把報告寄出。"
+   },
+   {
+    "q": "We have been in the meeting room _____ two hours.",
+    "opts": [
+     "since",
+     "during",
+     "at",
+     "for"
+    ],
+    "answer": 3,
+    "why": "for＋一段時間（two hours）。since 後面要接起始時間點，例如 since nine。",
+    "zh": "我們已經在會議室待了兩個小時。"
+   },
+   {
+    "q": "The shipment will arrive _____ three days.",
+    "opts": [
+     "on",
+     "at",
+     "in",
+     "since"
+    ],
+    "answer": 2,
+    "why": "in＋一段時間，表示「經過多久之後」，in three days＝三天後。",
+    "zh": "這批貨三天後會到。"
+   },
+   {
+    "q": "She is responsible _____ the final inspection.",
+    "opts": [
+     "of",
+     "for",
+     "with",
+     "about"
+    ],
+    "answer": 1,
+    "why": "be responsible for＋事情，是固定搭配，意思是「負責……」。",
+    "zh": "她負責最後的檢驗。"
+   }
+  ]
+ },
+ "gloss": {
+  "agenda": [
+   "名詞",
+   "議程",
+   "",
+   "Please check the agenda before the call.",
+   "請在通話前看一下議程。"
+  ],
+  "approve": [
+   "動詞",
+   "核准、批准",
+   "",
+   "The boss will approve the plan today.",
+   "老闆今天會核准這個計畫。"
+  ],
+  "arrive": [
+   "動詞",
+   "到達",
+   "",
+   "The parts arrive on Monday.",
+   "零件週一會到。"
+  ],
+  "arrived": [
+   "動詞",
+   "到貨了（arrive 的過去式）",
+   "",
+   "The samples arrived this morning.",
+   "樣品今天早上到了。"
+  ],
+  "asked": [
+   "動詞",
+   "要求了（ask 的過去式）",
+   "問",
+   "She asked for a new schedule.",
+   "她要求一份新的時程表。"
+  ],
+  "audit": [
+   "名詞",
+   "稽核、查核",
+   "動詞：審核",
+   "The audit starts next Monday.",
+   "稽核下週一開始。"
+  ],
+  "bring": [
+   "動詞",
+   "（bring up）提出",
+   "帶來",
+   "Please bring your laptop to the meeting.",
+   "請帶筆電來開會。"
+  ],
+  "budget": [
+   "名詞",
+   "預算",
+   "",
+   "We have a small budget this year.",
+   "我們今年預算很少。"
+  ],
+  "cost": [
+   "名詞",
+   "費用、成本",
+   "動詞：花費",
+   "The cost of materials went up.",
+   "材料成本上漲了。"
+  ],
+  "course": [
+   "名詞",
+   "（of course）當然",
+   "課程",
+   "Of course, I can help you.",
+   "當然，我可以幫你。"
+  ],
+  "deadline": [
+   "名詞",
+   "截止期限",
+   "",
+   "The deadline is next Friday.",
+   "截止日是下週五。"
+  ],
+  "delay": [
+   "名詞",
+   "延誤",
+   "動詞：延遲",
+   "The delay was caused by the storm.",
+   "延誤是暴風雨造成的。"
+  ],
+  "design": [
+   "名詞",
+   "設計",
+   "",
+   "The new design looks simple.",
+   "新設計看起來很簡單。"
+  ],
+  "dollars": [
+   "名詞",
+   "美元（dollar 的複數）",
+   "",
+   "The ticket costs fifty dollars.",
+   "票價是五十美元。"
+  ],
+  "english": [
+   "形容詞",
+   "英文的",
+   "名詞：英語",
+   "He speaks English at work.",
+   "他工作時說英文。"
+  ],
+  "final": [
+   "形容詞",
+   "最後的、最終的",
+   "",
+   "This is the final version.",
+   "這是最終版本。"
+  ],
+  "fine": [
+   "形容詞",
+   "沒問題、可以的",
+   "很好；罰款",
+   "Any time is fine for me.",
+   "我什麼時間都可以。"
+  ],
+  "german": [
+   "形容詞",
+   "德文的",
+   "名詞：德語；德國人",
+   "The manual has a German version.",
+   "說明書有德文版。"
+  ],
+  "helps": [
+   "動詞",
+   "有幫助（help 的第三人稱）",
+   "",
+   "This tool helps us save time.",
+   "這個工具幫我們省時間。"
+  ],
+  "hot": [
+   "形容詞",
+   "很燙的",
+   "熱的；很辣的",
+   "Be careful, the soup is hot.",
+   "小心，湯很燙。"
+  ],
+  "hundred": [
+   "數字",
+   "一百",
+   "",
+   "Over two hundred people came.",
+   "超過兩百人來了。"
+  ],
+  "inspection": [
+   "名詞",
+   "檢驗、檢查",
+   "",
+   "The inspection takes two hours.",
+   "檢驗要花兩小時。"
+  ],
+  "items": [
+   "名詞",
+   "項目（item 的複數）",
+   "物品",
+   "There are three items on my list.",
+   "我的清單上有三個項目。"
+  ],
+  "jack": [
+   "人名",
+   "Jack（傑克）",
+   "",
+   "Jack works in the sales team.",
+   "Jack 在業務團隊工作。"
+  ],
+  "leading": [
+   "動詞",
+   "帶領、負責（lead 的進行式）",
+   "",
+   "She is leading the new team.",
+   "她正在帶領新團隊。"
+  ],
+  "lin": [
+   "人名",
+   "林（姓氏）",
+   "",
+   "Ms. Lin is our new manager.",
+   "林小姐是我們的新經理。"
+  ],
+  "longer": [
+   "形容詞",
+   "更長的（long 的比較級）",
+   "",
+   "We need a longer table.",
+   "我們需要更長的桌子。"
+  ],
+  "lot": [
+   "名詞",
+   "（a lot）很多",
+   "一批貨",
+   "There is a lot of work today.",
+   "今天有很多工作。"
+  ],
+  "lower": [
+   "形容詞",
+   "更低的（low 的比較級）",
+   "動詞：降低",
+   "Please give us a lower price.",
+   "請給我們更低的價格。"
+  ],
+  "manual": [
+   "名詞",
+   "說明書、手冊",
+   "形容詞：手動的",
+   "Read the manual before you start.",
+   "開始前請先讀說明書。"
+  ],
+  "met": [
+   "動詞",
+   "見過面（meet 的過去式）",
+   "",
+   "We met at a trade show.",
+   "我們在展覽上認識的。"
+  ],
+  "missing": [
+   "形容詞",
+   "不見的、缺少的",
+   "",
+   "One page is missing.",
+   "少了一頁。"
+  ],
+  "monday's": [
+   "縮寫",
+   "星期一的（Monday's）",
+   "",
+   "Monday's meeting is at ten.",
+   "週一的會議是十點。"
+  ],
+  "months": [
+   "名詞",
+   "月份（month 的複數）",
+   "",
+   "The project takes six months.",
+   "這個專案要六個月。"
+  ],
+  "nobody": [
+   "代名詞",
+   "沒有人",
+   "",
+   "Nobody knows the answer.",
+   "沒有人知道答案。"
+  ],
+  "off": [
+   "副詞",
+   "（sign off on）簽核",
+   "離開；關掉",
+   "Please turn off the machine.",
+   "請關掉機器。"
+  ],
+  "okay": [
+   "形容詞",
+   "好的、沒問題",
+   "",
+   "Is this time okay for you?",
+   "這個時間你可以嗎？"
+  ],
+  "pen": [
+   "名詞",
+   "筆",
+   "",
+   "Can I borrow your pen?",
+   "我可以借你的筆嗎？"
+  ],
+  "project": [
+   "名詞",
+   "專案",
+   "",
+   "The project ends in May.",
+   "專案五月結束。"
+  ],
+  "ready": [
+   "形容詞",
+   "準備好的",
+   "",
+   "Are you ready for the test?",
+   "你準備好測試了嗎？"
+  ],
+  "responsible": [
+   "形容詞",
+   "負責的",
+   "",
+   "He is responsible for shipping.",
+   "他負責出貨。"
+  ],
+  "setup": [
+   "名詞",
+   "安裝、設定",
+   "",
+   "The setup takes about an hour.",
+   "安裝大約要一小時。"
+  ],
+  "sign": [
+   "動詞",
+   "（sign off on）簽名",
+   "名詞：標誌",
+   "Please sign here.",
+   "請在這裡簽名。"
+  ],
+  "since": [
+   "連接詞",
+   "自從、從……以來",
+   "因為",
+   "I have lived here since 2020.",
+   "我從 2020 年起住在這裡。"
+  ],
+  "small": [
+   "形容詞",
+   "小的",
+   "",
+   "We found a small mistake.",
+   "我們發現一個小錯誤。"
+  ],
+  "sophie": [
+   "人名",
+   "Sophie（蘇菲）",
+   "",
+   "Sophie writes the weekly report.",
+   "Sophie 寫每週報告。"
+  ],
+  "start": [
+   "動詞",
+   "開始",
+   "名詞：開頭",
+   "Let's start the test now.",
+   "我們現在開始測試。"
+  ],
+  "starts": [
+   "動詞",
+   "開始（start 的第三人稱）",
+   "",
+   "The class starts at nine.",
+   "課九點開始。"
+  ],
+  "surprise": [
+   "名詞",
+   "驚訝、意外",
+   "動詞：使驚訝",
+   "The news was a big surprise.",
+   "這個消息很令人意外。"
+  ],
+  "test": [
+   "名詞",
+   "測試",
+   "動詞：測試",
+   "We run a test every week.",
+   "我們每週做一次測試。"
+  ],
+  "thank": [
+   "動詞",
+   "感謝",
+   "",
+   "I want to thank the whole team.",
+   "我想感謝整個團隊。"
+  ],
+  "that's": [
+   "縮寫",
+   "那是（that is）",
+   "",
+   "That's a good idea.",
+   "那是個好主意。"
+  ],
+  "today's": [
+   "縮寫",
+   "今天的（today's）",
+   "",
+   "Today's lunch is free.",
+   "今天的午餐免費。"
+  ],
+  "tomorrow's": [
+   "縮寫",
+   "明天的（tomorrow's）",
+   "",
+   "Tomorrow's schedule is full.",
+   "明天的行程排滿了。"
+  ],
+  "tuesday": [
+   "名詞",
+   "星期二",
+   "",
+   "The review is on Tuesday.",
+   "審查在週二。"
+  ],
+  "use": [
+   "動詞",
+   "使用",
+   "名詞：用途",
+   "You can use my computer.",
+   "你可以用我的電腦。"
+  ],
+  "weekend": [
+   "名詞",
+   "週末",
+   "",
+   "I rest on the weekend.",
+   "我週末休息。"
+  ],
+  "works": [
+   "動詞",
+   "行得通、可以（work 的第三人稱）",
+   "工作；運轉",
+   "This plan works for me.",
+   "這個計畫我可以。"
+  ],
+  "wrap": [
+   "動詞",
+   "（wrap up）完成、收尾",
+   "包裝",
+   "Let's wrap up this task today.",
+   "我們今天把這件事做完吧。"
+  ],
+  "yet": [
+   "副詞",
+   "還（沒）",
+   "",
+   "I haven't finished yet.",
+   "我還沒做完。"
+  ]
+ },
+ "phrases": [
+  {
+   "p": "bring up",
+   "forms": [
+    "bring up",
+    "bringing up",
+    "brings up"
+   ],
+   "pos": "片語・動詞",
+   "zh": "提出（話題）",
+   "ex": "He wants to bring up a new idea.",
+   "exzh": "他想提出一個新想法。"
+  },
+  {
+   "p": "wrap up",
+   "forms": [
+    "wrap up",
+    "wrapping up",
+    "wraps up"
+   ],
+   "pos": "片語・動詞",
+   "zh": "完成、結束",
+   "ex": "Let's wrap up the meeting now.",
+   "exzh": "我們現在結束會議吧。"
+  },
+  {
+   "p": "sign off on",
+   "forms": [
+    "sign off on",
+    "signed off on",
+    "signing off on"
+   ],
+   "pos": "片語・動詞",
+   "zh": "簽核、正式批准",
+   "ex": "Who will sign off on the plan?",
+   "exzh": "誰會簽核這個計畫？"
+  },
+  {
+   "p": "training cost",
+   "forms": [
+    "training cost"
+   ],
+   "pos": "名詞片語",
+   "zh": "訓練費用",
+   "ex": "The training cost is not high.",
+   "exzh": "訓練費用不高。"
+  },
+  {
+   "p": "test machine",
+   "forms": [
+    "test machine"
+   ],
+   "pos": "名詞片語",
+   "zh": "測試機器",
+   "ex": "The test machine is very fast.",
+   "exzh": "這台測試機器很快。"
+  },
+  {
+   "p": "not yet",
+   "forms": [
+    "not yet"
+   ],
+   "pos": "片語",
+   "zh": "還沒",
+   "ex": "The report is not yet ready.",
+   "exzh": "報告還沒準備好。"
+  },
+  {
+   "p": "of course",
+   "forms": [
+    "of course"
+   ],
+   "pos": "片語",
+   "zh": "當然",
+   "ex": "Of course, we can start now.",
+   "exzh": "當然，我們現在可以開始。"
+  }
+ ]
+}
