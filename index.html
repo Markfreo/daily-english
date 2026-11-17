@@ -178,9 +178,10 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 .gq u{text-decoration:none;border-bottom:2px solid var(--ink);padding:0 18px}
 .weak{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bad-bg);color:var(--bad)}
 .topic{font:700 19px var(--font-display);color:var(--accent)}
-/* 單字卡：長按英文字跳出 */
-#main{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
-#main textarea,#main input{-webkit-user-select:text;user-select:text}
+/* 單字卡：點題目或單字例句裡的英文字跳出；點到的字亮一下 */
+.lk{cursor:pointer;-webkit-tap-highlight-color:transparent}
+.lk-flash{position:fixed;z-index:49;pointer-events:none;border-radius:4px;background:color-mix(in srgb,var(--accent) 30%,transparent);animation:lkf 1s ease-out forwards}
+@keyframes lkf{0%,40%{opacity:1}100%{opacity:0}}
 .sheet-bg{position:fixed;inset:0;background:rgba(20,24,22,.35);z-index:50;opacity:0;transition:opacity .18s}
 .sheet-bg.on{opacity:1}
 .sheet{position:fixed;left:0;right:0;bottom:0;z-index:51;background:var(--surface);border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.18);padding:18px max(18px,env(safe-area-inset-left,0px)) calc(18px + env(safe-area-inset-bottom,0px));max-height:75vh;overflow:auto;transform:translateY(100%);transition:transform .2s ease-out}
@@ -417,7 +418,7 @@ function stageView({ small = false } = {}) {
   return box;
 }
 
-// ---------- 單字卡：長按任何英文字（約半秒）→ 中文、詞性、片語、新例句、發音、加入複習 ----------
+// ---------- 單字卡：點題目或單字例句裡的英文字 → 中文、詞性、片語、新例句、發音、加入複習（選項、字幕不查）----------
 // 資料：L.gloss（這課的字，照句子裡的意思）優先，再找 COMMON（共用基本字）；L.phrases（片語）
 let COMMON = {};
 const WORD_RE = /[A-Za-z]+(?:['’][A-Za-z]+)*/g;
@@ -449,19 +450,18 @@ function playSeq(srcs, texts) {
     a.onended = next; a.onerror = () => { speak(t); }; a.currentTime = 0; a.play().catch(() => speak(t)); };
   stopAll(); next();
 }
-function wordAt(x, y) {
+function wordAt(x, y, zone) {
   let node, off;
   if (document.caretRangeFromPoint) { const r = document.caretRangeFromPoint(x, y); if (!r) return null; node = r.startContainer; off = r.startOffset; }
   else if (document.caretPositionFromPoint) { const p = document.caretPositionFromPoint(x, y); if (!p) return null; node = p.offsetNode; off = p.offset; }
-  if (!node || node.nodeType !== 3 || !$("#main").contains(node)) return null;
+  if (!node || node.nodeType !== 3 || !zone.contains(node)) return null;
   const text = node.textContent;
   for (const m of text.matchAll(WORD_RE)) {
     if (off < m.index || off > m.index + m[0].length) continue;
     const r = document.createRange(); r.setStart(node, m.index); r.setEnd(node, m.index + m[0].length);
     const hit = [...r.getClientRects()].some(b => x >= b.left - 4 && x <= b.right + 4 && y >= b.top - 4 && y <= b.bottom + 4);
     if (!hit) return null;
-    const holder = node.parentElement.closest("button, li, p, .q, .gq, .ex, .line, div") || node.parentElement;
-    return { word: m[0], key: normW(m[0]), sentence: holder.textContent, range: r };
+    return { word: m[0], key: normW(m[0]), sentence: zone.textContent, range: r };
   }
   return null;
 }
@@ -503,23 +503,21 @@ function showWordCard(hit) {
   requestAnimationFrame(() => { bg.classList.add("on"); sheet.classList.add("on"); });
   playAudio(wordSrc, hit.key);
 }
-let press = null;
-document.addEventListener("pointerdown", (e) => {
-  if (e.button > 0 || e.target.closest(".sheet")) return;
-  clearTimeout(press && press.t);
-  press = { x: e.clientX, y: e.clientY, fired: false };
-  press.t = setTimeout(() => {
-    const hit = wordAt(press.x, press.y);
-    if (!hit) return;
-    press.fired = true;
-    try { navigator.vibrate && navigator.vibrate(15); } catch {}
-    showWordCard(hit);
-  }, 450);
-}, { passive: true });
-const cancelPress = (e) => { if (press && (e.type !== "pointermove" || Math.hypot(e.clientX - press.x, e.clientY - press.y) > 10)) clearTimeout(press.t); };
-["pointerup", "pointercancel", "pointermove"].forEach(t => document.addEventListener(t, cancelPress, { passive: true }));
-document.addEventListener("click", (e) => { if (press && press.fired) { press.fired = false; e.preventDefault(); e.stopPropagation(); } }, true);
-document.addEventListener("contextmenu", (e) => { if ($("#main").contains(e.target)) e.preventDefault(); });
+function flashWord(range) {
+  [...range.getClientRects()].forEach(b => {
+    const d = h("div", { class: "lk-flash" });
+    Object.assign(d.style, { left: b.left - 2 + "px", top: b.top - 1 + "px", width: b.width + 4 + "px", height: b.height + 2 + "px" });
+    document.body.append(d); setTimeout(() => d.remove(), 1000);
+  });
+}
+document.addEventListener("click", (e) => {
+  const zone = e.target.closest && e.target.closest(".lk");
+  if (!zone || e.target.closest(".sheet")) return;
+  const hit = wordAt(e.clientX, e.clientY, zone);
+  if (!hit) return;
+  flashWord(hit.range);
+  showWordCard(hit);
+});
 
 // ---------- 進度 ----------
 const STEPS = [
@@ -647,7 +645,7 @@ function reviewCard(e) {
     h("div", { class: "top" }, h("span", { class: "w" }, e.w), h("span", { class: "pos" }, e.pos), e.toeic ? h("span", { class: "tag" }, "多益") : null),
     h("details", {}, h("summary", { class: "link" }, "想一下意思，再點這裡看答案"),
       h("div", { class: "wtop" }, wordPic(e, e.from), h("div", { class: "wtext" }, h("div", { class: "zhm" }, e.zh), hookLine(e))),
-      h("div", { class: "ex" }, e.ex2), h("div", { class: "exzh" }, e.ex2zh)),
+      h("div", { class: "ex lk" }, e.ex2), h("div", { class: "exzh" }, e.ex2zh)),
     h("div", { class: "row" }, h("button", { class: "btn", onclick: () => e.audio ? playClip(e.audio) : e.audioSeq ? playSeq(e.audioSeq, [e.w, e.ex2]) : speak(e.w + ". " + e.ex2) }, icon("speaker"), "發音＋例句")),
     memoButtons(null, (v) => rateWord(e.w, v)));
 }
@@ -665,9 +663,9 @@ VIEWS.words = () => {
         h("div", { class: "top" }, h("span", { class: "w" }, w.w), h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
         h("div", { class: "zhm" }, w.zh))),
       hookLine(w),
-      h("div", { class: "ex" }, "對話原句：" + w.ex1),
+      h("div", { class: "ex lk" }, "對話原句：" + w.ex1),
       h("button", { class: "link", onclick: () => playLine(w.line) }, "▶ 聽對話裡的這一句"),
-      h("div", { class: "ex" }, "職場例句：" + w.ex2),
+      h("div", { class: "ex lk" }, "職場例句：" + w.ex2),
       h("div", { class: "exzh" }, w.ex2zh),
       h("div", { class: "row" }, h("button", { class: "btn", onclick: () => playClip("word_" + i) }, icon("speaker"), "發音＋例句")),
       memoButtons(memo[i], (v) => { memo[i] = v; store.set("memo:" + DAY, memo); rateWord(w.w, v); })));
@@ -734,7 +732,7 @@ VIEWS.quiz = () => {
         h("button", { class: "link", onclick: () => playLine(q.line) }, "▶ 聽答案那一句"));
     };
     q.options.forEach((o, j) => opts.append(h("button", { class: "opt", onclick: () => { ans[qi] = j; store.set("quiz:" + DAY, ans); show(j); } }, h("b", {}, "ABCD"[j]), o)));
-    sec.append(h("div", { class: "card" }, h("div", { class: "q" }, `${qi + 1}. ${q.q}`), opts, exp));
+    sec.append(h("div", { class: "card" }, h("div", { class: "q lk" }, `${qi + 1}. ${q.q}`), opts, exp));
     if (ans[qi] != null) setTimeout(() => show(ans[qi]));
   });
   setBar(nextBtn("看字幕重聽"));
@@ -870,7 +868,7 @@ function grammarCard(item, n, saveKey, onAnswer, extra) {
   const exp = h("div", { class: "explain", hidden: true });
   const opts = h("div", { class: "opts" });
   const parts = item.q.split("_____");
-  const qEl = h("div", { class: "gq" }, `${n + 1}. `, parts[0], h("u", {}, "\u00a0"), parts[1] || "");
+  const qEl = h("div", { class: "gq lk" }, `${n + 1}. `, parts[0], h("u", {}, "\u00a0"), parts[1] || "");
   const show = (pick, fresh) => {
     [...opts.children].forEach((b, j) => { b.disabled = true; if (j === item.answer) b.classList.add("right"); else if (j === pick) b.classList.add("wrong"); });
     qEl.querySelector("u").textContent = item.opts[item.answer];
@@ -985,7 +983,7 @@ VIEWS.toeic = () => {
     const show = (pick) => {
       [...opts.children].forEach((b, j) => { b.disabled = true; if (j === p.answer) b.classList.add("right"); else if (j === pick) b.classList.add("wrong"); });
       exp.hidden = false; exp.innerHTML = "";
-      exp.append(h("strong", {}, p.q), h("span", {}, p.zh),
+      exp.append(h("strong", { class: "lk" }, p.q), h("span", {}, p.zh),
         ...p.opts.map((o, j) => h("span", {}, `${"ABC"[j]}. ${o}`)),
         h("span", {}, (pick === p.answer ? "答對了。" : `答案是 ${"ABC"[p.answer]}。`) + p.why));
       if (Object.keys(ans).length === L.part2.length) markDone("toeic");
