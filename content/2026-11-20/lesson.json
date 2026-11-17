@@ -5,75 +5,140 @@
   "title": "Robot Waiter",
   "titleZh": "咖啡店的機器人服務生",
   "scene": "Nina 和 Oliver 在辦公室休息時間，聊著網路上看到的機器人咖啡店新聞。",
+  "place": "office",
   "level": "B1",
   "speed": "慢速",
   "speakers": {
-    "Nina": {"voice": "af_bella", "accent": "美式"},
-    "Oliver": {"voice": "bm_lewis", "accent": "英式"}
+    "Nina": {
+      "voice": "af_bella",
+      "accent": "美式"
+    },
+    "Oliver": {
+      "voice": "bm_lewis",
+      "accent": "英式"
+    }
   },
   "lines": [
-    {"s": "Nina", "en": "Hey Oliver, did you see the news this morning?", "zh": "嘿 Oliver，你今天早上有看到新聞嗎？"},
-    {"s": "Oliver", "en": "No, I didn't. What happened?", "zh": "沒有。發生什麼事了？"},
-    {"s": "Nina", "en": "I heard that a coffee shop in Seoul now has a robot waiter.", "zh": "我聽說首爾有一間咖啡店現在有機器人服務生。"},
-    {"s": "Oliver", "en": "A robot? Really? I heard that it brings the drinks to your table.", "zh": "機器人？真的嗎？我聽說它會把飲料送到你的桌上。"},
-    {"s": "Nina", "en": "Yes! It's easy to come across videos of it online.", "zh": "對！在網路上很容易看到它的影片。"},
-    {"s": "Oliver", "en": "Wow. Did you watch one?", "zh": "哇。你有看嗎？"},
-    {"s": "Nina", "en": "Yes, last night. It moved very slowly, but everyone was smiling.", "zh": "有，昨晚看的。它動得很慢，但大家都在笑。"},
-    {"s": "Oliver", "en": "That's funny. Did it say anything?", "zh": "真有趣。它有說什麼嗎？"},
-    {"s": "Nina", "en": "Yes, it said, \"Enjoy your coffee,\" in a very cute voice.", "zh": "有，它用很可愛的聲音說：「請享用咖啡。」"},
-    {"s": "Oliver", "en": "I love it. Would you want one in our office?", "zh": "我喜歡。你會想在我們辦公室放一台嗎？"},
-    {"s": "Nina", "en": "Maybe. It would be convenient when we are too busy to leave our desks.", "zh": "也許吧。我們忙到離不開座位的時候會很方便。"},
-    {"s": "Oliver", "en": "True. But I think it would spill the coffee on my keyboard.", "zh": "也對。但我覺得它會把咖啡灑在我的鍵盤上。"},
-    {"s": "Nina", "en": "Ha! That's what happened in the video, actually.", "zh": "哈！其實影片裡就發生了這種事。"},
-    {"s": "Oliver", "en": "No way. What happened?", "zh": "不會吧。發生什麼事？"},
-    {"s": "Nina", "en": "A man asked for a cup of tea. The robot stopped in front of him and shook a little.", "zh": "有個男人點了一杯茶。機器人停在他面前，還抖了一下。"},
-    {"s": "Oliver", "en": "Then what?", "zh": "然後呢？"},
-    {"s": "Nina", "en": "The tea went all over the table. The robot said, \"Sorry, sorry!\"", "zh": "茶灑得整張桌子都是。機器人說：「對不起，對不起！」"},
-    {"s": "Oliver", "en": "That is so funny. Did the man get angry?", "zh": "太好笑了。那個男人生氣了嗎？"},
-    {"s": "Nina", "en": "No, he laughed. Then the staff came and cleaned everything up.", "zh": "沒有，他笑了。然後店員過來把一切清理乾淨。"},
-    {"s": "Oliver", "en": "Good for him. I'd be a bit upset if it was my laptop.", "zh": "他真好。如果是我的筆電，我會有點不高興。"},
-    {"s": "Nina", "en": "Me too. The café said it will keep an eye on the robot from now on.", "zh": "我也是。咖啡店說之後會多盯著那個機器人。"},
-    {"s": "Oliver", "en": "I should hope so. Does the robot work every day?", "zh": "希望如此。機器人每天都上班嗎？"},
-    {"s": "Nina", "en": "I heard that it only works on weekends, because that's when the shop is busy.", "zh": "我聽說它只在週末上班，因為那時店裡最忙。"},
-    {"s": "Oliver", "en": "Smart. So the staff can focus on making the coffee.", "zh": "聰明。這樣店員就可以專心做咖啡。"},
-    {"s": "Nina", "en": "Exactly. The owner will announce soon that she wants two more robots.", "zh": "沒錯。老闆很快會宣布她想再買兩台機器人。"},
-    {"s": "Oliver", "en": "Two more? I wonder how that will turn out.", "zh": "再兩台？不知道結果會變怎樣。"},
-    {"s": "Nina", "en": "I think it will turn out well. People love new things.", "zh": "我覺得結果會不錯。大家都喜歡新鮮的東西。"},
-    {"s": "Oliver", "en": "Maybe. I like talking to real people, though.", "zh": "也許吧。不過我喜歡跟真人聊天。"},
-    {"s": "Nina", "en": "Me too. A robot can't ask, \"How was your day?\"", "zh": "我也是。機器人不會問：「你今天過得如何？」"},
-    {"s": "Oliver", "en": "Right. Or remember my favorite drink.", "zh": "對。也不會記得我最愛喝的飲料。"},
-    {"s": "Nina", "en": "Well, I heard that some robots can learn names now.", "zh": "嗯，我聽說有些機器人現在可以學會記名字了。"},
-    {"s": "Oliver", "en": "Now that is a bit scary. Next they will ask for my phone number.", "zh": "這就有點可怕了。接下來它們會跟我要電話號碼。"},
-    {"s": "Nina", "en": "Ha ha! Maybe they will want to be friends on social media.", "zh": "哈哈！也許它們還會想在社群媒體上加好友。"},
-    {"s": "Oliver", "en": "Please. I already have too many messages to answer.", "zh": "拜託。我要回的訊息已經夠多了。"},
-    {"s": "Nina", "en": "Same here. Anyway, do you want to go and see the robot one day?", "zh": "我也是。話說回來，你哪天想去看看那個機器人嗎？"},
-    {"s": "Oliver", "en": "Sure. If I ever go to Seoul, I'll try it.", "zh": "好啊。如果我去首爾，我會去試試。"},
-    {"s": "Nina", "en": "Good. Send me a photo if you do.", "zh": "好。如果你去了，傳張照片給我。"},
-    {"s": "Oliver", "en": "Of course. I'll take a video, too, for the whole team.", "zh": "當然。我也會拍影片給全部同事看。"},
-    {"s": "Nina", "en": "Great. Now, shall we get back to our own coffee?", "zh": "太好了。那我們該回去喝我們自己的咖啡了吧？"},
-    {"s": "Oliver", "en": "Yes. I need one badly before the next meeting.", "zh": "好。下次開會前我超需要來一杯。"},
-    {"s": "Nina", "en": "Come on, I'll buy. See, no robot needed!", "zh": "走吧，我請客。你看，不需要機器人！"}
+    {
+      "s": "Nina",
+      "en": "Oliver, did you see the news this morning?",
+      "zh": "Oliver，你看到今天早上的新聞了嗎？",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "No. What happened?",
+      "zh": "沒有。發生什麼事？",
+      "mood": "confused"
+    },
+    {
+      "s": "Nina",
+      "en": "A coffee shop in Seoul has a robot waiter.",
+      "zh": "首爾有一家咖啡店用機器人服務生。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Oliver",
+      "en": "Really? I'd like to see that.",
+      "zh": "真的嗎？我想看看。",
+      "mood": "surprised"
+    },
+    {
+      "s": "Nina",
+      "en": "It's easy to come across videos of it online.",
+      "zh": "網路上很容易看到它的影片。",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "Would it be convenient in our office?",
+      "zh": "放在我們辦公室會方便嗎？",
+      "mood": "confused"
+    },
+    {
+      "s": "Nina",
+      "en": "Maybe. But in one video, it spilled the tea!",
+      "zh": "也許吧。不過有支影片裡它把茶灑了！",
+      "mood": "surprised"
+    },
+    {
+      "s": "Oliver",
+      "en": "No way! Was the customer angry?",
+      "zh": "不會吧！客人生氣了嗎？",
+      "mood": "surprised"
+    },
+    {
+      "s": "Nina",
+      "en": "No, he laughed. The robot said, \"Sorry, sorry!\"",
+      "zh": "沒有，他笑了。機器人說：「抱歉、抱歉！」",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "Ha! I hope they keep an eye on it now.",
+      "zh": "哈！希望他們現在會盯著它。",
+      "mood": "happy"
+    },
+    {
+      "s": "Nina",
+      "en": "They will. The owner will announce two more robots soon.",
+      "zh": "會的。老闆很快要宣布再買兩台機器人。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Oliver",
+      "en": "I wonder how that will turn out.",
+      "zh": "不知道結果會怎樣。",
+      "mood": "confused"
+    },
+    {
+      "s": "Nina",
+      "en": "Me too. But I still like real people.",
+      "zh": "我也是。不過我還是喜歡真人。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Oliver",
+      "en": "Same here. A robot can't ask about my day.",
+      "zh": "我也是。機器人不會問我今天過得好不好。",
+      "mood": "happy"
+    }
   ],
   "quiz": [
     {
       "q": "What does the robot in the coffee shop do?",
-      "options": ["It makes the coffee.", "It brings drinks to the tables.", "It takes money from customers.", "It cleans the floor."],
+      "options": [
+        "It makes the coffee.",
+        "It brings drinks to the tables.",
+        "It takes money from customers.",
+        "It cleans the floor."
+      ],
       "answer": 1,
-      "line": 3,
+      "line": 2,
       "why": "Oliver 說他聽說機器人會把飲料送到桌上。"
     },
     {
       "q": "What went wrong in the video?",
-      "options": ["The robot broke a cup.", "The robot forgot the order.", "The robot got angry.", "The robot spilled the tea."],
+      "options": [
+        "The robot broke a cup.",
+        "The robot forgot the order.",
+        "The robot got angry.",
+        "The robot spilled the tea."
+      ],
       "answer": 3,
-      "line": 16,
-      "why": "The tea went all over the table.（茶灑得整張桌子都是。）"
+      "line": 6,
+      "why": "Nina 說影片裡機器人把茶灑了。"
     },
     {
       "q": "When does the robot work?",
-      "options": ["Only on weekends", "Every morning", "Only at night", "Every day of the week"],
+      "options": [
+        "Only on weekends",
+        "Every morning",
+        "Only at night",
+        "Every day of the week"
+      ],
       "answer": 0,
-      "line": 22,
+      "line": 10,
       "why": "I heard that it only works on weekends."
     }
   ],
@@ -86,109 +151,733 @@
       "line": 4,
       "ex2": "I came across an old inspection report in the file cabinet.",
       "ex2zh": "我在檔案櫃裡無意間找到一份舊的檢驗報告。",
-      "toeic": false
+      "toeic": false,
+      "hook": "come 來＋across 橫過：走著走著橫過面前＝偶然看到",
+      "img": "pic/word_0.png",
+      "pic": "a person scrolling a phone and surprised to find a robot video"
     },
     {
       "w": "keep an eye on",
       "pos": "片語・動詞",
       "zh": "留意、盯著看",
-      "ex1": "The café said it will keep an eye on the robot from now on.",
-      "line": 20,
+      "ex1": "Ha! I hope they keep an eye on it now.",
+      "line": 9,
       "ex2": "Please keep an eye on the temperature of the oven during the test.",
       "ex2zh": "測試期間請留意烤箱的溫度。",
-      "toeic": false
+      "toeic": false,
+      "hook": "keep 保持＋an eye on 一隻眼睛放在上面：一直放一隻眼睛在它身上＝盯著",
+      "img": "pic/word_1.png",
+      "pic": "a big eye watching a small robot carrying a cup"
     },
     {
       "w": "turn out",
       "pos": "片語・動詞",
       "zh": "結果是、最後變成",
       "ex1": "I wonder how that will turn out.",
-      "line": 25,
+      "line": 11,
       "ex2": "The new test method turned out to be faster than the old one.",
       "ex2zh": "新的測試方法結果比舊的更快。",
-      "toeic": false
+      "toeic": false,
+      "hook": "turn 翻＋out 出來：把底牌翻出來看＝結果是",
+      "img": "pic/word_2.png",
+      "pic": "a person flipping over a big playing card and gasping in surprise as sparkles and a star pop out"
     },
     {
       "w": "convenient",
       "pos": "形容詞",
       "zh": "方便的",
-      "ex1": "It would be convenient when we are too busy to leave our desks.",
-      "line": 10,
+      "ex1": "Would it be convenient in our office?",
+      "line": 5,
       "ex2": "Is Thursday afternoon convenient for the factory visit?",
       "ex2zh": "星期四下午參觀工廠方便嗎？",
-      "toeic": true
+      "toeic": true,
+      "hook": "con（一起）＋veni（拉丁文「來」）：你要的東西都一起來到你身邊＝方便的",
+      "img": "pic/word_3.png",
+      "pic": "a robot bringing coffee to a person at an office desk"
     },
     {
       "w": "announce",
       "pos": "動詞",
       "zh": "宣布、公布",
-      "ex1": "The owner will announce soon that she wants two more robots.",
-      "line": 24,
+      "ex1": "They will. The owner will announce two more robots soon.",
+      "line": 10,
       "ex2": "The company will announce the new quality policy next week.",
       "ex2zh": "公司下週會公布新的品質政策。",
-      "toeic": true
-    }
-  ],
-  "speaking": {
-    "pattern": "I heard that + 句子",
-    "patternZh": "我聽說……（轉述聽來的消息）",
-    "fromLine": 2,
-    "task": "用 I heard that... 說一個你最近聽到的有趣消息，再加一句你的感想。",
-    "example": "I heard that a new coffee shop opened near my office. I want to try it this weekend."
-  },
-  "reorder": [
-    {
-      "zh": "我聽說首爾有一間咖啡店現在有機器人服務生。",
-      "chunks": ["I heard that", "a coffee shop", "in Seoul", "now has", "a robot waiter."],
-      "line": 2
-    },
-    {
-      "zh": "我聽說它只在週末上班，因為那時店裡最忙。",
-      "chunks": ["I heard that", "it", "only works", "on weekends,", "because that's when", "the shop is busy."],
-      "line": 22
-    },
-    {
-      "zh": "我聽說新機器下週一會到。",
-      "chunks": ["I heard that", "the new machine", "will arrive", "next Monday."],
-      "line": null,
-      "audio": "reorder_2"
+      "toeic": true,
+      "hook": "an＋nounce（像 noun 名字）：把名字大聲說出來給大家＝宣布",
+      "img": "pic/word_4.png",
+      "pic": "a shop owner speaking into a megaphone next to two robots"
     }
   ],
   "part2": [
     {
       "q": "When will the new inspection machine arrive?",
-      "opts": ["In the factory.", "It's very expensive.", "Early next week."],
+      "opts": [
+        "In the factory.",
+        "It's very expensive.",
+        "Early next week."
+      ],
       "answer": 2,
       "why": "問 When（什麼時候），要回答時間。A 回答的是地點，B 回答的是價格。",
       "zh": "新的檢驗機器什麼時候會到？"
     },
     {
       "q": "Is Thursday afternoon convenient for you?",
-      "opts": ["Yes, that works for me.", "The afternoon tea was great.", "I'll take the train."],
+      "opts": [
+        "Yes, that works for me.",
+        "The afternoon tea was great.",
+        "I'll take the train."
+      ],
       "answer": 0,
       "why": "這是 Yes/No 問句，問時間方不方便。B 重複了 afternoon，是陷阱。",
       "zh": "星期四下午你方便嗎？"
     },
     {
       "q": "Why don't we announce the schedule today?",
-      "opts": ["At the front desk.", "Good idea. I'll send an email.", "Because it was late."],
+      "opts": [
+        "At the front desk.",
+        "Good idea. I'll send an email.",
+        "Because it was late."
+      ],
       "answer": 1,
       "why": "Why don't we 是建議，不是真的問原因，要回答同意或不同意。C 用 Because 回答是陷阱。",
       "zh": "我們何不今天就公布時程？"
     },
     {
       "q": "Could you keep an eye on the test results?",
-      "opts": ["Yes, the eye doctor is here.", "I saw the results yesterday.", "Sure, I'll check them every hour."],
+      "opts": [
+        "Yes, the eye doctor is here.",
+        "I saw the results yesterday.",
+        "Sure, I'll check them every hour."
+      ],
       "answer": 2,
       "why": "這是請求，回答 Sure 最自然。A 的 eye doctor 是利用 eye 的聲音陷阱。",
       "zh": "你可以幫忙留意測試結果嗎？"
     },
     {
       "q": "Do you want to ship by air or by sea?",
-      "opts": ["By air, please. It's urgent.", "Yes, I do.", "About three days."],
+      "opts": [
+        "By air, please. It's urgent.",
+        "Yes, I do.",
+        "About three days."
+      ],
       "answer": 0,
       "why": "這是選擇問句（A or B），要選一個。B 的 Yes 不能回答 or 問句。",
       "zh": "你想用空運還是海運出貨？"
+    }
+  ],
+  "grammar": {
+    "topic": "agree",
+    "topicZh": "主詞動詞一致",
+    "tip": "先找出「真正的主詞」：of＋名詞、with＋名詞、關係子句都只是修飾，跳過它們。主詞單數，動詞用單數（is／has／加 s）。",
+    "items": [
+      {
+        "q": "The robots in the coffee shop _____ drinks to customers.",
+        "opts": [
+          "brings",
+          "is bringing",
+          "bring",
+          "has brought"
+        ],
+        "answer": 2,
+        "why": "真正的主詞是 The robots（複數），in the coffee shop 只是修飾，動詞用複數 bring。",
+        "zh": "咖啡店裡的機器人把飲料送給客人。"
+      },
+      {
+        "q": "Each of the new employees _____ a training manual.",
+        "opts": [
+          "receive",
+          "receives",
+          "are receiving",
+          "have received"
+        ],
+        "answer": 1,
+        "why": "Each of＋複數名詞，主詞是 Each（單數），動詞用單數 receives。",
+        "zh": "每位新進員工都會拿到一本訓練手冊。"
+      },
+      {
+        "q": "The owner, together with her staff, _____ the robot every week.",
+        "opts": [
+          "checks",
+          "check",
+          "are checking",
+          "have checked"
+        ],
+        "answer": 0,
+        "why": "together with her staff 是插入的修飾，真正的主詞是 The owner（單數），用 checks。",
+        "zh": "老闆和員工每週一起檢查機器人。"
+      },
+      {
+        "q": "There _____ two problems with the new machine.",
+        "opts": [
+          "is",
+          "was",
+          "has",
+          "are"
+        ],
+        "answer": 3,
+        "why": "There is／are 的動詞看後面的名詞：two problems 是複數，用 are。",
+        "zh": "新機器有兩個問題。"
+      },
+      {
+        "q": "The number of customer complaints _____ fallen this year.",
+        "opts": [
+          "have",
+          "has",
+          "are",
+          "were"
+        ],
+        "answer": 1,
+        "why": "The number of（…的數量）當主詞是單數，用 has；a number of（許多）才用複數。",
+        "zh": "今年客訴的數量下降了。"
+      }
+    ]
+  },
+  "gloss": {
+    "air": [
+      "名詞",
+      "空中（by air 空運）",
+      "空氣",
+      "We'll send the samples by air.",
+      "我們會用空運寄樣品。"
+    ],
+    "announce": [
+      "動詞",
+      "宣布",
+      "",
+      "The CEO will announce the news tomorrow.",
+      "執行長明天會宣布這個消息。"
+    ],
+    "arrive": [
+      "動詞",
+      "抵達、送到",
+      "",
+      "The new chairs will arrive next week.",
+      "新椅子下週會送到。"
+    ],
+    "bring": [
+      "動詞",
+      "帶來",
+      "",
+      "Please bring your laptop to the meeting.",
+      "開會請帶筆電。"
+    ],
+    "bringing": [
+      "動詞",
+      "正在帶來（bring 的進行式）",
+      "",
+      "She is bringing the documents now.",
+      "她正把文件拿過來。"
+    ],
+    "brings": [
+      "動詞",
+      "帶來、送來（主詞是單數）",
+      "",
+      "The waiter brings water to every table.",
+      "服務生會送水到每一桌。"
+    ],
+    "broke": [
+      "動詞",
+      "打破了（break 的過去式）",
+      "",
+      "I broke my phone screen.",
+      "我把手機螢幕摔破了。"
+    ],
+    "brought": [
+      "動詞",
+      "帶來了（bring 的過去分詞）",
+      "",
+      "The new system has brought many changes.",
+      "新系統帶來很多改變。"
+    ],
+    "cabinet": [
+      "名詞",
+      "櫃子（file cabinet 檔案櫃）",
+      "",
+      "The keys are in the top cabinet.",
+      "鑰匙在最上面的櫃子。"
+    ],
+    "check": [
+      "動詞",
+      "檢查",
+      "",
+      "I'll check the numbers again.",
+      "我會再核對一次數字。"
+    ],
+    "checked": [
+      "動詞",
+      "檢查了（check 的過去分詞）",
+      "",
+      "We have checked all the boxes.",
+      "我們已經檢查過所有箱子。"
+    ],
+    "checking": [
+      "動詞",
+      "正在檢查",
+      "",
+      "They are checking the samples now.",
+      "他們正在檢查樣品。"
+    ],
+    "checks": [
+      "動詞",
+      "檢查（主詞是單數）",
+      "",
+      "She checks the stock every Monday.",
+      "她每週一盤點庫存。"
+    ],
+    "cleans": [
+      "動詞",
+      "打掃（主詞是單數）",
+      "",
+      "A robot cleans the floor at night.",
+      "晚上有機器人打掃地板。"
+    ],
+    "convenient": [
+      "形容詞",
+      "方便的",
+      "",
+      "Is Monday convenient for you?",
+      "週一你方便嗎？"
+    ],
+    "cup": [
+      "名詞",
+      "杯子",
+      "",
+      "Would you like a cup of coffee?",
+      "你要來杯咖啡嗎？"
+    ],
+    "desk": [
+      "名詞",
+      "桌子（front desk 櫃檯）",
+      "",
+      "Please leave it on my desk.",
+      "請把它放在我桌上。"
+    ],
+    "doctor": [
+      "名詞",
+      "醫生（eye doctor 眼科醫生）",
+      "",
+      "I have a doctor's appointment at three.",
+      "我三點要看醫生。"
+    ],
+    "drinks": [
+      "名詞",
+      "飲料（drink 的複數）",
+      "",
+      "Drinks are free at the event.",
+      "活動的飲料免費。"
+    ],
+    "eye": [
+      "名詞",
+      "眼睛（keep an eye on 注意、看著）",
+      "",
+      "My left eye hurts.",
+      "我左眼痛。"
+    ],
+    "fallen": [
+      "動詞",
+      "下降（fall 的過去分詞）",
+      "",
+      "Prices have fallen this month.",
+      "這個月價格下跌了。"
+    ],
+    "faster": [
+      "形容詞",
+      "比較快的（fast 的比較級）",
+      "",
+      "The new laptop is much faster.",
+      "新筆電快多了。"
+    ],
+    "file": [
+      "名詞",
+      "檔案（file cabinet 檔案櫃）",
+      "",
+      "Please send me the file.",
+      "請把檔案寄給我。"
+    ],
+    "forgot": [
+      "動詞",
+      "忘了（forget 的過去式）",
+      "",
+      "I forgot my password.",
+      "我忘了密碼。"
+    ],
+    "front": [
+      "名詞・形容詞",
+      "前面的（front desk 櫃檯）",
+      "",
+      "Please wait at the front door.",
+      "請在前門等。"
+    ],
+    "got": [
+      "動詞",
+      "變得（get 的過去式）",
+      "得到了",
+      "The customer got upset.",
+      "客戶不高興了。"
+    ],
+    "inspection": [
+      "名詞",
+      "檢驗、檢查",
+      "",
+      "The inspection takes one hour.",
+      "檢驗要一小時。"
+    ],
+    "keep": [
+      "動詞",
+      "（keep an eye on）注意、看著",
+      "保持；保留",
+      "Please keep the door closed.",
+      "請保持門關著。"
+    ],
+    "laughed": [
+      "動詞",
+      "笑了（laugh 的過去式）",
+      "",
+      "Everyone laughed at his joke.",
+      "大家都被他的笑話逗笑了。"
+    ],
+    "makes": [
+      "動詞",
+      "做、製作（主詞是單數）",
+      "",
+      "This machine makes 100 cups an hour.",
+      "這台機器一小時做 100 杯。"
+    ],
+    "manual": [
+      "名詞",
+      "手冊、說明書",
+      "",
+      "Please read the manual first.",
+      "請先看說明書。"
+    ],
+    "method": [
+      "名詞",
+      "方法",
+      "",
+      "This method saves a lot of time.",
+      "這個方法省很多時間。"
+    ],
+    "oliver": [
+      "人名",
+      "奧利佛（男生名字）",
+      "",
+      "Oliver sits next to me.",
+      "Oliver 坐我旁邊。"
+    ],
+    "online": [
+      "副詞・形容詞",
+      "在網路上",
+      "",
+      "You can book the tickets online.",
+      "你可以在網路上訂票。"
+    ],
+    "oven": [
+      "名詞",
+      "烤爐、烤箱",
+      "",
+      "The oven needs to be cleaned.",
+      "烤箱需要清潔。"
+    ],
+    "owner": [
+      "名詞",
+      "老闆、擁有者",
+      "",
+      "The owner of the café is very friendly.",
+      "那家咖啡館的老闆很親切。"
+    ],
+    "policy": [
+      "名詞",
+      "政策、規定",
+      "",
+      "Please read the return policy.",
+      "請閱讀退貨政策。"
+    ],
+    "receive": [
+      "動詞",
+      "收到",
+      "",
+      "Did you receive my email?",
+      "你收到我的電子郵件了嗎？"
+    ],
+    "received": [
+      "動詞",
+      "收到（receive 的過去分詞）",
+      "",
+      "We have received your order.",
+      "我們已收到你的訂單。"
+    ],
+    "receives": [
+      "動詞",
+      "收到（主詞是單數）",
+      "",
+      "Each guest receives a welcome gift.",
+      "每位客人都會收到見面禮。"
+    ],
+    "receiving": [
+      "動詞",
+      "正在收到",
+      "",
+      "We are receiving many orders this week.",
+      "我們這週接到很多訂單。"
+    ],
+    "results": [
+      "名詞",
+      "結果（result 的複數）",
+      "",
+      "The test results are good.",
+      "測試結果很好。"
+    ],
+    "robot": [
+      "名詞",
+      "機器人",
+      "",
+      "The robot can carry heavy boxes.",
+      "這個機器人可以搬重箱子。"
+    ],
+    "robots": [
+      "名詞",
+      "機器人（robot 的複數）",
+      "",
+      "The factory uses robots.",
+      "這間工廠使用機器人。"
+    ],
+    "sea": [
+      "名詞",
+      "海（by sea 海運）",
+      "",
+      "Shipping by sea is cheaper.",
+      "海運比較便宜。"
+    ],
+    "seoul": [
+      "地名",
+      "首爾（韓國首都）",
+      "",
+      "Our client is based in Seoul.",
+      "我們的客戶在首爾。"
+    ],
+    "ship": [
+      "動詞",
+      "運送、出貨",
+      "船（名詞）",
+      "We'll ship it by sea.",
+      "我們會用海運送。"
+    ],
+    "spilled": [
+      "動詞",
+      "灑了、打翻（spill 的過去式）",
+      "",
+      "I spilled coffee on my shirt.",
+      "我把咖啡灑在襯衫上。"
+    ],
+    "tables": [
+      "名詞",
+      "桌子（table 的複數）",
+      "",
+      "Please set up the tables for the event.",
+      "請把活動的桌子擺好。"
+    ],
+    "take": [
+      "動詞",
+      "搭乘",
+      "拿；花（時間）",
+      "I'll take a taxi.",
+      "我會搭計程車。"
+    ],
+    "takes": [
+      "動詞",
+      "收取、拿（主詞是單數）",
+      "花（時間）",
+      "The machine takes cash and cards.",
+      "這台機器收現金和卡。"
+    ],
+    "temperature": [
+      "名詞",
+      "溫度",
+      "",
+      "Keep the room temperature at 25 degrees.",
+      "室溫保持在 25 度。"
+    ],
+    "test": [
+      "名詞",
+      "測試",
+      "",
+      "The test results will be ready tomorrow.",
+      "測試結果明天出來。"
+    ],
+    "train": [
+      "名詞",
+      "火車",
+      "",
+      "I'll take the train to Kaohsiung.",
+      "我會搭火車去高雄。"
+    ],
+    "turn": [
+      "動詞",
+      "（turn out）結果是、最後變成",
+      "轉；輪到（名詞）",
+      "Let's see how it turns out.",
+      "看看結果如何。"
+    ],
+    "turned": [
+      "動詞",
+      "（turned out）結果證明是",
+      "轉了",
+      "The meeting turned out well.",
+      "會議結果很順利。"
+    ],
+    "urgent": [
+      "形容詞",
+      "緊急的",
+      "",
+      "This is an urgent order.",
+      "這是急件訂單。"
+    ],
+    "video": [
+      "名詞",
+      "影片",
+      "",
+      "I watched a video about the product.",
+      "我看了產品介紹影片。"
+    ],
+    "videos": [
+      "名詞",
+      "影片（video 的複數）",
+      "",
+      "We post videos on our website.",
+      "我們在網站上發影片。"
+    ],
+    "visit": [
+      "名詞",
+      "參觀、拜訪（factory visit 參觀工廠）",
+      "",
+      "The client's visit went well.",
+      "客戶來訪很順利。"
+    ],
+    "waiter": [
+      "名詞",
+      "服務生",
+      "",
+      "The waiter brought the menu.",
+      "服務生拿來菜單。"
+    ],
+    "way": [
+      "名詞",
+      "（No way!）不會吧、怎麼可能",
+      "方式；路",
+      "No way! That's amazing.",
+      "不會吧！太厲害了。"
+    ],
+    "wonder": [
+      "動詞",
+      "想知道、好奇",
+      "",
+      "I wonder if he got my message.",
+      "不知道他有沒有收到我的訊息。"
+    ],
+    "work": [
+      "動詞",
+      "工作、上班",
+      "",
+      "When does the night shift work?",
+      "夜班什麼時候上班？"
+    ],
+    "works": [
+      "動詞",
+      "（That works for me）可以、我方便",
+      "運作；工作",
+      "Ten o'clock works for me.",
+      "十點我可以。"
+    ]
+  },
+  "phrases": [
+    {
+      "p": "come across",
+      "forms": [
+        "come across",
+        "came across",
+        "coming across",
+        "comes across"
+      ],
+      "pos": "片語・動詞",
+      "zh": "偶然看到、碰到",
+      "ex": "I came across an interesting article today.",
+      "exzh": "我今天偶然看到一篇有趣的文章。"
+    },
+    {
+      "p": "keep an eye on",
+      "forms": [
+        "keep an eye on",
+        "kept an eye on",
+        "keeping an eye on"
+      ],
+      "pos": "片語・動詞",
+      "zh": "注意、看著",
+      "ex": "Can you keep an eye on my bag?",
+      "exzh": "可以幫我看一下包包嗎？"
+    },
+    {
+      "p": "turn out",
+      "forms": [
+        "turn out",
+        "turned out",
+        "turns out"
+      ],
+      "pos": "片語・動詞",
+      "zh": "結果是、最後變成",
+      "ex": "It turned out to be a great idea.",
+      "exzh": "結果證明那是個好主意。"
+    },
+    {
+      "p": "no way",
+      "forms": [
+        "no way"
+      ],
+      "pos": "片語",
+      "zh": "不會吧、怎麼可能",
+      "ex": "No way! You finished it already?",
+      "exzh": "不會吧！你已經做完了？"
+    },
+    {
+      "p": "by air / by sea",
+      "forms": [
+        "by air",
+        "by sea"
+      ],
+      "pos": "片語",
+      "zh": "空運／海運",
+      "ex": "It's faster to ship by air.",
+      "exzh": "空運比較快。"
+    },
+    {
+      "p": "file cabinet",
+      "forms": [
+        "file cabinet"
+      ],
+      "pos": "名詞片語",
+      "zh": "檔案櫃",
+      "ex": "The contracts are in the file cabinet.",
+      "exzh": "合約在檔案櫃裡。"
+    },
+    {
+      "p": "works for me",
+      "forms": [
+        "works for me"
+      ],
+      "pos": "片語",
+      "zh": "對我來說可以、我方便",
+      "ex": "Friday works for me.",
+      "exzh": "週五我可以。"
+    },
+    {
+      "p": "front desk",
+      "forms": [
+        "front desk"
+      ],
+      "pos": "名詞片語",
+      "zh": "櫃檯",
+      "ex": "Please leave the package at the front desk.",
+      "exzh": "請把包裹放在櫃檯。"
     }
   ]
 }

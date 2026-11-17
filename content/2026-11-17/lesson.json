@@ -19,193 +19,93 @@
   "lines": [
     {
       "s": "Oliver",
-      "en": "Hi Chloe, welcome back! How was your trip to Kyoto?",
-      "zh": "嗨 Chloe，歡迎回來！你的京都之旅怎麼樣？"
+      "en": "Hi Chloe, welcome back! How was Kyoto?",
+      "zh": "嗨 Chloe，歡迎回來！京都怎麼樣？",
+      "mood": "happy"
     },
     {
       "s": "Chloe",
-      "en": "It was wonderful, thanks. I'm still a little tired, though.",
-      "zh": "很棒，謝謝。不過我還是有點累。"
-    },
-    {
-      "s": "Oliver",
-      "en": "Was it your first time in Japan?",
-      "zh": "那是你第一次去日本嗎？"
-    },
-    {
-      "s": "Chloe",
-      "en": "Yes, it was. Have you ever been there?",
-      "zh": "是的。你有去過嗎？"
-    },
-    {
-      "s": "Oliver",
-      "en": "Yes, twice. I went to Tokyo and Osaka, but never Kyoto.",
-      "zh": "有，去過兩次。我去過東京和大阪，但從沒去過京都。"
-    },
-    {
-      "s": "Chloe",
-      "en": "You should go. The old temples are beautiful.",
-      "zh": "你應該去。那些古老的寺廟很美。"
+      "en": "Wonderful, but I'm still a little tired.",
+      "zh": "很棒，不過我還是有點累。",
+      "mood": "sad"
     },
     {
       "s": "Oliver",
       "en": "What was your favorite place?",
-      "zh": "你最喜歡哪個地方？"
+      "zh": "你最喜歡哪個地方？",
+      "mood": "neutral"
     },
     {
       "s": "Chloe",
-      "en": "A small temple on a hill. I happened to run into a friendly guide there.",
-      "zh": "山丘上的一間小寺廟。我在那裡剛好碰到一位很親切的導遊。"
+      "en": "A temple on a hill. I happened to run into a friendly guide.",
+      "zh": "山丘上的一間寺廟。我剛好碰到一位很親切的導遊。",
+      "mood": "happy"
     },
     {
       "s": "Oliver",
-      "en": "Really? What did he tell you?",
-      "zh": "真的嗎？他跟你說了什麼？"
+      "en": "Did you plan everything before you left?",
+      "zh": "你出發前有把一切都規劃好嗎？",
+      "mood": "neutral"
     },
     {
       "s": "Chloe",
-      "en": "He told us the history of the temple. It was over a thousand years old.",
-      "zh": "他告訴我們這間寺廟的歷史。它有一千多年了。"
+      "en": "I made an itinerary, but the trains were confusing.",
+      "zh": "我做了行程表，但電車很讓人搞不懂。",
+      "mood": "confused"
     },
     {
       "s": "Oliver",
-      "en": "That's amazing. Did you plan everything before you left?",
-      "zh": "太驚人了。你出發前有把一切都規劃好嗎？"
+      "en": "Oh no. Did you get lost?",
+      "zh": "糟糕。你有迷路嗎？",
+      "mood": "surprised"
     },
     {
       "s": "Chloe",
-      "en": "I made a simple itinerary, but I didn't follow it very well.",
-      "zh": "我做了一份簡單的行程表，但沒有照著走得很好。"
+      "en": "Yes! It took me an hour to figure out the map.",
+      "zh": "有！我花了一個小時才弄懂地圖。",
+      "mood": "sad"
     },
     {
       "s": "Oliver",
-      "en": "Why not?",
-      "zh": "為什麼？"
+      "en": "Ha! You could end up in the wrong city that way.",
+      "zh": "哈！那樣搞不好會跑到錯的城市去。",
+      "mood": "happy"
     },
     {
       "s": "Chloe",
-      "en": "Well, the trains were confusing at first. It took me a while to figure out the map.",
-      "zh": "嗯，一開始電車很讓人搞不懂。我花了好一陣子才弄懂地圖。"
+      "en": "Almost! But a kind woman helped me.",
+      "zh": "差一點！不過一位好心的女士幫了我。",
+      "mood": "happy"
     },
     {
       "s": "Oliver",
-      "en": "Ha, I know that feeling. Tokyo's station was the same for me.",
-      "zh": "哈，我懂那種感覺。東京的車站對我來說也一樣。"
+      "en": "And the food?",
+      "zh": "那食物呢？",
+      "mood": "neutral"
     },
     {
       "s": "Chloe",
-      "en": "Yes! I got lost on the first day. I thought I would end up in the wrong city.",
-      "zh": "對！我第一天就迷路了。我還以為會跑到錯的城市去。"
-    },
-    {
-      "s": "Oliver",
-      "en": "But you didn't, right?",
-      "zh": "但你沒有，對吧？"
-    },
-    {
-      "s": "Chloe",
-      "en": "No. A kind woman helped me find the right platform.",
-      "zh": "沒有。一位好心的女士幫我找到正確的月台。"
-    },
-    {
-      "s": "Oliver",
-      "en": "People in Japan are so helpful. Have you ever tried to speak Japanese?",
-      "zh": "日本人真的很樂於助人。你有試過說日文嗎？"
-    },
-    {
-      "s": "Chloe",
-      "en": "Only a little. I learned some basic words before the trip.",
-      "zh": "只有一點點。出發前我學了一些基本單字。"
-    },
-    {
-      "s": "Oliver",
-      "en": "Like what?",
-      "zh": "像是什麼？"
-    },
-    {
-      "s": "Chloe",
-      "en": "Things like \"thank you\" and \"delicious\". They made everyone smile.",
-      "zh": "像是「謝謝」和「好吃」。這些讓大家都笑了。"
-    },
-    {
-      "s": "Oliver",
-      "en": "Nice. What about the food? Did you try anything new?",
-      "zh": "不錯。那食物呢？你有試什麼新東西嗎？"
-    },
-    {
-      "s": "Chloe",
-      "en": "Everything was new! I had a bowl of hot noodles at a small shop near the hotel.",
-      "zh": "每樣都是新的！我在飯店附近的小店吃了一碗熱騰騰的麵。"
-    },
-    {
-      "s": "Oliver",
-      "en": "Was it good?",
-      "zh": "好吃嗎？"
-    },
-    {
-      "s": "Chloe",
-      "en": "It was the best I've ever had. I went back three times.",
-      "zh": "那是我吃過最好吃的。我回去了三次。"
-    },
-    {
-      "s": "Oliver",
-      "en": "Three times! I'd do the same thing.",
-      "zh": "三次！我也會那樣做。"
-    },
-    {
-      "s": "Chloe",
-      "en": "Have you ever eaten at a place that was so good that you didn't want to leave?",
-      "zh": "你有沒有在某家店吃得太好，好到不想離開過？"
-    },
-    {
-      "s": "Oliver",
-      "en": "Yes, once in Osaka. I stayed there for two hours.",
-      "zh": "有，在大阪有一次。我在那裡待了兩個小時。"
-    },
-    {
-      "s": "Chloe",
-      "en": "That's how I felt. Next time, I want to visit in autumn.",
-      "zh": "我就是那種感覺。下次我想秋天去。"
+      "en": "I found a great noodle shop. I went back three times.",
+      "zh": "我找到一家很棒的麵店，回去吃了三次。",
+      "mood": "happy"
     },
     {
       "s": "Oliver",
       "en": "What would you recommend for the best time to go?",
-      "zh": "你會建議什麼時候去最好？"
+      "zh": "你會建議什麼時候去最好？",
+      "mood": "neutral"
     },
     {
       "s": "Chloe",
-      "en": "Mid-November. The red leaves are gorgeous then.",
-      "zh": "十一月中旬。那時候的紅葉美極了。"
+      "en": "Mid-November. The red leaves are beautiful then.",
+      "zh": "十一月中旬。那時候的紅葉很美。",
+      "mood": "happy"
     },
     {
       "s": "Oliver",
-      "en": "Sounds perfect. Maybe I'll book a trip for next autumn.",
-      "zh": "聽起來太棒了。也許我明年秋天就訂行程。"
-    },
-    {
-      "s": "Chloe",
-      "en": "Do it! You won't regret it.",
-      "zh": "去吧！你不會後悔的。"
-    },
-    {
-      "s": "Oliver",
-      "en": "Now I just have to save some money.",
-      "zh": "現在我只要存點錢就好。"
-    },
-    {
-      "s": "Chloe",
-      "en": "Same here. My wallet is empty after this trip!",
-      "zh": "我也是。這趟旅行之後我的錢包空空的！"
-    },
-    {
-      "s": "Oliver",
-      "en": "Ha! Well, thanks for the stories. I feel like I traveled too.",
-      "zh": "哈！謝謝你分享這些故事。我覺得自己好像也去旅行了。"
-    },
-    {
-      "s": "Chloe",
-      "en": "Anytime. I'll show you my photos at lunch.",
-      "zh": "隨時都可以。午餐時我給你看我的照片。"
+      "en": "Sounds perfect. I'll go next autumn.",
+      "zh": "聽起來太棒了。我明年秋天就去。",
+      "mood": "happy"
     }
   ],
   "quiz": [
@@ -218,8 +118,8 @@
         "The trains"
       ],
       "answer": 3,
-      "line": 13,
-      "why": "Chloe 說一開始電車很讓人搞不懂，她花了一陣子才弄懂地圖。"
+      "line": 5,
+      "why": "Chloe 說她做了行程表，但電車很讓人搞不懂。"
     },
     {
       "q": "How many times did Chloe go back to the noodle shop?",
@@ -230,7 +130,7 @@
         "Four times"
       ],
       "answer": 2,
-      "line": 25,
+      "line": 11,
       "why": "I went back three times."
     },
     {
@@ -242,7 +142,7 @@
         "In January"
       ],
       "answer": 1,
-      "line": 31,
+      "line": 13,
       "why": "她說十一月中旬的紅葉很美。"
     }
   ],
@@ -251,60 +151,68 @@
       "w": "run into",
       "pos": "片語・動詞",
       "zh": "巧遇、碰到",
-      "ex1": "A small temple on a hill. I happened to run into a friendly guide there.",
-      "line": 7,
+      "ex1": "A temple on a hill. I happened to run into a friendly guide.",
+      "line": 3,
       "ex2": "I ran into our supplier at the trade show last week.",
       "ex2zh": "我上週在展覽上巧遇我們的供應商。",
-      "toeic": false
+      "toeic": false,
+      "hook": "run 跑＋into 撞進去：跑著跑著撞進某人懷裡＝巧遇、碰到",
+      "img": "pic/word_0.png",
+      "pic": "two friends bumping into each other by surprise on a street, both smiling"
     },
     {
       "w": "end up",
       "pos": "片語・動詞",
       "zh": "最後落得、結果變成",
-      "ex1": "Yes! I got lost on the first day. I thought I would end up in the wrong city.",
-      "line": 15,
+      "ex1": "Ha! You could end up in the wrong city that way.",
+      "line": 8,
       "ex2": "If we skip the test, we may end up with more defects.",
       "ex2zh": "如果我們跳過測試，最後可能會有更多瑕疵品。",
-      "toeic": false
+      "toeic": false,
+      "hook": "end 終點＋up：一路走到終點，最後停在哪裡＝最後落得",
+      "img": "pic/word_1.png",
+      "pic": "a confused traveler standing at the end of a winding road in front of the wrong city sign"
     },
     {
       "w": "figure out",
       "pos": "片語・動詞",
       "zh": "想出、弄清楚",
-      "ex1": "Well, the trains were confusing at first. It took me a while to figure out the map.",
-      "line": 13,
+      "ex1": "Yes! It took me an hour to figure out the map.",
+      "line": 7,
       "ex2": "We need to figure out why the machine keeps stopping.",
       "ex2zh": "我們得查出這台機器為什麼一直停機。",
-      "toeic": false
+      "toeic": false,
+      "hook": "figure 是「圖形、數字」：把圖（數字）算出來（out）＝弄清楚",
+      "img": "pic/word_2.png",
+      "pic": "a person looking at a big map with a light bulb above their head"
     },
     {
       "w": "itinerary",
       "pos": "名詞",
       "zh": "行程表",
-      "ex1": "I made a simple itinerary, but I didn't follow it very well.",
-      "line": 11,
+      "ex1": "I made an itinerary, but the trains were confusing.",
+      "line": 5,
       "ex2": "Please send me your itinerary before the business trip.",
       "ex2zh": "出差前請把你的行程表寄給我。",
-      "toeic": true
+      "toeic": true,
+      "hook": "拆字：itiner 來自拉丁文 iter（旅程）＋ary（表）＝旅程表＝行程表",
+      "img": "pic/word_3.png",
+      "pic": "a happy young traveler with a backpack holding a big schedule card showing only small pictures of a plane, a train and a hotel connected by a dotted line"
     },
     {
       "w": "recommend",
       "pos": "動詞",
       "zh": "推薦、建議",
       "ex1": "What would you recommend for the best time to go?",
-      "line": 30,
+      "line": 12,
       "ex2": "I recommend that we check every board twice.",
       "ex2zh": "我建議每片電路板都檢查兩次。",
-      "toeic": true
+      "toeic": true,
+      "hook": "拆字：re（一再）＋commend（稱讚）＝一直稱讚它＝推薦",
+      "img": "pic/word_4.png",
+      "pic": "a smiling person giving a thumbs up and pointing at a bowl of noodles"
     }
   ],
-  "speaking": {
-    "pattern": "Have you ever + 過去分詞 ...?",
-    "patternZh": "你有沒有……過？（問對方的經驗）",
-    "fromLine": 18,
-    "task": "",
-    "example": ""
-  },
   "part2": [
     {
       "q": "When is the shipment leaving the factory?",
@@ -362,39 +270,852 @@
       "zh": "誰負責這次教育訓練？"
     }
   ],
-  "reorder": [
+  "scene": "Chloe 剛從京都旅行回來，Oliver 在辦公室問她旅途的種種。",
+  "place": "office",
+  "grammar": {
+    "topic": "pos",
+    "topicZh": "詞性（名詞／形容詞／副詞的位置）",
+    "tip": "先看空格的位置：a/the 後面要名詞；名詞前面放形容詞；修飾動詞用副詞（常是 -ly）；be 動詞後面通常接形容詞。",
+    "items": [
+      {
+        "q": "Please read the safety rules _____ before you start the machine.",
+        "opts": [
+          "carefully",
+          "careful",
+          "care",
+          "caring"
+        ],
+        "answer": 0,
+        "why": "空格修飾動詞 read（怎麼讀），要用副詞 carefully。careful 是形容詞，只能修飾名詞。",
+        "zh": "開機器前請仔細閱讀安全規定。"
+      },
+      {
+        "q": "The new packaging design is very _____.",
+        "opts": [
+          "attract",
+          "attractive",
+          "attraction",
+          "attractively"
+        ],
+        "answer": 1,
+        "why": "be 動詞 is＋very 後面要形容詞，描述主詞的樣子：attractive（吸引人的）。",
+        "zh": "新的包裝設計很吸引人。"
+      },
+      {
+        "q": "We received a _____ from the customer this morning.",
+        "opts": [
+          "complain",
+          "complained",
+          "complaint",
+          "complaining"
+        ],
+        "answer": 2,
+        "why": "冠詞 a 後面要接名詞，complaint 是名詞（客訴）；complain 是動詞。",
+        "zh": "我們今天早上收到客戶的一封客訴。"
+      },
+      {
+        "q": "The engineers worked _____ to fix the problem before the deadline.",
+        "opts": [
+          "quick",
+          "quickness",
+          "quicken",
+          "quickly"
+        ],
+        "answer": 3,
+        "why": "修飾動詞 worked（怎麼工作），要用副詞 quickly。",
+        "zh": "工程師們很快地工作，在期限前修好問題。"
+      },
+      {
+        "q": "Our team made a _____ decision after the meeting.",
+        "opts": [
+          "final",
+          "finally",
+          "finalize",
+          "finality"
+        ],
+        "answer": 0,
+        "why": "a ___ decision：冠詞和名詞中間要放形容詞 final（最後的）。",
+        "zh": "我們團隊在會後做出最後決定。"
+      }
+    ]
+  },
+  "gloss": {
+    "attract": [
+      "動詞",
+      "吸引",
+      "",
+      "The trade show attracts many buyers.",
+      "這個展覽吸引很多買家。"
+    ],
+    "attraction": [
+      "名詞",
+      "景點；吸引力",
+      "",
+      "The castle is a popular attraction.",
+      "那座城堡是熱門景點。"
+    ],
+    "attractive": [
+      "形容詞",
+      "吸引人的、好看的",
+      "",
+      "The new logo is very attractive.",
+      "新標誌很好看。"
+    ],
+    "attractively": [
+      "副詞",
+      "吸引人地",
+      "",
+      "The products are attractively displayed.",
+      "產品陳列得很吸引人。"
+    ],
+    "back": [
+      "副詞",
+      "回來、回去",
+      "背部（名詞）",
+      "I'll be back in ten minutes.",
+      "我十分鐘後回來。"
+    ],
+    "board": [
+      "名詞",
+      "電路板",
+      "木板；董事會",
+      "Each board is tested before shipping.",
+      "每片電路板出貨前都會測試。"
+    ],
+    "broken": [
+      "形容詞",
+      "壞掉的",
+      "",
+      "The copy machine is broken again.",
+      "影印機又壞了。"
+    ],
+    "business": [
+      "名詞",
+      "公事、商務",
+      "生意；公司",
+      "I'm going to Osaka on business.",
+      "我要去大阪出差。"
+    ],
+    "care": [
+      "名詞・動詞",
+      "小心、照顧；在乎",
+      "",
+      "Please handle the samples with care.",
+      "請小心處理樣品。"
+    ],
+    "careful": [
+      "形容詞",
+      "小心的、仔細的",
+      "",
+      "Be careful with the glass.",
+      "小心玻璃。"
+    ],
+    "carefully": [
+      "副詞",
+      "仔細地、小心地",
+      "",
+      "Please check the numbers carefully.",
+      "請仔細核對數字。"
+    ],
+    "caring": [
+      "形容詞",
+      "有愛心的、會照顧人的",
+      "",
+      "She is a caring manager.",
+      "她是個很照顧人的主管。"
+    ],
+    "charge": [
+      "名詞",
+      "（in charge of）負責",
+      "費用",
+      "Who is in charge of the budget?",
+      "誰負責預算？"
+    ],
+    "check": [
+      "動詞",
+      "檢查",
+      "確認；（check in）入住",
+      "Please check the order before sending it.",
+      "寄出前請檢查訂單。"
+    ],
+    "chloe": [
+      "人名",
+      "克蘿伊（女生名字）",
+      "",
+      "Chloe is our new designer.",
+      "Chloe 是我們的新設計師。"
+    ],
+    "complain": [
+      "動詞",
+      "抱怨",
+      "",
+      "Customers complain about the long wait.",
+      "客戶抱怨等太久。"
+    ],
+    "complained": [
+      "動詞",
+      "抱怨了（complain 的過去式）",
+      "",
+      "He complained about the noise.",
+      "他抱怨噪音。"
+    ],
+    "complaining": [
+      "動詞",
+      "正在抱怨",
+      "",
+      "Stop complaining and start working.",
+      "別抱怨了，開始做吧。"
+    ],
+    "complaint": [
+      "名詞",
+      "客訴、抱怨",
+      "",
+      "We received a complaint about the delivery.",
+      "我們收到一則送貨的客訴。"
+    ],
+    "confusing": [
+      "形容詞",
+      "令人困惑的、搞不懂的",
+      "",
+      "The new form is a bit confusing.",
+      "新表格有點難懂。"
+    ],
+    "customer": [
+      "名詞",
+      "客戶、顧客",
+      "",
+      "The customer wants a refund.",
+      "客戶要退款。"
+    ],
+    "deadline": [
+      "名詞",
+      "截止期限",
+      "",
+      "The deadline is next Monday.",
+      "截止日是下週一。"
+    ],
+    "decision": [
+      "名詞",
+      "決定",
+      "",
+      "We need to make a decision today.",
+      "我們今天要做決定。"
+    ],
+    "defects": [
+      "名詞",
+      "瑕疵、缺陷（defect 的複數）",
+      "",
+      "The inspector found two defects.",
+      "檢驗員找到兩個瑕疵。"
+    ],
+    "design": [
+      "名詞",
+      "設計",
+      "設計（動詞）",
+      "I like the design of this chair.",
+      "我喜歡這張椅子的設計。"
+    ],
+    "end": [
+      "動詞",
+      "（end up）最後落得、結果變成",
+      "結束；末端（名詞）",
+      "We ended up staying late.",
+      "我們最後加班到很晚。"
+    ],
+    "engineers": [
+      "名詞",
+      "工程師（engineer 的複數）",
+      "",
+      "Our engineers are fixing the bug.",
+      "我們的工程師正在修 bug。"
+    ],
+    "factory": [
+      "名詞",
+      "工廠",
+      "",
+      "The factory is in Taichung.",
+      "工廠在台中。"
+    ],
+    "favorite": [
+      "形容詞",
+      "最喜歡的",
+      "",
+      "What's your favorite restaurant?",
+      "你最喜歡哪家餐廳？"
+    ],
+    "figure": [
+      "動詞",
+      "（figure out）想出、弄清楚",
+      "數字（名詞）",
+      "I can't figure out this report.",
+      "我看不懂這份報告。"
+    ],
+    "final": [
+      "形容詞",
+      "最後的、最終的",
+      "",
+      "This is the final version.",
+      "這是最終版本。"
+    ],
+    "finality": [
+      "名詞",
+      "定局、不可改變",
+      "",
+      "He spoke with finality.",
+      "他說得斬釘截鐵。"
+    ],
+    "finalize": [
+      "動詞",
+      "定案、最後確定",
+      "",
+      "We need to finalize the plan by Friday.",
+      "我們週五前要把計畫定案。"
+    ],
+    "finally": [
+      "副詞",
+      "終於；最後",
+      "",
+      "The shipment finally arrived.",
+      "貨終於到了。"
+    ],
+    "fix": [
+      "動詞",
+      "修理、解決",
+      "",
+      "Can you fix my laptop?",
+      "你可以修我的筆電嗎？"
+    ],
+    "get": [
+      "動詞",
+      "變得（get lost 迷路）",
+      "得到；拿",
+      "Don't get lost on the way.",
+      "路上別迷路了。"
+    ],
+    "guide": [
+      "名詞",
+      "導遊、嚮導",
+      "指南",
+      "Our guide spoke good English.",
+      "我們的導遊英文很好。"
+    ],
+    "happened": [
+      "動詞",
+      "（happen to）碰巧；發生了",
+      "",
+      "I happened to see him at the station.",
+      "我碰巧在車站看到他。"
+    ],
+    "hill": [
+      "名詞",
+      "小山、山丘",
+      "",
+      "The hotel is on a hill.",
+      "飯店在山坡上。"
+    ],
+    "hotel": [
+      "名詞",
+      "飯店、旅館",
+      "",
+      "I booked a hotel near the station.",
+      "我訂了車站附近的飯店。"
+    ],
+    "hr": [
+      "名詞",
+      "人資部門（human resources）",
+      "",
+      "Please ask HR about your leave.",
+      "請假的事請問人資。"
+    ],
+    "itinerary": [
+      "名詞",
+      "行程表",
+      "旅程路線",
+      "Please send me the itinerary before Friday.",
+      "請在週五前把行程表寄給我。"
+    ],
+    "keeps": [
+      "動詞",
+      "（keep + V-ing）一直、不斷",
+      "保持；保留",
+      "The phone keeps ringing.",
+      "電話一直響。"
+    ],
+    "kyoto": [
+      "地名",
+      "京都（日本城市）",
+      "",
+      "Kyoto has many old temples.",
+      "京都有很多古老的寺廟。"
+    ],
+    "leaves": [
+      "名詞",
+      "葉子（leaf 的複數）",
+      "離開（leave 的動詞形）",
+      "The leaves turn red in autumn.",
+      "葉子秋天會變紅。"
+    ],
+    "leaving": [
+      "動詞",
+      "離開、出發",
+      "",
+      "The bus is leaving now.",
+      "公車要開了。"
+    ],
+    "left": [
+      "動詞",
+      "離開了（leave 的過去式）",
+      "左邊（名詞）",
+      "She left the office at six.",
+      "她六點離開辦公室。"
+    ],
+    "lin": [
+      "人名",
+      "林（姓氏）",
+      "",
+      "Mr. Lin is on a business trip.",
+      "林先生出差了。"
+    ],
+    "lost": [
+      "形容詞",
+      "迷路的",
+      "遺失的",
+      "I got lost in the station.",
+      "我在車站迷路了。"
+    ],
+    "machine": [
+      "名詞",
+      "機器",
+      "",
+      "The machine needs to be cleaned.",
+      "這台機器需要清潔。"
+    ],
+    "made": [
+      "動詞",
+      "做了、製作了（make 的過去式）",
+      "",
+      "I made a list of questions.",
+      "我列了一份問題清單。"
+    ],
+    "map": [
+      "名詞",
+      "地圖",
+      "",
+      "Can you show me on the map?",
+      "你可以在地圖上指給我看嗎？"
+    ],
+    "meeting": [
+      "名詞",
+      "會議",
+      "",
+      "The meeting was moved to Tuesday.",
+      "會議改到週二。"
+    ],
+    "mid": [
+      "形容詞",
+      "（Mid-）……中旬、中間",
+      "",
+      "The project ends in mid-December.",
+      "專案十二月中結束。"
+    ],
+    "noodle": [
+      "名詞",
+      "麵（常用複數 noodles）",
+      "",
+      "Let's get some beef noodles.",
+      "我們去吃牛肉麵吧。"
+    ],
+    "packaging": [
+      "名詞",
+      "包裝",
+      "",
+      "The packaging was damaged.",
+      "包裝破損了。"
+    ],
+    "place": [
+      "名詞",
+      "地方",
+      "",
+      "This is a nice place for lunch.",
+      "這是吃午餐的好地方。"
+    ],
+    "plan": [
+      "動詞",
+      "計畫、安排",
+      "計畫（名詞）",
+      "Did you plan the team dinner?",
+      "你安排好團隊聚餐了嗎？"
+    ],
+    "printer": [
+      "名詞",
+      "印表機",
+      "",
+      "The printer is out of paper.",
+      "印表機沒紙了。"
+    ],
+    "quicken": [
+      "動詞",
+      "加快",
+      "",
+      "We need to quicken the process.",
+      "我們要加快流程。"
+    ],
+    "quickness": [
+      "名詞",
+      "快速、敏捷",
+      "",
+      "I was surprised by his quickness.",
+      "他的速度讓我很驚訝。"
+    ],
+    "ran": [
+      "動詞",
+      "（ran into）巧遇（run 的過去式）",
+      "跑了",
+      "I ran into my old boss yesterday.",
+      "我昨天巧遇以前的老闆。"
+    ],
+    "received": [
+      "動詞",
+      "收到了（receive 的過去式）",
+      "",
+      "I received your package today.",
+      "我今天收到你的包裹了。"
+    ],
+    "recommend": [
+      "動詞",
+      "推薦、建議",
+      "",
+      "Can you recommend a good hotel?",
+      "你可以推薦一家好飯店嗎？"
+    ],
+    "rules": [
+      "名詞",
+      "規定（rule 的複數）",
+      "",
+      "Please follow the office rules.",
+      "請遵守辦公室規定。"
+    ],
+    "run": [
+      "動詞",
+      "（run into）巧遇",
+      "跑；經營",
+      "I didn't expect to run into you here.",
+      "沒想到在這裡碰到你。"
+    ],
+    "safety": [
+      "名詞",
+      "安全",
+      "",
+      "Safety comes first.",
+      "安全第一。"
+    ],
+    "schedule": [
+      "名詞",
+      "時間表、行程",
+      "安排（動詞）",
+      "Let me check my schedule.",
+      "我看一下我的行程。"
+    ],
+    "send": [
+      "動詞",
+      "寄、傳送",
+      "",
+      "Please send me the file.",
+      "請把檔案寄給我。"
+    ],
+    "session": [
+      "名詞",
+      "（一段）課程、時段",
+      "",
+      "The training session lasts two hours.",
+      "訓練課程長兩小時。"
+    ],
+    "shipment": [
+      "名詞",
+      "（一批）貨物、出貨",
+      "",
+      "The shipment will arrive on Monday.",
+      "這批貨週一會到。"
+    ],
+    "shop": [
+      "名詞",
+      "店",
+      "",
+      "There's a coffee shop downstairs.",
+      "樓下有家咖啡店。"
+    ],
+    "show": [
+      "名詞",
+      "（trade show）展覽",
+      "節目；表演",
+      "We met at a trade show in Tokyo.",
+      "我們在東京的展覽上認識。"
+    ],
+    "skip": [
+      "動詞",
+      "跳過、略過",
+      "",
+      "Let's skip the small talk.",
+      "我們跳過寒暄吧。"
+    ],
+    "sounds": [
+      "動詞",
+      "聽起來（sound 的單數形）",
+      "",
+      "That sounds like a good idea.",
+      "聽起來是個好主意。"
+    ],
+    "start": [
+      "動詞",
+      "啟動、開始",
+      "",
+      "When does the meeting start?",
+      "會議什麼時候開始？"
+    ],
+    "stopping": [
+      "動詞",
+      "停下來（stop 的進行式）",
+      "",
+      "The printer keeps stopping.",
+      "印表機一直停下來。"
+    ],
+    "store": [
+      "名詞",
+      "商店",
+      "",
+      "I'll stop by the store on my way home.",
+      "我回家路上會去一趟商店。"
+    ],
+    "suggest": [
+      "動詞",
+      "建議",
+      "",
+      "I suggest we meet earlier.",
+      "我建議我們早點見面。"
+    ],
+    "supplier": [
+      "名詞",
+      "供應商",
+      "",
+      "We found a new supplier.",
+      "我們找到新的供應商。"
+    ],
+    "team": [
+      "名詞",
+      "團隊、小組",
+      "",
+      "Our team has six people.",
+      "我們團隊有六個人。"
+    ],
+    "temple": [
+      "名詞",
+      "寺廟",
+      "",
+      "We visited a famous temple.",
+      "我們參觀了一座有名的寺廟。"
+    ],
+    "test": [
+      "名詞",
+      "測試",
+      "考試",
+      "The product passed the test.",
+      "產品通過測試了。"
+    ],
+    "took": [
+      "動詞",
+      "花了（時間）（take 的過去式）",
+      "拿了；搭了",
+      "The trip took three hours.",
+      "這趟路花了三個小時。"
+    ],
+    "trade": [
+      "名詞",
+      "貿易（trade show 展覽）",
+      "",
+      "Trade between the two countries is growing.",
+      "兩國之間的貿易在成長。"
+    ],
+    "training": [
+      "名詞",
+      "訓練、培訓",
+      "",
+      "New staff must attend the training.",
+      "新員工必須參加培訓。"
+    ],
+    "trains": [
+      "名詞",
+      "火車、電車（train 的複數）",
+      "",
+      "The trains are very crowded.",
+      "電車很擠。"
+    ],
+    "trip": [
+      "名詞",
+      "旅行、行程",
+      "",
+      "How was your trip?",
+      "你這趟旅行如何？"
+    ],
+    "warehouse": [
+      "名詞",
+      "倉庫",
+      "",
+      "The goods are in the warehouse.",
+      "貨在倉庫裡。"
+    ],
+    "way": [
+      "名詞",
+      "方式（that way 那樣的話）",
+      "路",
+      "Do it this way.",
+      "照這個方式做。"
+    ],
+    "welcome": [
+      "感嘆詞",
+      "歡迎",
+      "",
+      "Welcome to our company.",
+      "歡迎來到我們公司。"
+    ],
+    "worked": [
+      "動詞",
+      "工作了（work 的過去式）",
+      "",
+      "We worked late last night.",
+      "我們昨晚加班到很晚。"
+    ],
+    "works": [
+      "動詞",
+      "（That works for me）可以、行得通",
+      "工作",
+      "Does Tuesday work for you?",
+      "週二你方便嗎？"
+    ]
+  },
+  "phrases": [
     {
-      "zh": "你有沒有在好到不想離開的地方吃過飯？",
-      "chunks": [
-        "Have you ever",
-        "eaten at",
-        "a place",
-        "that was so good",
-        "that you didn't want to leave?"
+      "p": "run into",
+      "forms": [
+        "run into",
+        "ran into",
+        "running into",
+        "runs into"
       ],
-      "line": 27
+      "pos": "片語・動詞",
+      "zh": "巧遇、碰到",
+      "ex": "I ran into an old classmate at the station.",
+      "exzh": "我在車站巧遇老同學。"
     },
     {
-      "zh": "你有試過說日文嗎？",
-      "chunks": [
-        "Have you ever",
-        "tried to",
-        "speak",
-        "Japanese?"
+      "p": "end up",
+      "forms": [
+        "end up",
+        "ended up",
+        "ending up",
+        "ends up"
       ],
-      "line": 18
+      "pos": "片語・動詞",
+      "zh": "最後落得、結果變成",
+      "ex": "We ended up ordering pizza.",
+      "exzh": "我們最後叫了披薩。"
     },
     {
-      "zh": "你有沒有跟外國客戶合作過？",
-      "chunks": [
-        "Have you ever",
-        "worked with",
-        "a customer",
-        "from another country?"
+      "p": "figure out",
+      "forms": [
+        "figure out",
+        "figured out",
+        "figuring out"
       ],
-      "line": null,
-      "audio": "reorder_2"
+      "pos": "片語・動詞",
+      "zh": "想出、弄清楚",
+      "ex": "I finally figured out the problem.",
+      "exzh": "我終於搞懂問題在哪了。"
+    },
+    {
+      "p": "get lost",
+      "forms": [
+        "get lost",
+        "got lost",
+        "getting lost"
+      ],
+      "pos": "片語・動詞",
+      "zh": "迷路",
+      "ex": "It's easy to get lost in this building.",
+      "exzh": "在這棟大樓很容易迷路。"
+    },
+    {
+      "p": "in charge of",
+      "forms": [
+        "in charge of"
+      ],
+      "pos": "片語",
+      "zh": "負責",
+      "ex": "She is in charge of marketing.",
+      "exzh": "她負責行銷。"
+    },
+    {
+      "p": "trade show",
+      "forms": [
+        "trade show"
+      ],
+      "pos": "名詞片語",
+      "zh": "商展、展覽",
+      "ex": "We'll have a booth at the trade show.",
+      "exzh": "我們會在商展設攤位。"
+    },
+    {
+      "p": "welcome back",
+      "forms": [
+        "welcome back"
+      ],
+      "pos": "片語",
+      "zh": "歡迎回來",
+      "ex": "Welcome back! How was your vacation?",
+      "exzh": "歡迎回來！假期過得如何？"
+    },
+    {
+      "p": "happen to",
+      "forms": [
+        "happen to",
+        "happened to",
+        "happens to"
+      ],
+      "pos": "片語・動詞",
+      "zh": "碰巧",
+      "ex": "Do you happen to know his number?",
+      "exzh": "你剛好知道他的電話嗎？"
+    },
+    {
+      "p": "keep + V-ing",
+      "forms": [
+        "keeps stopping",
+        "keep stopping"
+      ],
+      "pos": "片語・動詞",
+      "zh": "一直、不斷做某事",
+      "ex": "The printer keeps jamming.",
+      "exzh": "印表機一直卡紙。"
+    },
+    {
+      "p": "works for me",
+      "forms": [
+        "works for me"
+      ],
+      "pos": "片語",
+      "zh": "對我來說可以、我方便",
+      "ex": "Three o'clock works for me.",
+      "exzh": "三點我可以。"
+    },
+    {
+      "p": "go back",
+      "forms": [
+        "went back",
+        "go back"
+      ],
+      "pos": "片語・動詞",
+      "zh": "回去",
+      "ex": "I went back to the office after lunch.",
+      "exzh": "午餐後我回到辦公室。"
     }
-  ],
-  "scene": "Chloe 剛從京都旅行回來，Oliver 在辦公室問她旅途的種種。"
+  ]
 }

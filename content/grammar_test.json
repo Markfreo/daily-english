@@ -1,0 +1,17 @@
+{
+ "items": [
+  {"topic": "pos", "topicZh": "詞性（名詞／形容詞／副詞的位置）", "q": "The new machine works very _____ and rarely breaks down.", "opts": ["reliable", "reliably", "reliability", "rely"], "answer": 1, "why": "空格修飾動詞 works，要用副詞 reliably。reliable 是形容詞，只能修飾名詞。", "zh": "新機器運作非常穩定，很少故障。"},
+  {"topic": "tense", "topicZh": "動詞時態", "q": "Ms. Chen _____ for this company since 2019.", "opts": ["works", "worked", "has worked", "will work"], "answer": 2, "why": "看到 since＋過去時間點，表示「從那時到現在」，用現在完成式 has worked。", "zh": "陳小姐從 2019 年起就在這家公司工作。"},
+  {"topic": "voice", "topicZh": "主動與被動", "q": "All shipments _____ before they leave the factory.", "opts": ["inspect", "are inspected", "inspecting", "have inspected"], "answer": 1, "why": "貨物是「被」檢查，主詞不會自己檢查，要用被動 be + p.p.：are inspected。", "zh": "所有貨物出廠前都會經過檢驗。"},
+  {"topic": "agree", "topicZh": "主詞動詞一致", "q": "The list of new suppliers _____ on the manager's desk.", "opts": ["is", "are", "be", "being"], "answer": 0, "why": "真正的主詞是 The list（單數），of new suppliers 只是修飾，所以用 is。", "zh": "新供應商名單放在經理桌上。"},
+  {"topic": "prep", "topicZh": "介系詞", "q": "Please submit the report _____ Friday at noon.", "opts": ["until", "by", "since", "during"], "answer": 1, "why": "by＝在某時間之前（期限），交報告是一次性的動作。until 是「持續到」某時間，用在持續的動作。", "zh": "請在週五中午前交報告。"},
+  {"topic": "conj", "topicZh": "連接詞", "q": "The meeting was canceled _____ the manager was sick.", "opts": ["because", "because of", "despite", "although"], "answer": 0, "why": "空格後面是完整句子（主詞＋動詞），要用連接詞 because。because of 後面只能接名詞。", "zh": "因為經理生病，會議取消了。"},
+  {"topic": "relative", "topicZh": "關係代名詞", "q": "The engineer _____ fixed the line yesterday is on vacation today.", "opts": ["which", "who", "whom", "whose"], "answer": 1, "why": "先行詞 The engineer 是人，而且空格後面直接接動詞 fixed（缺主詞），用 who。", "zh": "昨天修好產線的那位工程師今天休假。"},
+  {"topic": "infger", "topicZh": "不定詞與動名詞", "q": "We look forward to _____ with you again.", "opts": ["work", "working", "worked", "be working"], "answer": 1, "why": "look forward to 的 to 是介系詞，後面要接名詞或動名詞，所以用 working。", "zh": "我們期待再次與您合作。"},
+  {"topic": "participle", "topicZh": "分詞形容詞（-ing／-ed）", "q": "The customers were _____ with the quick reply.", "opts": ["satisfy", "satisfying", "satisfied", "satisfaction"], "answer": 2, "why": "人「感到」滿意用 -ed（satisfied）；讓人滿意的事物才用 -ing（satisfying）。", "zh": "客戶對快速的回覆感到滿意。"},
+  {"topic": "compare", "topicZh": "比較級與最高級", "q": "This model is _____ than the one we bought last year.", "opts": ["cheap", "cheaper", "cheapest", "more cheap"], "answer": 1, "why": "看到 than 就用比較級。cheap 是短的形容詞，比較級加 -er：cheaper。", "zh": "這個型號比我們去年買的便宜。"},
+  {"topic": "pronoun", "topicZh": "代名詞", "q": "Mr. Lee completed the safety training by _____.", "opts": ["he", "him", "his", "himself"], "answer": 3, "why": "by oneself＝自己一個人（獨自），要用反身代名詞 himself。", "zh": "李先生自己完成了安全訓練。"},
+  {"topic": "cond", "topicZh": "條件句", "q": "If the parts arrive late, we _____ the delivery date.", "opts": ["change", "changed", "will change", "would change"], "answer": 2, "why": "真實可能發生的條件句：If＋現在式，主要子句用 will＋原形動詞。", "zh": "如果零件晚到，我們會更改交貨日期。"},
+  {"topic": "timeclause", "topicZh": "時間與條件子句（現在式代替未來）", "q": "Please call me as soon as the samples _____.", "opts": ["arrive", "will arrive", "arrived", "arriving"], "answer": 0, "why": "as soon as、when、before 這類時間子句，就算講未來也用現在式：arrive。", "zh": "樣品一到請馬上打電話給我。"}
+ ]
+}

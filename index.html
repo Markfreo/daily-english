@@ -121,7 +121,82 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 .rz-chip.ok{border-color:var(--good);background:var(--good-bg);color:var(--good)}
 .rz-chip.bad{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
 .rz-chip:disabled{cursor:default}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+/* 卡通舞台：場景背景＋兩個人輪流說話（嘴型跟聲音、手勢、點頭、表情）*/
+.stage{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#ECEAE3 center/cover no-repeat}
+.stage.small{aspect-ratio:2/1}
+.toon{position:absolute;bottom:-5%;left:2%;width:47%;max-width:300px}
+.toon.r{left:auto;right:2%}
+.stage.small .toon{width:37%}
+.toon svg{display:block;width:100%;height:auto;overflow:visible}
+.toon.r svg{transform:scaleX(-1)}
+.toon .nm{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.9);border-radius:999px;padding:1px 9px;font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap}
+.toon.talk .nm{color:var(--accent)}
+.toon .body{transform-box:view-box;transform-origin:80px 200px;transition:transform .4s}
+.toon .head{transform-box:view-box;transform-origin:80px 114px;transition:rotate .4s}
+.toon .gest{transform-box:view-box;transform-origin:125px 128px;transition:transform .35s}
+.toon .mood{display:none}
+.toon:not(.talk) .gest .hand{opacity:0}
+.toon.m-neutral .mood.neutral,.toon.m-happy .mood.happy,.toon.m-surprised .mood.surprised,.toon.m-confused .mood.confused,.toon.m-sad .mood.sad{display:inline}
+.toon .mo{display:none;transform-box:fill-box;transform-origin:center}
+.toon.talk .mo{display:inline}
+.toon .vis{display:none}
+.toon.cue.talk .mo{display:none}
+.toon.cue.talk[data-v="A"] .vis.A,.toon.cue.talk[data-v="B"] .vis.B,.toon.cue.talk[data-v="C"] .vis.C,.toon.cue.talk[data-v="D"] .vis.D,
+.toon.cue.talk[data-v="E"] .vis.E,.toon.cue.talk[data-v="F"] .vis.F,.toon.cue.talk[data-v="G"] .vis.G,.toon.cue.talk[data-v="H"] .vis.H{display:inline}
+.toon.cue.talk[data-v="X"] .shut{display:inline}
+.toon.talk .shut{display:none}
+.toon.talk:not(.lip) .mo{animation:yap .22s ease-in-out infinite alternate}
+.toon.talk .body{transform:rotate(2.5deg)}
+.toon.talk .head{animation:hbob .5s ease-in-out infinite alternate}
+.toon.listen .head{animation:nod 2.2s ease-in-out infinite}
+.toon.m-confused .head{rotate:-4deg}
+.toon.m-sad .head{rotate:2.5deg}
+.toon.talk.g1 .gest{animation:explain 1.1s ease-in-out infinite alternate}
+.toon.talk.g2 .gest{animation:raise .9s ease-in-out infinite alternate}
+.toon.talk.g3 .gest{animation:palm 1.4s ease-in-out infinite alternate}
+.bubble{position:absolute;top:2%;left:72%;background:var(--surface);border:1.5px solid var(--line);border-radius:14px;padding:4px 10px;display:flex;gap:4px;opacity:0;transform:scale(.6);transition:opacity .15s,transform .15s}
+.toon.r .bubble{left:auto;right:72%}
+.toon.talk .bubble{opacity:1;transform:scale(1)}
+.bubble i{width:6px;height:6px;border-radius:50%;background:var(--accent);animation:dot .9s infinite}
+.bubble i:nth-child(2){animation-delay:.15s}.bubble i:nth-child(3){animation-delay:.3s}
+@keyframes yap{from{transform:scaleY(.3)}to{transform:scaleY(1.2)}}
+@keyframes hbob{from{transform:rotate(-1deg)}to{transform:rotate(1deg)}}
+@keyframes nod{0%,55%,100%{transform:rotate(0)}65%{transform:rotate(4deg)}75%{transform:rotate(0)}85%{transform:rotate(3.5deg)}}
+@keyframes explain{from{transform:rotate(-14deg)}to{transform:rotate(-30deg)}}
+@keyframes raise{from{transform:rotate(-30deg)}to{transform:rotate(-44deg)}}
+@keyframes palm{from{transform:rotate(-8deg)}to{transform:rotate(-22deg)}}
+@keyframes dot{0%,60%,100%{opacity:.25}30%{opacity:1}}
+/* 單字圖 */
+.wtop{display:flex;gap:14px;align-items:flex-start}
+.wpic{flex:0 0 112px;width:112px;height:112px;border-radius:12px;overflow:hidden;background:var(--bg);display:grid;place-items:center}
+.wpic img,.wpic svg{width:100%;height:100%;object-fit:cover;display:block}
+.wtext{display:flex;flex-direction:column;gap:6px;min-width:0}
+.hook{font-size:15px;background:color-mix(in srgb,var(--marker) 35%,transparent);border-radius:10px;padding:8px 10px}
+.hook b{color:var(--accent)}
+/* 文法 */
+.gq{font-size:17px;line-height:1.5}
+.gq u{text-decoration:none;border-bottom:2px solid var(--ink);padding:0 18px}
+.weak{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bad-bg);color:var(--bad)}
+.topic{font:700 19px var(--font-display);color:var(--accent)}
+/* 單字卡：長按英文字跳出 */
+#main{-webkit-touch-callout:none;-webkit-user-select:none;user-select:none}
+#main textarea,#main input{-webkit-user-select:text;user-select:text}
+.sheet-bg{position:fixed;inset:0;background:rgba(20,24,22,.35);z-index:50;opacity:0;transition:opacity .18s}
+.sheet-bg.on{opacity:1}
+.sheet{position:fixed;left:0;right:0;bottom:0;z-index:51;background:var(--surface);border-radius:18px 18px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.18);padding:18px max(18px,env(safe-area-inset-left,0px)) calc(18px + env(safe-area-inset-bottom,0px));max-height:75vh;overflow:auto;transform:translateY(100%);transition:transform .2s ease-out}
+.sheet.on{transform:none}
+.sheet .in{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:10px}
+.sheet .hd{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.sheet .w{font:700 26px var(--font-display);color:var(--ink)}
+.sheet .zhm{font-size:20px;font-weight:600}
+.sheet .also{color:var(--muted);font-size:15px}
+.sheet .ph{background:color-mix(in srgb,var(--marker) 35%,transparent);border-radius:12px;padding:10px 12px;display:flex;flex-direction:column;gap:4px}
+.sheet .ph b{color:var(--accent)}
+.sheet .ex{font-size:17px;line-height:1.5}
+.sheet .exzh{color:var(--muted);font-size:15px}
+.sheet .say{border:1.5px solid var(--line);background:var(--surface);border-radius:999px;width:38px;height:38px;display:grid;place-items:center;color:var(--accent);cursor:pointer}
+.sheet .pos{font-size:13px;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:2px 9px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.toon *,.bubble i{animation:none!important}}
 </style>
 
 <div class="wrap" id="app">
@@ -209,6 +284,243 @@ const listeners = new Set();
 requestAnimationFrame(tick);
 const lineAt = (t) => { for (let i = T.length - 1; i >= 0; i--) if (t >= T[i].start - 0.05) return i; return -1; };
 
+// ---------- 卡通舞台：場景背景＋兩個人輪流說話 ----------
+// 嘴巴照 mouth.json 的音量張合；講話的人比手勢、身體前傾；聽的人點頭；表情照每句的 mood
+const PLACE_BY_THEME = { "職場會議": "meeting_room", "客戶溝通": "office", "日常閒聊": "cafe", "生活情境": "home", "輕鬆話題": "park" };
+const FORMAL_THEMES = new Set(["職場會議", "客戶溝通"]);
+const OUTFIT = { formal: ["#2F4357", "#55606B"], casual: ["#6C8F80", "#C98E55"] };
+const HAIR = ["#2E241F", "#5A3B28"];
+const MOODS = ["neutral", "happy", "surprised", "confused", "sad"];
+let MOUTH = null;
+// 9 種口型（Rhubarb 的代號），跟休息時的嘴一樣大：A 閉嘴 m/b/p、B 咬牙 s/t/ee、C 半開 e、D 大開 ah、E 微圓 o、F 嘟嘴 oo/w、G 咬下唇 f/v、H 舌頭 l
+function visemes(lip) {
+  const dk = "#5E2622", tooth = "#FFFFFF", tongue = "#D9776E";
+  const edge = `stroke="${lip}" stroke-width="1.4" stroke-linejoin="round"`;
+  const V = {
+    A: `<path d="M73 87.5 Q80 89 87 87.5" stroke="${lip}" stroke-width="2.4" fill="none" stroke-linecap="round"/>`,
+    B: `<path d="M72 86 Q80 84.5 88 86 Q80 91 72 86Z" fill="${dk}" ${edge}/><path d="M73.6 86 Q80 85 86.4 86 L85.9 87.8 Q80 88.6 74.1 87.8Z" fill="${tooth}"/>`,
+    C: `<path d="M72 85.5 Q80 83.5 88 85.5 Q80 93.5 72 85.5Z" fill="${dk}" ${edge}/><path d="M74 85.6 Q80 84.4 86 85.6 L85.4 87 Q80 86.4 74.6 87Z" fill="${tooth}"/>`,
+    D: `<path d="M71.5 85 Q80 82.6 88.5 85 Q80 96 71.5 85Z" fill="${dk}" ${edge}/><path d="M73.6 85.2 Q80 83.8 86.4 85.2 L85.8 86.8 Q80 86 74.2 86.8Z" fill="${tooth}"/><ellipse cx="80" cy="91.4" rx="4" ry="1.6" fill="${tongue}"/>`,
+    E: `<ellipse cx="80" cy="88" rx="5" ry="4.2" fill="${dk}" ${edge}/>`,
+    F: `<ellipse cx="80" cy="88.4" rx="3.1" ry="3.3" fill="${dk}" stroke="${lip}" stroke-width="2.2"/>`,
+    G: `<path d="M74 86 L86 86 L85.5 88.2 L74.5 88.2Z" fill="${tooth}"/><path d="M72.5 86.4 Q80 84.8 87.5 86.4" stroke="${lip}" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M73.5 88.8 Q80 90.8 86.5 88.8" stroke="${lip}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`,
+    H: `<path d="M72 85.5 Q80 83.5 88 85.5 Q80 92.5 72 85.5Z" fill="${dk}" ${edge}/><path d="M76 88 Q80 85.4 84 88 Q80 90 76 88Z" fill="${tongue}"/>`
+  };
+  return Object.entries(V).map(([k, v]) => `<g class="vis ${k}">${v}</g>`).join("");
+}
+const SKIN = [{ base: "#F6D2B4", shade: "#E5B593", lip: "#B5655B" }, { base: "#EBBE9A", shade: "#D6A27C", lip: "#A65A50" }];
+// 動畫片風格的半身人物：大頭、大眼、深色外框線；脖子接進衣領，頭和身體是一體的
+function toonSVG(female, idx, formal) {
+  const hair = HAIR[idx % 2], top = OUTFIT[formal ? "formal" : "casual"][idx % 2], sk = SKIN[idx % 2];
+  const ol = `stroke="#3B2A22" stroke-width="1.6" stroke-linejoin="round"`, sh = "#00000022", hl = "#FFFFFF40";
+  const backHair = female
+    ? `<path d="M46 66 Q42 22 80 22 Q118 22 114 66 Q114 96 120 118 Q100 124 80 121 Q60 124 40 118 Q46 96 46 66Z" fill="${hair}" ${ol}/>` : "";
+  const frontHair = female
+    ? `<path d="M50 62 Q48 27 80 26 Q112 27 110 62 Q105 45 93 38 Q86 49 66 51 Q56 53 50 62Z" fill="${hair}" ${ol}/><path d="M62 35 Q74 29 88 30" stroke="${hl}" stroke-width="3" fill="none" stroke-linecap="round"/>`
+    : `<path d="M48 64 Q44 25 80 23 Q116 25 112 64 Q110 50 104 43 Q94 50 80 46 Q64 48 55 43 Q50 52 48 64Z" fill="${hair}" ${ol}/><path d="M63 32 Q78 26 95 30" stroke="${hl}" stroke-width="3" fill="none" stroke-linecap="round"/>`;
+  // 衣領：畫在頭的「上面」，把脖子底部蓋住 → 頭跟身體接在一起
+  const patch = `<path d="M64 110 Q80 126 96 110 L102 134 L58 134Z" fill="${top}"/>`;
+  let collar;
+  if (formal && !female) collar = `<path d="M67 109 L80 138 L93 109Z" fill="#F7F5EF" ${ol}/>
+      <path d="M67 109 L72 122 L80 114Z M93 109 L88 122 L80 114Z" fill="#FFFFFF" ${ol}/>
+      <path d="M78 116 L82 116 L84 122 L82 148 L80 152 L78 148 L76 122Z" fill="#8E3B3B" ${ol}/>
+      <path d="M64 112 L57 140 L67 136 L80 162 M96 112 L103 140 L93 136 L80 162" fill="none" ${ol}/>
+      <circle cx="80" cy="172" r="2.3" fill="#00000050"/><circle cx="80" cy="188" r="2.3" fill="#00000050"/>`;
+  else if (formal) collar = `<path d="M68 109 L80 132 L92 109Z" fill="#F7F5EF" ${ol}/>
+      <path d="M71 111 Q80 124 89 111" stroke="#D9B65C" stroke-width="1.2" fill="none"/><circle cx="80" cy="122.5" r="2" fill="#D9B65C"/>
+      <path d="M65 112 L58 140 L67 136 L80 160 M95 112 L102 140 L93 136 L80 160" fill="none" ${ol}/>
+      <circle cx="80" cy="174" r="2.3" fill="#00000050"/><circle cx="80" cy="189" r="2.3" fill="#00000050"/>`;
+  else if (idx % 2) collar = `<path d="M58 109 Q80 134 102 109" stroke="#00000030" stroke-width="7" fill="none" stroke-linecap="round"/>
+      <path d="M58 109 Q80 134 102 109" stroke="#3B2A22" stroke-width="1.4" fill="none"/>
+      <path d="M74 122 L73 148 M86 122 L87 148" stroke="#F4F1EA" stroke-width="2.2" stroke-linecap="round"/><circle cx="73" cy="149" r="1.8" fill="#F4F1EA"/><circle cx="87" cy="149" r="1.8" fill="#F4F1EA"/>`;
+  else collar = `<path d="M66 110 Q80 123 94 110" stroke="#00000035" stroke-width="4" fill="none"/><path d="M66 110 Q80 123 94 110" stroke="#3B2A22" stroke-width="1.4" fill="none"/>`;
+  // 眼睛：眼白＋大虹膜＋亮點；開心時變成彎彎的笑眼
+  const eye = (x, ry = 6.4, iris = 3.7) => `<ellipse cx="${x}" cy="64" rx="5.6" ry="${ry}" fill="#FFFFFF" ${ol}/>
+      <circle cx="${x + 0.5}" cy="65" r="${iris}" fill="#4A3426"/><circle cx="${x + 0.5}" cy="65" r="${(iris / 2).toFixed(1)}" fill="#1B120E"/>
+      <circle cx="${x + 1.9}" cy="62.6" r="1.3" fill="#FFFFFF"/>`;
+  const smileEye = (x) => `<path d="M${x - 5.2} 66 Q${x} 59 ${x + 5.2} 66" stroke="#3B2A22" stroke-width="2.3" fill="none" stroke-linecap="round"/>`;
+  const sadLid = (x) => `<path d="M${x - 6} 61.5 Q${x} 56 ${x + 6} 61.5 L${x + 6} 63 Q${x} 61 ${x - 6} 63Z" fill="${sk.base}" stroke="#3B2A22" stroke-width="1.4"/>`;
+  const brow = (d) => `<path d="${d}" stroke="${hair}" stroke-width="3.2" fill="none" stroke-linecap="round"/>`;
+  const SM = (d) => `<path class="shut" d="${d}" stroke="${sk.lip}" stroke-width="2.2" fill="none" stroke-linecap="round"/>`;
+  const faces = {
+    neutral: brow("M62 53 Q68 50.5 75 52.5") + brow("M85 52.5 Q92 50.5 98 53") + eye(69) + eye(91) + SM("M74 87 Q80 89.6 86 87"),
+    happy: brow("M62 51 Q68 48 75 50.5") + brow("M85 50.5 Q92 48 98 51") + smileEye(69) + smileEye(91)
+      + `<path class="shut" d="M71.5 85.5 Q80 95 88.5 85.5 Q80 88 71.5 85.5Z" fill="#5E2622" stroke="${sk.lip}" stroke-width="1.4"/><path class="shut" d="M73.4 86.2 Q80 88.2 86.6 86.2 L85.8 88 Q80 89.4 74.2 88Z" fill="#FFFFFF"/>`,
+    surprised: brow("M62 48.5 Q68 45 75 48") + brow("M85 48 Q92 45 98 48.5") + eye(69, 7.4, 3.1) + eye(91, 7.4, 3.1)
+      + `<ellipse class="shut" cx="80" cy="89" rx="3.4" ry="4.2" fill="#5E2622" stroke="${sk.lip}" stroke-width="1.4"/>`,
+    confused: brow("M62 50 Q68 47 75 50.5") + brow("M85 54 Q92 53.5 98 55") + eye(69) + eye(91, 5.2, 3.2) + SM("M74 88 Q77 86 80 88 Q83 89.6 86 87"),
+    sad: brow("M62 55 Q69 54 75 50.5") + brow("M85 50.5 Q91 54 98 55") + eye(69) + eye(91) + sadLid(69) + sadLid(91) + SM("M74 90 Q80 85.6 86 90")
+  };
+  return `<svg viewBox="0 0 160 200" aria-hidden="true"><g class="body">
+    <path d="M26 200 Q26 132 50 122 Q64 116 72 112 L88 112 Q96 116 110 122 Q134 132 134 200Z" fill="${top}" ${ol}/>
+    <path d="M46 124 Q32 119 23 132 L24 204 L44 204Z" fill="${top}" ${ol}/><path d="M32 122 Q24 127 23 132 L24 204 L31 204Z" fill="${sh}"/>
+    <g class="head">${backHair}
+      <path d="M70 90 L70 116 Q80 121 90 116 L90 90Z" fill="${sk.base}" ${ol}/><path d="M70 96 Q80 106 90 96 L90 104 Q80 112 70 104Z" fill="${sk.shade}"/>
+      <ellipse cx="50" cy="67" rx="5" ry="8" fill="${sk.base}" ${ol}/><ellipse cx="110" cy="67" rx="5" ry="8" fill="${sk.base}" ${ol}/>
+      <path d="M50 62 Q50 30 80 30 Q110 30 110 62 Q110 84 98 94 Q90 100 80 100 Q70 100 62 94 Q50 84 50 62Z" fill="${sk.base}" ${ol}/>
+      ${frontHair}
+      <ellipse cx="62" cy="77" rx="5" ry="3.2" fill="#F08A7A" opacity=".3"/><ellipse cx="98" cy="77" rx="5" ry="3.2" fill="#F08A7A" opacity=".3"/>
+      <path d="M79.5 71 Q77.5 77.5 80 79 Q82.6 78.6 82 76.6" stroke="${sk.shade}" stroke-width="1.7" fill="none" stroke-linecap="round"/>
+      ${MOODS.map(m => `<g class="mood ${m}">${faces[m]}</g>`).join("")}
+      <ellipse class="mo" cx="80" cy="88" rx="4.5" ry="2.5" fill="#5E2622"/>
+      ${visemes(sk.lip)}
+    </g>${patch}${collar}
+    <g class="gest"><path d="M116 202 L114 128 M137 132 L136 202" stroke="#3B2A22" stroke-width="1.6" fill="none"/><path d="M114 128 Q115 119 125 118 Q136 119 137 132 L136 202 L116 202Z" fill="${top}"/><path d="M116 202 L114.2 130 M136.9 134 L136 202" stroke="#3B2A22" stroke-width="1.6" fill="none"/><path d="M129 120 Q136 125 137 132 L136 202 L129 202Z" fill="${sh}"/>
+      ${formal ? `<path class="hand" d="M116.5 197 L136 197 L136 203 L116.5 203Z" fill="#F7F5EF" ${ol}/>` : ""}
+      <path class="hand" d="M118 203 Q116 213 121 217 Q128 220 132 215 Q135 210 134 203Z" fill="${sk.base}" ${ol}/></g>
+    <circle cx="125" cy="129" r="11.5" fill="${top}"/><path d="M118 121 Q125 117 132 120" stroke="#3B2A22" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+  </g></svg>`;
+}
+function stageView({ small = false } = {}) {
+  const names = Object.keys(L.speakers);
+  const place = L.place || PLACE_BY_THEME[L.theme] || "office";
+  const formal = FORMAL_THEMES.has(L.theme);
+  const box = h("div", { class: "stage" + (small ? " small" : ""), "aria-hidden": "true" });
+  box.style.backgroundImage = `url(bg/${place}.jpg)`;
+  const toons = names.map((n, i) => {
+    const el = h("div", { class: "toon m-neutral" + (i ? " r" : "") + (MOUTH ? " lip" : "") + (MOUTH && MOUTH.cues ? " cue" : "") });
+    el.insertAdjacentHTML("beforeend", toonSVG(/^[ab]f_/.test(L.speakers[n].voice), i, formal));
+    el.append(h("div", { class: "bubble" }, h("i"), h("i"), h("i")), h("span", { class: "nm" }, n));
+    box.append(el);
+    return el;
+  });
+  const mos = toons.map(el => el.querySelector(".mo"));
+  const setMood = (el, m) => { MOODS.forEach(x => el.classList.toggle("m-" + x, x === m)); };
+  let last = "";
+  listeners.add((t) => {
+    const i = lineAt(t);
+    const who = !dialogue.paused && i >= 0 && t <= T[i].end + 0.05 ? L.lines[i].s : "";
+    const key = who + ":" + i;
+    if (key !== last) {
+      last = key;
+      toons.forEach((el, k) => {
+        const talk = names[k] === who;
+        el.classList.toggle("talk", talk);
+        el.classList.toggle("listen", !!who && !talk);
+        if (talk) {
+          setMood(el, MOODS.includes(L.lines[i].mood) ? L.lines[i].mood : "neutral");
+          [1, 2, 3].forEach(g => el.classList.toggle("g" + g, g === 1 + (i % 3)));
+        }
+      });
+    }
+    if (who && MOUTH && MOUTH.cues) {
+      const c = MOUTH.cues; let lo = 0, hi = c.length - 1;
+      while (lo < hi) { const m = (lo + hi + 1) >> 1; if (c[m][0] <= t) lo = m; else hi = m - 1; }
+      toons[names.indexOf(who)].dataset.v = c[lo][1];
+    } else if (who && MOUTH) {
+      const d = +(MOUTH.v[Math.floor(t * MOUTH.fps)] || 0);
+      const mo = mos[names.indexOf(who)];
+      mo.setAttribute("ry", d < 1 ? 0.6 : (1 + d * 0.38).toFixed(1));
+      mo.setAttribute("rx", (5 + d * 0.15).toFixed(1));
+    }
+  });
+  return box;
+}
+
+// ---------- 單字卡：長按任何英文字（約半秒）→ 中文、詞性、片語、新例句、發音、加入複習 ----------
+// 資料：L.gloss（這課的字，照句子裡的意思）優先，再找 COMMON（共用基本字）；L.phrases（片語）
+let COMMON = {};
+const WORD_RE = /[A-Za-z]+(?:['’][A-Za-z]+)*/g;
+const normW = (w) => w.toLowerCase().replace(/’/g, "'");
+// 備案：音檔載入失敗才用手機內建聲音（避開 Albert 這類怪聲音，優先 Samantha／Ava）
+function speak(text) {
+  try {
+    const u = new SpeechSynthesisUtterance(text); u.lang = "en-US"; u.rate = 0.9;
+    const vs = speechSynthesis.getVoices().filter(v => /^en[-_]US/i.test(v.lang));
+    const v = ["Samantha", "Ava", "Allison", "Susan", "Google US English"].map(n => vs.find(x => x.name.startsWith(n))).find(Boolean);
+    if (v) u.voice = v;
+    speechSynthesis.cancel(); speechSynthesis.speak(u);
+  } catch {}
+}
+// 單字卡音檔（美式女聲 Heart）：這課的字在 content/<日期>/audio/gloss/，共用基本字在 audio/common/
+const glossFile = (k) => k.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "") || "x";
+function glossAudio(key, ex, phrase) {
+  const f = (phrase ? "ph_" : "") + glossFile(key) + (ex ? "_ex" : "") + ".mp3";
+  return phrase || (L && L.gloss && L.gloss[key]) ? url(DAY, "audio/gloss/" + f) : "audio/common/" + f;
+}
+function playAudio(src, fallbackText) {
+  stopAll(); try { speechSynthesis.cancel(); } catch {}
+  const a = clip(src); a.onerror = () => speak(fallbackText);
+  a.currentTime = 0; a.play().catch(() => speak(fallbackText));
+}
+function playSeq(srcs, texts) {
+  let i = 0;
+  const next = () => { if (i >= srcs.length) return; const a = clip(srcs[i]); const t = texts[i]; i++;
+    a.onended = next; a.onerror = () => { speak(t); }; a.currentTime = 0; a.play().catch(() => speak(t)); };
+  stopAll(); next();
+}
+function wordAt(x, y) {
+  let node, off;
+  if (document.caretRangeFromPoint) { const r = document.caretRangeFromPoint(x, y); if (!r) return null; node = r.startContainer; off = r.startOffset; }
+  else if (document.caretPositionFromPoint) { const p = document.caretPositionFromPoint(x, y); if (!p) return null; node = p.offsetNode; off = p.offset; }
+  if (!node || node.nodeType !== 3 || !$("#main").contains(node)) return null;
+  const text = node.textContent;
+  for (const m of text.matchAll(WORD_RE)) {
+    if (off < m.index || off > m.index + m[0].length) continue;
+    const r = document.createRange(); r.setStart(node, m.index); r.setEnd(node, m.index + m[0].length);
+    const hit = [...r.getClientRects()].some(b => x >= b.left - 4 && x <= b.right + 4 && y >= b.top - 4 && y <= b.bottom + 4);
+    if (!hit) return null;
+    const holder = node.parentElement.closest("button, li, p, .q, .gq, .ex, .line, div") || node.parentElement;
+    return { word: m[0], key: normW(m[0]), sentence: holder.textContent, range: r };
+  }
+  return null;
+}
+function findPhrase(key, sentence) {
+  const s = " " + sentence.toLowerCase().replace(/’/g, "'").replace(/[^a-z' ]+/g, " ").replace(/\s+/g, " ") + " ";
+  return (L && L.phrases || []).find(p => p.forms.some(f => f.split(" ").includes(key) && s.includes(" " + f.toLowerCase() + " ")));
+}
+function closeSheet() {
+  document.querySelectorAll(".sheet, .sheet-bg").forEach(el => { el.classList.remove("on"); setTimeout(() => el.remove(), 220); });
+}
+function showWordCard(hit) {
+  const g = (L && L.gloss && L.gloss[hit.key]) || COMMON[hit.key];
+  if (!g) return;
+  const [pos, zh, also, ex, exzh] = g;
+  const ph = findPhrase(hit.key, hit.sentence);
+  const bankKey = ph ? ph.p : hit.key;
+  const inBank = () => !!bankGet()[bankKey];
+  const addBtn = h("button", { class: "btn primary", onclick: () => {
+    const b = bankGet();
+    if (!b[bankKey]) b[bankKey] = ph
+      ? { w: ph.p, pos: ph.pos, zh: ph.zh, ex2: ph.ex, ex2zh: ph.exzh, toeic: false, from: DAY, audio: null, audioSeq: [glossAudio(ph.p, false, true), glossAudio(ph.p, true, true)], stage: 1, due: addDays(TODAY, 3), done: false }
+      : { w: hit.key, pos, zh, ex2: ex, ex2zh: exzh, toeic: false, from: DAY, audio: null, audioSeq: [wordSrc, exSrc], stage: 1, due: addDays(TODAY, 3), done: false };
+    store.set("wordbank", b); addBtn.disabled = true; addBtn.textContent = "已加入複習（3 天後出現）";
+  } }, "加入複習");
+  if (inBank()) { addBtn.disabled = true; addBtn.textContent = "已在複習清單"; }
+  const say = (src, t) => h("button", { class: "say", "aria-label": "發音", onclick: () => playAudio(src, t) }, icon("speaker"));
+  const wordSrc = glossAudio(hit.key), exSrc = glossAudio(hit.key, true);
+  const bg = h("div", { class: "sheet-bg", onclick: closeSheet });
+  const sheet = h("div", { class: "sheet", role: "dialog", "aria-label": "單字卡" }, h("div", { class: "in" },
+    h("div", { class: "hd" }, h("span", { class: "w" }, hit.key), say(wordSrc, hit.key), h("span", { class: "pos" }, pos)),
+    ph ? h("div", { class: "ph" }, h("div", { class: "row", style: "align-items:center;gap:6px" }, h("b", {}, "這句裡是片語　"), ph.p, say(glossAudio(ph.p, false, true), ph.p), h("span", { class: "pos" }, ph.pos)),
+      h("div", { class: "zhm" }, ph.zh), h("div", { class: "row", style: "align-items:center;gap:6px" }, h("span", { class: "ex" }, ph.ex), say(glossAudio(ph.p, true, true), ph.ex)), h("div", { class: "exzh" }, ph.exzh)) : null,
+    h("div", { class: "zhm" }, ph ? h("span", { class: "also" }, hit.key + " 單獨的意思：") : null, zh),
+    also ? h("div", { class: "also" }, "其他意思：" + also) : null,
+    h("div", { class: "row", style: "align-items:center;gap:8px" }, h("b", {}, "例句"), say(exSrc, ex)),
+    h("div", { class: "ex" }, ex), h("div", { class: "exzh" }, exzh),
+    h("div", { class: "row" }, addBtn, h("button", { class: "btn", onclick: closeSheet }, "關閉"))));
+  document.body.append(bg, sheet);
+  requestAnimationFrame(() => { bg.classList.add("on"); sheet.classList.add("on"); });
+  playAudio(wordSrc, hit.key);
+}
+let press = null;
+document.addEventListener("pointerdown", (e) => {
+  if (e.button > 0 || e.target.closest(".sheet")) return;
+  clearTimeout(press && press.t);
+  press = { x: e.clientX, y: e.clientY, fired: false };
+  press.t = setTimeout(() => {
+    const hit = wordAt(press.x, press.y);
+    if (!hit) return;
+    press.fired = true;
+    try { navigator.vibrate && navigator.vibrate(15); } catch {}
+    showWordCard(hit);
+  }, 450);
+}, { passive: true });
+const cancelPress = (e) => { if (press && (e.type !== "pointermove" || Math.hypot(e.clientX - press.x, e.clientY - press.y) > 10)) clearTimeout(press.t); };
+["pointerup", "pointercancel", "pointermove"].forEach(t => document.addEventListener(t, cancelPress, { passive: true }));
+document.addEventListener("click", (e) => { if (press && press.fired) { press.fired = false; e.preventDefault(); e.stopPropagation(); } }, true);
+document.addEventListener("contextmenu", (e) => { if ($("#main").contains(e.target)) e.preventDefault(); });
+
 // ---------- 進度 ----------
 const STEPS = [
   { id: "words", name: "單字預習" },
@@ -216,7 +528,7 @@ const STEPS = [
   { id: "quiz", name: "② 理解題" },
   { id: "lyrics", name: "③ 逐字聽" },
   { id: "shadow", name: "④ 跟讀" },
-  { id: "speak", name: "⑤ 造句練習" },
+  { id: "speak", name: "⑤ 文法練習" },
   { id: "toeic", name: "⑥ 多益" }
 ];
 let prog = {}, cur = 0, MODE = "lesson";
@@ -303,6 +615,8 @@ function registerWords() {
   L.words.forEach((w, i) => {
     if (!b[w.w]) b[w.w] = { w: w.w, pos: w.pos, zh: w.zh, ex2: w.ex2, ex2zh: w.ex2zh, toeic: w.toeic,
       from: DAY, audio: url(DAY, `audio/word_${i}.mp3`), stage: 0, due: null, done: false };
+    if (w.img) b[w.w].img = url(DAY, w.img);
+    if (w.hook) b[w.w].hook = w.hook;
   });
   store.set("wordbank", b);
 }
@@ -321,12 +635,20 @@ function memoButtons(initial, onPick) {
   paint(initial);
   return h("div", { class: "memo" }, r, f);
 }
+// 單字圖：img＝圖檔路徑（完整網址或 content 底下）；svg＝直接畫的圖
+function wordPic(w, day) {
+  if (w.img) return h("div", { class: "wpic" }, h("img", { src: w.img.startsWith("content/") ? w.img : url(day, w.img), alt: "", loading: "lazy" }));
+  if (w.svg) { const d = h("div", { class: "wpic" }); d.innerHTML = w.svg; return d; }
+  return null;
+}
+const hookLine = (w) => w.hook ? h("div", { class: "hook" }, h("b", {}, "記憶法　"), w.hook) : null;
 function reviewCard(e) {
   return h("div", { class: "card word" },
     h("div", { class: "top" }, h("span", { class: "w" }, e.w), h("span", { class: "pos" }, e.pos), e.toeic ? h("span", { class: "tag" }, "多益") : null),
     h("details", {}, h("summary", { class: "link" }, "想一下意思，再點這裡看答案"),
-      h("div", { class: "zhm" }, e.zh), h("div", { class: "ex" }, e.ex2), h("div", { class: "exzh" }, e.ex2zh)),
-    h("div", { class: "row" }, h("button", { class: "btn", onclick: () => playClip(e.audio) }, icon("speaker"), "發音＋例句")),
+      h("div", { class: "wtop" }, wordPic(e, e.from), h("div", { class: "wtext" }, h("div", { class: "zhm" }, e.zh), hookLine(e))),
+      h("div", { class: "ex" }, e.ex2), h("div", { class: "exzh" }, e.ex2zh)),
+    h("div", { class: "row" }, h("button", { class: "btn", onclick: () => e.audio ? playClip(e.audio) : e.audioSeq ? playSeq(e.audioSeq, [e.w, e.ex2]) : speak(e.w + ". " + e.ex2) }, icon("speaker"), "發音＋例句")),
     memoButtons(null, (v) => rateWord(e.w, v)));
 }
 
@@ -334,12 +656,15 @@ VIEWS.words = () => {
   registerWords();
   const memo = store.get("memo:" + DAY, {});
   const sec = h("section", { class: "step" },
+    testInvite(),
     h("h2", {}, "今天的 5 個單字"),
     h("p", { class: "lead" }, "3 個從今天的對話挑出來，2 個是多益常考字。看完按「記得」或「忘了」，忘了的字過幾天會再出現。"));
   L.words.forEach((w, i) => {
     sec.append(h("div", { class: "card word" },
-      h("div", { class: "top" }, h("span", { class: "w" }, w.w), h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
-      h("div", { class: "zhm" }, w.zh),
+      h("div", { class: "wtop" }, wordPic(w, DAY), h("div", { class: "wtext" },
+        h("div", { class: "top" }, h("span", { class: "w" }, w.w), h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
+        h("div", { class: "zhm" }, w.zh))),
+      hookLine(w),
       h("div", { class: "ex" }, "對話原句：" + w.ex1),
       h("button", { class: "link", onclick: () => playLine(w.line) }, "▶ 聽對話裡的這一句"),
       h("div", { class: "ex" }, "職場例句：" + w.ex2),
@@ -391,6 +716,7 @@ VIEWS.blind = () => {
   return h("section", { class: "step" },
     h("h2", {}, "先不看字幕，專心聽"),
     h("p", { class: "lead" }, `${L.scene || ""}（${Object.entries(L.speakers).map(([k, v]) => k + " " + v.accent).join("、")}）聽不懂的地方先跳過，聽完再去答題。`),
+    stageView(),
     playerControls(),
     h("div", { class: "cover" }, "字幕先藏起來了。答完題目後，下一步就會看到。"));
 };
@@ -458,7 +784,7 @@ VIEWS.lyrics = () => {
   return h("section", { class: "step" },
     h("h2", {}, "看字幕再聽一次"),
     h("p", { class: "lead" }, "字幕會跟著聲音亮起來。點任何一句，就從那一句開始播。注意剛剛沒聽出來的地方。"),
-    playerControls(), h("div", { class: "card" }, box));
+    stageView({ small: true }), playerControls(), h("div", { class: "card" }, box));
 };
 
 VIEWS.shadow = () => {
@@ -492,6 +818,7 @@ VIEWS.shadow = () => {
     h("h2", {}, "一句一句跟著念"),
     h("p", { class: "lead" }, "每句播完會停下來，換你大聲念一次。模仿語調和停頓，不只是把字念對。第 1 輪看字念，第 2 輪試著藏起英文。"),
     h("div", { class: "row" }, speedBox, hideTxt),
+    stageView({ small: true }),
     h("div", { class: "card shadow-box" }, count, who, big, zh, state),
     restart);
 };
@@ -536,7 +863,101 @@ function reorderCard(item, n, saveKey, play, onSolved) {
   return h("div", { class: "card" }, h("div", { class: "q" }, `${n + 1}. ${item.zh}`), answer, bank, msg, after);
 }
 
-VIEWS.speak = () => {
+// ---------- 文法練習（多益 Part 5）----------
+// 一題四選一。saveKey 存答案；onAnswer(pick) 答完時呼叫
+function grammarCard(item, n, saveKey, onAnswer, extra) {
+  const ans = store.get(saveKey, {});
+  const exp = h("div", { class: "explain", hidden: true });
+  const opts = h("div", { class: "opts" });
+  const parts = item.q.split("_____");
+  const qEl = h("div", { class: "gq" }, `${n + 1}. `, parts[0], h("u", {}, "\u00a0"), parts[1] || "");
+  const show = (pick, fresh) => {
+    [...opts.children].forEach((b, j) => { b.disabled = true; if (j === item.answer) b.classList.add("right"); else if (j === pick) b.classList.add("wrong"); });
+    qEl.querySelector("u").textContent = item.opts[item.answer];
+    exp.hidden = false; exp.innerHTML = "";
+    exp.append(h("span", {}, (pick === item.answer ? "答對了。" : `答案是 ${"ABCD"[item.answer]}。`) + item.why));
+    if (item.zh) exp.append(h("span", {}, "整句意思：" + item.zh));
+    if (fresh && onAnswer) onAnswer(pick);
+  };
+  item.opts.forEach((o, j) => opts.append(h("button", { class: "opt", onclick: () => { const a = store.get(saveKey, {}); a[n] = j; store.set(saveKey, a); show(j, true); } }, h("b", {}, "ABCD"[j]), o)));
+  if (ans[n] != null) setTimeout(() => show(ans[n], false));
+  return h("div", { class: "card" }, extra || null, qEl, opts, exp);
+}
+const gtest = () => store.get("gtest", null);
+const isWeak = (topic) => !!(gtest() && gtest().weak.some(w => w.topic === topic));
+function testInvite() {
+  if (gtest() || store.get("gtest-skip", false)) return null;
+  const card = h("div", { class: "card" },
+    h("div", { class: "q" }, "第一次來？先做文法小測驗"),
+    h("div", { class: "exzh" }, "13 題、約 6 分鐘，找出你最弱的文法。結果只存在這台裝置。"),
+    h("div", { class: "row" },
+      h("button", { class: "btn primary", onclick: () => openTest() }, "開始測驗"),
+      h("button", { class: "btn", onclick: () => { store.set("gtest-skip", true); card.remove(); } }, "之後再說")));
+  return card;
+}
+function viewGrammar() {
+  const G = L.grammar;
+  const key = "gram:" + DAY;
+  const sec = h("section", { class: "step" },
+    h("h2", {}, "文法練習：多益 Part 5"),
+    h("div", { class: "card" },
+      h("div", { class: "row" }, h("span", { class: "note" }, "今天的文法"), isWeak(G.topic) ? h("span", { class: "weak" }, "你的弱項") : null),
+      h("div", { class: "topic" }, G.topicZh),
+      h("div", {}, G.tip)),
+    h("p", { class: "lead" }, "選出最適合填進空格的答案，答完馬上看解說。答錯的題目週六會再出現。"));
+  const done = () => {
+    const a = store.get(key, {});
+    if (G.items.every((_, i) => a[i] != null)) markDone("speak");
+  };
+  G.items.forEach((item, n) => sec.append(grammarCard(item, n, key, (pick) => {
+    const bank = store.get("grambank", {}), id = DAY + "#" + n;
+    if (pick !== item.answer) bank[id] = { ...item, from: DAY, topicZh: G.topicZh };
+    store.set("grambank", bank);
+    done();
+  })));
+  if (!gtest()) sec.append(h("button", { class: "link", onclick: () => openTest() }, "做文法程度測驗（13 題）"));
+  setBar(nextBtn("去做多益"));
+  return sec;
+}
+
+// 文法程度測驗：每個主題 1 題，答錯的主題＝弱項
+async function openTest() {
+  stopAll(); listeners.clear();
+  MODE = "test";
+  $("#steps").hidden = true;
+  renderHeader("Grammar Check", "文法程度測驗：每個主題 1 題，找出弱項", ["測驗", ""]);
+  const main = $("#main"); main.innerHTML = ""; main.append(h("p", { class: "lead" }, "載入中…"));
+  let G;
+  try { G = await fetchJSON("content/grammar_test.json"); } catch { main.innerHTML = ""; main.append(h("p", { class: "lead" }, "測驗載入失敗，請稍後再試。")); return; }
+  const key = "gtest-ans";
+  store.set(key, {});
+  const sec = h("section", { class: "step" }, h("h2", {}, "文法程度測驗"),
+    h("p", { class: "lead" }, "不會的題目用猜的就好，不要查。每題答完會看到解說。"));
+  const finish = h("button", { class: "btn primary", disabled: true, onclick: () => {
+    const a = store.get(key, {});
+    const weak = G.items.filter((it, i) => a[i] !== it.answer).map(it => ({ topic: it.topic, topicZh: it.topicZh }));
+    const score = G.items.length - weak.length;
+    store.set("gtest", { date: TODAY, score, total: G.items.length, weak });
+    main.innerHTML = "";
+    main.append(h("section", { class: "step" },
+      h("div", { class: "card done-hero" }, h("div", { class: "score" }, `${score}/${G.items.length}`), h("div", {}, "文法程度測驗完成")),
+      h("div", { class: "card" }, h("div", { class: "q" }, weak.length ? "你的弱項（輪到這些主題時會特別標出來）：" : "全部答對，沒有明顯弱項。"),
+        ...weak.map(w => h("div", {}, "・" + w.topicZh))),
+      h("p", { class: "note" }, "結果只存在這台裝置。想重測可以從完成頁再做一次。")));
+    setBar(h("button", { class: "btn primary", onclick: () => openDay(VIEW_DAY) }, "回到今天的練習"));
+    window.scrollTo({ top: 0 });
+  } }, "看結果");
+  G.items.forEach((item, n) => sec.append(grammarCard(item, n, key, () => {
+    const a = store.get(key, {});
+    finish.disabled = !G.items.every((_, i) => a[i] != null);
+  }, h("div", { class: "note" }, item.topicZh))));
+  main.innerHTML = ""; main.append(sec);
+  setBar(h("button", { class: "btn", onclick: () => openDay(VIEW_DAY) }, "先不做"), finish);
+  window.scrollTo({ top: 0 });
+}
+
+VIEWS.speak = () => L.grammar ? viewGrammar() : viewReorder();
+function viewReorder() {
   const S = L.speaking;
   const key = "reorder:" + DAY;
   const sec = h("section", { class: "step" },
@@ -583,6 +1004,8 @@ function viewDone() {
   const quizAns = store.get("quiz:" + DAY, {}), p2 = store.get("p2:" + DAY, {});
   const qOk = L.quiz.filter((q, i) => quizAns[i] === q.answer).length;
   const pOk = L.part2.filter((p, i) => p2[i] === p.answer).length;
+  const ga = store.get("gram:" + DAY, {});
+  const gOk = L.grammar ? L.grammar.items.filter((g, i) => ga[i] === g.answer).length : 0;
   const memo = store.get("memo:" + DAY, {});
   const forgot = L.words.filter((w, i) => memo[i] === "f").map(w => w.w);
   const missing = STEPS.filter(s => !prog[s.id]);
@@ -593,8 +1016,10 @@ function viewDone() {
       h("div", {}, missing.length ? "還有幾步沒做：" + missing.map(s => s.name).join("、") : "這一天的練習都做完了。")),
     h("div", { class: "card" },
       h("div", {}, `理解題：答對 ${qOk} / ${L.quiz.length}`),
+      L.grammar ? h("div", {}, `文法（${L.grammar.topicZh}）：答對 ${gOk} / ${L.grammar.items.length}`) : null,
       h("div", {}, `多益 Part 2：答對 ${pOk} / ${L.part2.length}`),
       h("div", {}, forgot.length ? `過幾天會再複習的單字：${forgot.join("、")}` : "單字：全部記得")),
+    h("button", { class: "link", onclick: () => openTest() }, gtest() ? `重做文法程度測驗（上次 ${gtest().score}/${gtest().total}）` : "做文法程度測驗（13 題）"),
     h("p", { class: "note" }, "練習紀錄只存在這台裝置上，不會傳到網路。換手機或清除瀏覽器資料，紀錄就會不見。"));
 }
 
@@ -609,12 +1034,23 @@ async function viewSaturday(d) {
   if (!lessons.length) { sec.append(h("p", { class: "lead" }, "這週還沒有練習內容。")); setBar(); return sec; }
   const bank = bankGet();
   lessons.forEach(({ d: ld, L: x }) => x.words.forEach((w, i) => {
-    const e = bank[w.w] || { w: w.w, pos: w.pos, zh: w.zh, ex2: w.ex2, ex2zh: w.ex2zh, toeic: w.toeic, from: ld, audio: url(ld, `audio/word_${i}.mp3`), stage: 0 };
+    const e = bank[w.w] || { w: w.w, pos: w.pos, zh: w.zh, ex2: w.ex2, ex2zh: w.ex2zh, toeic: w.toeic, from: ld, audio: url(ld, `audio/word_${i}.mp3`), stage: 0,
+      img: w.img ? url(ld, w.img) : undefined, hook: w.hook };
     if (!bank[w.w]) { bank[w.w] = { ...e, due: null, done: false }; }
     sec.append(reviewCard(e));
   }));
   store.set("wordbank", bank);
-  sec.append(h("h2", {}, "這週的句子重組再做一次"), h("p", { class: "lead" }, "排對之後跟著念。"));
+  const weekDates = lessons.map(x => x.d);
+  const wrong = Object.entries(store.get("grambank", {})).filter(([, g]) => weekDates.includes(g.from));
+  if (wrong.length) {
+    sec.append(h("h2", {}, `這週的文法錯題再做一次（${wrong.length} 題）`), h("p", { class: "lead" }, "答對的題目會從錯題本拿掉。"));
+    wrong.forEach(([id, g], i) => sec.append(grammarCard(g, i, "gram-week:" + d, (pick) => {
+      if (pick === g.answer) { const b = store.get("grambank", {}); delete b[id]; store.set("grambank", b); }
+    }, h("div", { class: "note" }, `${g.topicZh}・${mdLabel(g.from)}`))));
+  } else if (lessons.some(x => x.L.grammar)) {
+    sec.append(h("h2", {}, "這週的文法"), h("p", { class: "lead" }, "這週沒有答錯的文法題（或還沒做），很好。"));
+  }
+  if (lessons.some(x => x.L.reorder)) sec.append(h("h2", {}, "這週的句子重組再做一次"), h("p", { class: "lead" }, "排對之後跟著念。"));
   let n = 0;
   lessons.forEach(({ d: ld, L: x }) => (x.reorder || []).forEach((item) => {
     const play = () => playClip(item.audio ? url(ld, `audio/${item.audio}.mp3`) : url(ld, "audio/dialogue.mp3#t=" + 0));
@@ -633,12 +1069,14 @@ async function viewSunday(d) {
   const p = progOf(d); p.report = true; store.set("prog:" + d, p);
   const mon = monday(d);
   const lessons = await loadLessons(weekLessonDates(d));
-  let qOk = 0, qAll = 0, pOk = 0, pAll = 0, learned = 0, remembered = 0;
+  let qOk = 0, qAll = 0, pOk = 0, pAll = 0, gOk = 0, gAll = 0, learned = 0, remembered = 0;
   const forgot = [];
   lessons.forEach(({ d: ld, L: x }) => {
     const qa = store.get("quiz:" + ld, {}), pa = store.get("p2:" + ld, {}), memo = store.get("memo:" + ld, {});
     x.quiz.forEach((q, i) => { if (qa[i] != null) { qAll++; if (qa[i] === q.answer) qOk++; } });
     x.part2.forEach((q, i) => { if (pa[i] != null) { pAll++; if (pa[i] === q.answer) pOk++; } });
+    const ga = store.get("gram:" + ld, {});
+    if (x.grammar) x.grammar.items.forEach((g, i) => { if (ga[i] != null) { gAll++; if (ga[i] === g.answer) gOk++; } });
     x.words.forEach((w, i) => { if (memo[i]) { learned++; if (memo[i] === "r") remembered++; else forgot.push(w.w); } });
   });
   const days = [0, 1, 2, 3, 4, 5].filter(i => dayDone(addDays(mon, i))).length;
@@ -651,6 +1089,7 @@ async function viewSunday(d) {
       h("div", {}, `練習天數：${days} / 6 天（連續 ${streakCount()} 天）`),
       h("div", {}, `單字：學了 ${learned} 個，記住 ${remembered} 個`),
       h("div", {}, `理解題答對率：${pct(qOk, qAll)}`),
+      gAll ? h("div", {}, `文法答對率：${pct(gOk, gAll)}`) : null,
       h("div", {}, `多益 Part 2 答對率：${pct(pOk, pAll)}`),
       forgot.length ? h("div", {}, `下週會再複習：${forgot.join("、")}`) : null),
     todo.length ? h("div", { class: "card" }, h("div", { class: "q" }, "這週還沒做完，可以補做："),
@@ -679,7 +1118,9 @@ async function openDay(d) {
   DAY = entry.date;
   L = await fetchJSON(url(DAY, "lesson.json"));
   T = await fetchJSON(url(DAY, "timing.json"));
+  MOUTH = await fetchJSON(url(DAY, "mouth.json")).catch(() => null);
   dialogue.src = url(DAY, "audio/dialogue.mp3");
+  STEPS[5].name = L.grammar ? "⑤ 文法練習" : "⑤ 造句練習";
   prog = progOf(DAY); cur = store.get("cur:" + DAY, 0);
   renderHeader(L.title, L.titleZh + (DAY !== d ? `（${mdLabel(DAY)} 的內容）` : ""),
     [L.theme, `${L.level}・${L.speed}・約 ${Math.max(1, Math.round(T[T.length - 1].end / 60))} 分鐘`]);
@@ -690,6 +1131,7 @@ async function openDay(d) {
 (async () => {
   try {
     INDEX = await fetchJSON("content/index.json");
+    COMMON = await fetchJSON("content/common_gloss.json").catch(() => ({}));
     await openDay(TODAY);
   } catch (e) {
     $("#main").append(h("p", { class: "lead" }, "內容載入失敗，請檢查網路後重新整理。"));

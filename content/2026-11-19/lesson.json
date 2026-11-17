@@ -19,183 +19,93 @@
   "lines": [
     {
       "s": "Hannah",
-      "en": "Good evening, sir. Welcome to the Riverside Hotel.",
-      "zh": "先生晚安。歡迎光臨 Riverside 飯店。"
+      "en": "Good evening. Welcome to the Riverside Hotel.",
+      "zh": "晚安，歡迎來到河畔飯店。",
+      "mood": "happy"
     },
     {
       "s": "Ryan",
       "en": "Hi. I'd like to check in, please.",
-      "zh": "嗨。我想辦理入住。"
+      "zh": "你好，我要辦理入住。",
+      "mood": "neutral"
     },
     {
       "s": "Hannah",
-      "en": "Certainly. Do you have a reservation?",
-      "zh": "沒問題。請問您有預約嗎？"
+      "en": "Of course. Do you have a reservation?",
+      "zh": "好的。請問有預約嗎？",
+      "mood": "neutral"
     },
     {
       "s": "Ryan",
-      "en": "Yes, under the name Ryan Miller.",
-      "zh": "有，用 Ryan Miller 的名字。"
+      "en": "Yes, under Ryan Miller. I'm here for a business trip.",
+      "zh": "有，名字是 Ryan Miller。我來出差。",
+      "mood": "neutral"
     },
     {
       "s": "Hannah",
-      "en": "Let me check. Yes, Mr. Miller. A single room for three nights, is that right?",
-      "zh": "我查一下。有的，Miller 先生。單人房三晚，對嗎？"
+      "en": "Three nights, right? Your room is on the sixth floor.",
+      "zh": "住三晚，對嗎？您的房間在六樓。",
+      "mood": "neutral"
     },
     {
       "s": "Ryan",
-      "en": "That's right. I'm here for a business trip.",
-      "zh": "沒錯。我是來出差的。"
+      "en": "Could I get a quiet room on a higher floor?",
+      "zh": "可以給我高一點樓層的安靜房間嗎？",
+      "mood": "neutral"
     },
     {
       "s": "Hannah",
-      "en": "Is this your first time in our city?",
-      "zh": "這是您第一次來我們這座城市嗎？"
+      "en": "Let me see. Yes, one is available on the ninth floor.",
+      "zh": "我看一下。有，九樓有一間空房。",
+      "mood": "happy"
     },
     {
       "s": "Ryan",
-      "en": "No, I come here twice a year for work.",
-      "zh": "不是，我一年因為工作會來兩次。"
+      "en": "Perfect. Can I check out late on Friday?",
+      "zh": "太好了。星期五可以晚點退房嗎？",
+      "mood": "happy"
     },
     {
       "s": "Hannah",
-      "en": "Wonderful. Your room is on the sixth floor. Here is your key card.",
-      "zh": "太好了。您的房間在六樓。這是您的房卡。"
+      "en": "Sure. I can give you until two o'clock.",
+      "zh": "可以，最晚可以到兩點。",
+      "mood": "happy"
     },
     {
       "s": "Ryan",
-      "en": "Thank you. Would it be possible to get a room on a higher floor?",
-      "zh": "謝謝。有沒有可能換到比較高的樓層？"
+      "en": "Great. Is there a good place for dinner nearby?",
+      "zh": "太好了。附近有好吃的晚餐嗎？",
+      "mood": "neutral"
     },
     {
       "s": "Hannah",
-      "en": "Of course. May I ask why?",
-      "zh": "當然可以。方便問一下原因嗎？"
+      "en": "Try the Italian place across the street. Go early.",
+      "zh": "可以試試對面的義大利餐廳，要早點去。",
+      "mood": "neutral"
     },
     {
       "s": "Ryan",
-      "en": "I prefer a quiet room, and the street can be noisy.",
-      "zh": "我喜歡安靜的房間，而且街上可能很吵。"
+      "en": "Why?",
+      "zh": "為什麼？",
+      "mood": "confused"
     },
     {
       "s": "Hannah",
-      "en": "I see. Let me see if a room is available.",
-      "zh": "我了解了。讓我看看有沒有空房。"
-    },
-    {
-      "s": "Hannah",
-      "en": "Yes, we have one on the ninth floor. It's available tonight.",
-      "zh": "有的，九樓有一間。今晚可以入住。"
+      "en": "They often run out of the popular dishes after eight.",
+      "zh": "八點以後熱門菜常常賣完。",
+      "mood": "neutral"
     },
     {
       "s": "Ryan",
-      "en": "That would be perfect. Is breakfast included?",
-      "zh": "那太好了。有含早餐嗎？"
+      "en": "Thanks!",
+      "zh": "謝謝！",
+      "mood": "happy"
     },
     {
       "s": "Hannah",
-      "en": "Yes, it is. Breakfast is served from six thirty to ten, on the first floor.",
-      "zh": "有的。早餐在一樓供應，從六點半到十點。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Great. Also, one question. Would it be possible to check out late on Friday?",
-      "zh": "太好了。另外還有一個問題。星期五有沒有可能晚點退房？"
-    },
-    {
-      "s": "Hannah",
-      "en": "Let me check. Normally check-out is at eleven. I can give you until two in the afternoon.",
-      "zh": "我查一下。一般退房是十一點。我可以讓您延到下午兩點。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Two o'clock is fine. Thank you so much.",
-      "zh": "兩點就可以了。非常謝謝你。"
-    },
-    {
-      "s": "Hannah",
-      "en": "No problem. I'll make a note on your reservation.",
-      "zh": "不客氣。我會在您的預約上做個記錄。"
-    },
-    {
-      "s": "Ryan",
-      "en": "One more thing. What is the Wi-Fi password? I need to join a video call at eight.",
-      "zh": "還有一件事。Wi-Fi 密碼是什麼？我八點要開視訊會議。"
-    },
-    {
-      "s": "Hannah",
-      "en": "It's on the card in your key holder.",
-      "zh": "寫在您房卡套的那張卡片上。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Got it. Is there a place nearby for dinner?",
-      "zh": "知道了。附近有地方可以吃晚餐嗎？"
-    },
-    {
-      "s": "Hannah",
-      "en": "Yes, there's a good Italian restaurant across the street. It's open until eleven.",
-      "zh": "有的，對面有一家不錯的義大利餐廳。營業到十一點。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Perfect. I'm starving after the flight.",
-      "zh": "太好了。搭完飛機我餓壞了。"
-    },
-    {
-      "s": "Hannah",
-      "en": "Please go soon. The popular dishes often run out of stock after eight.",
-      "zh": "請早點去。熱門的菜色八點後常常就賣完了。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Thanks for the tip. I'll go right now.",
-      "zh": "謝謝你的提醒。我現在就去。"
-    },
-    {
-      "s": "Hannah",
-      "en": "Just tell them you're a guest here. The staff will take care of you.",
-      "zh": "只要告訴他們您是這裡的房客。店員會好好招待您。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Nice. What if I need a taxi tomorrow morning?",
-      "zh": "太好了。如果我明天早上需要計程車呢？"
-    },
-    {
-      "s": "Hannah",
-      "en": "Just call the front desk. We can arrange one for you.",
-      "zh": "打電話到櫃檯就好。我們可以幫您安排。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Good to know. Would it be possible to get a wake-up call at six thirty?",
-      "zh": "知道了。有沒有可能在六點半幫我叫醒？"
-    },
-    {
-      "s": "Hannah",
-      "en": "Of course. I'll set it up now.",
-      "zh": "當然。我現在就幫您設定。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Thank you. You've been very helpful.",
-      "zh": "謝謝你。你幫了我很大的忙。"
-    },
-    {
-      "s": "Hannah",
-      "en": "My pleasure, Mr. Miller. The elevator is on your left.",
-      "zh": "這是我的榮幸，Miller 先生。電梯在您的左手邊。"
-    },
-    {
-      "s": "Ryan",
-      "en": "Thanks again. Have a good night.",
-      "zh": "再次謝謝。祝你晚安。"
-    },
-    {
-      "s": "Hannah",
-      "en": "You too. Enjoy your stay.",
-      "zh": "您也是。祝您住得愉快。"
+      "en": "Just say you're our guest. They'll take care of you.",
+      "zh": "跟他們說您是我們的房客，他們會好好招待您。",
+      "mood": "happy"
     }
   ],
   "quiz": [
@@ -208,7 +118,7 @@
         "To study"
       ],
       "answer": 2,
-      "line": 5,
+      "line": 3,
       "why": "I'm here for a business trip."
     },
     {
@@ -220,20 +130,20 @@
         "At noon"
       ],
       "answer": 1,
-      "line": 17,
-      "why": "Hannah 說可以讓他延到下午兩點。"
+      "line": 8,
+      "why": "Hannah 說最晚可以到兩點退房。"
     },
     {
-      "q": "What does Ryan ask for at the end?",
+      "q": "What kind of room does Ryan want?",
       "options": [
-        "A wake-up call",
-        "Extra towels",
-        "A taxi",
-        "A late dinner"
+        "A room with a view",
+        "A quiet room on a higher floor",
+        "A cheaper room",
+        "A room near the elevator"
       ],
-      "answer": 0,
-      "line": 30,
-      "why": "他問能不能在六點半叫醒他。"
+      "answer": 1,
+      "line": 5,
+      "why": "Ryan 問能不能給他高一點樓層的安靜房間。"
     }
   ],
   "words": [
@@ -245,56 +155,64 @@
       "line": 1,
       "ex2": "Please check in at the front desk when you arrive at the factory.",
       "ex2zh": "到工廠時請先到櫃檯報到。",
-      "toeic": false
+      "toeic": false,
+      "hook": "check 核對＋in 進去：核對好身分才能進去＝辦理入住、報到",
+      "img": "pic/word_0.png",
+      "pic": "a smiling receptionist handing a key card across a hotel counter to a traveler with a red suitcase, no signboard"
     },
     {
       "w": "run out of",
       "pos": "片語・動詞",
       "zh": "用完、賣完",
-      "ex1": "Please go soon. The popular dishes often run out of stock after eight.",
-      "line": 25,
+      "ex1": "They often run out of the popular dishes after eight.",
+      "line": 12,
       "ex2": "We might run out of spare parts before the end of the month.",
       "ex2zh": "我們可能在月底前就把備用零件用完了。",
-      "toeic": false
+      "toeic": false,
+      "hook": "run 跑＋out 出去：東西全部跑光光＝用完、賣完",
+      "img": "pic/word_1.png",
+      "pic": "a chef shrugging and pointing at one completely empty serving tray with only crumbs left"
     },
     {
       "w": "take care of",
       "pos": "片語・動詞",
       "zh": "照顧、處理",
-      "ex1": "Just tell them you're a guest here. The staff will take care of you.",
-      "line": 27,
+      "ex1": "Just say you're our guest. They'll take care of you.",
+      "line": 14,
       "ex2": "Don't worry, our team will take care of the order.",
       "ex2zh": "別擔心，我們的團隊會處理這張訂單。",
-      "toeic": false
+      "toeic": false,
+      "hook": "take 拿＋care 關心：把關心拿去給對方＝照顧、處理",
+      "img": "pic/word_2.png",
+      "pic": "a friendly waiter serving a guest with a smile"
     },
     {
       "w": "reservation",
       "pos": "名詞",
       "zh": "預約、訂位",
-      "ex1": "Certainly. Do you have a reservation?",
+      "ex1": "Of course. Do you have a reservation?",
       "line": 2,
       "ex2": "I made a reservation for the meeting room at two o'clock.",
       "ex2zh": "我預約了兩點的會議室。",
-      "toeic": true
+      "toeic": true,
+      "hook": "re（先）＋serve（服務）：事先把服務留下來＝預約、訂位",
+      "img": "pic/word_3.png",
+      "pic": "a waiter leading a smiling couple to a special table that has a ribbon on the chairs, saved just for them"
     },
     {
       "w": "available",
       "pos": "形容詞",
       "zh": "有空的、可用的",
-      "ex1": "I see. Let me see if a room is available.",
-      "line": 12,
+      "ex1": "Let me see. Yes, one is available on the ninth floor.",
+      "line": 6,
       "ex2": "Is the quality manager available for a call this afternoon?",
       "ex2zh": "品質經理今天下午有空通電話嗎？",
-      "toeic": true
+      "toeic": true,
+      "hook": "a＋vail（像 value 價值）＋able（可以）：有價值、可以拿來用＝有空的、可用的",
+      "img": "pic/word_4.png",
+      "pic": "a friendly bellboy opening a clean empty hotel room door with a glowing green light above it"
     }
   ],
-  "speaking": {
-    "pattern": "Would it be possible to + 原形動詞 ...?",
-    "patternZh": "有沒有可能……？（客氣地提出請求）",
-    "fromLine": 9,
-    "task": "",
-    "example": ""
-  },
   "part2": [
     {
       "q": "What time does the training start?",
@@ -352,38 +270,596 @@
       "zh": "你要搭火車還是公車去機場？"
     }
   ],
-  "reorder": [
+  "scene": "Ryan 出差，晚上抵達飯店，櫃檯人員 Hannah 幫他辦理入住。",
+  "place": "hotel_lobby",
+  "grammar": {
+    "topic": "voice",
+    "topicZh": "主動與被動",
+    "tip": "問自己：主詞是「自己做」還是「被做」？東西（貨物、房間、報告）通常是被做的，用 be 動詞＋過去分詞（p.p.）。",
+    "items": [
+      {
+        "q": "Breakfast _____ from 6:30 to 10:00 on the first floor.",
+        "opts": [
+          "serves",
+          "is served",
+          "serving",
+          "has serve"
+        ],
+        "answer": 1,
+        "why": "早餐是「被供應」的，不會自己供應，用被動 is served。",
+        "zh": "早餐在一樓供應，時間是 6:30 到 10:00。"
+      },
+      {
+        "q": "The hotel staff _____ the rooms every morning.",
+        "opts": [
+          "clean",
+          "are cleaned",
+          "cleaning",
+          "is clean"
+        ],
+        "answer": 0,
+        "why": "員工是「自己」打掃房間，用主動；staff 在這裡當複數，用 clean。",
+        "zh": "飯店員工每天早上打掃房間。"
+      },
+      {
+        "q": "Your key card _____ at the front desk yesterday.",
+        "opts": [
+          "leaves",
+          "left",
+          "was left",
+          "is leaving"
+        ],
+        "answer": 2,
+        "why": "房卡是「被留下」的，而且是 yesterday（過去），用過去式被動 was left。",
+        "zh": "您的房卡昨天被留在櫃檯了。"
+      },
+      {
+        "q": "The new safety rules will _____ to all workers next week.",
+        "opts": [
+          "explain",
+          "explaining",
+          "explained",
+          "be explained"
+        ],
+        "answer": 3,
+        "why": "規定是「被說明」的；will 後面接原形，被動就是 will be＋p.p.：will be explained。",
+        "zh": "新的安全規定下週會向所有員工說明。"
+      },
+      {
+        "q": "The meeting room has already _____ for Friday afternoon.",
+        "opts": [
+          "been booked",
+          "booked",
+          "booking",
+          "be booked"
+        ],
+        "answer": 0,
+        "why": "會議室是「被預訂」的；has already 是現在完成式，被動是 has been＋p.p.：has been booked。",
+        "zh": "會議室已經被訂走星期五下午的時段了。"
+      }
+    ]
+  },
+  "gloss": {
+    "airport": [
+      "名詞",
+      "機場",
+      "",
+      "I'll pick you up at the airport.",
+      "我會去機場接你。"
+    ],
+    "arrive": [
+      "動詞",
+      "抵達",
+      "",
+      "What time will you arrive?",
+      "你幾點會到？"
+    ],
+    "available": [
+      "形容詞",
+      "有空房的、可以用的",
+      "（人）有空的",
+      "Is this room available tonight?",
+      "這間房今晚有空嗎？"
+    ],
+    "book": [
+      "動詞",
+      "預訂",
+      "書（名詞）",
+      "I'd like to book a table for four.",
+      "我想訂四人桌。"
+    ],
+    "booked": [
+      "動詞",
+      "預訂了（book 的過去式）",
+      "",
+      "I booked a room for two nights.",
+      "我訂了兩晚的房間。"
+    ],
+    "booking": [
+      "名詞",
+      "預訂",
+      "",
+      "Can I change my booking?",
+      "我可以更改預訂嗎？"
+    ],
+    "bus": [
+      "名詞",
+      "公車、巴士",
+      "",
+      "I take the bus to work.",
+      "我搭公車上班。"
+    ],
+    "card": [
+      "名詞",
+      "卡片（key card 房卡）",
+      "",
+      "Please show your ID card.",
+      "請出示你的證件。"
+    ],
+    "care": [
+      "名詞",
+      "（take care of）照顧、處理",
+      "小心",
+      "I'll take care of the bill.",
+      "帳單我來處理。"
+    ],
+    "cheaper": [
+      "形容詞",
+      "比較便宜的（cheap 的比較級）",
+      "",
+      "Do you have a cheaper option?",
+      "有比較便宜的選擇嗎？"
+    ],
+    "check": [
+      "動詞",
+      "（check in）辦理入住；（check out）退房",
+      "檢查",
+      "Can I check in early?",
+      "我可以提早入住嗎？"
+    ],
+    "clean": [
+      "動詞",
+      "打掃、清潔",
+      "乾淨的（形容詞）",
+      "Please clean the table after lunch.",
+      "午餐後請把桌子擦乾淨。"
+    ],
+    "cleaned": [
+      "動詞",
+      "被打掃（clean 的過去分詞）",
+      "",
+      "The rooms are cleaned every day.",
+      "房間每天都會打掃。"
+    ],
+    "cleaning": [
+      "動詞・名詞",
+      "正在打掃；清潔工作",
+      "",
+      "The staff are cleaning the lobby.",
+      "員工正在打掃大廳。"
+    ],
+    "course": [
+      "名詞",
+      "（of course）當然",
+      "課程",
+      "Of course, I can help.",
+      "當然，我可以幫忙。"
+    ],
+    "desk": [
+      "名詞",
+      "桌子（front desk 櫃檯）",
+      "",
+      "Please leave the key at the desk.",
+      "請把鑰匙留在櫃檯。"
+    ],
+    "dishes": [
+      "名詞",
+      "菜餚（dish 的複數）",
+      "盤子",
+      "This restaurant has great local dishes.",
+      "這家餐廳有很棒的在地菜。"
+    ],
+    "elevator": [
+      "名詞",
+      "電梯",
+      "",
+      "Take the elevator to the fifth floor.",
+      "搭電梯到五樓。"
+    ],
+    "end": [
+      "名詞",
+      "結尾、末端",
+      "",
+      "The report is due at the end of the month.",
+      "報告月底要交。"
+    ],
+    "explain": [
+      "動詞",
+      "解釋、說明",
+      "",
+      "Can you explain the new rule?",
+      "你可以說明新規定嗎？"
+    ],
+    "explained": [
+      "動詞",
+      "解釋了（explain 的過去式）",
+      "",
+      "She explained the plan clearly.",
+      "她把計畫解釋得很清楚。"
+    ],
+    "explaining": [
+      "動詞",
+      "正在解釋",
+      "",
+      "He is explaining the process now.",
+      "他正在說明流程。"
+    ],
+    "flight": [
+      "名詞",
+      "班機",
+      "",
+      "My flight leaves at seven.",
+      "我的班機七點起飛。"
+    ],
+    "front": [
+      "名詞・形容詞",
+      "前面的（front desk 櫃檯）",
+      "",
+      "Let's meet at the front door.",
+      "我們在前門見。"
+    ],
+    "get": [
+      "動詞",
+      "得到、拿到",
+      "變得",
+      "Could I get a glass of water?",
+      "可以給我一杯水嗎？"
+    ],
+    "guest": [
+      "名詞",
+      "客人、房客",
+      "",
+      "Our guests can use the gym for free.",
+      "房客可以免費使用健身房。"
+    ],
+    "higher": [
+      "形容詞",
+      "比較高的（high 的比較級）",
+      "",
+      "I'd like a room on a higher floor.",
+      "我想要高一點樓層的房間。"
+    ],
+    "holiday": [
+      "名詞",
+      "假期",
+      "",
+      "I'm on holiday next week.",
+      "我下週休假。"
+    ],
+    "italian": [
+      "形容詞",
+      "義大利的",
+      "",
+      "Let's go to an Italian restaurant.",
+      "我們去義大利餐廳吧。"
+    ],
+    "key": [
+      "名詞",
+      "鑰匙（key card 房卡）",
+      "關鍵的（形容詞）",
+      "I lost my office key.",
+      "我弄丟辦公室鑰匙了。"
+    ],
+    "leaves": [
+      "動詞",
+      "離開（leave 的單數形）",
+      "",
+      "The shuttle leaves every hour.",
+      "接駁車每小時一班。"
+    ],
+    "leaving": [
+      "動詞",
+      "正要離開",
+      "",
+      "I'm leaving the office now.",
+      "我現在要離開辦公室了。"
+    ],
+    "left": [
+      "動詞",
+      "離開了；留下了（leave 的過去式）",
+      "左邊（名詞）",
+      "I left my umbrella at the hotel.",
+      "我把傘忘在飯店了。"
+    ],
+    "made": [
+      "動詞",
+      "做了（make a reservation 預訂）",
+      "",
+      "I made a reservation for six people.",
+      "我訂了六個人的位子。"
+    ],
+    "miller": [
+      "人名",
+      "米勒（姓氏）",
+      "",
+      "Mr. Miller will arrive at noon.",
+      "Miller 先生中午會到。"
+    ],
+    "parts": [
+      "名詞",
+      "零件（part 的複數）",
+      "",
+      "We ordered new parts for the machine.",
+      "我們幫機器訂了新零件。"
+    ],
+    "reservation": [
+      "名詞",
+      "預約、訂位",
+      "",
+      "Do I need a reservation?",
+      "需要預約嗎？"
+    ],
+    "riverside": [
+      "名詞・地名",
+      "河畔（這裡是飯店名稱）",
+      "",
+      "We had dinner at a riverside café.",
+      "我們在河邊的咖啡館吃晚餐。"
+    ],
+    "rules": [
+      "名詞",
+      "規定（rule 的複數）",
+      "",
+      "Please follow the safety rules.",
+      "請遵守安全規定。"
+    ],
+    "run": [
+      "動詞",
+      "（run out of）用完、賣完",
+      "跑",
+      "We might run out of paper.",
+      "我們可能會沒紙。"
+    ],
+    "ryan": [
+      "人名",
+      "萊恩（男生名字）",
+      "",
+      "Ryan is on a business trip.",
+      "Ryan 在出差。"
+    ],
+    "safety": [
+      "名詞",
+      "安全",
+      "",
+      "Safety comes first.",
+      "安全第一。"
+    ],
+    "sales": [
+      "名詞",
+      "業務、銷售（sales department 業務部）",
+      "業績",
+      "Sales were strong this quarter.",
+      "這季業績很好。"
+    ],
+    "serve": [
+      "動詞",
+      "供應（餐點）；服務",
+      "",
+      "We serve breakfast until ten.",
+      "我們早餐供應到十點。"
+    ],
+    "served": [
+      "動詞",
+      "被供應（serve 的過去分詞）",
+      "",
+      "Dinner is served at seven.",
+      "晚餐七點供應。"
+    ],
+    "serves": [
+      "動詞",
+      "供應（主詞是單數）",
+      "",
+      "This café serves great sandwiches.",
+      "這家咖啡館的三明治很棒。"
+    ],
+    "serving": [
+      "動詞",
+      "正在供應",
+      "",
+      "The kitchen is no longer serving food.",
+      "廚房已經不供餐了。"
+    ],
+    "spare": [
+      "形容詞",
+      "備用的",
+      "空閒的",
+      "Do you have a spare charger?",
+      "你有備用的充電器嗎？"
+    ],
+    "start": [
+      "動詞",
+      "開始",
+      "",
+      "The training starts at nine.",
+      "訓練九點開始。"
+    ],
+    "take": [
+      "動詞",
+      "（take care of）照顧、處理",
+      "拿；搭乘",
+      "Don't worry, I'll take care of it.",
+      "別擔心，我來處理。"
+    ],
+    "taking": [
+      "動詞",
+      "搭乘（take 的進行式）",
+      "",
+      "I'm taking a taxi to the hotel.",
+      "我要搭計程車去飯店。"
+    ],
+    "took": [
+      "動詞",
+      "搭了（take 的過去式）",
+      "花了（時間）",
+      "I took the MRT this morning.",
+      "我今天早上搭捷運。"
+    ],
+    "train": [
+      "名詞",
+      "火車",
+      "",
+      "The train to Taichung is full.",
+      "往台中的火車客滿了。"
+    ],
+    "view": [
+      "名詞",
+      "景色、視野",
+      "看法",
+      "The room has a great view of the sea.",
+      "房間的海景很棒。"
+    ],
+    "visit": [
+      "動詞",
+      "拜訪、探望",
+      "",
+      "I want to visit my parents this weekend.",
+      "我這週末想去看父母。"
+    ],
+    "work": [
+      "動詞",
+      "工作",
+      "",
+      "I work at a hotel.",
+      "我在飯店工作。"
+    ],
+    "worked": [
+      "動詞",
+      "工作（work 的過去分詞）",
+      "",
+      "How long have you worked there?",
+      "你在那裡工作多久了？"
+    ]
+  },
+  "phrases": [
     {
-      "zh": "有沒有可能換到比較高的樓層？",
-      "chunks": [
-        "Would it be possible",
-        "to get",
-        "a room",
-        "on a higher floor?"
+      "p": "check in",
+      "forms": [
+        "check in",
+        "checked in",
+        "checking in"
       ],
-      "line": 9
+      "pos": "片語・動詞",
+      "zh": "辦理入住、報到",
+      "ex": "You can check in after three p.m.",
+      "exzh": "下午三點後可以辦理入住。"
     },
     {
-      "zh": "星期五有沒有可能晚點退房？",
-      "chunks": [
-        "Would it be possible",
-        "to check out",
-        "late",
-        "on Friday?"
+      "p": "check out",
+      "forms": [
+        "check out",
+        "checked out"
       ],
-      "line": 16
+      "pos": "片語・動詞",
+      "zh": "退房",
+      "ex": "What time do I need to check out?",
+      "exzh": "我幾點要退房？"
     },
     {
-      "zh": "有沒有可能把會議改到星期四？",
-      "chunks": [
-        "Would it be possible",
-        "to move",
-        "the meeting",
-        "to Thursday?"
+      "p": "run out of",
+      "forms": [
+        "run out of",
+        "ran out of",
+        "running out of",
+        "runs out of"
       ],
-      "line": null,
-      "audio": "reorder_2"
+      "pos": "片語・動詞",
+      "zh": "用完、賣完",
+      "ex": "We ran out of coffee this morning.",
+      "exzh": "今天早上咖啡沒了。"
+    },
+    {
+      "p": "take care of",
+      "forms": [
+        "take care of",
+        "took care of",
+        "taking care of",
+        "takes care of"
+      ],
+      "pos": "片語・動詞",
+      "zh": "照顧、處理",
+      "ex": "Can you take care of the client tomorrow?",
+      "exzh": "你明天可以負責招待客戶嗎？"
+    },
+    {
+      "p": "of course",
+      "forms": [
+        "of course"
+      ],
+      "pos": "片語",
+      "zh": "當然",
+      "ex": "Of course you can join us.",
+      "exzh": "你當然可以加入我們。"
+    },
+    {
+      "p": "front desk",
+      "forms": [
+        "front desk"
+      ],
+      "pos": "名詞片語",
+      "zh": "櫃檯",
+      "ex": "Please ask at the front desk.",
+      "exzh": "請到櫃檯詢問。"
+    },
+    {
+      "p": "key card",
+      "forms": [
+        "key card"
+      ],
+      "pos": "名詞片語",
+      "zh": "房卡、門禁卡",
+      "ex": "My key card doesn't work.",
+      "exzh": "我的房卡不能用。"
+    },
+    {
+      "p": "spare parts",
+      "forms": [
+        "spare parts"
+      ],
+      "pos": "名詞片語",
+      "zh": "備用零件",
+      "ex": "We keep spare parts in the warehouse.",
+      "exzh": "我們把備用零件放在倉庫。"
+    },
+    {
+      "p": "business trip",
+      "forms": [
+        "business trip"
+      ],
+      "pos": "名詞片語",
+      "zh": "出差",
+      "ex": "I'm going on a business trip to Japan.",
+      "exzh": "我要去日本出差。"
+    },
+    {
+      "p": "make a reservation",
+      "forms": [
+        "made a reservation",
+        "make a reservation"
+      ],
+      "pos": "片語・動詞",
+      "zh": "預訂、訂位",
+      "ex": "I'd like to make a reservation for Friday.",
+      "exzh": "我想訂週五的位子。"
+    },
+    {
+      "p": "let me see",
+      "forms": [
+        "let me see"
+      ],
+      "pos": "片語",
+      "zh": "我看看、讓我想想",
+      "ex": "Let me see... yes, we have one left.",
+      "exzh": "我看看……有，還剩一個。"
     }
-  ],
-  "scene": "Ryan 出差，晚上抵達飯店，櫃檯人員 Hannah 幫他辦理入住。"
+  ]
 }

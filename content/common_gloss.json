@@ -1,0 +1,2067 @@
+{
+"a": [
+"冠詞",
+"一個",
+"某一個",
+"I need a pen for the meeting.",
+"我開會需要一支筆。"
+],
+"an": [
+"冠詞",
+"一個（用在母音開頭的字前面）",
+"",
+"She sent an email to the client.",
+"她寄了一封電子郵件給客戶。"
+],
+"the": [
+"冠詞",
+"這個、那個（指特定的東西）",
+"",
+"The meeting starts at nine.",
+"會議九點開始。"
+],
+"i": [
+"代名詞",
+"我",
+"",
+"I work in the sales department.",
+"我在業務部工作。"
+],
+"me": [
+"代名詞",
+"我（當受詞）",
+"",
+"Can you call me after lunch?",
+"午餐後可以打給我嗎？"
+],
+"my": [
+"代名詞",
+"我的",
+"",
+"My office is on the third floor.",
+"我的辦公室在三樓。"
+],
+"you": [
+"代名詞",
+"你、你們",
+"",
+"Did you finish the report?",
+"你報告寫完了嗎？"
+],
+"your": [
+"代名詞",
+"你的、你們的",
+"",
+"Thank you for your help.",
+"謝謝你的幫忙。"
+],
+"he": [
+"代名詞",
+"他",
+"",
+"He is our new manager.",
+"他是我們的新經理。"
+],
+"him": [
+"代名詞",
+"他（當受詞）",
+"",
+"I'll ask him about the price.",
+"我會問他價格的事。"
+],
+"his": [
+"代名詞",
+"他的",
+"",
+"His flight was delayed.",
+"他的班機延誤了。"
+],
+"she": [
+"代名詞",
+"她",
+"",
+"She works at the front desk.",
+"她在櫃檯工作。"
+],
+"her": [
+"代名詞",
+"她（當受詞）；她的",
+"",
+"I gave her the files.",
+"我把檔案給她了。"
+],
+"it": [
+"代名詞",
+"它、這件事",
+"",
+"It is a good idea.",
+"這是個好主意。"
+],
+"we": [
+"代名詞",
+"我們",
+"",
+"We need more time.",
+"我們需要更多時間。"
+],
+"our": [
+"代名詞",
+"我們的",
+"",
+"Our team finished the project.",
+"我們團隊完成了專案。"
+],
+"they": [
+"代名詞",
+"他們、它們",
+"",
+"They will arrive tomorrow.",
+"他們明天會到。"
+],
+"them": [
+"代名詞",
+"他們、它們（當受詞）",
+"",
+"Please send them the price list.",
+"請把價目表寄給他們。"
+],
+"this": [
+"代名詞・形容詞",
+"這、這個",
+"",
+"This room is too small.",
+"這個房間太小了。"
+],
+"that": [
+"代名詞・連接詞",
+"那、那個",
+"（連接句子）……這件事",
+"That sounds good.",
+"那聽起來不錯。"
+],
+"who": [
+"代名詞",
+"誰",
+"",
+"Who is in charge of this project?",
+"誰負責這個專案？"
+],
+"what": [
+"代名詞",
+"什麼",
+"",
+"What time is the meeting?",
+"會議是幾點？"
+],
+"when": [
+"副詞・連接詞",
+"什麼時候；當……的時候",
+"",
+"When can you send the samples?",
+"你什麼時候可以寄樣品？"
+],
+"where": [
+"副詞",
+"哪裡",
+"",
+"Where is the meeting room?",
+"會議室在哪裡？"
+],
+"why": [
+"副詞",
+"為什麼",
+"",
+"Why was the shipment late?",
+"為什麼貨晚到了？"
+],
+"how": [
+"副詞",
+"怎麼、如何；（問狀況）怎麼樣",
+"",
+"How was your weekend?",
+"你週末過得怎麼樣？"
+],
+"is": [
+"動詞",
+"是（be 動詞，主詞是單數）",
+"",
+"The report is ready.",
+"報告準備好了。"
+],
+"are": [
+"動詞",
+"是（be 動詞，主詞是複數或 you）",
+"",
+"Are you free this afternoon?",
+"你今天下午有空嗎？"
+],
+"was": [
+"動詞",
+"是（is 的過去式）",
+"",
+"The meeting was very long.",
+"那場會議很長。"
+],
+"were": [
+"動詞",
+"是（are 的過去式）",
+"",
+"We were busy last week.",
+"我們上週很忙。"
+],
+"be": [
+"動詞",
+"是、成為（be 動詞原形）",
+"",
+"Please be on time.",
+"請準時。"
+],
+"been": [
+"動詞",
+"是（be 的過去分詞，用在 have been）",
+"",
+"I have been here for two years.",
+"我在這裡兩年了。"
+],
+"do": [
+"助動詞・動詞",
+"（問句、否定句的助動詞）；做",
+"",
+"Do you have a minute?",
+"你有一點時間嗎？"
+],
+"does": [
+"助動詞・動詞",
+"（主詞是單數時的 do）；做",
+"",
+"Does the price include tax?",
+"價格含稅嗎？"
+],
+"did": [
+"助動詞・動詞",
+"（do 的過去式）；做了",
+"",
+"Did you call the customer?",
+"你打給客戶了嗎？"
+],
+"don't": [
+"助動詞",
+"不（do not 的縮寫）",
+"",
+"Don't forget the meeting.",
+"別忘了開會。"
+],
+"have": [
+"動詞・助動詞",
+"有；（have + 過去分詞）已經",
+"",
+"I have two questions.",
+"我有兩個問題。"
+],
+"has": [
+"動詞・助動詞",
+"有（主詞是單數）；已經",
+"",
+"She has a meeting at three.",
+"她三點有個會。"
+],
+"had": [
+"動詞・助動詞",
+"有（have 的過去式）",
+"",
+"We had a great time.",
+"我們玩得很開心。"
+],
+"will": [
+"助動詞",
+"將會",
+"",
+"I will call you tomorrow.",
+"我明天會打給你。"
+],
+"would": [
+"助動詞",
+"會、願意（比 will 客氣）",
+"",
+"Would you like some coffee?",
+"你要喝點咖啡嗎？"
+],
+"can": [
+"助動詞",
+"可以、能夠",
+"",
+"Can you help me with this?",
+"你可以幫我處理這個嗎？"
+],
+"can't": [
+"助動詞",
+"不能（can not 的縮寫）",
+"",
+"I can't find the file.",
+"我找不到那個檔案。"
+],
+"could": [
+"助動詞",
+"可以（比 can 客氣）；能夠（過去）",
+"",
+"Could you send it again?",
+"可以請你再寄一次嗎？"
+],
+"should": [
+"助動詞",
+"應該",
+"",
+"You should talk to the manager.",
+"你應該跟經理談談。"
+],
+"must": [
+"助動詞",
+"必須",
+"",
+"All visitors must sign in.",
+"所有訪客都必須登記。"
+],
+"may": [
+"助動詞",
+"可能；可以",
+"",
+"It may rain this afternoon.",
+"今天下午可能會下雨。"
+],
+"might": [
+"助動詞",
+"可能（比 may 不確定）",
+"",
+"The price might go up.",
+"價格可能會漲。"
+],
+"it's": [
+"縮寫",
+"它是（it is 的縮寫）",
+"",
+"It's a busy day today.",
+"今天很忙。"
+],
+"i'm": [
+"縮寫",
+"我是（I am 的縮寫）",
+"",
+"I'm sorry I'm late.",
+"抱歉我遲到了。"
+],
+"i'll": [
+"縮寫",
+"我會（I will 的縮寫）",
+"",
+"I'll check and get back to you.",
+"我查一下再回覆你。"
+],
+"i'd": [
+"縮寫",
+"我想要／我會（I would 的縮寫）",
+"",
+"I'd like a window seat.",
+"我想要靠窗的座位。"
+],
+"you're": [
+"縮寫",
+"你是（you are 的縮寫）",
+"",
+"You're right.",
+"你說得對。"
+],
+"we'll": [
+"縮寫",
+"我們會（we will 的縮寫）",
+"",
+"We'll finish it by Friday.",
+"我們週五前會完成。"
+],
+"they'll": [
+"縮寫",
+"他們會（they will 的縮寫）",
+"",
+"They'll call us tomorrow.",
+"他們明天會打給我們。"
+],
+"let's": [
+"縮寫",
+"我們來……吧（let us 的縮寫）",
+"",
+"Let's take a break.",
+"我們休息一下吧。"
+],
+"to": [
+"介系詞",
+"到、給；（放在動詞前）去做……",
+"",
+"I went to the factory.",
+"我去了工廠。"
+],
+"of": [
+"介系詞",
+"……的",
+"",
+"This is a copy of the contract.",
+"這是合約的副本。"
+],
+"in": [
+"介系詞",
+"在……裡面；在（某段時間）",
+"（時間）……之後",
+"The files are in the cabinet.",
+"檔案在櫃子裡。"
+],
+"on": [
+"介系詞",
+"在……上面；在（某一天）",
+"",
+"The meeting is on Monday.",
+"會議在週一。"
+],
+"at": [
+"介系詞",
+"在（某個地點、時間點）",
+"",
+"Let's meet at the station at six.",
+"我們六點在車站見。"
+],
+"for": [
+"介系詞",
+"為了、給；（時間）……之久",
+"",
+"This gift is for you.",
+"這份禮物是給你的。"
+],
+"from": [
+"介系詞",
+"從、來自",
+"",
+"I'm from Taiwan.",
+"我來自台灣。"
+],
+"with": [
+"介系詞",
+"和……一起；用、帶著",
+"",
+"I had lunch with my team.",
+"我跟團隊一起吃午餐。"
+],
+"by": [
+"介系詞",
+"在……之前；由、透過",
+"在……旁邊",
+"Please finish it by Friday.",
+"請在週五前完成。"
+],
+"about": [
+"介系詞・副詞",
+"關於；大約",
+"",
+"We talked about the new plan.",
+"我們談了新計畫。"
+],
+"into": [
+"介系詞",
+"進入、到……裡面",
+"",
+"Put the samples into the box.",
+"把樣品放進箱子裡。"
+],
+"under": [
+"介系詞",
+"在……下面；以……的名義",
+"",
+"The box is under the desk.",
+"箱子在桌子底下。"
+],
+"after": [
+"介系詞・連接詞",
+"在……之後",
+"",
+"Let's talk after lunch.",
+"午餐後再談吧。"
+],
+"before": [
+"介系詞・連接詞",
+"在……之前",
+"",
+"Please call me before you leave.",
+"你離開前請打給我。"
+],
+"during": [
+"介系詞",
+"在……期間",
+"",
+"Please turn off your phone during the meeting.",
+"開會時請關手機。"
+],
+"until": [
+"介系詞・連接詞",
+"直到……為止",
+"",
+"The store is open until ten.",
+"這家店開到十點。"
+],
+"within": [
+"介系詞",
+"在……之內",
+"",
+"We will reply within two days.",
+"我們會在兩天內回覆。"
+],
+"across": [
+"介系詞",
+"在……對面；橫越",
+"",
+"The bank is across the street.",
+"銀行在對街。"
+],
+"near": [
+"介系詞・形容詞",
+"在……附近",
+"",
+"Is there a hotel near the airport?",
+"機場附近有飯店嗎？"
+],
+"up": [
+"副詞・介系詞",
+"向上",
+"",
+"Prices went up last month.",
+"上個月價格上漲了。"
+],
+"out": [
+"副詞",
+"出去、在外面；用完",
+"",
+"She is out of the office today.",
+"她今天不在辦公室。"
+],
+"and": [
+"連接詞",
+"和、而且",
+"",
+"I bought coffee and bread.",
+"我買了咖啡和麵包。"
+],
+"or": [
+"連接詞",
+"或者、還是",
+"",
+"Do you want tea or coffee?",
+"你要茶還是咖啡？"
+],
+"but": [
+"連接詞",
+"但是",
+"",
+"It's small, but it's very useful.",
+"它很小，但很實用。"
+],
+"because": [
+"連接詞",
+"因為",
+"",
+"I was late because of the traffic.",
+"我因為塞車遲到了。"
+],
+"if": [
+"連接詞",
+"如果",
+"",
+"Call me if you have any questions.",
+"有任何問題就打給我。"
+],
+"than": [
+"連接詞",
+"比（用在比較）",
+"",
+"This model is cheaper than that one.",
+"這個型號比那個便宜。"
+],
+"then": [
+"副詞",
+"那時；然後",
+"",
+"I'll finish this, then I'll call you.",
+"我做完這個再打給你。"
+],
+"too": [
+"副詞",
+"也；太",
+"",
+"I like this design too.",
+"我也喜歡這個設計。"
+],
+"very": [
+"副詞",
+"非常",
+"",
+"The new system is very fast.",
+"新系統非常快。"
+],
+"just": [
+"副詞",
+"只是；剛剛",
+"",
+"I just got back from lunch.",
+"我剛吃完午餐回來。"
+],
+"still": [
+"副詞",
+"還、仍然",
+"",
+"Are you still at the office?",
+"你還在辦公室嗎？"
+],
+"already": [
+"副詞",
+"已經",
+"",
+"I already sent the invoice.",
+"我已經寄出發票了。"
+],
+"only": [
+"副詞・形容詞",
+"只有、僅僅",
+"",
+"We only have two left.",
+"我們只剩兩個。"
+],
+"not": [
+"副詞",
+"不、沒有",
+"",
+"The printer is not working.",
+"印表機壞了。"
+],
+"no": [
+"感嘆詞・形容詞",
+"不；沒有",
+"",
+"No, thank you.",
+"不用了，謝謝。"
+],
+"yes": [
+"感嘆詞",
+"是的、對",
+"",
+"Yes, I can come.",
+"可以，我能來。"
+],
+"please": [
+"副詞",
+"請",
+"",
+"Please sign here.",
+"請在這裡簽名。"
+],
+"thanks": [
+"感嘆詞",
+"謝謝",
+"",
+"Thanks for the quick reply.",
+"謝謝你快速回覆。"
+],
+"sorry": [
+"形容詞",
+"抱歉的",
+"難過的",
+"Sorry for the delay.",
+"抱歉延誤了。"
+],
+"hi": [
+"感嘆詞",
+"嗨（打招呼）",
+"",
+"Hi, nice to meet you.",
+"嗨，很高興認識你。"
+],
+"oh": [
+"感嘆詞",
+"喔、噢（表示驚訝或理解）",
+"",
+"Oh, I see.",
+"喔，我懂了。"
+],
+"ha": [
+"感嘆詞",
+"哈（笑聲）",
+"",
+"Ha! That's funny.",
+"哈！真好笑。"
+],
+"here": [
+"副詞",
+"這裡",
+"",
+"Please wait here.",
+"請在這裡等。"
+],
+"there": [
+"副詞",
+"那裡；（there is/are）有",
+"",
+"There is a meeting at ten.",
+"十點有個會議。"
+],
+"now": [
+"副詞",
+"現在",
+"",
+"I'm busy right now.",
+"我現在很忙。"
+],
+"today": [
+"副詞・名詞",
+"今天",
+"",
+"I'll finish it today.",
+"我今天會完成。"
+],
+"tomorrow": [
+"副詞・名詞",
+"明天",
+"",
+"See you tomorrow.",
+"明天見。"
+],
+"yesterday": [
+"副詞・名詞",
+"昨天",
+"",
+"I met the client yesterday.",
+"我昨天見了客戶。"
+],
+"soon": [
+"副詞",
+"很快、不久",
+"",
+"The bus will come soon.",
+"公車很快就會來。"
+],
+"often": [
+"副詞",
+"經常",
+"",
+"I often work late on Fridays.",
+"我週五常加班。"
+],
+"usually": [
+"副詞",
+"通常",
+"",
+"I usually take the MRT to work.",
+"我通常搭捷運上班。"
+],
+"once": [
+"副詞",
+"一次",
+"",
+"We meet once a week.",
+"我們每週開一次會。"
+],
+"twice": [
+"副詞",
+"兩次",
+"",
+"I checked it twice.",
+"我檢查了兩次。"
+],
+"maybe": [
+"副詞",
+"也許、可能",
+"",
+"Maybe we can meet on Friday.",
+"也許我們週五可以見面。"
+],
+"really": [
+"副詞",
+"真的",
+"",
+"Really? That's great news.",
+"真的嗎？好消息。"
+],
+"almost": [
+"副詞",
+"幾乎、差一點",
+"",
+"I'm almost done.",
+"我快做完了。"
+],
+"all": [
+"形容詞・代名詞",
+"全部、所有",
+"",
+"All the rooms are booked.",
+"所有房間都訂滿了。"
+],
+"some": [
+"形容詞",
+"一些",
+"",
+"I need some help.",
+"我需要一些幫忙。"
+],
+"many": [
+"形容詞",
+"很多（可數）",
+"",
+"How many people are coming?",
+"有多少人要來？"
+],
+"much": [
+"形容詞・副詞",
+"很多（不可數）",
+"",
+"How much does it cost?",
+"這個多少錢？"
+],
+"more": [
+"形容詞・副詞",
+"更多",
+"",
+"Could you give me more details?",
+"可以給我更多細節嗎？"
+],
+"each": [
+"形容詞・代名詞",
+"每一個",
+"",
+"Each room has a desk.",
+"每個房間都有一張桌子。"
+],
+"every": [
+"形容詞",
+"每一、每個",
+"",
+"I check my email every morning.",
+"我每天早上都看電子郵件。"
+],
+"everything": [
+"代名詞",
+"每件事、一切",
+"",
+"Everything is ready.",
+"一切都準備好了。"
+],
+"same": [
+"形容詞",
+"相同的",
+"",
+"We have the same idea.",
+"我們的想法一樣。"
+],
+"one": [
+"數字",
+"一",
+"一個",
+"I have one question.",
+"我有一個問題。"
+],
+"two": [
+"數字",
+"二",
+"",
+"The meeting is two hours long.",
+"會議長兩個小時。"
+],
+"three": [
+"數字",
+"三",
+"",
+"We have three new members.",
+"我們有三位新成員。"
+],
+"four": [
+"數字",
+"四",
+"",
+"The office has four floors.",
+"辦公室有四層樓。"
+],
+"five": [
+"數字",
+"五",
+"",
+"It takes five minutes to walk there.",
+"走過去要五分鐘。"
+],
+"six": [
+"數字",
+"六",
+"",
+"The store closes at six.",
+"店六點關門。"
+],
+"eight": [
+"數字",
+"八",
+"",
+"I start work at eight.",
+"我八點開始上班。"
+],
+"nine": [
+"數字",
+"九",
+"",
+"The train leaves at nine.",
+"火車九點開。"
+],
+"ten": [
+"數字",
+"十",
+"",
+"Please wait ten minutes.",
+"請等十分鐘。"
+],
+"eleven": [
+"數字",
+"十一",
+"",
+"The shop opens at eleven.",
+"店十一點開。"
+],
+"twenty": [
+"數字",
+"二十",
+"",
+"We need twenty chairs.",
+"我們需要二十張椅子。"
+],
+"first": [
+"形容詞・副詞",
+"第一、首先",
+"",
+"First, let's check the numbers.",
+"首先，我們來看數字。"
+],
+"sixth": [
+"形容詞",
+"第六",
+"",
+"My room is on the sixth floor.",
+"我的房間在六樓。"
+],
+"ninth": [
+"形容詞",
+"第九",
+"",
+"The office is on the ninth floor.",
+"辦公室在九樓。"
+],
+"o'clock": [
+"副詞",
+"……點鐘",
+"",
+"Let's meet at three o'clock.",
+"我們三點見。"
+],
+"good": [
+"形容詞",
+"好的",
+"",
+"That's a good idea.",
+"那是個好主意。"
+],
+"great": [
+"形容詞",
+"很棒的",
+"",
+"Great job on the presentation!",
+"簡報做得很棒！"
+],
+"big": [
+"形容詞",
+"大的",
+"",
+"We got a big order.",
+"我們接到一張大訂單。"
+],
+"little": [
+"形容詞・副詞",
+"小的；（a little）有點",
+"",
+"I'm a little tired.",
+"我有點累。"
+],
+"new": [
+"形容詞",
+"新的",
+"",
+"We moved to a new office.",
+"我們搬到新辦公室。"
+],
+"old": [
+"形容詞",
+"舊的；老的",
+"",
+"The old printer is broken.",
+"舊印表機壞了。"
+],
+"long": [
+"形容詞",
+"長的；久的",
+"",
+"It was a long day.",
+"今天好漫長。"
+],
+"next": [
+"形容詞",
+"下一個",
+"",
+"See you next week.",
+"下週見。"
+],
+"last": [
+"形容詞",
+"上一個；最後的",
+"",
+"I visited the factory last month.",
+"我上個月去了工廠。"
+],
+"time": [
+"名詞",
+"時間；次",
+"",
+"Do you have time tomorrow?",
+"你明天有時間嗎？"
+],
+"times": [
+"名詞",
+"次數（time 的複數）",
+"",
+"I called him three times.",
+"我打給他三次。"
+],
+"day": [
+"名詞",
+"天、日子",
+"",
+"Have a nice day!",
+"祝你有美好的一天！"
+],
+"days": [
+"名詞",
+"天（day 的複數）",
+"",
+"It takes three days to ship.",
+"出貨要三天。"
+],
+"week": [
+"名詞",
+"週、星期",
+"",
+"I'm on vacation next week.",
+"我下週休假。"
+],
+"month": [
+"名詞",
+"月",
+"",
+"Sales went up this month.",
+"這個月業績上升了。"
+],
+"year": [
+"名詞",
+"年",
+"",
+"I joined the company last year.",
+"我去年進公司。"
+],
+"years": [
+"名詞",
+"年（year 的複數）",
+"",
+"He has worked here for five years.",
+"他在這裡工作五年了。"
+],
+"hour": [
+"名詞",
+"小時",
+"",
+"The meeting took an hour.",
+"會議花了一小時。"
+],
+"hours": [
+"名詞",
+"小時（hour 的複數）",
+"",
+"The store's hours are nine to six.",
+"這家店營業時間是九點到六點。"
+],
+"morning": [
+"名詞",
+"早上",
+"",
+"I have a meeting this morning.",
+"我今天早上有個會。"
+],
+"afternoon": [
+"名詞",
+"下午",
+"",
+"Are you free this afternoon?",
+"你今天下午有空嗎？"
+],
+"evening": [
+"名詞",
+"傍晚、晚上",
+"",
+"Good evening, everyone.",
+"大家晚安。"
+],
+"night": [
+"名詞",
+"夜晚",
+"",
+"I worked late last night.",
+"我昨晚加班到很晚。"
+],
+"nights": [
+"名詞",
+"晚（night 的複數；住宿的晚數）",
+"",
+"I'll stay for two nights.",
+"我會住兩晚。"
+],
+"noon": [
+"名詞",
+"中午",
+"",
+"Let's meet at noon.",
+"我們中午見。"
+],
+"monday": [
+"名詞",
+"星期一",
+"",
+"The new rule starts on Monday.",
+"新規定週一開始。"
+],
+"thursday": [
+"名詞",
+"星期四",
+"",
+"The shipment leaves on Thursday.",
+"貨週四出。"
+],
+"friday": [
+"名詞",
+"星期五",
+"",
+"Please send it by Friday.",
+"請在週五前寄出。"
+],
+"weekends": [
+"名詞",
+"週末（weekend 的複數）",
+"",
+"I don't work on weekends.",
+"我週末不上班。"
+],
+"january": [
+"名詞",
+"一月",
+"",
+"The project starts in January.",
+"專案一月開始。"
+],
+"november": [
+"名詞",
+"十一月",
+"",
+"The trade show is in November.",
+"展覽在十一月。"
+],
+"spring": [
+"名詞",
+"春天",
+"",
+"We will launch it in spring.",
+"我們會在春天推出。"
+],
+"summer": [
+"名詞",
+"夏天",
+"",
+"Summer is our busy season.",
+"夏天是我們的旺季。"
+],
+"autumn": [
+"名詞",
+"秋天",
+"",
+"Autumn is a good time to visit Japan.",
+"秋天是去日本的好時節。"
+],
+"people": [
+"名詞",
+"人們",
+"",
+"Many people came to the event.",
+"很多人來參加活動。"
+],
+"woman": [
+"名詞",
+"女人、女士",
+"",
+"The woman at the desk helped me.",
+"櫃檯那位女士幫了我。"
+],
+"family": [
+"名詞",
+"家人、家庭",
+"",
+"I spent the weekend with my family.",
+"我週末跟家人一起過。"
+],
+"ms": [
+"名詞",
+"女士（放在女性姓氏前）",
+"",
+"Ms. Lin is our manager.",
+"林小姐是我們的經理。"
+],
+"mr": [
+"名詞",
+"先生（放在男性姓氏前）",
+"",
+"Mr. Wang will join the meeting.",
+"王先生會參加會議。"
+],
+"office": [
+"名詞",
+"辦公室",
+"",
+"I'll be in the office all day.",
+"我整天都會在辦公室。"
+],
+"room": [
+"名詞",
+"房間",
+"",
+"The meeting room is free now.",
+"會議室現在沒人用。"
+],
+"rooms": [
+"名詞",
+"房間（room 的複數）",
+"",
+"All the rooms have Wi-Fi.",
+"所有房間都有 Wi-Fi。"
+],
+"door": [
+"名詞",
+"門",
+"",
+"Please close the door.",
+"請關門。"
+],
+"floor": [
+"名詞",
+"樓層；地板",
+"",
+"The restroom is on this floor.",
+"廁所在這層樓。"
+],
+"street": [
+"名詞",
+"街道",
+"",
+"The bank is on Main Street.",
+"銀行在主街上。"
+],
+"city": [
+"名詞",
+"城市",
+"",
+"Taipei is a busy city.",
+"台北是個忙碌的城市。"
+],
+"coffee": [
+"名詞",
+"咖啡",
+"",
+"Let's get some coffee.",
+"我們去買點咖啡吧。"
+],
+"tea": [
+"名詞",
+"茶",
+"",
+"Would you like some tea?",
+"你要喝點茶嗎？"
+],
+"food": [
+"名詞",
+"食物",
+"",
+"The food here is great.",
+"這裡的食物很棒。"
+],
+"lunch": [
+"名詞",
+"午餐",
+"",
+"Let's have lunch together.",
+"我們一起吃午餐吧。"
+],
+"dinner": [
+"名詞",
+"晚餐",
+"",
+"We had dinner with the client.",
+"我們跟客戶吃了晚餐。"
+],
+"breakfast": [
+"名詞",
+"早餐",
+"",
+"Breakfast is served from seven.",
+"早餐七點開始供應。"
+],
+"email": [
+"名詞・動詞",
+"電子郵件；寄電子郵件",
+"",
+"I'll email you the file.",
+"我會用電子郵件把檔案寄給你。"
+],
+"number": [
+"名詞",
+"號碼；數字",
+"",
+"What's your phone number?",
+"你的電話號碼是多少？"
+],
+"idea": [
+"名詞",
+"主意、想法",
+"",
+"Do you have any ideas?",
+"你有什麼想法嗎？"
+],
+"problem": [
+"名詞",
+"問題",
+"",
+"There is a problem with the printer.",
+"印表機出了問題。"
+],
+"problems": [
+"名詞",
+"問題（problem 的複數）",
+"",
+"We fixed all the problems.",
+"我們修好了所有問題。"
+],
+"news": [
+"名詞",
+"新聞；消息",
+"",
+"I have good news.",
+"我有好消息。"
+],
+"money": [
+"名詞",
+"錢",
+"",
+"This will save us money.",
+"這會幫我們省錢。"
+],
+"price": [
+"名詞",
+"價格",
+"",
+"The price includes shipping.",
+"價格含運費。"
+],
+"weather": [
+"名詞",
+"天氣",
+"",
+"The weather is nice today.",
+"今天天氣很好。"
+],
+"go": [
+"動詞",
+"去",
+"",
+"I'll go to the bank later.",
+"我晚點會去銀行。"
+],
+"going": [
+"動詞",
+"去（go 的進行式）；（be going to）打算",
+"",
+"I'm going to the airport.",
+"我要去機場。"
+],
+"went": [
+"動詞",
+"去了（go 的過去式）",
+"",
+"We went to Tokyo last year.",
+"我們去年去了東京。"
+],
+"come": [
+"動詞",
+"來",
+"",
+"Can you come to the meeting?",
+"你能來開會嗎？"
+],
+"came": [
+"動詞",
+"來了（come 的過去式）",
+"",
+"He came to the office early.",
+"他很早就來辦公室了。"
+],
+"see": [
+"動詞",
+"看到；明白",
+"",
+"I see what you mean.",
+"我懂你的意思。"
+],
+"saw": [
+"動詞",
+"看到了（see 的過去式）",
+"",
+"I saw your email.",
+"我看到你的電子郵件了。"
+],
+"say": [
+"動詞",
+"說",
+"",
+"What did the client say?",
+"客戶說了什麼？"
+],
+"said": [
+"動詞",
+"說了（say 的過去式）",
+"",
+"She said yes.",
+"她說好。"
+],
+"think": [
+"動詞",
+"認為、想",
+"",
+"I think it's a good plan.",
+"我覺得這是個好計畫。"
+],
+"want": [
+"動詞",
+"想要",
+"",
+"Do you want to join us?",
+"你想加入我們嗎？"
+],
+"need": [
+"動詞",
+"需要",
+"",
+"We need more chairs.",
+"我們需要更多椅子。"
+],
+"like": [
+"動詞・介系詞",
+"喜歡；（would like）想要",
+"像……一樣",
+"I like this design.",
+"我喜歡這個設計。"
+],
+"give": [
+"動詞",
+"給",
+"",
+"Please give me a call.",
+"請打電話給我。"
+],
+"ask": [
+"動詞",
+"問；要求",
+"",
+"Can I ask a question?",
+"我可以問個問題嗎？"
+],
+"help": [
+"動詞・名詞",
+"幫忙",
+"",
+"Can you help me?",
+"你可以幫我嗎？"
+],
+"helped": [
+"動詞",
+"幫了（help 的過去式）",
+"",
+"My coworker helped me a lot.",
+"同事幫了我很多。"
+],
+"hope": [
+"動詞",
+"希望",
+"",
+"I hope you like it.",
+"希望你喜歡。"
+],
+"wait": [
+"動詞",
+"等待",
+"",
+"Please wait a moment.",
+"請稍等。"
+],
+"call": [
+"動詞・名詞",
+"打電話；電話",
+"",
+"I'll call you back later.",
+"我晚點回你電話。"
+],
+"called": [
+"動詞",
+"打了電話；叫做",
+"",
+"A customer called this morning.",
+"今天早上有位客戶打來。"
+],
+"look": [
+"動詞",
+"看",
+"",
+"Look at this chart.",
+"看看這張圖表。"
+],
+"find": [
+"動詞",
+"找到",
+"",
+"I can't find my keys.",
+"我找不到鑰匙。"
+],
+"found": [
+"動詞",
+"找到了（find 的過去式）",
+"",
+"I found a cheaper supplier.",
+"我找到更便宜的供應商。"
+],
+"buy": [
+"動詞",
+"買",
+"",
+"I need to buy a new laptop.",
+"我需要買新筆電。"
+],
+"read": [
+"動詞",
+"讀、閱讀",
+"",
+"Please read the email first.",
+"請先讀那封電子郵件。"
+],
+"write": [
+"動詞",
+"寫",
+"",
+"Please write your name here.",
+"請在這裡寫上你的名字。"
+],
+"writes": [
+"動詞",
+"寫（主詞是單數）",
+"",
+"She writes the weekly report.",
+"她負責寫週報。"
+],
+"writing": [
+"動詞",
+"寫（write 的進行式）",
+"",
+"I'm writing the proposal now.",
+"我正在寫提案。"
+],
+"written": [
+"動詞",
+"寫好的（write 的過去分詞）",
+"",
+"The report was written by our team.",
+"這份報告是我們團隊寫的。"
+],
+"study": [
+"動詞・名詞",
+"學習、研讀；研究",
+"",
+"I study English every day.",
+"我每天學英文。"
+],
+"try": [
+"動詞",
+"試試看",
+"",
+"Try the new menu.",
+"試試新菜單。"
+],
+"move": [
+"動詞",
+"移動；搬家",
+"",
+"Can we move the meeting to Friday?",
+"我們可以把會議改到週五嗎？"
+],
+"moved": [
+"動詞",
+"移動了；搬了",
+"",
+"We moved to a bigger office.",
+"我們搬到更大的辦公室了。"
+],
+"worry": [
+"動詞",
+"擔心",
+"",
+"Don't worry about it.",
+"別擔心。"
+],
+"tired": [
+"形容詞",
+"累的",
+"",
+"I'm tired after the trip.",
+"旅行回來我很累。"
+],
+"easy": [
+"形容詞",
+"容易的",
+"",
+"The new system is easy to use.",
+"新系統很好用。"
+],
+"difficult": [
+"形容詞",
+"困難的",
+"",
+"This question is difficult.",
+"這個問題很難。"
+],
+"expensive": [
+"形容詞",
+"昂貴的",
+"",
+"The hotel is too expensive.",
+"那間飯店太貴了。"
+],
+"beautiful": [
+"形容詞",
+"美麗的",
+"",
+"The view is beautiful.",
+"景色很美。"
+],
+"wonderful": [
+"形容詞",
+"很棒的、美好的",
+"",
+"We had a wonderful time.",
+"我們玩得很愉快。"
+],
+"perfect": [
+"形容詞",
+"完美的、太好了",
+"",
+"Friday is perfect for me.",
+"週五對我來說剛好。"
+],
+"right": [
+"形容詞",
+"對的；（句尾 right?）對吧",
+"右邊",
+"You're right.",
+"你說得對。"
+],
+"wrong": [
+"形容詞",
+"錯的",
+"",
+"I took the wrong bus.",
+"我搭錯公車了。"
+],
+"sure": [
+"形容詞・副詞",
+"確定的；（回答）當然",
+"",
+"Sure, I can do that.",
+"當然，我可以做。"
+],
+"free": [
+"形容詞",
+"免費的；有空的",
+"",
+"Are you free tonight?",
+"你今晚有空嗎？"
+],
+"best": [
+"形容詞",
+"最好的",
+"",
+"This is the best restaurant in town.",
+"這是城裡最好的餐廳。"
+],
+"bad": [
+"形容詞",
+"壞的、不好的",
+"",
+"The weather was bad.",
+"天氣很差。"
+],
+"red": [
+"形容詞",
+"紅色的",
+"",
+"Please sign the red form.",
+"請簽紅色那張表。"
+],
+"kind": [
+"形容詞",
+"親切的、好心的",
+"種類（名詞）",
+"Thank you, that's very kind.",
+"謝謝，你人真好。"
+],
+"angry": [
+"形容詞",
+"生氣的",
+"",
+"The customer was angry.",
+"客戶很生氣。"
+],
+"real": [
+"形容詞",
+"真的、真實的",
+"",
+"Is this real leather?",
+"這是真皮嗎？"
+],
+"popular": [
+"形容詞",
+"受歡迎的",
+"",
+"This model is very popular.",
+"這個型號很受歡迎。"
+],
+"quiet": [
+"形容詞",
+"安靜的",
+"",
+"Is there a quiet place to talk?",
+"有安靜的地方可以談嗎？"
+],
+"friendly": [
+"形容詞",
+"友善的",
+"",
+"The staff were very friendly.",
+"員工都很友善。"
+],
+"main": [
+"形容詞",
+"主要的",
+"",
+"The main office is in Taipei.",
+"總公司在台北。"
+],
+"full": [
+"形容詞",
+"滿的；完整的",
+"",
+"The parking lot is full.",
+"停車場滿了。"
+],
+"early": [
+"形容詞・副詞",
+"早的；提早",
+"",
+"Let's leave early.",
+"我們早點出發吧。"
+],
+"late": [
+"形容詞・副詞",
+"晚的、遲到的",
+"",
+"Sorry I'm late.",
+"抱歉我遲到了。"
+],
+"quick": [
+"形容詞",
+"快速的",
+"",
+"Thanks for the quick reply.",
+"謝謝你很快回覆。"
+],
+"quickly": [
+"副詞",
+"快速地",
+"",
+"Please reply quickly.",
+"請盡快回覆。"
+],
+"together": [
+"副詞",
+"一起",
+"",
+"Let's work on it together.",
+"我們一起處理吧。"
+],
+"nearby": [
+"形容詞・副詞",
+"附近的；在附近",
+"",
+"Is there a bank nearby?",
+"附近有銀行嗎？"
+],
+"upstairs": [
+"副詞",
+"在樓上",
+"",
+"The meeting room is upstairs.",
+"會議室在樓上。"
+],
+"factory": [
+"名詞",
+"工廠",
+"",
+"The factory is in Taichung.",
+"工廠在台中。"
+],
+"team": [
+"名詞",
+"團隊、小組",
+"",
+"Our team has six people.",
+"我們團隊有六個人。"
+],
+"customer": [
+"名詞",
+"客戶、顧客",
+"",
+"The customer wants a refund.",
+"客戶要退款。"
+],
+"customers": [
+"名詞",
+"客戶、顧客（customer 的複數）",
+"",
+"Our customers love the new app.",
+"我們的客戶很喜歡新 app。"
+],
+"shipment": [
+"名詞",
+"（一批）貨物、出貨",
+"",
+"The shipment will arrive on Monday.",
+"這批貨週一會到。"
+],
+"supplier": [
+"名詞",
+"供應商",
+"",
+"We found a new supplier.",
+"我們找到新的供應商。"
+],
+"machine": [
+"名詞",
+"機器",
+"",
+"The machine needs to be cleaned.",
+"這台機器需要清潔。"
+],
+"meeting": [
+"名詞",
+"會議",
+"",
+"The meeting was moved to Tuesday.",
+"會議改到週二。"
+],
+"hotel": [
+"名詞",
+"飯店、旅館",
+"",
+"I booked a hotel near the station.",
+"我訂了車站附近的飯店。"
+],
+"send": [
+"動詞",
+"寄、傳送",
+"",
+"Please send me the file.",
+"請把檔案寄給我。"
+],
+"sent": [
+"動詞",
+"寄出了（send 的過去式）",
+"",
+"I sent the invoice yesterday.",
+"我昨天寄出發票了。"
+],
+"complaint": [
+"名詞",
+"客訴、抱怨",
+"",
+"We received a complaint about the delivery.",
+"我們收到一則送貨的客訴。"
+],
+"complaints": [
+"名詞",
+"客訴（complaint 的複數）",
+"",
+"We got fewer complaints this month.",
+"這個月客訴變少了。"
+],
+"manager": [
+"名詞",
+"經理、主管",
+"",
+"I'll ask my manager.",
+"我會問我的主管。"
+],
+"company": [
+"名詞",
+"公司",
+"",
+"Our company has offices in Asia.",
+"我們公司在亞洲有據點。"
+],
+"quality": [
+"名詞",
+"品質",
+"",
+"Quality is our top priority.",
+"品質是我們的第一優先。"
+],
+"report": [
+"名詞",
+"報告",
+"",
+"Please finish the report by Friday.",
+"請在週五前完成報告。"
+],
+"department": [
+"名詞",
+"部門",
+"",
+"He works in the sales department.",
+"他在業務部工作。"
+],
+"staff": [
+"名詞",
+"員工、工作人員",
+"",
+"All staff must wear badges.",
+"所有員工都要配戴識別證。"
+],
+"employees": [
+"名詞",
+"員工（employee 的複數）",
+"",
+"The company has 200 employees.",
+"公司有 200 名員工。"
+],
+"workers": [
+"名詞",
+"工人、員工（worker 的複數）",
+"",
+"The workers start at eight.",
+"工人八點開工。"
+],
+"order": [
+"名詞",
+"訂單",
+"點餐；順序",
+"We got a big order from Japan.",
+"我們接到日本的大訂單。"
+],
+"schedule": [
+"名詞",
+"時間表、行程",
+"安排（動詞）",
+"Let me check my schedule.",
+"我看一下我的行程。"
+],
+"trip": [
+"名詞",
+"旅行、行程",
+"",
+"How was your trip?",
+"你這趟旅行如何？"
+],
+"business": [
+"名詞",
+"公事、商務",
+"生意；公司",
+"I'm going to Osaka on business.",
+"我要去大阪出差。"
+],
+"training": [
+"名詞",
+"訓練、培訓",
+"",
+"New staff must attend the training.",
+"新員工必須參加培訓。"
+],
+"store": [
+"名詞",
+"商店",
+"",
+"I'll stop by the store on my way home.",
+"我回家路上會去一趟商店。"
+],
+"shop": [
+"名詞",
+"店",
+"",
+"There's a coffee shop downstairs.",
+"樓下有家咖啡店。"
+],
+"place": [
+"名詞",
+"地方",
+"",
+"This is a nice place for lunch.",
+"這是吃午餐的好地方。"
+],
+"welcome": [
+"感嘆詞",
+"歡迎",
+"",
+"Welcome to our company.",
+"歡迎來到我們公司。"
+],
+"happened": [
+"動詞",
+"發生了（happen 的過去式）",
+"",
+"What happened to the printer?",
+"印表機怎麼了？"
+],
+"hear": [
+"動詞",
+"聽到",
+"",
+"I'm happy to hear that.",
+"聽到這個我很高興。"
+],
+"let": [
+"動詞",
+"讓（let me 讓我來）",
+"",
+"Let me help you.",
+"讓我來幫你。"
+]
+}
