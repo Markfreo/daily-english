@@ -1,16 +1,16 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#F6F7F4"><meta name="color-scheme" content="light"><meta name="apple-mobile-web-app-title" content="每日英文"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="icon.png"><link rel="icon" href="icon.png"><style>body{margin:0}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}</style></head><body><title>每日英文</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+TC:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&display=swap">
 <style>
 /* Layout: one narrow column, one step on screen at a time, lyrics-style transcript with a highlighter marker on the line being spoken */
 :root{
   /* 簡約淺灰綠，固定淺色（2026-11-12 Frank 選 B） */
-  --bg:#F6F7F4; --surface:#FFFFFF; --ink:#2B312E; --muted:#7D857F; --line:#E3E7E1;
+  --bg:#F6F7F4; --surface:#FFFFFF; --ink:#2B312E; --muted:#636B65; --line:#E3E7E1;
   --accent:#5E8C7A; --accent-ink:#FFFFFF; --marker:#CFE3BF; --marker-ink:#2B312E;
   --good:#4F8A5B; --good-bg:#E6F1E2; --bad:#C0574B; --bad-bg:#F8E7E4;
-  --font-display:"Inter","Noto Sans TC",system-ui,-apple-system,sans-serif;
-  --font-body:"Inter","Noto Sans TC",system-ui,-apple-system,sans-serif;
+  --font-display:"Atkinson Hyperlegible Next","Noto Sans TC",system-ui,-apple-system,sans-serif;
+  --font-body:"Atkinson Hyperlegible Next","Noto Sans TC",system-ui,-apple-system,sans-serif;
   --r:14px; color-scheme:light;
 }
 *{box-sizing:border-box}
@@ -19,32 +19,64 @@ html,body{background:var(--bg)}
 body{color:var(--ink);font:16px/1.55 var(--font-body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:0 120px}
 .wrap{max-width:560px;margin:0 auto;display:flex;flex-direction:column;gap:18px}
 header{padding-top:18px;display:flex;flex-direction:column;gap:12px}
-.eyebrow{font-size:13px;color:var(--muted);letter-spacing:.04em;display:flex;gap:8px;flex-wrap:wrap}
+.eyebrow{font-size:14px;color:var(--muted);letter-spacing:.04em;display:flex;gap:8px;flex-wrap:wrap}
 .eyebrow b{color:var(--ink);font-weight:600}
 h1{font:700 28px/1.2 var(--font-display);letter-spacing:-.01em;margin:0;text-wrap:balance}
 h1 small{display:block;font:500 15px/1.4 var(--font-body);color:var(--muted);margin-top:4px}
-.statusrow{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.hrow{display:flex;align-items:center;gap:10px}
+.hrow .eyebrow{flex:1;min-width:0}
+.hrow .streak{font-size:14px;white-space:nowrap}
+.gear{flex:0 0 auto;width:44px;height:44px;margin:-10px -10px -10px 0;border:0;background:transparent;color:var(--muted);border-radius:50%;display:grid;place-items:center;cursor:pointer}
+.gear[aria-expanded="true"]{color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.settings{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:4px 14px;display:flex;flex-direction:column}
+.settings .srow{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 0;flex-wrap:wrap}
+.settings .srow + .srow{border-top:1px solid var(--line)}
+.settings .srow small{display:block;font-size:13px;color:var(--muted)}
 .streak{font-weight:600;font-variant-numeric:tabular-nums}
-.week{display:flex;gap:6px}
-.week span,.week button{width:22px;height:22px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:11px;color:var(--muted)}
+.week{display:flex;gap:6px;flex-wrap:wrap}
+.wday{display:flex;flex-direction:column;align-items:center;gap:2px}
+.wday small{font-size:13px;color:var(--muted);line-height:1.2}
+.week span,.week button{width:36px;height:36px;border-radius:50%;border:1.5px solid var(--line);display:grid;place-items:center;font-size:14px;color:var(--muted)}
 .week .done{background:var(--good);border-color:var(--good);color:var(--bg)}
-.week .half{background:linear-gradient(90deg,var(--good) 50%,transparent 50%);border-color:var(--good)}
+.week .half{background:linear-gradient(90deg,var(--good-bg) 50%,transparent 50%);border-color:var(--good);color:var(--ink)}
 .week button{font:inherit;padding:0;background:transparent;cursor:pointer}
-.week .today{outline:2px solid var(--accent);outline-offset:2px}
-.toggle{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted);cursor:pointer;user-select:none}
+.week .today{border:2px solid var(--ink);color:var(--ink);font-weight:700}
+.week .today.done{border-color:var(--ink)}
+.toggle{display:flex;align-items:center;gap:8px;font-size:15px;color:var(--muted);cursor:pointer;user-select:none;min-height:44px}
 .toggle input{appearance:none;width:40px;height:24px;border-radius:12px;background:var(--line);position:relative;cursor:pointer;margin:0;transition:background .2s}
 .toggle input::after{content:"";position:absolute;top:3px;left:3px;width:18px;height:18px;border-radius:50%;background:var(--surface);transition:transform .2s}
 .toggle input:checked{background:var(--accent)}
 .toggle input:checked::after{transform:translateX(16px)}
 nav.steps{display:flex;gap:6px;overflow-x:auto;padding-bottom:2px;scrollbar-width:none}
-nav.steps button{flex:0 0 auto;border:1.5px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:6px 12px;font:500 13px var(--font-body);cursor:pointer;white-space:nowrap}
+nav.steps button{flex:0 0 auto;border:1.5px solid var(--line);background:transparent;color:var(--muted);border-radius:999px;padding:0 14px;min-height:44px;font:600 14px var(--font-body);cursor:pointer;white-space:nowrap}
 nav.steps button.cur{border-color:var(--accent);color:var(--accent)}
 nav.steps button.ok{background:var(--good-bg);border-color:transparent;color:var(--good)}
+nav.steps button.skip{border-style:dashed;color:var(--muted);background:transparent}
+/* 今日進度卡：做到第幾步、還剩多久、一鍵繼續 */
+.prog-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:10px}
+.prog-card .trow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.prog-card .trow b{font-weight:700;font-variant-numeric:tabular-nums}
+.prog-card .trow span{font-size:14px;color:var(--muted)}
+.tbar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
+.tbar i{height:8px;border-radius:4px;background:var(--line)}
+.tbar i.ok{background:var(--good)}
+.tbar i.skip{background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px);opacity:.5}
+.tbar i.cur{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--accent)}
+.prog-card .btn{width:100%;justify-content:center}
+.skip-link{align-self:center;color:var(--muted)}
+/* 完成頁的小慶祝 */
+.done-hero{position:relative;overflow:hidden}
+.badge{width:76px;height:76px;margin:0 auto;border-radius:50%;background:var(--good);color:#fff;display:grid;place-items:center;font-size:40px;font-weight:700;animation:pop .6s cubic-bezier(.2,1.6,.4,1) both}
+.badge.part{background:var(--accent)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.burst i{position:absolute;left:50%;top:68px;width:8px;height:8px;border-radius:2px;opacity:0;animation:fly 1.1s ease-out .15s both}
+@keyframes fly{0%{opacity:1;transform:translate(0,0) rotate(0)}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(260deg)}}
+@media (prefers-reduced-motion:reduce){.badge,.burst i{animation:none!important}.burst{display:none}}
 section.step{display:flex;flex-direction:column;gap:14px}
 h2{font:700 22px/1.25 var(--font-display);margin:0}
 .lead{color:var(--muted);margin:0}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
-button.btn{font:600 15px var(--font-body);border-radius:12px;padding:12px 16px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+button.btn{font:700 16px var(--font-body);border-radius:12px;padding:12px 16px;min-height:48px;border:1.5px solid var(--line);background:var(--surface);color:var(--ink);cursor:pointer;display:inline-flex;align-items:center;justify-content:center;gap:8px}
 button.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
 button.btn:disabled{opacity:.45;cursor:default}
 button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
@@ -55,13 +87,13 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px soli
 .seek::-moz-range-track{height:6px;border-radius:3px;background:linear-gradient(90deg,var(--accent) var(--p),var(--line) var(--p))}
 .seek::-webkit-slider-thumb{-webkit-appearance:none;width:22px;height:22px;border-radius:50%;background:var(--accent);border:3px solid var(--surface);box-shadow:0 1px 4px rgba(0,0,0,.25);margin-top:-8px}
 .seek::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:var(--accent);border:3px solid var(--surface)}
-.times{display:flex;justify-content:space-between;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums}
+.times{display:flex;justify-content:space-between;font-size:14px;color:var(--muted);font-variant-numeric:tabular-nums}
 .speed{display:flex;border:1.5px solid var(--line);border-radius:10px;overflow:hidden}
-.speed button{border:0;background:transparent;color:var(--muted);font:600 14px var(--font-body);padding:8px 12px;cursor:pointer;font-variant-numeric:tabular-nums}
+.speed button{border:0;background:transparent;color:var(--muted);font:600 15px var(--font-body);padding:0 14px;min-height:44px;cursor:pointer;font-variant-numeric:tabular-nums}
 .speed button.on{background:var(--ink);color:var(--bg)}
 .lyrics{position:relative;display:flex;flex-direction:column;gap:2px;max-height:52vh;overflow-y:auto;scroll-behavior:smooth;padding:6px 2px;overscroll-behavior:contain}
 .ln{border:0;background:transparent;text-align:left;padding:8px 10px;border-radius:10px;cursor:pointer;color:var(--ink);font:inherit;display:grid;grid-template-columns:56px 1fr;gap:6px;transition:color .2s,background .2s}
-.ln .who{font-size:12px;color:var(--muted);padding-top:4px}
+.ln .who{font-size:13px;color:var(--muted);padding-top:4px}
 .ln .en{font-size:17px;line-height:1.45}
 .ln .zh{grid-column:2;font-size:14px;color:var(--muted)}
 .lyrics .ln .en{color:color-mix(in srgb,var(--muted) 75%,transparent)}
@@ -80,14 +112,58 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px soli
 .opt b{color:var(--muted);font-weight:600}
 .opt.right{border-color:var(--good);background:var(--good-bg)}
 .opt.wrong{border-color:var(--bad);background:var(--bad-bg)}
+.opt.right::after,.opt.wrong::after{margin-left:auto;padding-left:8px;font-weight:700;font-size:18px;line-height:1.2}
+.opt.right::after{content:"✓";color:var(--good)}
+.opt.wrong::after{content:"✗";color:var(--bad)}
+.rz-chip.ok:not(:disabled)::after{content:" ✓"}
+.rz-chip.bad::after{content:" ✗"}
+.word{scroll-margin-top:12px}
+.rated{font:600 14px var(--font-body);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums;vertical-align:middle}
+.rated.all{color:var(--good)}
+/* ③ 逐字聽：句子卡片、下面的句子、最下面的播放器 */
+.lcard{background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--r);padding:12px 16px 6px;display:flex;flex-direction:column;gap:4px;min-height:132px}
+.lcard .who{font-size:13px;color:var(--muted)}
+.lcard .en{font:600 20px/1.45 var(--font-body);color:color-mix(in srgb,var(--ink) 38%,transparent)}
+.lcard .en .w{transition:color .12s}
+.lcard .en .w.on{color:var(--ink)}
+.lcard .zh{font-size:15px;color:var(--muted)}
+.lcard .acts{border-top:1px solid var(--line);margin-top:4px;padding-top:2px}
+.lcard .acts .link{display:inline-flex;align-items:center;gap:4px;margin:0;padding:10px 0}
+.lnext{overflow-y:auto;overscroll-behavior:contain;display:flex;flex-direction:column;gap:2px;margin-top:-4px}
+.lnext .ln .en{font-size:17px;color:color-mix(in srgb,var(--ink) 55%,transparent)}
+.lnext .ln.cur{display:none}
+.lnext .ln.past{opacity:.45}
+section.step.lyr{gap:10px}
+.actionbar.tall{padding-top:8px}
+.lplayer{flex:1;display:flex;flex-direction:column;gap:2px;min-width:0}
+.lplayer .slimrow{display:flex;align-items:center;gap:12px}
+.lplayer .slimrow .skip-link{flex:0 0 auto;margin:0}
+.lplayer .slimrow .btn.slim{flex:1;min-height:40px;padding:6px 12px;font-size:15px}
+.lplayer .seek{height:26px}
+.lplayer .times{margin-top:-4px}
+.lplayer .ctrl{display:grid;grid-template-columns:1fr 1fr auto 1fr 1fr;align-items:center;justify-items:center}
+.ibtn{min-width:52px;min-height:52px;border:0;background:transparent;color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:pointer;font:600 16px var(--font-body);border-radius:12px}
+.ibtn small{font-size:13px;font-weight:500;color:var(--muted)}
+.ibtn .icon{width:24px;height:24px}
+.ibtn[aria-pressed="false"] b{color:var(--muted);text-decoration:line-through}
+.round{width:60px;height:60px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;cursor:pointer}
+.round .icon{width:28px;height:28px}
+/* 回來接續的小視窗 */
+dialog.welcome{border:0;border-radius:var(--r);padding:22px 20px 18px;width:min(340px,calc(100vw - 32px));background:var(--surface);color:var(--ink);box-shadow:0 12px 40px rgba(0,0,0,.18)}
+dialog.welcome::backdrop{background:rgba(30,36,33,.35)}
+dialog.welcome h3{font:700 20px var(--font-display);margin:0 0 6px}
+dialog.welcome p{margin:0 0 4px}
+dialog.welcome .sub{color:var(--muted);font-size:15px;margin-bottom:16px}
+dialog.welcome .btn{width:100%}
+dialog.welcome .link{display:block;margin:6px auto 0;text-align:center;color:var(--muted)}
 .opt:disabled{cursor:default}
 .explain{font-size:14px;color:var(--muted);display:flex;flex-direction:column;gap:6px}
-.link{border:0;background:none;color:var(--accent);font:600 14px var(--font-body);padding:0;cursor:pointer;text-align:left}
+.link{border:0;background:none;color:var(--accent);font:600 15px var(--font-body);padding:11px 0;margin:-8px 0;cursor:pointer;text-align:left}
 .word{display:flex;flex-direction:column;gap:8px}
 .word .top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .word .w{font:700 24px var(--font-display)}
-.word .pos{font-size:13px;color:var(--muted)}
-.tag{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
+.word .pos{font-size:14px;color:var(--muted)}
+.tag{font-size:13px;font-weight:600;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
 .word .zhm{font-weight:600}
 .word .ex{font-size:15px}
 .word .exzh{font-size:14px;color:var(--muted)}
@@ -106,7 +182,7 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 .fb ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:6px}
 .fb ins{text-decoration:none;color:var(--good);font-weight:600}
 .fb del{color:var(--bad)}
-.note{font-size:13px;color:var(--muted)}
+.note{font-size:14px;color:var(--muted)}
 .score{font:700 40px var(--font-display);font-variant-numeric:tabular-nums}
 .actionbar{position:fixed;left:0;right:0;bottom:0;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-top:1px solid var(--line);padding:12px max(16px,env(safe-area-inset-right,0px)) calc(12px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}
 .actionbar:has(.in:empty){display:none}
@@ -129,7 +205,7 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 .stage.small .toon{width:37%}
 .toon svg{display:block;width:100%;height:auto;overflow:visible}
 .toon.r svg{transform:scaleX(-1)}
-.toon .nm{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.9);border-radius:999px;padding:1px 9px;font-size:12px;font-weight:600;color:var(--muted);white-space:nowrap}
+.toon .nm{position:absolute;bottom:6px;left:50%;transform:translateX(-50%);background:rgba(255,255,255,.9);border-radius:999px;padding:1px 9px;font-size:13px;font-weight:600;color:var(--ink);white-space:nowrap}
 .toon.talk .nm{color:var(--accent)}
 .toon .body{transform-box:view-box;transform-origin:80px 200px;transition:transform .4s}
 .toon .head{transform-box:view-box;transform-origin:80px 114px;transition:rotate .4s}
@@ -176,7 +252,7 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 /* 文法 */
 .gq{font-size:17px;line-height:1.5}
 .gq u{text-decoration:none;border-bottom:2px solid var(--ink);padding:0 18px}
-.weak{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bad-bg);color:var(--bad)}
+.weak{font-size:13px;font-weight:600;padding:2px 8px;border-radius:999px;background:var(--bad-bg);color:var(--bad)}
 .topic{font:700 19px var(--font-display);color:var(--accent)}
 /* 單字卡：點題目或單字例句裡的英文字跳出；點到的字亮一下 */
 .lk{cursor:pointer;-webkit-tap-highlight-color:transparent}
@@ -202,12 +278,20 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 
 <div class="wrap" id="app">
   <header>
-    <div class="eyebrow"><b id="h-date"></b><span id="h-theme"></span><span id="h-level"></span></div>
-    <h1 id="h-title"></h1>
-    <div class="statusrow">
+    <div class="hrow">
+      <div class="eyebrow"><b id="h-date"></b><span id="h-theme"></span><span id="h-level"></span></div>
       <span class="streak" id="streak"></span>
-      <div class="week" id="week" aria-label="本週練習"></div>
-      <label class="toggle" for="zh-toggle"><input type="checkbox" id="zh-toggle"> 中文</label>
+      <button class="gear" id="gear" aria-expanded="false" aria-controls="settings" aria-label="設定"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg></button>
+    </div>
+    <h1 id="h-title"></h1>
+    <div class="settings" id="settings" hidden>
+      <div class="srow"><span>本週練習<small>點一下可以打開那一天補做</small></span><div class="week" id="week" aria-label="本週練習"></div></div>
+      <div class="srow"><span>顯示中文翻譯</span><label class="toggle" for="zh-toggle"><input type="checkbox" id="zh-toggle" aria-label="顯示中文翻譯"></label></div>
+    </div>
+    <div class="prog-card" id="prog-card">
+      <div class="trow"><b id="t-count"></b><span id="t-left"></span></div>
+      <div class="tbar" id="tbar" aria-hidden="true"></div>
+      <button class="btn primary" id="t-go" hidden></button>
     </div>
     <nav class="steps" id="steps" aria-label="今日步驟"></nav>
   </header>
@@ -236,6 +320,8 @@ const ICON = {
   play: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M7 5v14l12-7z"/></svg>',
   pause: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>',
   speaker: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg>',
+  prev: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg>',
+  next: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>',
   again: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/></svg>'
 };
 const icon = (name) => { const s = document.createElement("span"); s.innerHTML = ICON[name]; return s.firstChild; };
@@ -520,21 +606,35 @@ document.addEventListener("click", (e) => {
 });
 
 // ---------- 進度 ----------
+// min：每一步大約要幾分鐘（給「還剩約 X 分鐘」用）
 const STEPS = [
-  { id: "words", name: "單字預習" },
-  { id: "blind", name: "① 盲聽" },
-  { id: "quiz", name: "② 理解題" },
-  { id: "lyrics", name: "③ 逐字聽" },
-  { id: "shadow", name: "④ 跟讀" },
-  { id: "speak", name: "⑤ 文法練習" },
-  { id: "toeic", name: "⑥ 多益" }
+  { id: "words", name: "單字預習", min: 4 },
+  { id: "blind", name: "① 盲聽", min: 2 },
+  { id: "quiz", name: "② 理解題", min: 2 },
+  { id: "lyrics", name: "③ 逐字聽", min: 3 },
+  { id: "shadow", name: "④ 跟讀", min: 6 },
+  { id: "speak", name: "⑤ 文法練習", min: 4 },
+  { id: "toeic", name: "⑥ 多益", min: 3 }
 ];
+const MIN_DONE = 4;   // 一天至少真的做完幾步，才算打卡
 let prog = {}, cur = 0, MODE = "lesson";
 const progOf = (d) => store.get("prog:" + d, {});
+// prog[id]：true＝做完；"skip"＝略過
+const isOk = (id) => prog[id] === true;
+const isHandled = (id) => !!prog[id];
 const markDone = (id) => { prog[id] = true; store.set("prog:" + DAY, prog); renderNav(); renderStatus(); };
-const allDone = () => STEPS.every(s => prog[s.id]);
-// 某一天算不算「有練」：平日 6 步做完；週六複習做完；週日看過週報
-const dayDone = (d) => { const p = progOf(d); return !!(p.review || p.report || STEPS.every(s => p[s.id])); };
+const markSkip = (id) => { if (prog[id] === true) return; prog[id] = "skip"; store.set("prog:" + DAY, prog); renderNav(); renderStatus(); };
+const allDone = () => STEPS.every(s => isOk(s.id));
+// 下一個還沒做（也沒略過）的步驟；從目前這步往後找，找不到再從頭找；都處理過了就回傳完成頁
+function nextTodo(from = cur) {
+  for (let i = from + 1; i < STEPS.length; i++) if (!isHandled(STEPS[i].id)) return i;
+  for (let i = 0; i <= Math.min(from, STEPS.length - 1); i++) if (!isHandled(STEPS[i].id)) return i;
+  return STEPS.length;
+}
+const firstTodo = () => nextTodo(-1);
+// 某一天算不算「有練」：平日 7 步都做完或略過、而且至少真的做完 4 步；週六複習做完；週日看過週報
+const dayDone = (d) => { const p = progOf(d); if (p.review || p.report) return true;
+  return STEPS.every(s => p[s.id]) && STEPS.filter(s => p[s.id] === true).length >= MIN_DONE; };
 const dayStarted = (d) => Object.keys(progOf(d)).length > 0;
 function streakCount() {
   let n = 0; const miss = {}; const first = INDEX.length ? INDEX[0].date : TODAY;
@@ -553,6 +653,8 @@ function streakCount() {
 // 某一天要開哪一份課：當天有就用當天，沒有就用之前最近的一份
 const lessonFor = (d) => { let e = null; for (const x of INDEX) if (x.date <= d) e = x; return e || INDEX[0]; };
 
+const gearBtn = $("#gear");
+gearBtn.addEventListener("click", () => { const open = $("#settings").hidden; $("#settings").hidden = !open; gearBtn.setAttribute("aria-expanded", String(open)); });
 const zhToggle = $("#zh-toggle");
 zhToggle.checked = store.get("zh", false);
 const applyZh = () => document.body.classList.toggle("hidezh", !zhToggle.checked);
@@ -569,31 +671,74 @@ function renderHeader(title, sub, eyebrow) {
 }
 function renderStatus() {
   const n = streakCount();
-  $("#streak").textContent = n ? `連續 ${n} 天` : (MODE === "lesson" ? `今天 ${STEPS.filter(s => prog[s.id]).length}/${STEPS.length} 步` : "");
+  $("#streak").textContent = n ? `連續 ${n} 天` : "";
   const wk = $("#week"); wk.innerHTML = "";
   const mon = monday(TODAY);
   WD.forEach((lb, i) => {
     const d = addDays(mon, i);
     const canOpen = d <= TODAY && d >= addDays(TODAY, -6);
     const cls = [dayDone(d) ? "done" : dayStarted(d) ? "half" : "", d === VIEW_DAY ? "today" : ""].join(" ").trim();
-    const el = h(canOpen ? "button" : "span", { class: cls, title: mdLabel(d) + (canOpen ? "，點一下打開" : ""), onclick: canOpen ? () => openDay(d) : null },
-      dayDone(d) ? "✓" : lb);
-    wk.append(el);
+    const el = h(canOpen ? "button" : "span", { class: cls, title: mdLabel(d) + (canOpen ? "，點一下打開" : ""), "aria-label": mdLabel(d) + (dayDone(d) ? "，已完成" : ""), onclick: canOpen ? () => openDay(d) : null },
+      String(Number(d.slice(8))));
+    wk.append(h("div", { class: "wday" }, h("small", { "aria-hidden": "true" }, lb), el));
   });
 }
 function renderNav() {
   const nav = $("#steps"); nav.innerHTML = "";
   STEPS.forEach((s, i) => nav.append(h("button", {
-    class: (i === cur ? "cur " : "") + (prog[s.id] ? "ok" : ""), onclick: () => go(i)
-  }, s.name)));
+    class: (i === cur ? "cur " : "") + (isOk(s.id) ? "ok" : prog[s.id] === "skip" ? "skip" : ""), onclick: () => go(i)
+  }, s.name + (prog[s.id] === "skip" ? "（略過）" : ""))));
   const b = nav.children[cur];
   if (b) nav.scrollLeft = b.offsetLeft - nav.clientWidth / 2 + b.clientWidth / 2;
+  renderProgress();
+}
+// 今日進度卡
+function renderProgress() {
+  const card = $("#prog-card");
+  card.hidden = MODE !== "lesson";
+  if (card.hidden) return;
+  const ok = STEPS.filter(s => isOk(s.id)).length;
+  const left = STEPS.filter(s => !isHandled(s.id));
+  const mins = left.reduce((a, s) => a + s.min, 0);
+  $("#t-count").textContent = `今日進度 ${ok}/${STEPS.length}`;
+  $("#t-left").textContent = left.length ? `還剩 ${left.length} 步・約 ${mins} 分鐘` : (ok >= MIN_DONE ? "今天完成了" : `至少做完 ${MIN_DONE} 步才算打卡`);
+  const bar = $("#tbar"); bar.innerHTML = "";
+  STEPS.forEach((s, i) => bar.append(h("i", { class: [isOk(s.id) ? "ok" : prog[s.id] === "skip" ? "skip" : "", i === cur ? "cur" : ""].join(" ").trim() })));
+  // 「繼續」按鈕：目前畫面不是下一個該做的步驟時才出現（例如回頭看做過的步驟、或在完成頁）
+  const t = firstTodo(), btn = $("#t-go");
+  btn.hidden = !(t < STEPS.length && t !== cur && (cur >= STEPS.length || isHandled(STEPS[cur].id)));
+  btn.textContent = t < STEPS.length ? `繼續：${STEPS[t].name}` : "";
+  btn.onclick = () => go(t);
 }
 function setBar(...btns) { const bar = $("#actionbar"); bar.innerHTML = ""; btns.forEach(b => bar.append(b)); }
-const nextBtn = (label = "下一步") => h("button", { class: "btn primary", onclick: () => { markDone(STEPS[cur].id); go(cur + 1); } }, label);
+// 每一步底部的按鈕：ready()＝這步做完了沒；need()＝還差什麼（顯示在按鈕上）
+let refreshBar = null;
+function stepBar(ready, need, wrap) {
+  const id = STEPS[cur].id;
+  const skip = h("button", { class: "btn", onclick: () => { markSkip(id); go(nextTodo()); } }, "跳過這步");
+  const main = h("button", { class: "btn primary", onclick: () => { if (!(ready() || isOk(id))) return; markDone(id); go(nextTodo()); } });
+  refreshBar = () => {
+    const ok = isOk(id) || ready();
+    if (ok && !isOk(id)) markDone(id);
+    const n = nextTodo();
+    main.disabled = !ok;
+    main.textContent = ok ? (n >= STEPS.length ? "完成今天的練習" : `下一步：${STEPS[n].name}`) : need();
+    skip.hidden = ok;
+  };
+  refreshBar();
+  if (wrap) setBar(wrap(skip, main)); else setBar(skip, main);
+}
+const leftCount = (arr, saved) => arr.filter((_, i) => saved[i] == null).length;
+// 對話播到最後一句就記下「聽完了」
+function heardUntilEnd(step) {
+  const k = `heard:${step}:` + DAY;
+  listeners.add((t) => { if (!store.get(k, false) && t >= T[T.length - 1].start) { store.set(k, true); refreshBar && refreshBar(); } });
+}
 
 function go(i) {
-  stopAll(); listeners.clear(); segEnd = null; segDone = null;
+  stopAll(); listeners.clear(); segEnd = null; segDone = null; refreshBar = null; fitNow = null;
+  document.querySelector(".actionbar").classList.remove("tall");
+  document.body.style.paddingBottom = "";
   cur = Math.max(0, Math.min(i, STEPS.length));
   store.set("cur:" + DAY, cur);
   renderNav();
@@ -653,12 +798,14 @@ function reviewCard(e) {
 VIEWS.words = () => {
   registerWords();
   const memo = store.get("memo:" + DAY, {});
+  const rated = h("span", { class: "rated", "aria-live": "polite" });
+  const paintRated = () => { const n = L.words.length - leftCount(L.words, memo); rated.textContent = `已評 ${n}/${L.words.length}`; rated.classList.toggle("all", n === L.words.length); };
+  paintRated();
+  const cards = [];
   const sec = h("section", { class: "step" },
-    testInvite(),
-    h("h2", {}, "今天的 5 個單字"),
-    h("p", { class: "lead" }, "3 個從今天的對話挑出來，2 個是多益常考字。看完按「記得」或「忘了」，忘了的字過幾天會再出現。"));
+    h("h2", {}, "今天的 5 個單字", rated));
   L.words.forEach((w, i) => {
-    sec.append(h("div", { class: "card word" },
+    sec.append(cards[i] = h("div", { class: "card word" },
       h("div", { class: "wtop" }, wordPic(w, DAY), h("div", { class: "wtext" },
         h("div", { class: "top" }, h("span", { class: "w" }, w.w), h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
         h("div", { class: "zhm" }, w.zh))),
@@ -668,14 +815,21 @@ VIEWS.words = () => {
       h("div", { class: "ex lk" }, "職場例句：" + w.ex2),
       h("div", { class: "exzh" }, w.ex2zh),
       h("div", { class: "row" }, h("button", { class: "btn", onclick: () => playClip("word_" + i) }, icon("speaker"), "發音＋例句")),
-      memoButtons(memo[i], (v) => { memo[i] = v; store.set("memo:" + DAY, memo); rateWord(w.w, v); })));
+      memoButtons(memo[i], (v) => {
+        const first = memo[i] == null;
+        memo[i] = v; store.set("memo:" + DAY, memo); rateWord(w.w, v); paintRated(); refreshBar && refreshBar();
+        // 第一次評這個字 → 自動捲到下一個還沒評的字（改答案不捲）
+        if (!first) return;
+        const next = L.words.findIndex((_, j) => j > i && memo[j] == null);
+        if (next >= 0) setTimeout(() => cards[next].scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "start" }), 350);
+      })));
   });
   const due = dueWords();
   if (due.length) {
     sec.append(h("h2", {}, `複習：之前忘記的字（${due.length} 個）`), h("p", { class: "lead" }, "先想想看意思，再打開答案。"));
     due.forEach(e => sec.append(reviewCard(e)));
   }
-  setBar(nextBtn("開始聽力"));
+  stepBar(() => leftCount(L.words, memo) === 0, () => `還有 ${leftCount(L.words, memo)} 個字沒評`);
   return sec;
 };
 
@@ -710,17 +864,18 @@ function playerControls({ showBar = true } = {}) {
 }
 
 VIEWS.blind = () => {
-  setBar(nextBtn("聽完了，去答題"));
+  heardUntilEnd("blind");
+  stepBar(() => store.get("heard:blind:" + DAY, false), () => "整段聽完就能下一步");
   return h("section", { class: "step" },
     h("h2", {}, "先不看字幕，專心聽"),
-    h("p", { class: "lead" }, `${L.scene || ""}（${Object.entries(L.speakers).map(([k, v]) => k + " " + v.accent).join("、")}）聽不懂的地方先跳過，聽完再去答題。`),
+    L.scene ? h("p", { class: "lead" }, L.scene.split(/[，。]/)[0]) : null,   // 只留情境的第一句
     stageView(),
     playerControls(),
     h("div", { class: "cover" }, "字幕先藏起來了。答完題目後，下一步就會看到。"));
 };
 
 VIEWS.quiz = () => {
-  const sec = h("section", { class: "step" }, h("h2", {}, "你聽懂多少？"), h("p", { class: "lead" }, "憑印象選，答完會告訴你答案在哪一句。"));
+  const sec = h("section", { class: "step" }, h("h2", {}, "你聽懂多少？"));
   const ans = store.get("quiz:" + DAY, {});
   L.quiz.forEach((q, qi) => {
     const exp = h("div", { class: "explain", hidden: true });
@@ -731,11 +886,11 @@ VIEWS.quiz = () => {
       exp.append(h("span", {}, (pick === q.answer ? "答對了。" : "答案是 " + "ABCD"[q.answer] + "。") + q.why),
         h("button", { class: "link", onclick: () => playLine(q.line) }, "▶ 聽答案那一句"));
     };
-    q.options.forEach((o, j) => opts.append(h("button", { class: "opt", onclick: () => { ans[qi] = j; store.set("quiz:" + DAY, ans); show(j); } }, h("b", {}, "ABCD"[j]), o)));
+    q.options.forEach((o, j) => opts.append(h("button", { class: "opt", onclick: () => { ans[qi] = j; store.set("quiz:" + DAY, ans); show(j); refreshBar && refreshBar(); } }, h("b", {}, "ABCD"[j]), o)));
     sec.append(h("div", { class: "card" }, h("div", { class: "q lk" }, `${qi + 1}. ${q.q}`), opts, exp));
     if (ans[qi] != null) setTimeout(() => show(ans[qi]));
   });
-  setBar(nextBtn("看字幕重聽"));
+  stepBar(() => leftCount(L.quiz, ans) === 0, () => `還有 ${leftCount(L.quiz, ans)} 題沒答`);
   return sec;
 };
 
@@ -755,12 +910,18 @@ function lyricsList({ onPick }) {
     box.append(h("button", { class: "ln", role: "listitem", "data-i": i, onclick: () => onPick(i) },
       h("span", { class: "who" }, ln.s), en, h("span", { class: "zh" }, ln.zh)));
   });
-  let last = -2, lastW = -1;
+  let last = -2, lastW = -1, needScroll = false, handsOffUntil = 0;
+  // 手動拉字幕時，先停止自動跟隨；約 4 秒沒碰再接回正在播的那一句
+  const handsOn = () => { handsOffUntil = Date.now() + 4000; needScroll = true; };
+  ["touchmove", "wheel"].forEach(ev => box.addEventListener(ev, handsOn, { passive: true }));
   const mark = (i, t) => {
     if (i !== last) {
       if (last >= 0 && box.children[last]) box.children[last].querySelectorAll(".w.on").forEach(w => w.classList.remove("on"));
-      last = i; lastW = -1;
+      last = i; lastW = -1; needScroll = true;
       [...box.children].forEach((el, j) => el.classList.toggle("now", j === i));
+    }
+    if (needScroll && Date.now() >= handsOffUntil) {
+      needScroll = false;
       const el = box.children[i];
       if (el) box.scrollTo({ top: el.offsetTop - box.clientHeight / 2 + el.clientHeight / 2 });
     }
@@ -775,15 +936,126 @@ function lyricsList({ onPick }) {
   return { box, mark };
 }
 
+// ③ 逐字聽：卡通固定在上面；正在播的句子是一張卡片（可以點單字查意思）；下面是接下來的句子；播放器在最下面
 VIEWS.lyrics = () => {
-  const { box, mark } = lyricsList({ onPick: (i) => { segEnd = null; dialogue.playbackRate = speed; dialogue.currentTime = T[i].start; dialogue.play().catch(() => {}); } });
-  listeners.add((t) => mark(lineAt(t), t));
-  setBar(nextBtn("開始跟讀"));
-  return h("section", { class: "step" },
+  dialogue.currentTime = 0;   // 一律從頭播，不接 ① 停下的地方
+  // 每個字估一個開始時間：照字母數分配整句的長度，標點後面多算一點停頓
+  const words = L.lines.map((ln, i) => {
+    const parts = ln.en.split(" ");
+    const weight = (w) => w.replace(/[^A-Za-z0-9']/g, "").length + 1.5 + (/[,;]$/.test(w) ? 3 : 0) + (/[.!?]$/.test(w) ? 4 : 0);
+    const totalW = parts.reduce((a, w) => a + weight(w), 0);
+    let acc = 0;
+    return parts.map((w) => { const at = T[i].start + (T[i].end - T[i].start) * acc / totalW; acc += weight(w); return { w, at }; });
+  });
+  const playFrom = (i) => { segEnd = null; segDone = null; stopAll(); dialogue.playbackRate = speed; dialogue.currentTime = T[i].start; dialogue.play().catch(() => {}); };
+
+  // 正在播的句子卡片
+  const cWho = h("div", { class: "who" }), cEn = h("div", { class: "en lk" }), cZh = h("div", { class: "zh" });
+  const card = h("div", { class: "lcard", "aria-live": "polite" }, cWho, cEn, cZh,
+    h("div", { class: "acts" }, h("button", { class: "link", onclick: () => playLine(shown) }, icon("again"), " 重播這句")));
+  let shown = -1;
+  const showLine = (i) => {
+    shown = i;
+    cWho.textContent = L.lines[i].s;
+    cEn.innerHTML = "";
+    words[i].forEach((x, k) => { if (k) cEn.append(" "); cEn.append(h("span", { class: "w" }, x.w)); });
+    cZh.textContent = L.lines[i].zh;
+    [...list.children].forEach((el, j) => { el.classList.toggle("cur", j === i); el.classList.toggle("past", j < i); });
+    needScroll = true;
+  };
+
+  // 下面的句子：點一下從那句播
+  const list = h("div", { class: "lnext", role: "list" });
+  L.lines.forEach((ln, i) => list.append(h("button", { class: "ln", role: "listitem", onclick: () => playFrom(i) },
+    h("span", { class: "who" }, ln.s), h("span", { class: "en" }, ln.en), h("span", { class: "zh" }, ln.zh))));
+  // 自動把「下一句」捲到最上面；手動拉時先停，約 4 秒沒碰再接回
+  let needScroll = false, handsOffUntil = 0;
+  ["touchmove", "wheel"].forEach(ev => list.addEventListener(ev, () => { handsOffUntil = Date.now() + 4000; needScroll = true; }, { passive: true }));
+  const follow = () => {
+    if (!needScroll || Date.now() < handsOffUntil) return;
+    needScroll = false;
+    const el = list.children[Math.min(shown + 1, L.lines.length - 1)];
+    if (el) list.scrollTo({ top: el.offsetTop - list.offsetTop - 2 });
+  };
+
+  let lastW = -1;
+  listeners.add((t) => {
+    const i = Math.max(0, lineAt(t));
+    if (i !== shown) { showLine(i); lastW = -1; }
+    let k = -1;
+    if (t >= T[i].start - 0.05) for (let n = 0; n < words[i].length; n++) if (t >= words[i][n].at) k = n;
+    if (dialogue.currentTime >= T[i].end) k = words[i].length - 1;
+    if (k !== lastW) { lastW = k; cEn.querySelectorAll(".w").forEach((w, n) => w.classList.toggle("on", n <= k)); }
+    follow();
+  });
+  heardUntilEnd("lyrics");
+
+  // 最下面的播放器
+  const total = () => dialogue.duration || T[T.length - 1].end + 0.5;
+  const seek = h("input", { type: "range", class: "seek", min: 0, max: Math.ceil(total() * 10), step: 1, value: 0, "aria-label": "拖曳調整播放位置" });
+  const times = h("div", { class: "times" }, h("span", {}, "0:00"), h("span", {}, fmt(T[T.length - 1].end)));
+  let dragging = false;
+  const paintBar = (t) => { seek.style.setProperty("--p", (100 * t / total()) + "%"); times.firstChild.textContent = fmt(t); };
+  const seekTo = () => { segEnd = null; const t = seek.value / 10; dialogue.currentTime = t; paintBar(t); };
+  seek.addEventListener("pointerdown", () => { dragging = true; });
+  seek.addEventListener("touchstart", () => { dragging = true; }, { passive: true });
+  seek.addEventListener("input", seekTo);
+  seek.addEventListener("change", () => { seekTo(); dragging = false; });
+  const play = h("button", { class: "round", "aria-label": "播放", onclick: () => {
+    segEnd = null; segDone = null;
+    if (dialogue.paused) { dialogue.playbackRate = speed; dialogue.play().catch(() => {}); } else dialogue.pause();
+  } });
+  const syncPlay = () => { play.innerHTML = ""; play.append(icon(dialogue.paused ? "play" : "pause")); play.setAttribute("aria-label", dialogue.paused ? "播放" : "暫停"); };
+  syncPlay();
+  const cur0 = () => Math.max(0, lineAt(dialogue.currentTime));
+  // 上一句：這句已經播超過 1.5 秒 → 從這句開頭；否則跳到上一句
+  const prev = h("button", { class: "ibtn", onclick: () => { const i = cur0(); playFrom(dialogue.currentTime - T[i].start > 1.5 || i === 0 ? i : i - 1); } }, icon("prev"), h("small", {}, "上一句"));
+  const next = h("button", { class: "ibtn", onclick: () => playFrom(Math.min(cur0() + 1, L.lines.length - 1)) }, icon("next"), h("small", {}, "下一句"));
+  const speeds = [0.75, 1, 1.25];
+  const spd = h("button", { class: "ibtn", "aria-label": "播放速度", onclick: () => {
+    speed = speeds[(speeds.indexOf(speed) + 1) % speeds.length]; store.set("speed", speed); dialogue.playbackRate = speed; spd.firstChild.textContent = speed + "x";
+  } }, h("b", {}, speed + "x"), h("small", {}, "速度"));
+  const zhb = h("button", { class: "ibtn", "aria-pressed": String(zhToggle.checked), onclick: () => {
+    zhToggle.checked = !zhToggle.checked; store.set("zh", zhToggle.checked); applyZh(); zhb.setAttribute("aria-pressed", String(zhToggle.checked));
+  } }, h("b", {}, "中"), h("small", {}, "翻譯"));
+  listeners.add((t) => {
+    seek.max = Math.ceil(total() * 10);
+    if (!dragging) { seek.value = Math.round(t * 10); paintBar(t); }
+    if (play.dataset.p !== String(dialogue.paused)) { play.dataset.p = String(dialogue.paused); syncPlay(); }
+  });
+  stepBar(() => store.get("heard:lyrics:" + DAY, false), () => "跟著字幕聽完一遍就能下一步", (skip, main) => {
+    skip.className = "link skip-link"; main.classList.add("slim");
+    return h("div", { class: "lplayer" },
+      h("div", { class: "slimrow" }, skip, main),
+      h("div", {}, seek, times),
+      h("div", { class: "ctrl" }, spd, prev, play, next, zhb));
+  });
+  document.querySelector(".actionbar").classList.add("tall");
+
+  showLine(0);
+  const sec = h("section", { class: "step lyr" },
     h("h2", {}, "看字幕再聽一次"),
-    h("p", { class: "lead" }, "字幕會跟著聲音亮起來。點任何一句，就從那一句開始播。注意剛剛沒聽出來的地方。"),
-    stageView({ small: true }), playerControls(), h("div", { class: "card" }, box));
+    stageView({ small: true }), card, list);
+  // 卡通＋句子卡＋下面的句子塞滿一個畫面：畫面捲到卡通上方，句子列表高度剛好到播放器上面
+  fitNow = () => {
+    const stage = sec.querySelector(".stage") || sec;
+    const ab = document.querySelector(".actionbar").offsetHeight || 0;
+    const stageTop = stage.getBoundingClientRect().top + window.scrollY;
+    const off = list.getBoundingClientRect().top - stage.getBoundingClientRect().top;
+    const hgt = Math.max(120, window.innerHeight - ab - off - 12 - 10);
+    list.style.height = list.style.maxHeight = hgt + "px";
+    document.body.style.paddingBottom = (ab + 16) + "px";   // 讓頁面捲得到卡通上方
+    window.scrollTo({ top: stageTop - 12, behavior: "instant" });
+    // 實際量一次再修正，確保句子列表不會被播放器蓋到
+    const fix = Math.floor(document.querySelector(".actionbar").getBoundingClientRect().top - list.getBoundingClientRect().top - 8);
+    if (fix > 80) list.style.height = list.style.maxHeight = fix + "px";
+    needScroll = true; follow();
+  };
+  setTimeout(() => fitNow && fitNow(), 0);
+  return sec;
 };
+let fitNow = null;
+window.addEventListener("resize", () => fitNow && fitNow());
 
 VIEWS.shadow = () => {
   let i = store.get("shadow:" + DAY, 0);
@@ -804,7 +1076,7 @@ VIEWS.shadow = () => {
     paint(); state.textContent = "仔細聽"; state.className = "state";
     playLine(i, () => { state.textContent = "換你念，念完按下面的按鈕"; state.className = "state yours"; });
   }
-  function finish() { markDone("shadow"); go(cur + 1); }
+  function finish() { markDone("shadow"); go(nextTodo()); }
   paint();
   state.textContent = "按「開始」播第一句";
   const start = h("button", { class: "btn primary", onclick: () => { start.replaceWith(next); run(); } }, icon("play"), i ? "從第 " + (i + 1) + " 句繼續" : "開始");
@@ -814,11 +1086,13 @@ VIEWS.shadow = () => {
   setBar(again, start);
   return h("section", { class: "step" },
     h("h2", {}, "一句一句跟著念"),
-    h("p", { class: "lead" }, "每句播完會停下來，換你大聲念一次。模仿語調和停頓，不只是把字念對。第 1 輪看字念，第 2 輪試著藏起英文。"),
     h("div", { class: "row" }, speedBox, hideTxt),
     stageView({ small: true }),
     h("div", { class: "card shadow-box" }, count, who, big, zh, state),
-    restart);
+    restart,
+    isOk("shadow")
+      ? h("button", { class: "link skip-link", onclick: () => go(nextTodo()) }, nextTodo() >= STEPS.length ? "已念完，看今天的成果 →" : `已念完，下一步：${STEPS[nextTodo()].name} →`)
+      : h("button", { class: "link skip-link", onclick: () => { markSkip("shadow"); go(nextTodo()); } }, "今天先跳過跟讀"));
 };
 
 // 一題句子重組。play：排對後播放正確句子；saveKey：記住做完沒
@@ -886,8 +1160,8 @@ const isWeak = (topic) => !!(gtest() && gtest().weak.some(w => w.topic === topic
 function testInvite() {
   if (gtest() || store.get("gtest-skip", false)) return null;
   const card = h("div", { class: "card" },
-    h("div", { class: "q" }, "第一次來？先做文法小測驗"),
-    h("div", { class: "exzh" }, "13 題、約 6 分鐘，找出你最弱的文法。結果只存在這台裝置。"),
+    h("div", { class: "q" }, "先做文法程度測驗，找出你的弱項？"),
+    h("div", { class: "exzh" }, "13 題、約 6 分鐘，只要做一次。之後你的弱項會標出來，練習時特別注意。結果只存在這台裝置。"),
     h("div", { class: "row" },
       h("button", { class: "btn primary", onclick: () => openTest() }, "開始測驗"),
       h("button", { class: "btn", onclick: () => { store.set("gtest-skip", true); card.remove(); } }, "之後再說")));
@@ -897,24 +1171,21 @@ function viewGrammar() {
   const G = L.grammar;
   const key = "gram:" + DAY;
   const sec = h("section", { class: "step" },
+    testInvite(),
     h("h2", {}, "文法練習：多益 Part 5"),
     h("div", { class: "card" },
       h("div", { class: "row" }, h("span", { class: "note" }, "今天的文法"), isWeak(G.topic) ? h("span", { class: "weak" }, "你的弱項") : null),
       h("div", { class: "topic" }, G.topicZh),
-      h("div", {}, G.tip)),
-    h("p", { class: "lead" }, "選出最適合填進空格的答案，答完馬上看解說。答錯的題目週六會再出現。"));
-  const done = () => {
-    const a = store.get(key, {});
-    if (G.items.every((_, i) => a[i] != null)) markDone("speak");
-  };
+      h("div", {}, G.tip)),);
+  const done = () => { refreshBar && refreshBar(); };
   G.items.forEach((item, n) => sec.append(grammarCard(item, n, key, (pick) => {
     const bank = store.get("grambank", {}), id = DAY + "#" + n;
     if (pick !== item.answer) bank[id] = { ...item, from: DAY, topicZh: G.topicZh };
     store.set("grambank", bank);
     done();
   })));
-  if (!gtest()) sec.append(h("button", { class: "link", onclick: () => openTest() }, "做文法程度測驗（13 題）"));
-  setBar(nextBtn("去做多益"));
+  if (!gtest() && store.get("gtest-skip", false)) sec.append(h("button", { class: "link", onclick: () => openTest() }, "做文法程度測驗（13 題）"));
+  stepBar(() => leftCount(G.items, store.get(key, {})) === 0, () => `還有 ${leftCount(G.items, store.get(key, {}))} 題沒答`);
   return sec;
 }
 
@@ -922,7 +1193,7 @@ function viewGrammar() {
 async function openTest() {
   stopAll(); listeners.clear();
   MODE = "test";
-  $("#steps").hidden = true;
+  $("#steps").hidden = true; $("#prog-card").hidden = true;
   renderHeader("Grammar Check", "文法程度測驗：每個主題 1 題，找出弱項", ["測驗", ""]);
   const main = $("#main"); main.innerHTML = ""; main.append(h("p", { class: "lead" }, "載入中…"));
   let G;
@@ -966,9 +1237,10 @@ function viewReorder() {
       h("div", { class: "exzh" }, S.patternZh),
       h("button", { class: "link", onclick: () => playLine(S.fromLine) }, "▶ 聽對話裡怎麼用")),
     h("p", { class: "lead" }, "看中文，依序點下面的字塊排出英文句子。點已經放上去的字塊可以拿回來。排對之後，跟著念一次。"));
-  const finish = () => { const s = store.get(key, {}); if (L.reorder.every((_, n) => s[n])) markDone("speak"); };
+  const finish = () => { refreshBar && refreshBar(); };
+  const reLeft = () => L.reorder.filter((_, n) => !store.get(key, {})[n]).length;
   L.reorder.forEach((item, n) => sec.append(reorderCard(item, n, key, () => item.audio ? playClip(item.audio) : playLine(item.line), finish)));
-  setBar(nextBtn("去做多益"));
+  stepBar(() => reLeft() === 0, () => `還有 ${reLeft()} 題沒排`);
   return sec;
 };
 
@@ -976,7 +1248,7 @@ VIEWS.toeic = () => {
   const ans = store.get("p2:" + DAY, {});
   const sec = h("section", { class: "step" },
     h("h2", {}, "多益 Part 2・應答問題"),
-    h("p", { class: "lead" }, "按播放，會先聽到一個問句，再聽到 A、B、C 三個回答。選最適合的一個。題目不給文字，跟真的考試一樣，答完才看得到。"));
+    h("p", { class: "lead" }, "聽問句和 A、B、C 三個回答，選最適合的一個。"));
   L.part2.forEach((p, n) => {
     const exp = h("div", { class: "explain", hidden: true });
     const opts = h("div", { class: "row" });
@@ -986,7 +1258,7 @@ VIEWS.toeic = () => {
       exp.append(h("strong", { class: "lk" }, p.q), h("span", {}, p.zh),
         ...p.opts.map((o, j) => h("span", {}, `${"ABC"[j]}. ${o}`)),
         h("span", {}, (pick === p.answer ? "答對了。" : `答案是 ${"ABC"[p.answer]}。`) + p.why));
-      if (Object.keys(ans).length === L.part2.length) markDone("toeic");
+      refreshBar && refreshBar();
     };
     "ABC".split("").forEach((c, j) => opts.append(h("button", { class: "opt", style: "flex:1;justify-content:center", onclick: () => { ans[n] = j; store.set("p2:" + DAY, ans); show(j); } }, h("b", {}, c))));
     sec.append(h("div", { class: "card" },
@@ -994,7 +1266,7 @@ VIEWS.toeic = () => {
       opts, exp));
     if (ans[n] != null) setTimeout(() => show(ans[n]));
   });
-  setBar(h("button", { class: "btn primary", onclick: () => { markDone("toeic"); go(STEPS.length); } }, "完成今天的練習"));
+  stepBar(() => leftCount(L.part2, ans) === 0, () => `還有 ${leftCount(L.part2, ans)} 題沒答`);
   return sec;
 };
 
@@ -1005,18 +1277,44 @@ function viewDone() {
   const ga = store.get("gram:" + DAY, {});
   const gOk = L.grammar ? L.grammar.items.filter((g, i) => ga[i] === g.answer).length : 0;
   const memo = store.get("memo:" + DAY, {});
+  const remembered = L.words.filter((w, i) => memo[i] === "r").length;
   const forgot = L.words.filter((w, i) => memo[i] === "f").map(w => w.w);
-  const missing = STEPS.filter(s => !prog[s.id]);
-  setBar(h("button", { class: "btn", onclick: () => go(0) }, "回到第一步"));
+  const unrated = leftCount(L.words, memo);
+  const okN = STEPS.filter(s => isOk(s.id)).length;
+  const skipped = STEPS.filter(s => prog[s.id] === "skip");
+  const todo = STEPS.filter(s => !isHandled(s.id));
+  const counted = dayDone(DAY);
+  const t = firstTodo();
+  // 一行成績：沒做的步驟寫「略過」，不假裝答對
+  const line = (id, text) => h("div", {}, isOk(id) ? text : `${STEPS.find(s => s.id === id).name}：${prog[id] === "skip" ? "略過" : "還沒做"}`);
+  const wordLine = isOk("words") || remembered || forgot.length
+    ? `單字：記得 ${remembered} 個、忘了 ${forgot.length} 個` + (unrated ? `、${unrated} 個沒評` : "") + (forgot.length ? `（${forgot.join("、")} 過幾天會再複習）` : "")
+    : `單字預習：${prog.words === "skip" ? "略過" : "還沒做"}`;
+  // 底部按鈕：還有沒做的 → 繼續；有略過的 → 補做；全部做完 → 再聽一次對話
+  const firstSkipped = STEPS.findIndex(s => prog[s.id] === "skip");
+  if (t < STEPS.length) setBar(h("button", { class: "btn primary", onclick: () => go(t) }, `繼續：${STEPS[t].name}`));
+  else if (firstSkipped >= 0) setBar(h("button", { class: "btn primary", onclick: () => go(firstSkipped) }, `補做：${STEPS[firstSkipped].name}`));
+  else setBar(h("button", { class: "btn", onclick: () => go(3) }, "再聽一次今天的對話"));
+  const burst = h("div", { class: "burst", "aria-hidden": "true" });
+  if (counted) {
+    const colors = ["var(--good)", "var(--accent)", "var(--marker)", "#E2B45A", "#D9826F"];
+    for (let k = 0; k < 14; k++) { const a = (k / 14) * Math.PI * 2; const r = 70 + (k % 3) * 22;
+      burst.append(h("i", { style: `--x:${Math.round(Math.cos(a) * r)}px;--y:${Math.round(Math.sin(a) * r)}px;background:${colors[k % colors.length]};animation-delay:${0.1 + (k % 4) * 0.05}s` })); }
+  }
+  const n = streakCount();
+  const headline = todo.length ? `已完成 ${okN}/${STEPS.length} 步，還剩：${todo.map(s => s.name).join("、")}`
+    : counted ? (skipped.length ? `今天的練習完成了！（略過：${skipped.map(s => s.name).join("、")}）` : "今天 7 步全部完成！")
+    : `今天只做完 ${okN} 步，至少做完 ${MIN_DONE} 步才算打卡。把略過的補做幾步就可以了。`;
   return h("section", { class: "step" },
-    h("div", { class: "card done-hero" },
-      h("div", { class: "score" }, missing.length ? `${STEPS.length - missing.length}/${STEPS.length}` : "完成"),
-      h("div", {}, missing.length ? "還有幾步沒做：" + missing.map(s => s.name).join("、") : "這一天的練習都做完了。")),
+    h("div", { class: "card done-hero" }, burst,
+      h("div", { class: "badge" + (counted ? "" : " part") }, counted ? "✓" : `${okN}`),
+      h("div", { class: "score" }, counted ? (n ? `連續 ${n} 天` : "完成") : `${okN}/${STEPS.length}`),
+      h("div", {}, headline)),
     h("div", { class: "card" },
-      h("div", {}, `理解題：答對 ${qOk} / ${L.quiz.length}`),
-      L.grammar ? h("div", {}, `文法（${L.grammar.topicZh}）：答對 ${gOk} / ${L.grammar.items.length}`) : null,
-      h("div", {}, `多益 Part 2：答對 ${pOk} / ${L.part2.length}`),
-      h("div", {}, forgot.length ? `過幾天會再複習的單字：${forgot.join("、")}` : "單字：全部記得")),
+      line("quiz", `理解題：答對 ${qOk} / ${L.quiz.length}`),
+      L.grammar ? line("speak", `文法（${L.grammar.topicZh}）：答對 ${gOk} / ${L.grammar.items.length}`) : null,
+      line("toeic", `多益 Part 2：答對 ${pOk} / ${L.part2.length}`),
+      h("div", {}, wordLine)),
     h("button", { class: "link", onclick: () => openTest() }, gtest() ? `重做文法程度測驗（上次 ${gtest().score}/${gtest().total}）` : "做文法程度測驗（13 題）"),
     h("p", { class: "note" }, "練習紀錄只存在這台裝置上，不會傳到網路。換手機或清除瀏覽器資料，紀錄就會不見。"));
 }
@@ -1098,12 +1396,13 @@ async function viewSunday(d) {
 // ---------- 打開某一天 ----------
 async function openDay(d) {
   stopAll(); listeners.clear(); segEnd = null; segDone = null; clips = {};
+  $("#settings").hidden = true; gearBtn.setAttribute("aria-expanded", "false");
   VIEW_DAY = d;
   const wd = wdIdx(d);
   const main = $("#main");
   if (wd >= 5) {
     MODE = wd === 5 ? "review" : "report";
-    $("#steps").hidden = true;
+    $("#steps").hidden = true; $("#prog-card").hidden = true;
     renderHeader(wd === 5 ? "Review Day" : "Weekly Report", wd === 5 ? "週六複習日：這週的單字和句子" : "週日：看看這週的成果", [wd === 5 ? "複習" : "週報", ""]);
     main.innerHTML = ""; main.append(h("p", { class: "lead" }, "載入中…"));
     const view = await (wd === 5 ? viewSaturday(d) : viewSunday(d));
@@ -1121,16 +1420,52 @@ async function openDay(d) {
   STEPS[5].name = L.grammar ? "⑤ 文法練習" : "⑤ 造句練習";
   prog = progOf(DAY); cur = store.get("cur:" + DAY, 0);
   renderHeader(L.title, L.titleZh + (DAY !== d ? `（${mdLabel(DAY)} 的內容）` : ""),
-    [L.theme, `${L.level}・${L.speed}・約 ${Math.max(1, Math.round(T[T.length - 1].end / 60))} 分鐘`]);
+    [L.theme, ""]);
   renderStatus();
   go(cur);
 }
+
+// ---------- 回來接續：做到一半離開、之後再打開時跳出小視窗 ----------
+function stepDetail(id) {
+  const n = (k, arr) => arr.length - leftCount(arr, store.get(k + DAY, {}));
+  if (id === "words") return `已評 ${n("memo:", L.words)}/${L.words.length} 個字`;
+  if (id === "quiz") return `答了 ${n("quiz:", L.quiz)}/${L.quiz.length} 題`;
+  if (id === "shadow") { const i = store.get("shadow:" + DAY, 0); return i ? `第 ${i + 1} 句` : ""; }
+  if (id === "speak" && L.grammar) return `答了 ${n("gram:", L.grammar.items)}/${L.grammar.items.length} 題`;
+  if (id === "toeic") return `答了 ${n("p2:", L.part2)}/${L.part2.length} 題`;
+  return "";
+}
+function maybeWelcome() {
+  if (MODE !== "lesson" || VIEW_DAY !== TODAY || DAY !== TODAY) return;
+  if (!dayStarted(DAY) && !cur && !Object.keys(store.get("memo:" + DAY, {})).length) return;   // 今天還沒開始
+  const t = cur < STEPS.length && !isHandled(STEPS[cur].id) ? cur : firstTodo();
+  if (t >= STEPS.length) return;                        // 今天都處理完了
+  const left = STEPS.filter(s => !isHandled(s.id));
+  const detail = stepDetail(STEPS[t].id);
+  const dlg = h("dialog", { class: "welcome", "aria-labelledby": "wb-title" },
+    h("h3", { id: "wb-title" }, "歡迎回來"),
+    h("p", {}, `上次做到 ${STEPS[t].name}` + (detail ? `（${detail}）` : "")),
+    h("p", { class: "sub" }, `今天還剩 ${left.length} 步・約 ${left.reduce((a, s) => a + s.min, 0)} 分鐘`),
+    h("button", { class: "btn primary", onclick: () => { dlg.close(); if (t !== cur) go(t); } }, `繼續：${STEPS[t].name}`),
+    h("button", { class: "link", onclick: () => dlg.close() }, "先看看別的"));
+  dlg.addEventListener("close", () => dlg.remove());
+  document.body.append(dlg);
+  try { dlg.showModal(); } catch { dlg.setAttribute("open", ""); }
+}
+// 切到別的 App 超過 10 分鐘再回來，也算「回來」
+let hiddenAt = 0;
+document.addEventListener("visibilitychange", () => {
+  if (document.hidden) { hiddenAt = Date.now(); return; }
+  if (hiddenAt && Date.now() - hiddenAt > 10 * 60 * 1000 && !document.querySelector("dialog.welcome")) { stopAll(); maybeWelcome(); }
+  hiddenAt = 0;
+});
 
 (async () => {
   try {
     INDEX = await fetchJSON("content/index.json");
     COMMON = await fetchJSON("content/common_gloss.json").catch(() => ({}));
     await openDay(TODAY);
+    maybeWelcome();
   } catch (e) {
     $("#main").append(h("p", { class: "lead" }, "內容載入失敗，請檢查網路後重新整理。"));
   }
