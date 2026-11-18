@@ -1,0 +1,849 @@
+{
+  "date": "2026-11-25",
+  "weekday": "週三",
+  "theme": "客戶溝通",
+  "title": "Customer Audit Visit",
+  "titleZh": "客戶來稽核",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Nina": {
+      "voice": "af_bella",
+      "accent": "美式"
+    },
+    "Oliver": {
+      "voice": "bm_lewis",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Oliver",
+      "en": "Hi Nina. We want to set up an audit at your factory.",
+      "zh": "嗨 Nina，我們想安排一次到你們工廠的稽核。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Nina",
+      "en": "Sure. What would you like to see?",
+      "zh": "沒問題。你們想看什麼？",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "The line, the lab, and your quality records.",
+      "zh": "產線、實驗室，還有你們的品質紀錄。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Nina",
+      "en": "I see. Do you have a list of requirements?",
+      "zh": "了解。你們有要求清單嗎？",
+      "mood": "confused"
+    },
+    {
+      "s": "Oliver",
+      "en": "Yes. I'll send it to you today.",
+      "zh": "有的，我今天寄給你。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Nina",
+      "en": "Great. When would you like to come?",
+      "zh": "太好了。你們想什麼時候來？",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "Maybe next Tuesday. Is that okay?",
+      "zh": "也許下週二，可以嗎？",
+      "mood": "neutral"
+    },
+    {
+      "s": "Nina",
+      "en": "Let me double-check the schedule. Hmm, Tuesday is busy.",
+      "zh": "我再確認一下行程。嗯，週二很忙。",
+      "mood": "sad"
+    },
+    {
+      "s": "Oliver",
+      "en": "Then how about Wednesday morning?",
+      "zh": "那週三早上呢？",
+      "mood": "confused"
+    },
+    {
+      "s": "Nina",
+      "en": "Wednesday works. I'll walk through each step with you.",
+      "zh": "週三可以。我會陪你們走過每個步驟。",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "That would help a lot. Thank you.",
+      "zh": "那會很有幫助，謝謝你。",
+      "mood": "happy"
+    },
+    {
+      "s": "Nina",
+      "en": "No problem. We'll prepare everything for you.",
+      "zh": "不客氣，我們會幫你們準備好一切。",
+      "mood": "happy"
+    },
+    {
+      "s": "Oliver",
+      "en": "Wow, you're quick. See you on Wednesday!",
+      "zh": "哇，你們真有效率。週三見！",
+      "mood": "surprised"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What does Oliver want to do?",
+      "options": [
+        "Buy more boards",
+        "Visit and check the factory",
+        "Change the price",
+        "Cancel the order"
+      ],
+      "answer": 1,
+      "line": 0,
+      "why": "Oliver 想安排到工廠稽核（audit）。"
+    },
+    {
+      "q": "What will Oliver send to Nina today?",
+      "options": [
+        "A photo",
+        "A new order",
+        "A list of requirements",
+        "A bill"
+      ],
+      "answer": 2,
+      "line": 4,
+      "why": "Nina 問有沒有要求清單，Oliver 說今天寄給她。"
+    },
+    {
+      "q": "When will the audit happen?",
+      "options": [
+        "Tuesday",
+        "Wednesday morning",
+        "Friday afternoon",
+        "Next month"
+      ],
+      "answer": 1,
+      "line": 9,
+      "why": "週二太忙，最後改成週三早上。"
+    }
+  ],
+  "words": [
+    {
+      "w": "set up",
+      "pos": "片語・動詞",
+      "zh": "安排、設立",
+      "ex1": "Hi Nina. We want to set up an audit at your factory.",
+      "line": 0,
+      "ex2": "Can you set up a call with the customer tomorrow?",
+      "ex2zh": "你可以幫忙安排明天跟客戶通電話嗎？",
+      "toeic": false,
+      "hook": "set 擺好＋up 立起來：把場子「擺好立起來」＝安排、設立",
+      "img": "pic/word_0.png",
+      "pic": "two people putting up a table and chairs in a bright meeting room"
+    },
+    {
+      "w": "double-check",
+      "pos": "動詞",
+      "zh": "再確認一次",
+      "ex1": "Let me double-check the schedule. Hmm, Tuesday is busy.",
+      "line": 7,
+      "ex2": "Please double-check the numbers before you send the report.",
+      "ex2zh": "寄報告前請再確認一次數字。",
+      "toeic": false,
+      "hook": "double 兩倍＋check 檢查：檢查兩次＝再確認一次",
+      "img": "pic/word_1.png",
+      "pic": "a woman looking at a calendar twice with a magnifying glass, two small eyes above her head"
+    },
+    {
+      "w": "walk through",
+      "pos": "片語・動詞",
+      "zh": "一步一步帶著做或說明",
+      "ex1": "Wednesday works. I'll walk through each step with you.",
+      "line": 9,
+      "ex2": "The engineer will walk through the test process with the client.",
+      "ex2zh": "工程師會帶客戶一步一步看測試流程。",
+      "toeic": false,
+      "hook": "walk 走＋through 穿過：陪你走過每一個步驟＝帶著做",
+      "img": "pic/word_2.png",
+      "pic": "a guide walking through a factory with a visitor, pointing at machines"
+    },
+    {
+      "w": "audit",
+      "pos": "名詞",
+      "zh": "稽核、查核",
+      "ex1": "Hi Nina. We want to set up an audit at your factory.",
+      "line": 0,
+      "ex2": "The customer will do an audit of our quality system next month.",
+      "ex2zh": "客戶下個月會稽核我們的品質系統。",
+      "toeic": true,
+      "hook": "audit 發音像「凹滴」：被查帳查到「凹滴」不出來，只好乖乖被稽核",
+      "img": "pic/word_3.png",
+      "pic": "an inspector in a safety helmet and glasses looking closely at a machine on a factory line, magnifying glass in hand"
+    },
+    {
+      "w": "requirements",
+      "pos": "名詞（複數）",
+      "zh": "要求、規定",
+      "ex1": "I see. Do you have a list of requirements?",
+      "line": 3,
+      "ex2": "Our products meet all the safety requirements.",
+      "ex2zh": "我們的產品符合所有安全規定。",
+      "toeic": true,
+      "hook": "require 需要＋ments：「需要」的事項一堆＝要求；re＋quire 像「再問」，客戶再三問你做到沒",
+      "img": "pic/word_4.png",
+      "pic": "a manager pointing at a machine while a worker gives a thumbs-up and a big green check mark floats above"
+    }
+  ],
+  "part2": [
+    {
+      "q": "Who is leading the audit?",
+      "opts": [
+        "The lab is on the left.",
+        "Ms. Lin from quality.",
+        "On Wednesday morning."
+      ],
+      "answer": 1,
+      "why": "Who 問人，答 Ms. Lin。A 是地點，C 是時間。",
+      "zh": "誰負責帶這次稽核？"
+    },
+    {
+      "q": "Could you send me the schedule?",
+      "opts": [
+        "Sure, I'll email it now.",
+        "It's a long schedule.",
+        "At the front desk."
+      ],
+      "answer": 0,
+      "why": "Could you 是請求，答 Sure 最自然。B 重複 schedule 是陷阱，C 是地點。",
+      "zh": "你可以把時程表寄給我嗎？"
+    },
+    {
+      "q": "Why don't we start with the lab?",
+      "opts": [
+        "Because it's far.",
+        "At about ten o'clock.",
+        "Good idea. Let's go."
+      ],
+      "answer": 2,
+      "why": "Why don't we 是建議，不是真的問原因，要回應建議。A 把它當成 Why 問句是陷阱。",
+      "zh": "我們何不先從實驗室開始？"
+    },
+    {
+      "q": "Is the report ready, or do you need more time?",
+      "opts": [
+        "Yes, the report.",
+        "I need one more day.",
+        "Ready for the meeting room."
+      ],
+      "answer": 1,
+      "why": "選擇問句不能用 Yes/No 回答。A 重複 report、C 重複 ready 是陷阱。",
+      "zh": "報告好了嗎，還是你需要更多時間？"
+    },
+    {
+      "q": "How long will the audit take?",
+      "opts": [
+        "About two hours.",
+        "By train.",
+        "In the conference room."
+      ],
+      "answer": 0,
+      "why": "How long 問時間長度，答 About two hours。B 是 How 的方式，C 是地點。",
+      "zh": "稽核會花多久？"
+    }
+  ],
+  "scene": "客戶 Oliver 想到工廠稽核，品保人員 Nina 跟他在辦公室討論時間和流程。",
+  "place": "office",
+  "grammar": {
+    "topic": "relative",
+    "topicZh": "關係代名詞",
+    "tip": "先看空格前面的名詞：是「人」用 who；是「物」用 which；人或物都可以用 that；表示「誰的」用 whose。再看空格後面缺不缺主詞，缺就用關係代名詞。",
+    "items": [
+      {
+        "q": "The auditor _____ visited us last week was very kind.",
+        "opts": [
+          "which",
+          "who",
+          "whose",
+          "what"
+        ],
+        "answer": 1,
+        "why": "先行詞 auditor 是人，後面缺主詞，用 who。which 用在物，what 不能當關係代名詞連接前面的名詞。",
+        "zh": "上週來訪的稽核員人很親切。"
+      },
+      {
+        "q": "This is the report _____ shows the test results.",
+        "opts": [
+          "who",
+          "whose",
+          "which",
+          "where"
+        ],
+        "answer": 2,
+        "why": "先行詞 report 是物，後面缺主詞，用 which（或 that）。who 是人，where 是地點。",
+        "zh": "這就是顯示測試結果的報告。"
+      },
+      {
+        "q": "The customer _____ order was late is calling now.",
+        "opts": [
+          "who",
+          "whose",
+          "which",
+          "whom"
+        ],
+        "answer": 1,
+        "why": "customer 和 order 是「所有關係」（客戶的訂單），用 whose。",
+        "zh": "訂單延遲的那位客戶現在正在打電話來。"
+      },
+      {
+        "q": "We need a supplier _____ can deliver on time.",
+        "opts": [
+          "who",
+          "which",
+          "whose",
+          "what"
+        ],
+        "answer": 0,
+        "why": "supplier 指的是人或公司，後面缺主詞，用 who（that 也可以）。which 一般不用在人。",
+        "zh": "我們需要能準時交貨的供應商。"
+      },
+      {
+        "q": "The machine _____ we bought last year works well.",
+        "opts": [
+          "who",
+          "whose",
+          "where",
+          "that"
+        ],
+        "answer": 3,
+        "why": "先行詞 machine 是物，關係代名詞在這裡當受詞，可以用 that（或 which，也可省略）。who 是人，whose 是所有格。",
+        "zh": "我們去年買的那台機器運作良好。"
+      }
+    ]
+  },
+  "gloss": {
+    "audit": [
+      "名詞",
+      "稽核、查核",
+      "",
+      "The audit starts at nine.",
+      "稽核九點開始。"
+    ],
+    "auditor": [
+      "名詞",
+      "稽核員",
+      "",
+      "The auditor asked many questions.",
+      "稽核員問了很多問題。"
+    ],
+    "bill": [
+      "名詞",
+      "帳單",
+      "",
+      "Please send me the bill.",
+      "請寄帳單給我。"
+    ],
+    "boards": [
+      "名詞",
+      "電路板（board 的複數）",
+      "",
+      "We checked all the boards.",
+      "我們檢查了所有電路板。"
+    ],
+    "bought": [
+      "動詞",
+      "買了（buy 的過去式）",
+      "",
+      "We bought a new tester.",
+      "我們買了新的測試機。"
+    ],
+    "busy": [
+      "形容詞",
+      "忙碌的",
+      "",
+      "The lab is busy today.",
+      "實驗室今天很忙。"
+    ],
+    "calling": [
+      "動詞",
+      "正在打電話（call 的進行式）",
+      "",
+      "He is calling the supplier.",
+      "他正在打給供應商。"
+    ],
+    "cancel": [
+      "動詞",
+      "取消",
+      "",
+      "We had to cancel the meeting.",
+      "我們得取消會議。"
+    ],
+    "change": [
+      "動詞",
+      "更改",
+      "改變；零錢（名詞）",
+      "Can we change the date?",
+      "我們可以改日期嗎？"
+    ],
+    "check": [
+      "動詞",
+      "查看、檢查",
+      "確認",
+      "Please check the label.",
+      "請檢查標籤。"
+    ],
+    "client": [
+      "名詞",
+      "客戶",
+      "",
+      "The client is happy with the sample.",
+      "客戶對樣品很滿意。"
+    ],
+    "conference": [
+      "名詞",
+      "會議（conference room 會議室）",
+      "研討會",
+      "The conference starts at two.",
+      "研討會兩點開始。"
+    ],
+    "deliver": [
+      "動詞",
+      "交貨、送達",
+      "",
+      "We can deliver by Friday.",
+      "我們週五前可以交貨。"
+    ],
+    "desk": [
+      "名詞",
+      "櫃台、桌子（front desk 櫃台）",
+      "",
+      "Leave it at the desk.",
+      "放在桌上就好。"
+    ],
+    "double": [
+      "形容詞・副詞",
+      "兩倍的（double-check 再確認）",
+      "",
+      "Order a double portion.",
+      "點雙份。"
+    ],
+    "engineer": [
+      "名詞",
+      "工程師",
+      "",
+      "The engineer fixed the machine.",
+      "工程師修好了機器。"
+    ],
+    "far": [
+      "形容詞・副詞",
+      "遠",
+      "",
+      "The factory is not far from here.",
+      "工廠離這裡不遠。"
+    ],
+    "front": [
+      "名詞・形容詞",
+      "前面的（front desk 櫃台）",
+      "",
+      "The front door is open.",
+      "前門開著。"
+    ],
+    "happen": [
+      "動詞",
+      "發生",
+      "",
+      "When did it happen?",
+      "這是什麼時候發生的？"
+    ],
+    "hmm": [
+      "感嘆詞",
+      "嗯（思考時的聲音）",
+      "",
+      "Hmm, let me think about it.",
+      "嗯，讓我想一想。"
+    ],
+    "lab": [
+      "名詞",
+      "實驗室",
+      "",
+      "The samples are in the lab.",
+      "樣品在實驗室。"
+    ],
+    "leading": [
+      "動詞",
+      "帶領、主持（lead 的進行式）",
+      "",
+      "She is leading the project.",
+      "她負責帶這個專案。"
+    ],
+    "left": [
+      "名詞・形容詞",
+      "左邊",
+      "離開了（leave 的過去式）",
+      "Turn left at the corner.",
+      "在轉角左轉。"
+    ],
+    "lin": [
+      "人名",
+      "林（姓氏）",
+      "",
+      "Ms. Lin is in the lab.",
+      "林小姐在實驗室。"
+    ],
+    "line": [
+      "名詞",
+      "生產線",
+      "線；排隊",
+      "The line runs all day.",
+      "產線整天運轉。"
+    ],
+    "list": [
+      "名詞",
+      "清單",
+      "",
+      "Here is the list of items.",
+      "這是品項清單。"
+    ],
+    "lot": [
+      "名詞",
+      "（a lot）很多",
+      "",
+      "Thanks a lot for your help.",
+      "非常謝謝你的幫忙。"
+    ],
+    "meet": [
+      "動詞",
+      "符合（要求）",
+      "見面",
+      "This product meets our standard.",
+      "這個產品符合我們的標準。"
+    ],
+    "nina": [
+      "人名",
+      "妮娜（女生名字）",
+      "",
+      "Nina works in the QA team.",
+      "Nina 在品保組。"
+    ],
+    "numbers": [
+      "名詞",
+      "數字（number 的複數）",
+      "",
+      "The numbers look good.",
+      "數字看起來不錯。"
+    ],
+    "okay": [
+      "形容詞",
+      "可以、沒問題",
+      "",
+      "Is this price okay?",
+      "這個價格可以嗎？"
+    ],
+    "oliver": [
+      "人名",
+      "奧利佛（男生名字）",
+      "",
+      "Oliver is our new client.",
+      "Oliver 是我們的新客戶。"
+    ],
+    "photo": [
+      "名詞",
+      "照片",
+      "",
+      "Send me a photo of the defect.",
+      "把瑕疵的照片寄給我。"
+    ],
+    "prepare": [
+      "動詞",
+      "準備",
+      "",
+      "I'll prepare the slides.",
+      "我來準備簡報。"
+    ],
+    "process": [
+      "名詞",
+      "流程",
+      "",
+      "The process takes two days.",
+      "這個流程要兩天。"
+    ],
+    "products": [
+      "名詞",
+      "產品（product 的複數）",
+      "",
+      "All products are tested.",
+      "所有產品都會測試。"
+    ],
+    "ready": [
+      "形容詞",
+      "準備好的",
+      "",
+      "The report is ready.",
+      "報告準備好了。"
+    ],
+    "records": [
+      "名詞",
+      "紀錄（record 的複數）",
+      "",
+      "Please keep the records for a year.",
+      "請把紀錄保存一年。"
+    ],
+    "requirements": [
+      "名詞",
+      "要求、規定（requirement 的複數）",
+      "",
+      "We know your requirements.",
+      "我們了解你們的要求。"
+    ],
+    "results": [
+      "名詞",
+      "結果（result 的複數）",
+      "",
+      "The results are good.",
+      "結果很好。"
+    ],
+    "safety": [
+      "名詞",
+      "安全",
+      "",
+      "Safety comes first.",
+      "安全第一。"
+    ],
+    "set": [
+      "動詞",
+      "（set up）安排、設立",
+      "放置",
+      "We set up a meeting.",
+      "我們安排了一場會議。"
+    ],
+    "shows": [
+      "動詞",
+      "顯示（主詞是單數）",
+      "",
+      "The chart shows the trend.",
+      "圖表顯示趨勢。"
+    ],
+    "start": [
+      "動詞",
+      "開始",
+      "",
+      "Let's start the meeting.",
+      "我們開始開會吧。"
+    ],
+    "step": [
+      "名詞",
+      "步驟",
+      "",
+      "The next step is testing.",
+      "下一步是測試。"
+    ],
+    "system": [
+      "名詞",
+      "系統、制度",
+      "",
+      "We have a new quality system.",
+      "我們有新的品質系統。"
+    ],
+    "take": [
+      "動詞",
+      "花（時間）",
+      "拿",
+      "The trip takes two hours.",
+      "這趟路程要兩小時。"
+    ],
+    "test": [
+      "名詞",
+      "測試",
+      "測試（動詞）",
+      "The test takes an hour.",
+      "測試要一小時。"
+    ],
+    "thank": [
+      "動詞",
+      "感謝",
+      "",
+      "I thank you for your help.",
+      "謝謝你的幫忙。"
+    ],
+    "through": [
+      "介系詞",
+      "（walk through）一步一步經過",
+      "穿過",
+      "He walked through the door.",
+      "他走過那扇門。"
+    ],
+    "train": [
+      "名詞",
+      "火車",
+      "",
+      "I go to work by train.",
+      "我搭火車上班。"
+    ],
+    "tuesday": [
+      "名詞",
+      "星期二",
+      "",
+      "See you on Tuesday.",
+      "週二見。"
+    ],
+    "us": [
+      "代名詞",
+      "我們（受詞）",
+      "",
+      "Please call us tomorrow.",
+      "請明天打給我們。"
+    ],
+    "visit": [
+      "動詞・名詞",
+      "拜訪、參觀",
+      "",
+      "They will visit our plant.",
+      "他們會參觀我們的工廠。"
+    ],
+    "visited": [
+      "動詞",
+      "拜訪了（visit 的過去式）",
+      "",
+      "He visited us last month.",
+      "他上個月來拜訪我們。"
+    ],
+    "walk": [
+      "動詞",
+      "（walk through）帶著走過",
+      "走路",
+      "Let me walk you to the door.",
+      "我送你到門口。"
+    ],
+    "wednesday": [
+      "名詞",
+      "星期三",
+      "",
+      "The audit is on Wednesday.",
+      "稽核在週三。"
+    ],
+    "well": [
+      "副詞",
+      "好地",
+      "嗯（口語）",
+      "The line is running well.",
+      "產線運作良好。"
+    ],
+    "which": [
+      "代名詞",
+      "關係代名詞，指「物」",
+      "哪一個",
+      "This is the part which broke.",
+      "這就是壞掉的零件。"
+    ],
+    "whom": [
+      "代名詞",
+      "關係代名詞，指「人」（受詞）",
+      "",
+      "The man whom I met is an auditor.",
+      "我遇到的那個人是稽核員。"
+    ],
+    "whose": [
+      "代名詞",
+      "關係代名詞，「…的」",
+      "",
+      "The client whose order was late called.",
+      "訂單延遲的客戶打來了。"
+    ],
+    "works": [
+      "動詞",
+      "可以（行得通）",
+      "工作",
+      "That time works for me.",
+      "那個時間我可以。"
+    ],
+    "wow": [
+      "感嘆詞",
+      "哇",
+      "",
+      "Wow, that was fast.",
+      "哇，真快。"
+    ]
+  },
+  "phrases": [
+    {
+      "p": "set up",
+      "forms": [
+        "set up",
+        "sets up",
+        "setting up"
+      ],
+      "pos": "片語・動詞",
+      "zh": "安排、設立",
+      "ex": "We set up a call with the supplier.",
+      "exzh": "我們安排了跟供應商的通話。"
+    },
+    {
+      "p": "double-check",
+      "forms": [
+        "double-check",
+        "double-checked"
+      ],
+      "pos": "動詞",
+      "zh": "再確認一次",
+      "ex": "Please double-check the date.",
+      "exzh": "請再確認一次日期。"
+    },
+    {
+      "p": "walk through",
+      "forms": [
+        "walk through",
+        "walked through"
+      ],
+      "pos": "片語・動詞",
+      "zh": "一步一步帶著做或說明",
+      "ex": "Let me walk through the steps.",
+      "exzh": "讓我一步一步說明。"
+    },
+    {
+      "p": "a lot",
+      "forms": [
+        "a lot"
+      ],
+      "pos": "片語",
+      "zh": "很多",
+      "ex": "That helps a lot.",
+      "exzh": "那很有幫助。"
+    },
+    {
+      "p": "how about",
+      "forms": [
+        "how about"
+      ],
+      "pos": "片語",
+      "zh": "……如何？",
+      "ex": "How about Friday?",
+      "exzh": "星期五如何？"
+    },
+    {
+      "p": "see you",
+      "forms": [
+        "see you"
+      ],
+      "pos": "片語",
+      "zh": "再見、到時見",
+      "ex": "See you at the meeting.",
+      "exzh": "會議上見。"
+    },
+    {
+      "p": "quality records",
+      "forms": [
+        "quality records"
+      ],
+      "pos": "名詞片語",
+      "zh": "品質紀錄",
+      "ex": "Keep the quality records safe.",
+      "exzh": "請妥善保管品質紀錄。"
+    }
+  ]
+}
