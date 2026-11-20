@@ -1,0 +1,945 @@
+{
+  "date": "2026-11-26",
+  "weekday": "週四",
+  "theme": "生活情境",
+  "title": "Sold Out Salmon",
+  "titleZh": "鮭魚賣完了",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Jake": {
+      "voice": "am_adam",
+      "accent": "美式"
+    },
+    "Olivia": {
+      "voice": "bf_emma",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Jake",
+      "en": "Hi. Can I have the grilled salmon?",
+      "zh": "嗨，我可以點烤鮭魚嗎？",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "I'm sorry. The salmon is sold out today.",
+      "zh": "抱歉，今天鮭魚賣完了。",
+      "mood": "sad"
+    },
+    {
+      "s": "Jake",
+      "en": "Oh no. What else is good?",
+      "zh": "喔不。還有什麼好吃的？",
+      "mood": "surprised"
+    },
+    {
+      "s": "Olivia",
+      "en": "The chicken is nice. Both dishes come with soup.",
+      "zh": "雞肉不錯。兩道菜都附湯。",
+      "mood": "happy"
+    },
+    {
+      "s": "Jake",
+      "en": "Great. I'll have the chicken, please.",
+      "zh": "好，我要雞肉，謝謝。",
+      "mood": "happy"
+    },
+    {
+      "s": "Olivia",
+      "en": "Would you like something to drink?",
+      "zh": "要喝點什麼嗎？",
+      "mood": "neutral"
+    },
+    {
+      "s": "Jake",
+      "en": "Just water. My friend and I will split the bill.",
+      "zh": "只要水。我和朋友會分開付帳。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "Sure. I'll bring a separate receipt for each of you.",
+      "zh": "好的，我會給你們各一張收據。",
+      "mood": "happy"
+    },
+    {
+      "s": "Jake",
+      "en": "Thanks. I'm allergic to nuts, by the way.",
+      "zh": "謝謝。對了，我對堅果過敏。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "Thanks for telling me. I'll tell the chef.",
+      "zh": "謝謝你告訴我，我會跟主廚說。",
+      "mood": "happy"
+    },
+    {
+      "s": "Jake",
+      "en": "What if I don't like the food?",
+      "zh": "如果我不喜歡這道菜呢？",
+      "mood": "confused"
+    },
+    {
+      "s": "Olivia",
+      "en": "Then we can give you a refund.",
+      "zh": "那我們可以退錢給你。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Jake",
+      "en": "That's very kind. Thank you.",
+      "zh": "你人真好，謝謝。",
+      "mood": "happy"
+    },
+    {
+      "s": "Olivia",
+      "en": "My pleasure. Your food will be ready soon.",
+      "zh": "別客氣，您的餐點馬上好。",
+      "mood": "happy"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What is sold out today?",
+      "options": [
+        "The soup",
+        "The grilled salmon",
+        "The chicken",
+        "The water"
+      ],
+      "answer": 1,
+      "line": 1,
+      "why": "Olivia 說今天鮭魚賣完了（sold out）。"
+    },
+    {
+      "q": "What will Jake drink?",
+      "options": [
+        "Water",
+        "Tea",
+        "Juice",
+        "Coffee"
+      ],
+      "answer": 0,
+      "line": 6,
+      "why": "Jake 說 Just water，只要水。"
+    },
+    {
+      "q": "What does Jake say about nuts?",
+      "options": [
+        "He wants extra nuts.",
+        "He likes nuts a lot.",
+        "He is allergic to them.",
+        "He sells nuts."
+      ],
+      "answer": 2,
+      "line": 8,
+      "why": "I'm allergic to nuts：他對堅果過敏。"
+    }
+  ],
+  "words": [
+    {
+      "w": "sold out",
+      "pos": "片語・形容詞",
+      "zh": "賣完了、售罄",
+      "ex1": "I'm sorry. The salmon is sold out today.",
+      "line": 1,
+      "ex2": "The new model was sold out in two days.",
+      "ex2zh": "新型號兩天就賣完了。",
+      "toeic": false,
+      "hook": "sold 賣掉了＋out 出去了：全部都賣出去了＝賣完了",
+      "img": "pic/word_0.png",
+      "pic": "a chef shrugging next to an empty tray"
+    },
+    {
+      "w": "come with",
+      "pos": "片語・動詞",
+      "zh": "附帶、附有",
+      "ex1": "The chicken is nice. Both dishes come with soup.",
+      "line": 3,
+      "ex2": "The machine comes with a one-year warranty.",
+      "ex2zh": "這台機器附一年保固。",
+      "toeic": false,
+      "hook": "come 來＋with 帶著：來的時候還帶著別的東西＝附帶",
+      "img": "pic/word_1.png",
+      "pic": "a waiter putting a bowl of soup next to a main dish on a table"
+    },
+    {
+      "w": "split the bill",
+      "pos": "片語・動詞",
+      "zh": "分開付帳、各付各的",
+      "ex1": "Just water. My friend and I will split the bill.",
+      "line": 6,
+      "ex2": "After the team dinner, we split the bill.",
+      "ex2zh": "團隊聚餐後，我們各付各的。",
+      "toeic": false,
+      "hook": "split 切開＋bill 帳單：把帳單一刀切成兩半＝分攤",
+      "img": "pic/word_2.png",
+      "pic": "two friends at a restaurant table, a big knife cutting a piggy bank in half"
+    },
+    {
+      "w": "receipt",
+      "pos": "名詞",
+      "zh": "收據",
+      "ex1": "Sure. I'll bring a separate receipt for each of you.",
+      "line": 7,
+      "ex2": "Please keep the receipt for the expense report.",
+      "ex2zh": "請保留收據以便報銷。",
+      "toeic": true,
+      "hook": "re 回來＋ceipt（像 receive 收到）：收到錢之後給你的憑證＝收據",
+      "img": "pic/word_3.png",
+      "pic": "a cashier handing a long paper strip to a smiling customer"
+    },
+    {
+      "w": "refund",
+      "pos": "名詞",
+      "zh": "退款",
+      "ex1": "Then we can give you a refund.",
+      "line": 11,
+      "ex2": "The supplier gave us a full refund for the bad boards.",
+      "ex2zh": "供應商為壞掉的板子給了全額退款。",
+      "toeic": true,
+      "hook": "re 回去＋fund 資金：錢回到你手上＝退款",
+      "img": "pic/word_4.png",
+      "pic": "a shop clerk handing money back to a customer, coins flying back"
+    }
+  ],
+  "part2": [
+    {
+      "q": "When does the shipment arrive?",
+      "opts": [
+        "Yes, it is a big ship.",
+        "Around three o'clock.",
+        "In the warehouse."
+      ],
+      "answer": 1,
+      "why": "問 When 要回答時間。A 的 ship 是同音字陷阱，C 是地點。",
+      "zh": "這批貨什麼時候到？"
+    },
+    {
+      "q": "Could you send me the receipt?",
+      "opts": [
+        "Sure, I'll email it now.",
+        "Yes, I received it.",
+        "At the front desk."
+      ],
+      "answer": 0,
+      "why": "Could you 是請求，答 Sure 最自然。B 的 received 是近音陷阱，C 是地點。",
+      "zh": "可以把收據寄給我嗎？"
+    },
+    {
+      "q": "Why don't we split the cost?",
+      "opts": [
+        "Because it's too far.",
+        "The cost is high.",
+        "Good idea, that's fair."
+      ],
+      "answer": 2,
+      "why": "Why don't we 是建議，不是真的問原因。C 同意建議才通順；A 誤當成 Why 問句，B 重複 cost。",
+      "zh": "我們何不分攤費用？"
+    },
+    {
+      "q": "Who is leading the meeting?",
+      "opts": [
+        "Sarah is, I think.",
+        "In room five.",
+        "Yes, it was long."
+      ],
+      "answer": 0,
+      "why": "Who 問人，答人名。B 是地點，C 用 Yes 回答不通順。",
+      "zh": "誰要主持這場會議？"
+    },
+    {
+      "q": "Do you want tea or coffee?",
+      "opts": [
+        "It's on the table.",
+        "Coffee, please.",
+        "Yes, please."
+      ],
+      "answer": 1,
+      "why": "選擇問句（A or B）要直接選一個，不能用 Yes/No。",
+      "zh": "你要茶還是咖啡？"
+    }
+  ],
+  "scene": "Jake 在餐廳點餐，鮭魚賣完了，服務生 Olivia 幫他推薦其他餐點並處理付帳。",
+  "place": "restaurant",
+  "grammar": {
+    "topic": "infger",
+    "topicZh": "不定詞與動名詞",
+    "tip": "先看空格前的動詞：decide、plan、want 後面接 to＋原形；suggest、avoid、enjoy 後面接 V-ing；介系詞 to（look forward to）後面也接 V-ing。",
+    "items": [
+      {
+        "q": "We decided _____ the shipment until Monday.",
+        "opts": [
+          "delay",
+          "to delay",
+          "delaying",
+          "delayed"
+        ],
+        "answer": 1,
+        "why": "decide 後面接 to＋原形：decided to delay。",
+        "zh": "我們決定把出貨延到週一。"
+      },
+      {
+        "q": "The manager suggested _____ the meeting to Friday.",
+        "opts": [
+          "move",
+          "to move",
+          "moving",
+          "moved"
+        ],
+        "answer": 2,
+        "why": "suggest 後面接 V-ing：suggested moving，不能接 to。",
+        "zh": "經理建議把會議移到週五。"
+      },
+      {
+        "q": "We are planning _____ a new inspection machine.",
+        "opts": [
+          "to buy",
+          "buying",
+          "buy",
+          "bought"
+        ],
+        "answer": 0,
+        "why": "plan 後面接 to＋原形：planning to buy。",
+        "zh": "我們計畫買一台新的檢驗機。"
+      },
+      {
+        "q": "The engineer avoided _____ the machine during the test.",
+        "opts": [
+          "to touch",
+          "touch",
+          "touching",
+          "touched"
+        ],
+        "answer": 2,
+        "why": "avoid 後面接 V-ing：avoided touching。",
+        "zh": "工程師在測試期間避免碰機器。"
+      },
+      {
+        "q": "I am looking forward to _____ you next week.",
+        "opts": [
+          "see",
+          "seeing",
+          "saw",
+          "seen"
+        ],
+        "answer": 1,
+        "why": "look forward to 的 to 是介系詞，後面接 V-ing：seeing。",
+        "zh": "我期待下週見到你。"
+      }
+    ]
+  },
+  "gloss": {
+    "allergic": [
+      "形容詞",
+      "過敏的",
+      "",
+      "He is allergic to dust.",
+      "他對灰塵過敏。"
+    ],
+    "am": [
+      "助動詞",
+      "是（be 的第一人稱現在式）",
+      "",
+      "I am ready for the audit.",
+      "我準備好稽核了。"
+    ],
+    "around": [
+      "介系詞",
+      "大約",
+      "",
+      "The meeting ends around noon.",
+      "會議大約中午結束。"
+    ],
+    "avoided": [
+      "動詞",
+      "避免了（avoid 的過去式）",
+      "",
+      "She avoided the traffic by leaving early.",
+      "她提早出門避開了塞車。"
+    ],
+    "bill": [
+      "名詞",
+      "帳單",
+      "法案；鈔票",
+      "Please pay the bill by Friday.",
+      "請在週五前付帳單。"
+    ],
+    "boards": [
+      "名詞",
+      "電路板（board 的複數）",
+      "",
+      "We tested all the boards.",
+      "我們測過所有電路板。"
+    ],
+    "both": [
+      "代名詞",
+      "兩者都",
+      "",
+      "Both reports are ready.",
+      "兩份報告都好了。"
+    ],
+    "bought": [
+      "動詞",
+      "買了（buy 的過去式）",
+      "",
+      "We bought a new printer.",
+      "我們買了一台新印表機。"
+    ],
+    "bring": [
+      "動詞",
+      "帶來",
+      "",
+      "Please bring your ID card.",
+      "請帶身分證來。"
+    ],
+    "buying": [
+      "動詞",
+      "買（buy 的 -ing 形）",
+      "",
+      "He is buying a new laptop.",
+      "他正在買新筆電。"
+    ],
+    "chef": [
+      "名詞",
+      "主廚",
+      "",
+      "The chef cooks very well.",
+      "主廚煮得很好。"
+    ],
+    "chicken": [
+      "名詞",
+      "雞肉",
+      "",
+      "I had chicken for lunch.",
+      "我午餐吃了雞肉。"
+    ],
+    "comes": [
+      "動詞",
+      "附帶（come with 的 come，第三人稱單數）",
+      "來",
+      "This phone comes with a charger.",
+      "這支手機附充電器。"
+    ],
+    "cost": [
+      "名詞",
+      "費用",
+      "動詞：花費",
+      "The cost is too high.",
+      "費用太高了。"
+    ],
+    "decided": [
+      "動詞",
+      "決定了（decide 的過去式）",
+      "",
+      "We decided to wait.",
+      "我們決定等一等。"
+    ],
+    "delay": [
+      "動詞",
+      "延遲",
+      "名詞：延誤",
+      "Don't delay the order.",
+      "不要延遲訂單。"
+    ],
+    "delayed": [
+      "動詞",
+      "延遲了（delay 的過去式）",
+      "",
+      "The flight was delayed.",
+      "班機延誤了。"
+    ],
+    "delaying": [
+      "動詞",
+      "延遲（delay 的 -ing 形）",
+      "",
+      "Delaying the plan costs money.",
+      "延後計畫要花錢。"
+    ],
+    "desk": [
+      "名詞",
+      "櫃檯、書桌",
+      "",
+      "Please ask at the front desk.",
+      "請到櫃檯詢問。"
+    ],
+    "dishes": [
+      "名詞",
+      "菜餚（dish 的複數）",
+      "碗盤",
+      "The dishes here are cheap.",
+      "這裡的菜很便宜。"
+    ],
+    "drink": [
+      "名詞",
+      "飲料",
+      "動詞：喝",
+      "I'd like a cold drink.",
+      "我想要一杯冰飲。"
+    ],
+    "else": [
+      "副詞",
+      "其他、另外",
+      "",
+      "Do you need anything else?",
+      "你還需要別的嗎？"
+    ],
+    "engineer": [
+      "名詞",
+      "工程師",
+      "",
+      "The engineer fixed the machine.",
+      "工程師修好了機器。"
+    ],
+    "expense": [
+      "名詞",
+      "費用、開銷",
+      "",
+      "Hotel is a big expense.",
+      "住宿是一大筆開銷。"
+    ],
+    "extra": [
+      "形容詞",
+      "額外的",
+      "",
+      "I need extra time.",
+      "我需要額外的時間。"
+    ],
+    "fair": [
+      "形容詞",
+      "公平的",
+      "展覽會",
+      "The price is fair.",
+      "這個價格很公道。"
+    ],
+    "far": [
+      "副詞",
+      "遠",
+      "",
+      "The factory is not far.",
+      "工廠不遠。"
+    ],
+    "forward": [
+      "副詞",
+      "（look forward to）期待",
+      "向前",
+      "I look forward to your reply.",
+      "我期待你的回覆。"
+    ],
+    "friend": [
+      "名詞",
+      "朋友",
+      "",
+      "My friend works in Taipei.",
+      "我朋友在台北工作。"
+    ],
+    "front": [
+      "形容詞",
+      "前面的",
+      "名詞：前方",
+      "The front door is locked.",
+      "前門鎖著。"
+    ],
+    "gave": [
+      "動詞",
+      "給了（give 的過去式）",
+      "",
+      "She gave me a pen.",
+      "她給了我一支筆。"
+    ],
+    "grilled": [
+      "形容詞",
+      "烤的",
+      "",
+      "I like grilled fish.",
+      "我喜歡烤魚。"
+    ],
+    "high": [
+      "形容詞",
+      "高的",
+      "",
+      "The price is too high.",
+      "價格太高了。"
+    ],
+    "inspection": [
+      "名詞",
+      "檢驗",
+      "",
+      "The inspection takes one hour.",
+      "檢驗要一小時。"
+    ],
+    "jake": [
+      "人名",
+      "Jake（男子名）",
+      "",
+      "Jake is my coworker.",
+      "Jake 是我的同事。"
+    ],
+    "juice": [
+      "名詞",
+      "果汁",
+      "",
+      "Orange juice, please.",
+      "請給我柳橙汁。"
+    ],
+    "keep": [
+      "動詞",
+      "保留",
+      "繼續、保持",
+      "Keep this form for a year.",
+      "這份表格請保留一年。"
+    ],
+    "leading": [
+      "動詞",
+      "帶領、主持（lead 的 -ing 形）",
+      "",
+      "She is leading the project.",
+      "她正在帶領這個專案。"
+    ],
+    "likes": [
+      "動詞",
+      "喜歡（like 的第三人稱單數）",
+      "",
+      "He likes simple plans.",
+      "他喜歡簡單的計畫。"
+    ],
+    "looking": [
+      "動詞",
+      "（looking forward to）期待",
+      "看",
+      "We are looking forward to the trip.",
+      "我們期待這趟旅行。"
+    ],
+    "lot": [
+      "名詞",
+      "（a lot）很多、非常",
+      "",
+      "Thanks a lot.",
+      "非常感謝。"
+    ],
+    "model": [
+      "名詞",
+      "型號",
+      "",
+      "This model is very popular.",
+      "這個型號很受歡迎。"
+    ],
+    "moving": [
+      "動詞",
+      "移動（move 的 -ing 形）",
+      "",
+      "We are moving the desk.",
+      "我們正在搬桌子。"
+    ],
+    "nice": [
+      "形容詞",
+      "不錯的",
+      "友善的",
+      "It's a nice office.",
+      "這是間不錯的辦公室。"
+    ],
+    "nuts": [
+      "名詞",
+      "堅果",
+      "",
+      "Nuts are not allowed here.",
+      "這裡不能帶堅果。"
+    ],
+    "planning": [
+      "動詞",
+      "計畫（plan 的 -ing 形）",
+      "",
+      "We are planning a trip.",
+      "我們正在計畫旅行。"
+    ],
+    "pleasure": [
+      "名詞",
+      "（My pleasure）不客氣",
+      "愉快",
+      "It was a pleasure to meet you.",
+      "很高興認識你。"
+    ],
+    "ready": [
+      "形容詞",
+      "準備好的",
+      "",
+      "The report is ready.",
+      "報告準備好了。"
+    ],
+    "receipt": [
+      "名詞",
+      "收據",
+      "",
+      "Can I have a receipt?",
+      "可以給我收據嗎？"
+    ],
+    "received": [
+      "動詞",
+      "收到了（receive 的過去式）",
+      "",
+      "We received your email.",
+      "我們收到你的郵件了。"
+    ],
+    "refund": [
+      "名詞",
+      "退款",
+      "",
+      "I want a refund.",
+      "我想要退款。"
+    ],
+    "salmon": [
+      "名詞",
+      "鮭魚",
+      "",
+      "Salmon is my favorite.",
+      "鮭魚是我的最愛。"
+    ],
+    "sarah": [
+      "人名",
+      "Sarah（女子名）",
+      "",
+      "Sarah is our manager.",
+      "Sarah 是我們的經理。"
+    ],
+    "seeing": [
+      "動詞",
+      "見到（see 的 -ing 形）",
+      "",
+      "I'm seeing a client today.",
+      "我今天要見一位客戶。"
+    ],
+    "seen": [
+      "動詞",
+      "看過（see 的過去分詞）",
+      "",
+      "I haven't seen this report.",
+      "我沒看過這份報告。"
+    ],
+    "sells": [
+      "動詞",
+      "賣（sell 的第三人稱單數）",
+      "",
+      "The shop sells shoes.",
+      "這家店賣鞋子。"
+    ],
+    "separate": [
+      "形容詞",
+      "各別的、分開的",
+      "動詞：分開",
+      "Use separate boxes.",
+      "請用不同的箱子。"
+    ],
+    "ship": [
+      "名詞",
+      "船",
+      "動詞：出貨",
+      "The ship leaves at noon.",
+      "船中午出發。"
+    ],
+    "sold": [
+      "動詞",
+      "（sold out）賣完了",
+      "賣出（sell 的過去式）",
+      "The tickets are sold out.",
+      "票賣完了。"
+    ],
+    "something": [
+      "代名詞",
+      "某事、某物",
+      "",
+      "I need something to read.",
+      "我需要有東西可以讀。"
+    ],
+    "soup": [
+      "名詞",
+      "湯",
+      "",
+      "The soup is hot.",
+      "湯很燙。"
+    ],
+    "split": [
+      "動詞",
+      "（split the bill）分攤",
+      "分開",
+      "Let's split the cost.",
+      "我們分攤費用吧。"
+    ],
+    "suggested": [
+      "動詞",
+      "建議了（suggest 的過去式）",
+      "",
+      "He suggested a new plan.",
+      "他建議了一個新計畫。"
+    ],
+    "table": [
+      "名詞",
+      "桌子",
+      "表格",
+      "Please book a table.",
+      "請訂一張桌子。"
+    ],
+    "tell": [
+      "動詞",
+      "告訴",
+      "",
+      "Please tell me the time.",
+      "請告訴我時間。"
+    ],
+    "telling": [
+      "動詞",
+      "告訴（tell 的 -ing 形）",
+      "",
+      "Thanks for telling me.",
+      "謝謝你告訴我。"
+    ],
+    "test": [
+      "名詞",
+      "測試",
+      "動詞：測試",
+      "The test starts at nine.",
+      "測試九點開始。"
+    ],
+    "thank": [
+      "動詞",
+      "感謝",
+      "",
+      "I thank you for your help.",
+      "謝謝你的幫忙。"
+    ],
+    "that's": [
+      "縮寫",
+      "that is 的縮寫",
+      "",
+      "That's a good idea.",
+      "那是個好主意。"
+    ],
+    "touch": [
+      "動詞",
+      "碰、觸摸",
+      "",
+      "Don't touch the board.",
+      "不要碰電路板。"
+    ],
+    "touched": [
+      "動詞",
+      "碰了（touch 的過去式）",
+      "",
+      "He touched the screen.",
+      "他碰了螢幕。"
+    ],
+    "touching": [
+      "動詞",
+      "碰（touch 的 -ing 形）",
+      "",
+      "Stop touching the machine.",
+      "別再碰機器了。"
+    ],
+    "us": [
+      "代名詞",
+      "我們（受詞）",
+      "",
+      "Please send us a quote.",
+      "請寄給我們報價。"
+    ],
+    "wants": [
+      "動詞",
+      "想要（want 的第三人稱單數）",
+      "",
+      "She wants a new desk.",
+      "她想要一張新桌子。"
+    ],
+    "warehouse": [
+      "名詞",
+      "倉庫",
+      "",
+      "The goods are in the warehouse.",
+      "貨在倉庫裡。"
+    ],
+    "warranty": [
+      "名詞",
+      "保固",
+      "",
+      "The warranty lasts one year.",
+      "保固期一年。"
+    ],
+    "water": [
+      "名詞",
+      "水",
+      "",
+      "Please give me some water.",
+      "請給我一些水。"
+    ],
+    "way": [
+      "名詞",
+      "（by the way）順帶一提",
+      "方式、路",
+      "By the way, I'm late.",
+      "順帶一提，我會晚到。"
+    ],
+    "arrive": [
+      "動詞",
+      "抵達",
+      "",
+      "The samples will arrive on Monday.",
+      "樣品週一會到。"
+    ]
+  },
+  "phrases": [
+    {
+      "p": "sold out",
+      "forms": [
+        "sold out"
+      ],
+      "pos": "片語・形容詞",
+      "zh": "賣完了、售罄",
+      "ex": "The shirts sold out in one day.",
+      "exzh": "襯衫一天就賣完了。"
+    },
+    {
+      "p": "come with",
+      "forms": [
+        "come with",
+        "comes with",
+        "came with"
+      ],
+      "pos": "片語・動詞",
+      "zh": "附帶、附有",
+      "ex": "The kit comes with a manual.",
+      "exzh": "這組工具附說明書。"
+    },
+    {
+      "p": "split the bill",
+      "forms": [
+        "split the bill"
+      ],
+      "pos": "片語・動詞",
+      "zh": "分開付帳",
+      "ex": "Let's split the bill evenly.",
+      "exzh": "我們平分帳單吧。"
+    },
+    {
+      "p": "look forward to",
+      "forms": [
+        "looking forward to"
+      ],
+      "pos": "片語・動詞",
+      "zh": "期待",
+      "ex": "I look forward to the visit.",
+      "exzh": "我期待這次拜訪。"
+    },
+    {
+      "p": "by the way",
+      "forms": [
+        "by the way"
+      ],
+      "pos": "片語",
+      "zh": "順帶一提",
+      "ex": "By the way, the audit is Friday.",
+      "exzh": "順帶一提，稽核在週五。"
+    }
+  ]
+}

@@ -1,0 +1,1012 @@
+{
+  "date": "2026-11-27",
+  "weekday": "週五",
+  "theme": "輕鬆話題",
+  "title": "Smart Watch Fun",
+  "titleZh": "智慧手錶好好玩",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Sophie": {
+      "voice": "af_bella",
+      "accent": "美式"
+    },
+    "Liam": {
+      "voice": "bm_lewis",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Liam",
+      "en": "Nice watch, Sophie. Is it new?",
+      "zh": "好看的手錶，Sophie。是新的嗎？",
+      "mood": "happy"
+    },
+    {
+      "s": "Sophie",
+      "en": "Yes! I got it last week. I love it.",
+      "zh": "對！我上週買的，我很愛。",
+      "mood": "happy"
+    },
+    {
+      "s": "Liam",
+      "en": "What does it do?",
+      "zh": "它有什麼功能？",
+      "mood": "confused"
+    },
+    {
+      "s": "Sophie",
+      "en": "It helps me keep track of my steps.",
+      "zh": "它幫我記錄我走了幾步。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Liam",
+      "en": "Really? That sounds interesting.",
+      "zh": "真的嗎？聽起來很有趣。",
+      "mood": "surprised"
+    },
+    {
+      "s": "Sophie",
+      "en": "Yes. It has a great feature too. It checks my sleep.",
+      "zh": "對，它還有個很棒的功能，會檢查我的睡眠。",
+      "mood": "happy"
+    },
+    {
+      "s": "Liam",
+      "en": "Wow. Is it expensive?",
+      "zh": "哇，貴嗎？",
+      "mood": "surprised"
+    },
+    {
+      "s": "Sophie",
+      "en": "A little. But this device is worth it.",
+      "zh": "有一點，但這個裝置很值得。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Liam",
+      "en": "I tried one before, but I always give up.",
+      "zh": "我以前試過，但總是半途而廢。",
+      "mood": "sad"
+    },
+    {
+      "s": "Sophie",
+      "en": "Let's walk after work. We can show off our steps!",
+      "zh": "我們下班後去走走吧，可以炫耀一下步數！",
+      "mood": "happy"
+    },
+    {
+      "s": "Liam",
+      "en": "Ha! Okay, you have a deal.",
+      "zh": "哈！好，就這麼說定。",
+      "mood": "happy"
+    },
+    {
+      "s": "Sophie",
+      "en": "Great. I'm excited to start tomorrow.",
+      "zh": "太好了，我很期待明天開始。",
+      "mood": "happy"
+    },
+    {
+      "s": "Liam",
+      "en": "Me too. I'm a little worried, though.",
+      "zh": "我也是，不過有點擔心。",
+      "mood": "sad"
+    },
+    {
+      "s": "Sophie",
+      "en": "Don't be. It will be fun.",
+      "zh": "別擔心，會很好玩的。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Liam",
+      "en": "Okay. Let's order coffee first.",
+      "zh": "好，我們先點咖啡吧。",
+      "mood": "neutral"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What did Sophie buy?",
+      "options": [
+        "A phone",
+        "A smartwatch",
+        "A camera",
+        "A bike"
+      ],
+      "answer": 1,
+      "line": 0,
+      "why": "Liam 說 Nice watch，Sophie 說是上週買的新手錶。"
+    },
+    {
+      "q": "What does the watch check?",
+      "options": [
+        "Her sleep",
+        "Her food",
+        "The weather",
+        "Her email"
+      ],
+      "answer": 0,
+      "line": 5,
+      "why": "It checks my sleep：它會檢查她的睡眠。"
+    },
+    {
+      "q": "When will they walk together?",
+      "options": [
+        "Before work",
+        "At lunch",
+        "After work",
+        "On Sunday"
+      ],
+      "answer": 2,
+      "line": 9,
+      "why": "Sophie 說 Let's walk after work，下班後一起走。"
+    }
+  ],
+  "words": [
+    {
+      "w": "keep track of",
+      "pos": "片語・動詞",
+      "zh": "記錄、掌握",
+      "ex1": "It helps me keep track of my steps.",
+      "line": 3,
+      "ex2": "We use software to keep track of every shipment.",
+      "ex2zh": "我們用軟體掌握每一批貨。",
+      "toeic": false,
+      "hook": "keep 保持＋track 軌跡：一直盯著軌跡＝持續記錄",
+      "img": "pic/word_0.png",
+      "pic": "a smiling woman looking at her smartwatch showing a happy walking person, small footprints behind her on the sidewalk"
+    },
+    {
+      "w": "show off",
+      "pos": "片語・動詞",
+      "zh": "炫耀、展示",
+      "ex1": "Let's walk after work. We can show off our steps!",
+      "line": 9,
+      "ex2": "He likes to show off his new phone.",
+      "ex2zh": "他喜歡炫耀他的新手機。",
+      "toeic": false,
+      "hook": "show 展示＋off 離開身體：把東西秀到全場都看到＝炫耀",
+      "img": "pic/word_1.png",
+      "pic": "a proud man holding up a big gold trophy while friends watch"
+    },
+    {
+      "w": "give up",
+      "pos": "片語・動詞",
+      "zh": "放棄",
+      "ex1": "I tried one before, but I always give up.",
+      "line": 8,
+      "ex2": "Don't give up on the audit plan yet.",
+      "ex2zh": "先不要放棄稽核計畫。",
+      "toeic": false,
+      "hook": "give 給＋up 上去：把手舉起來交出去＝放棄",
+      "img": "pic/word_2.png",
+      "pic": "a runner sitting down on the road with hands raised, tired"
+    },
+    {
+      "w": "feature",
+      "pos": "名詞",
+      "zh": "功能、特色",
+      "ex1": "Yes. It has a great feature too. It checks my sleep.",
+      "line": 5,
+      "ex2": "The new machine has a useful safety feature.",
+      "ex2zh": "新機器有個實用的安全功能。",
+      "toeic": true,
+      "hook": "feature 像 future：未來才有的新功能＝功能、特色",
+      "img": "pic/word_3.png",
+      "pic": "a smiling woman pointing at a glowing star badge on a gadget"
+    },
+    {
+      "w": "device",
+      "pos": "名詞",
+      "zh": "裝置、設備",
+      "ex1": "A little. But this device is worth it.",
+      "line": 7,
+      "ex2": "This device tests the circuit boards automatically.",
+      "ex2zh": "這個裝置會自動測試電路板。",
+      "toeic": true,
+      "hook": "de＋vice 像 advice（建議）：給你好用建議的小東西＝裝置",
+      "img": "pic/word_4.png",
+      "pic": "a small gadget on a table with glowing lights and a happy hand touching it"
+    }
+  ],
+  "part2": [
+    {
+      "q": "How was your business trip?",
+      "opts": [
+        "It was quite useful.",
+        "By plane, I think.",
+        "Next Monday."
+      ],
+      "answer": 0,
+      "why": "How was 問感受或評價，答 It was quite useful。B 是 How 的另一種意思（交通方式）陷阱，C 是時間。",
+      "zh": "你的出差如何？"
+    },
+    {
+      "q": "Where should I put these samples?",
+      "opts": [
+        "Yes, they're samples.",
+        "On the shelf by the door.",
+        "For the audit."
+      ],
+      "answer": 1,
+      "why": "Where 問地點，答 On the shelf。A 重複 samples，C 回答用途。",
+      "zh": "這些樣品我該放哪裡？"
+    },
+    {
+      "q": "Would you mind closing the window?",
+      "opts": [
+        "The window is large.",
+        "Yes, I closed it.",
+        "Not at all."
+      ],
+      "answer": 2,
+      "why": "Would you mind ...ing 是禮貌請求，答 Not at all（一點也不介意）表示願意。",
+      "zh": "你介意把窗戶關上嗎？"
+    },
+    {
+      "q": "What time does the video call start?",
+      "opts": [
+        "At ten thirty.",
+        "With the client.",
+        "It's a good call."
+      ],
+      "answer": 0,
+      "why": "What time 問時間。B 是 Who 的答案，C 重複 call。",
+      "zh": "視訊會議幾點開始？"
+    },
+    {
+      "q": "Why don't you take a break?",
+      "opts": [
+        "Because I like breakfast.",
+        "I'll take the train.",
+        "Thanks, I need one."
+      ],
+      "answer": 2,
+      "why": "Why don't you 是建議。A 是近音 break／breakfast 陷阱，B 重複 take。",
+      "zh": "你何不休息一下？"
+    }
+  ],
+  "scene": "Sophie 和 Liam 在咖啡店聊她新買的智慧手錶，約好下班後一起走路。",
+  "place": "cafe",
+  "grammar": {
+    "topic": "participle",
+    "topicZh": "分詞形容詞（-ing／-ed）",
+    "tip": "事物「令人覺得……」用 -ing（surprising 令人驚訝的）；人「感到……」用 -ed（surprised 感到驚訝的）。先看修飾或描述的是人還是事物。",
+    "items": [
+      {
+        "q": "The audit results were _____ to the manager.",
+        "opts": [
+          "surprise",
+          "surprising",
+          "surprised",
+          "surprises"
+        ],
+        "answer": 1,
+        "why": "主詞 results 是事物，描述它「令人驚訝」，用 surprising。",
+        "zh": "稽核結果讓經理很驚訝。"
+      },
+      {
+        "q": "The manager was _____ with the test results.",
+        "opts": [
+          "satisfy",
+          "satisfying",
+          "satisfied",
+          "satisfies"
+        ],
+        "answer": 2,
+        "why": "manager 是人，表示他「感到滿意」，用 satisfied。",
+        "zh": "經理對測試結果很滿意。"
+      },
+      {
+        "q": "We received a _____ report about the late shipment.",
+        "opts": [
+          "disappointing",
+          "disappointed",
+          "disappoint",
+          "disappoints"
+        ],
+        "answer": 0,
+        "why": "report 是事物，「令人失望的」報告，用 disappointing。",
+        "zh": "我們收到一份關於延遲出貨、令人失望的報告。"
+      },
+      {
+        "q": "The workers felt _____ after the long audit.",
+        "opts": [
+          "tire",
+          "tiring",
+          "tired",
+          "tires"
+        ],
+        "answer": 2,
+        "why": "workers 是人，感到「疲倦」用 tired。",
+        "zh": "漫長的稽核後，工人們覺得很累。"
+      },
+      {
+        "q": "It was an _____ meeting with the new client.",
+        "opts": [
+          "interesting",
+          "interest",
+          "interested",
+          "interests"
+        ],
+        "answer": 0,
+        "why": "meeting 是事物，「有趣的」會議用 interesting；interested 用在人身上。",
+        "zh": "那是一場和新客戶開的有趣會議。"
+      }
+    ]
+  },
+  "gloss": {
+    "always": [
+      "副詞",
+      "總是",
+      "",
+      "He always arrives early.",
+      "他總是很早到。"
+    ],
+    "audit": [
+      "名詞",
+      "稽核",
+      "",
+      "The audit starts Monday.",
+      "稽核週一開始。"
+    ],
+    "automatically": [
+      "副詞",
+      "自動地",
+      "",
+      "The door opens automatically.",
+      "門會自動打開。"
+    ],
+    "bike": [
+      "名詞",
+      "腳踏車",
+      "",
+      "I go to work by bike.",
+      "我騎腳踏車上班。"
+    ],
+    "boards": [
+      "名詞",
+      "電路板（board 的複數）",
+      "",
+      "We tested all the boards.",
+      "我們測過所有電路板。"
+    ],
+    "break": [
+      "名詞",
+      "（take a break）休息",
+      "動詞：打破",
+      "Let's take a short break.",
+      "我們休息一下吧。"
+    ],
+    "camera": [
+      "名詞",
+      "相機",
+      "",
+      "The camera is on the desk.",
+      "相機在桌上。"
+    ],
+    "check": [
+      "動詞",
+      "檢查",
+      "",
+      "Please check the date.",
+      "請檢查日期。"
+    ],
+    "checks": [
+      "動詞",
+      "檢查（check 的第三人稱單數）",
+      "",
+      "She checks every board.",
+      "她檢查每一片板子。"
+    ],
+    "circuit": [
+      "名詞",
+      "電路",
+      "",
+      "The circuit is broken.",
+      "電路壞了。"
+    ],
+    "client": [
+      "名詞",
+      "客戶",
+      "",
+      "The client called twice.",
+      "客戶打了兩次電話。"
+    ],
+    "closed": [
+      "動詞",
+      "關了（close 的過去式）",
+      "形容詞：關閉的",
+      "He closed the door.",
+      "他把門關上了。"
+    ],
+    "closing": [
+      "動詞",
+      "關（close 的 -ing 形）",
+      "",
+      "We are closing at six.",
+      "我們六點關門。"
+    ],
+    "deal": [
+      "名詞",
+      "（you have a deal）說定了",
+      "交易",
+      "We made a good deal.",
+      "我們談成了一筆好交易。"
+    ],
+    "device": [
+      "名詞",
+      "裝置",
+      "",
+      "This device is very small.",
+      "這個裝置很小。"
+    ],
+    "disappoint": [
+      "動詞",
+      "使失望",
+      "",
+      "We don't want to disappoint you.",
+      "我們不想讓你失望。"
+    ],
+    "disappointed": [
+      "形容詞",
+      "感到失望的",
+      "",
+      "She was disappointed by the news.",
+      "她對消息感到失望。"
+    ],
+    "disappointing": [
+      "形容詞",
+      "令人失望的",
+      "",
+      "The result was disappointing.",
+      "結果令人失望。"
+    ],
+    "disappoints": [
+      "動詞",
+      "使失望（disappoint 的第三人稱單數）",
+      "",
+      "The delay disappoints him.",
+      "延誤讓他失望。"
+    ],
+    "excited": [
+      "形容詞",
+      "感到興奮的",
+      "",
+      "They are excited about the trip.",
+      "他們對旅行很興奮。"
+    ],
+    "feature": [
+      "名詞",
+      "功能、特色",
+      "",
+      "The app has a new feature.",
+      "這個應用程式有新功能。"
+    ],
+    "felt": [
+      "動詞",
+      "覺得、感到（feel 的過去式）",
+      "",
+      "I felt sick yesterday.",
+      "我昨天覺得不舒服。"
+    ],
+    "fun": [
+      "形容詞",
+      "好玩的",
+      "名詞：樂趣",
+      "The trip was fun.",
+      "這趟旅行很好玩。"
+    ],
+    "got": [
+      "動詞",
+      "買到、得到（get 的過去式）",
+      "",
+      "I got a new phone.",
+      "我得到一支新手機。"
+    ],
+    "helps": [
+      "動詞",
+      "幫助（help 的第三人稱單數）",
+      "",
+      "The tool helps us save time.",
+      "這工具幫我們省時間。"
+    ],
+    "interest": [
+      "名詞",
+      "興趣",
+      "",
+      "He has an interest in music.",
+      "他對音樂有興趣。"
+    ],
+    "interested": [
+      "形容詞",
+      "感興趣的",
+      "",
+      "I'm interested in this job.",
+      "我對這份工作有興趣。"
+    ],
+    "interesting": [
+      "形容詞",
+      "有趣的",
+      "",
+      "That's an interesting idea.",
+      "那是個有趣的想法。"
+    ],
+    "interests": [
+      "名詞",
+      "興趣（interest 的複數）",
+      "",
+      "Her interests are travel and food.",
+      "她的興趣是旅行和美食。"
+    ],
+    "keep": [
+      "動詞",
+      "（keep track of）持續",
+      "保留",
+      "Keep going, you're close.",
+      "繼續，你快到了。"
+    ],
+    "large": [
+      "形容詞",
+      "大的",
+      "",
+      "We need a large room.",
+      "我們需要大房間。"
+    ],
+    "likes": [
+      "動詞",
+      "喜歡（like 的第三人稱單數）",
+      "",
+      "He likes to show off.",
+      "他喜歡炫耀。"
+    ],
+    "love": [
+      "動詞",
+      "很喜歡",
+      "名詞：愛",
+      "I love this coffee shop.",
+      "我很喜歡這家咖啡店。"
+    ],
+    "mind": [
+      "動詞",
+      "介意",
+      "",
+      "Do you mind waiting?",
+      "你介意等一下嗎？"
+    ],
+    "nice": [
+      "形容詞",
+      "好看的、不錯的",
+      "友善的",
+      "Nice shoes!",
+      "好看的鞋子！"
+    ],
+    "off": [
+      "副詞",
+      "（show off）炫耀",
+      "離開、關掉",
+      "Turn off the light.",
+      "把燈關掉。"
+    ],
+    "okay": [
+      "感嘆詞",
+      "好吧",
+      "",
+      "Okay, let's start.",
+      "好，我們開始吧。"
+    ],
+    "phone": [
+      "名詞",
+      "手機",
+      "",
+      "My phone is dead.",
+      "我的手機沒電了。"
+    ],
+    "plan": [
+      "名詞",
+      "計畫",
+      "",
+      "The plan looks good.",
+      "這個計畫看起來不錯。"
+    ],
+    "plane": [
+      "名詞",
+      "飛機",
+      "",
+      "The plane lands at noon.",
+      "飛機中午降落。"
+    ],
+    "put": [
+      "動詞",
+      "放",
+      "",
+      "Put the box on the shelf.",
+      "把箱子放在架上。"
+    ],
+    "quite": [
+      "副詞",
+      "相當",
+      "",
+      "It's quite cold today.",
+      "今天相當冷。"
+    ],
+    "received": [
+      "動詞",
+      "收到了（receive 的過去式）",
+      "",
+      "We received your email.",
+      "我們收到你的郵件了。"
+    ],
+    "results": [
+      "名詞",
+      "結果（result 的複數）",
+      "",
+      "The test results are good.",
+      "測試結果很好。"
+    ],
+    "safety": [
+      "名詞",
+      "安全",
+      "",
+      "Safety comes first.",
+      "安全第一。"
+    ],
+    "samples": [
+      "名詞",
+      "樣品（sample 的複數）",
+      "",
+      "Please send three samples.",
+      "請寄三個樣品。"
+    ],
+    "satisfied": [
+      "形容詞",
+      "感到滿意的",
+      "",
+      "The client is satisfied.",
+      "客戶很滿意。"
+    ],
+    "satisfies": [
+      "動詞",
+      "使滿意（satisfy 的第三人稱單數）",
+      "",
+      "This plan satisfies everyone.",
+      "這個計畫讓大家都滿意。"
+    ],
+    "satisfy": [
+      "動詞",
+      "使滿意",
+      "",
+      "We want to satisfy our clients.",
+      "我們想讓客戶滿意。"
+    ],
+    "satisfying": [
+      "形容詞",
+      "令人滿意的",
+      "",
+      "The result was satisfying.",
+      "結果令人滿意。"
+    ],
+    "shelf": [
+      "名詞",
+      "架子",
+      "",
+      "The files are on the shelf.",
+      "檔案在架子上。"
+    ],
+    "show": [
+      "動詞",
+      "（show off）炫耀",
+      "展示",
+      "Let me show you the report.",
+      "我給你看報告。"
+    ],
+    "sleep": [
+      "名詞",
+      "睡眠",
+      "動詞：睡覺",
+      "I need more sleep.",
+      "我需要更多睡眠。"
+    ],
+    "smartwatch": [
+      "名詞",
+      "智慧手錶",
+      "",
+      "My smartwatch counts my steps.",
+      "我的智慧手錶會計步。"
+    ],
+    "software": [
+      "名詞",
+      "軟體",
+      "",
+      "We updated the software.",
+      "我們更新了軟體。"
+    ],
+    "sophie": [
+      "人名",
+      "Sophie（女子名）",
+      "",
+      "Sophie works in sales.",
+      "Sophie 在業務部。"
+    ],
+    "sounds": [
+      "動詞",
+      "聽起來",
+      "",
+      "That sounds great.",
+      "聽起來很棒。"
+    ],
+    "start": [
+      "動詞",
+      "開始",
+      "",
+      "Let's start the meeting.",
+      "我們開始開會吧。"
+    ],
+    "steps": [
+      "名詞",
+      "步數（step 的複數）",
+      "步驟",
+      "I walk ten thousand steps a day.",
+      "我一天走一萬步。"
+    ],
+    "sunday": [
+      "名詞",
+      "星期日",
+      "",
+      "We rest on Sunday.",
+      "我們週日休息。"
+    ],
+    "surprise": [
+      "名詞",
+      "驚喜",
+      "動詞：使驚訝",
+      "It was a nice surprise.",
+      "那是個好驚喜。"
+    ],
+    "surprised": [
+      "形容詞",
+      "感到驚訝的",
+      "",
+      "I was surprised by the news.",
+      "我對消息感到驚訝。"
+    ],
+    "surprises": [
+      "動詞",
+      "使驚訝（surprise 的第三人稱單數）",
+      "",
+      "His answer surprises me.",
+      "他的回答讓我驚訝。"
+    ],
+    "surprising": [
+      "形容詞",
+      "令人驚訝的",
+      "",
+      "The result is surprising.",
+      "結果令人驚訝。"
+    ],
+    "take": [
+      "動詞",
+      "（take a break）休息",
+      "拿、搭",
+      "Take a seat, please.",
+      "請坐。"
+    ],
+    "test": [
+      "名詞",
+      "測試",
+      "",
+      "The test results are ready.",
+      "測試結果好了。"
+    ],
+    "tests": [
+      "動詞",
+      "測試（test 的第三人稱單數）",
+      "",
+      "She tests every board.",
+      "她測試每一片板子。"
+    ],
+    "these": [
+      "代名詞",
+      "這些",
+      "",
+      "These boards are new.",
+      "這些板子是新的。"
+    ],
+    "they're": [
+      "縮寫",
+      "they are 的縮寫",
+      "",
+      "They're in the meeting.",
+      "他們在開會。"
+    ],
+    "thirty": [
+      "數字",
+      "三十",
+      "",
+      "The call lasts thirty minutes.",
+      "通話持續三十分鐘。"
+    ],
+    "though": [
+      "副詞",
+      "不過（放句尾）",
+      "",
+      "It's late, though.",
+      "不過已經很晚了。"
+    ],
+    "tire": [
+      "動詞",
+      "使疲倦",
+      "",
+      "Long trips tire me.",
+      "長途旅行讓我很累。"
+    ],
+    "tires": [
+      "動詞",
+      "使疲倦（tire 的第三人稱單數）",
+      "名詞：輪胎",
+      "Walking tires him.",
+      "走路讓他累。"
+    ],
+    "tiring": [
+      "形容詞",
+      "累人的",
+      "",
+      "It was a tiring day.",
+      "那是累人的一天。"
+    ],
+    "track": [
+      "名詞",
+      "（keep track of）記錄",
+      "軌道",
+      "Keep track of the costs.",
+      "記錄每筆成本。"
+    ],
+    "train": [
+      "名詞",
+      "火車",
+      "",
+      "I take the train to work.",
+      "我搭火車上班。"
+    ],
+    "tried": [
+      "動詞",
+      "試過（try 的過去式）",
+      "",
+      "I tried the new cafe.",
+      "我試過那家新咖啡店。"
+    ],
+    "use": [
+      "動詞",
+      "使用",
+      "",
+      "We use this tool daily.",
+      "我們每天用這個工具。"
+    ],
+    "useful": [
+      "形容詞",
+      "有用的",
+      "",
+      "The tool is very useful.",
+      "這個工具很有用。"
+    ],
+    "video": [
+      "名詞",
+      "視訊、影片",
+      "",
+      "Let's have a video call.",
+      "我們來開視訊會議。"
+    ],
+    "walk": [
+      "動詞",
+      "走路",
+      "",
+      "I walk to work.",
+      "我走路上班。"
+    ],
+    "watch": [
+      "名詞",
+      "手錶",
+      "動詞：看",
+      "My watch is slow.",
+      "我的手錶慢了。"
+    ],
+    "window": [
+      "名詞",
+      "窗戶",
+      "",
+      "Please open the window.",
+      "請打開窗戶。"
+    ],
+    "work": [
+      "名詞",
+      "（after work）下班後",
+      "工作",
+      "I'm busy at work.",
+      "我工作很忙。"
+    ],
+    "worried": [
+      "形容詞",
+      "擔心的",
+      "",
+      "She is worried about the test.",
+      "她擔心測驗。"
+    ],
+    "worth": [
+      "形容詞",
+      "值得的",
+      "",
+      "This book is worth reading.",
+      "這本書值得讀。"
+    ],
+    "wow": [
+      "感嘆詞",
+      "哇",
+      "",
+      "Wow, that's fast!",
+      "哇，好快！"
+    ],
+    "yet": [
+      "副詞",
+      "還（沒）",
+      "",
+      "It's not ready yet.",
+      "還沒準備好。"
+    ]
+  },
+  "phrases": [
+    {
+      "p": "keep track of",
+      "forms": [
+        "keep track of"
+      ],
+      "pos": "片語・動詞",
+      "zh": "記錄、掌握",
+      "ex": "I keep track of my work hours.",
+      "exzh": "我記錄自己的工時。"
+    },
+    {
+      "p": "show off",
+      "forms": [
+        "show off"
+      ],
+      "pos": "片語・動詞",
+      "zh": "炫耀、展示",
+      "ex": "She likes to show off her skills.",
+      "exzh": "她喜歡展現她的技術。"
+    },
+    {
+      "p": "give up",
+      "forms": [
+        "give up"
+      ],
+      "pos": "片語・動詞",
+      "zh": "放棄",
+      "ex": "Never give up on quality.",
+      "exzh": "永遠不要放棄品質。"
+    },
+    {
+      "p": "take a break",
+      "forms": [
+        "take a break"
+      ],
+      "pos": "片語・動詞",
+      "zh": "休息一下",
+      "ex": "Let's take a break at three.",
+      "exzh": "我們三點休息一下。"
+    },
+    {
+      "p": "after work",
+      "forms": [
+        "after work"
+      ],
+      "pos": "片語",
+      "zh": "下班後",
+      "ex": "Let's have dinner after work.",
+      "exzh": "我們下班後吃晚餐吧。"
+    }
+  ]
+}
