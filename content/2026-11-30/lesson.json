@@ -1,0 +1,837 @@
+{
+  "date": "2026-11-30",
+  "weekday": "週一",
+  "theme": "職場會議",
+  "title": "Choosing a Supplier",
+  "titleZh": "選擇供應商",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Olivia": {
+      "voice": "af_bella",
+      "accent": "美式"
+    },
+    "Henry": {
+      "voice": "bm_lewis",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Henry",
+      "en": "Good morning, Olivia. Let's talk about the new supplier.",
+      "zh": "早安，Olivia。我們來談談新的供應商。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "Sure. We have two choices, A and B.",
+      "zh": "好的。我們有兩個選擇，A 和 B。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Henry",
+      "en": "Which one is cheaper?",
+      "zh": "哪一家比較便宜？",
+      "mood": "confused"
+    },
+    {
+      "s": "Olivia",
+      "en": "Supplier A. But Supplier B is more reliable.",
+      "zh": "A 供應商。但 B 供應商比較可靠。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Henry",
+      "en": "How much more reliable?",
+      "zh": "可靠多少？",
+      "mood": "surprised"
+    },
+    {
+      "s": "Olivia",
+      "en": "Their quality is better, and they deliver faster.",
+      "zh": "他們的品質比較好，交貨也比較快。",
+      "mood": "happy"
+    },
+    {
+      "s": "Henry",
+      "en": "Hmm. But our budget is smaller this year.",
+      "zh": "嗯。但我們今年的預算比較少。",
+      "mood": "sad"
+    },
+    {
+      "s": "Olivia",
+      "en": "True. We need to cut down on costs.",
+      "zh": "沒錯。我們需要減少開支。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Henry",
+      "en": "Can you come up with a plan by Wednesday?",
+      "zh": "你能在週三前想出一個方案嗎？",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "Yes. I'm afraid we may fall behind if we wait.",
+      "zh": "可以。我擔心再等下去我們會落後。",
+      "mood": "sad"
+    },
+    {
+      "s": "Henry",
+      "en": "Good point. Let's not wait too long.",
+      "zh": "說得好。我們不要等太久。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "I'll ask both for their best price.",
+      "zh": "我會請兩家都報最好的價格。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Henry",
+      "en": "Perfect. That's the smartest way.",
+      "zh": "太好了。那是最聰明的做法。",
+      "mood": "happy"
+    },
+    {
+      "s": "Olivia",
+      "en": "Okay. I'll send you a summary tomorrow.",
+      "zh": "好的。我明天寄摘要給你。",
+      "mood": "happy"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Which supplier is cheaper?",
+      "options": [
+        "Supplier B",
+        "Supplier C",
+        "Supplier A",
+        "Both of them"
+      ],
+      "answer": 2,
+      "line": 3,
+      "why": "Olivia 說 Supplier A 比較便宜，B 比較可靠。"
+    },
+    {
+      "q": "What is better about Supplier B?",
+      "options": [
+        "Its quality and delivery",
+        "Its price",
+        "Its office",
+        "Its manager"
+      ],
+      "answer": 0,
+      "line": 5,
+      "why": "Olivia 說 B 的品質比較好，交貨也比較快。"
+    },
+    {
+      "q": "What does Henry ask Olivia to do by Wednesday?",
+      "options": [
+        "Visit a factory",
+        "Hire a new worker",
+        "Cancel the order",
+        "Make a plan"
+      ],
+      "answer": 3,
+      "line": 8,
+      "why": "Henry 問她能不能在週三前 come up with a plan（想出方案）。"
+    }
+  ],
+  "words": [
+    {
+      "w": "cut down on",
+      "pos": "片語・動詞",
+      "zh": "減少、削減",
+      "ex1": "True. We need to cut down on costs.",
+      "line": 7,
+      "ex2": "The factory wants to cut down on waste this year.",
+      "ex2zh": "工廠今年想減少浪費。",
+      "toeic": false,
+      "hook": "cut 剪＋down 往下：把數字剪下去＝減少",
+      "img": "pic/word_0.png",
+      "pic": "a person holding big scissors cutting a tall stack of coins down to a short stack"
+    },
+    {
+      "w": "come up with",
+      "pos": "片語・動詞",
+      "zh": "想出、提出（點子、方案）",
+      "ex1": "Can you come up with a plan by Wednesday?",
+      "line": 8,
+      "ex2": "The QA team came up with a new way to test the boards.",
+      "ex2zh": "品保團隊想出了測試電路板的新方法。",
+      "toeic": false,
+      "hook": "come up 浮上來＋with 帶著：腦中浮上來一個點子，帶著它出現＝想出",
+      "img": "pic/word_1.png",
+      "pic": "a smiling man with a glowing light bulb rising up out of his head"
+    },
+    {
+      "w": "fall behind",
+      "pos": "片語・動詞",
+      "zh": "落後、進度落後",
+      "ex1": "Yes. I'm afraid we may fall behind if we wait.",
+      "line": 9,
+      "ex2": "We will fall behind schedule if the parts arrive late.",
+      "ex2zh": "如果零件晚到，我們的進度會落後。",
+      "toeic": false,
+      "hook": "fall 掉＋behind 後面：賽跑中掉到別人後面＝落後",
+      "img": "pic/word_2.png",
+      "pic": "a tired runner far behind a group of other runners on a track"
+    },
+    {
+      "w": "supplier",
+      "pos": "名詞",
+      "zh": "供應商",
+      "ex1": "Good morning, Olivia. Let's talk about the new supplier.",
+      "line": 0,
+      "ex2": "Our supplier ships the circuit boards every Monday.",
+      "ex2zh": "我們的供應商每週一運送電路板。",
+      "toeic": true,
+      "hook": "supply 供應＋er 人：負責「供應」東西的人＝供應商",
+      "img": "pic/word_3.png",
+      "pic": "a delivery man handing a big box to a factory worker beside a truck"
+    },
+    {
+      "w": "budget",
+      "pos": "名詞",
+      "zh": "預算",
+      "ex1": "Hmm. But our budget is smaller this year.",
+      "line": 6,
+      "ex2": "The training plan is within the budget.",
+      "ex2zh": "這個訓練計畫在預算之內。",
+      "toeic": true,
+      "hook": "諧音「拔雞」：預算有限，只拔得起一隻雞的錢＝要精打細算＝預算（budget）",
+      "img": "pic/word_4.png",
+      "pic": "a woman counting a small pile of coins next to a piggy bank"
+    }
+  ],
+  "part2": [
+    {
+      "q": "Who is the new supplier?",
+      "opts": [
+        "It is a company in Taiwan.",
+        "Next Monday.",
+        "About ten boxes."
+      ],
+      "answer": 0,
+      "why": "Who 問「誰」，答公司名稱或類型。B 是時間，C 是數量。",
+      "zh": "新的供應商是誰？"
+    },
+    {
+      "q": "Could you send me the budget report?",
+      "opts": [
+        "It's under budget.",
+        "Sure, I'll email it now.",
+        "At the meeting room."
+      ],
+      "answer": 1,
+      "why": "Could you 是請求，Sure 是自然的答應。A 重複 budget 是陷阱。",
+      "zh": "你可以把預算報告寄給我嗎？"
+    },
+    {
+      "q": "When does the meeting start?",
+      "opts": [
+        "For about an hour.",
+        "It's in Room 3.",
+        "At ten o'clock."
+      ],
+      "answer": 2,
+      "why": "When 問時間。A 回答長度（How long），B 回答地點。",
+      "zh": "會議什麼時候開始？"
+    },
+    {
+      "q": "Why don't we ask another supplier?",
+      "opts": [
+        "Yes, he is a supplier.",
+        "That's a good idea.",
+        "Because it's far."
+      ],
+      "answer": 1,
+      "why": "Why don't we 是建議，不是真的問原因，所以回答 That's a good idea。C 用 Because 是掉進陷阱。",
+      "zh": "我們何不問問另一家供應商？"
+    },
+    {
+      "q": "Do you want the cheaper one or the faster one?",
+      "opts": [
+        "Yes, I do.",
+        "The faster one, please.",
+        "It was cheaper yesterday."
+      ],
+      "answer": 1,
+      "why": "這是選擇問句（A or B），要直接選一個，不能用 Yes/No。",
+      "zh": "你要比較便宜的還是比較快的？"
+    }
+  ],
+  "scene": "Olivia 和 Henry 在會議室討論要選哪一家新的供應商。",
+  "place": "meeting_room",
+  "grammar": {
+    "topic": "compare",
+    "topicZh": "比較級與最高級",
+    "tip": "看到 than 就用比較級（cheaper than、more reliable than）；看到 the 加「在……之中」就用最高級（the cheapest）；as ... as 中間用原級。短的字加 er／est，長的字用 more／most。",
+    "items": [
+      {
+        "q": "Supplier A is _____ than Supplier B.",
+        "opts": [
+          "cheap",
+          "cheaper",
+          "cheapest",
+          "more cheap"
+        ],
+        "answer": 1,
+        "why": "後面有 than，要用比較級。cheap 是短字，加 er：cheaper。more cheap 是錯的。",
+        "zh": "A 供應商比 B 供應商便宜。"
+      },
+      {
+        "q": "This is the _____ machine in our factory.",
+        "opts": [
+          "fast",
+          "faster",
+          "fastest",
+          "more fast"
+        ],
+        "answer": 2,
+        "why": "前面有 the，又是「在工廠裡」這個範圍，要用最高級 fastest。",
+        "zh": "這是我們工廠裡最快的機器。"
+      },
+      {
+        "q": "The new system is _____ reliable than the old one.",
+        "opts": [
+          "more",
+          "most",
+          "much",
+          "as"
+        ],
+        "answer": 0,
+        "why": "reliable 是長字，比較級用 more＋原形。後面有 than，不能用 most。",
+        "zh": "新系統比舊系統更可靠。"
+      },
+      {
+        "q": "Our delivery time is not as long _____ theirs.",
+        "opts": [
+          "than",
+          "as",
+          "that",
+          "the"
+        ],
+        "answer": 1,
+        "why": "not as ... as 是「不像……那麼……」，後面要接 as，不是 than。",
+        "zh": "我們的交貨時間沒有他們那麼長。"
+      },
+      {
+        "q": "Ms. Lin is the _____ manager in our team.",
+        "opts": [
+          "more experienced",
+          "most experienced",
+          "experienced than",
+          "much experienced"
+        ],
+        "answer": 1,
+        "why": "the 加「在團隊裡」是最高級，長字用 most＋原形：most experienced。",
+        "zh": "林小姐是我們團隊裡最有經驗的經理。"
+      }
+    ]
+  },
+  "gloss": {
+    "afraid": [
+      "形容詞",
+      "（I'm afraid）恐怕、擔心",
+      "害怕",
+      "I'm afraid I can't join the call.",
+      "恐怕我無法參加通話。"
+    ],
+    "another": [
+      "形容詞・代名詞",
+      "另一個",
+      "再一個",
+      "Let's try another method.",
+      "我們試試另一個方法。"
+    ],
+    "arrive": [
+      "動詞",
+      "抵達、送到",
+      "",
+      "The parts will arrive on Friday.",
+      "零件週五會到。"
+    ],
+    "as": [
+      "連接詞・介系詞",
+      "（as ... as）像……一樣",
+      "作為",
+      "This is as good as that one.",
+      "這個跟那個一樣好。"
+    ],
+    "b": [
+      "名詞",
+      "字母 B（B 供應商）",
+      "",
+      "Please choose option B.",
+      "請選 B 選項。"
+    ],
+    "behind": [
+      "副詞・介系詞",
+      "（fall behind）落後",
+      "在……後面",
+      "We are behind schedule.",
+      "我們進度落後。"
+    ],
+    "better": [
+      "形容詞",
+      "更好的（good 的比較級）",
+      "",
+      "This plan is better than the old one.",
+      "這個方案比舊的好。"
+    ],
+    "boards": [
+      "名詞",
+      "電路板（board 的複數）",
+      "",
+      "We tested all the boards.",
+      "我們測過所有電路板。"
+    ],
+    "both": [
+      "代名詞・形容詞",
+      "兩者都",
+      "",
+      "Both reports are ready.",
+      "兩份報告都好了。"
+    ],
+    "boxes": [
+      "名詞",
+      "箱子（box 的複數）",
+      "",
+      "The boxes are in the warehouse.",
+      "箱子在倉庫裡。"
+    ],
+    "budget": [
+      "名詞",
+      "預算",
+      "",
+      "We have a small budget this year.",
+      "我們今年預算很少。"
+    ],
+    "c": [
+      "名詞",
+      "字母 C（C 供應商）",
+      "",
+      "Plan C is the cheapest.",
+      "C 方案最便宜。"
+    ],
+    "cancel": [
+      "動詞",
+      "取消",
+      "",
+      "We had to cancel the meeting.",
+      "我們必須取消會議。"
+    ],
+    "cheap": [
+      "形容詞",
+      "便宜的",
+      "",
+      "This part is cheap but good.",
+      "這個零件便宜又好用。"
+    ],
+    "cheaper": [
+      "形容詞",
+      "比較便宜的（cheap 的比較級）",
+      "",
+      "Air freight is not cheaper.",
+      "空運沒有比較便宜。"
+    ],
+    "cheapest": [
+      "形容詞",
+      "最便宜的（cheap 的最高級）",
+      "",
+      "This is the cheapest option.",
+      "這是最便宜的選項。"
+    ],
+    "choices": [
+      "名詞",
+      "選擇（choice 的複數）",
+      "",
+      "We have three choices.",
+      "我們有三個選擇。"
+    ],
+    "circuit": [
+      "名詞",
+      "電路（circuit board 電路板）",
+      "",
+      "The circuit is overheating.",
+      "電路過熱了。"
+    ],
+    "costs": [
+      "名詞",
+      "成本、開支（cost 的複數）",
+      "",
+      "We need to lower the costs.",
+      "我們需要降低成本。"
+    ],
+    "cut": [
+      "動詞",
+      "（cut down on）減少",
+      "剪、切",
+      "Please cut the extra costs.",
+      "請刪掉多餘的開支。"
+    ],
+    "deliver": [
+      "動詞",
+      "交貨、運送",
+      "",
+      "We deliver within three days.",
+      "我們三天內交貨。"
+    ],
+    "delivery": [
+      "名詞",
+      "交貨、運送",
+      "",
+      "The delivery is on Monday.",
+      "交貨時間是週一。"
+    ],
+    "down": [
+      "副詞",
+      "（cut down on）減少",
+      "向下",
+      "Prices went down last month.",
+      "價格上個月下降了。"
+    ],
+    "experienced": [
+      "形容詞",
+      "有經驗的",
+      "",
+      "She is an experienced engineer.",
+      "她是有經驗的工程師。"
+    ],
+    "fall": [
+      "動詞",
+      "（fall behind）掉到後面、落後",
+      "掉下",
+      "Sales may fall next month.",
+      "下個月業績可能下滑。"
+    ],
+    "far": [
+      "形容詞・副詞",
+      "遠的",
+      "",
+      "The factory is far from here.",
+      "工廠離這裡很遠。"
+    ],
+    "fast": [
+      "形容詞",
+      "快的",
+      "",
+      "This machine is very fast.",
+      "這台機器很快。"
+    ],
+    "faster": [
+      "形容詞・副詞",
+      "更快（fast 的比較級）",
+      "",
+      "Can you ship it faster?",
+      "你能更快出貨嗎？"
+    ],
+    "fastest": [
+      "形容詞",
+      "最快的（fast 的最高級）",
+      "",
+      "This is the fastest route.",
+      "這是最快的路線。"
+    ],
+    "henry": [
+      "人名",
+      "亨利（男生名字）",
+      "",
+      "Henry leads the weekly meeting.",
+      "Henry 主持每週會議。"
+    ],
+    "hire": [
+      "動詞",
+      "僱用",
+      "",
+      "We plan to hire two engineers.",
+      "我們打算僱用兩位工程師。"
+    ],
+    "hmm": [
+      "感嘆詞",
+      "嗯（思考時的聲音）",
+      "",
+      "Hmm, let me think about it.",
+      "嗯，讓我想一想。"
+    ],
+    "its": [
+      "代名詞",
+      "它的",
+      "",
+      "The company changed its plan.",
+      "公司改了它的計畫。"
+    ],
+    "lin": [
+      "人名",
+      "林（姓氏）",
+      "",
+      "Ms. Lin is our new manager.",
+      "林小姐是我們的新經理。"
+    ],
+    "make": [
+      "動詞",
+      "做、制定",
+      "",
+      "Let's make a decision today.",
+      "我們今天做決定吧。"
+    ],
+    "most": [
+      "副詞・形容詞",
+      "最（最高級用字）",
+      "大多數",
+      "This is the most useful tool.",
+      "這是最有用的工具。"
+    ],
+    "okay": [
+      "感嘆詞・形容詞",
+      "好的",
+      "",
+      "Okay, let's begin.",
+      "好，我們開始吧。"
+    ],
+    "olivia": [
+      "人名",
+      "奧莉維亞（女生名字）",
+      "",
+      "Olivia manages the supplier list.",
+      "Olivia 負責供應商名單。"
+    ],
+    "parts": [
+      "名詞",
+      "零件（part 的複數）",
+      "",
+      "The parts are out of stock.",
+      "零件缺貨了。"
+    ],
+    "plan": [
+      "名詞",
+      "計畫、方案",
+      "",
+      "We need a new plan.",
+      "我們需要新的方案。"
+    ],
+    "point": [
+      "名詞",
+      "論點、重點",
+      "點；分數",
+      "That's a good point.",
+      "那是個好論點。"
+    ],
+    "qa": [
+      "名詞",
+      "品保（quality assurance）",
+      "",
+      "QA will check the samples.",
+      "品保會檢查樣品。"
+    ],
+    "reliable": [
+      "形容詞",
+      "可靠的",
+      "",
+      "He is a reliable partner.",
+      "他是可靠的夥伴。"
+    ],
+    "ships": [
+      "動詞",
+      "運送、出貨（主詞是單數）",
+      "船（名詞複數）",
+      "She ships orders every day.",
+      "她每天出貨。"
+    ],
+    "smaller": [
+      "形容詞",
+      "比較小的（small 的比較級）",
+      "",
+      "This room is smaller than that one.",
+      "這個房間比那個小。"
+    ],
+    "smartest": [
+      "形容詞",
+      "最聰明的（smart 的最高級）",
+      "",
+      "That is the smartest choice.",
+      "那是最聰明的選擇。"
+    ],
+    "start": [
+      "動詞",
+      "開始",
+      "",
+      "The meeting will start soon.",
+      "會議快開始了。"
+    ],
+    "summary": [
+      "名詞",
+      "摘要",
+      "",
+      "Please send me a short summary.",
+      "請寄給我簡短的摘要。"
+    ],
+    "system": [
+      "名詞",
+      "系統",
+      "",
+      "The system is down.",
+      "系統當機了。"
+    ],
+    "taiwan": [
+      "地名",
+      "台灣",
+      "",
+      "Our factory is in Taiwan.",
+      "我們的工廠在台灣。"
+    ],
+    "talk": [
+      "動詞",
+      "談、討論",
+      "",
+      "Can we talk about the schedule?",
+      "我們可以談談時程嗎？"
+    ],
+    "test": [
+      "動詞",
+      "測試",
+      "測試（名詞）",
+      "We test every product.",
+      "我們測試每個產品。"
+    ],
+    "that's": [
+      "縮寫",
+      "那是（that is）",
+      "",
+      "That's a great idea.",
+      "那是個好主意。"
+    ],
+    "their": [
+      "代名詞",
+      "他們的",
+      "",
+      "Their price is lower.",
+      "他們的價格比較低。"
+    ],
+    "theirs": [
+      "代名詞",
+      "他們的（東西）",
+      "",
+      "Our plan is simpler than theirs.",
+      "我們的方案比他們的簡單。"
+    ],
+    "true": [
+      "形容詞",
+      "真的、沒錯",
+      "",
+      "That's true.",
+      "沒錯。"
+    ],
+    "visit": [
+      "動詞",
+      "參觀、拜訪",
+      "",
+      "We will visit the factory.",
+      "我們會參觀工廠。"
+    ],
+    "wants": [
+      "動詞",
+      "想要（主詞是單數）",
+      "",
+      "He wants a quick reply.",
+      "他想要快點回覆。"
+    ],
+    "waste": [
+      "名詞",
+      "浪費、廢料",
+      "",
+      "We must reduce waste.",
+      "我們必須減少浪費。"
+    ],
+    "way": [
+      "名詞",
+      "方法、做法",
+      "路",
+      "This is a better way to work.",
+      "這是比較好的工作方法。"
+    ],
+    "wednesday": [
+      "名詞",
+      "星期三",
+      "",
+      "The review is on Wednesday.",
+      "檢討會在週三。"
+    ],
+    "which": [
+      "代名詞・形容詞",
+      "哪一個",
+      "",
+      "Which option do you prefer?",
+      "你比較喜歡哪個選項？"
+    ],
+    "worker": [
+      "名詞",
+      "工人、員工",
+      "",
+      "Each worker wears a helmet.",
+      "每位工人都戴安全帽。"
+    ]
+  },
+  "phrases": [
+    {
+      "p": "cut down on",
+      "forms": [
+        "cut down on",
+        "cutting down on",
+        "cut down"
+      ],
+      "pos": "片語・動詞",
+      "zh": "減少、削減",
+      "ex": "We should cut down on overtime hours.",
+      "exzh": "我們應該減少加班時數。"
+    },
+    {
+      "p": "come up with",
+      "forms": [
+        "come up with",
+        "came up with",
+        "coming up with"
+      ],
+      "pos": "片語・動詞",
+      "zh": "想出、提出",
+      "ex": "Can you come up with a better idea?",
+      "exzh": "你能想出更好的點子嗎？"
+    },
+    {
+      "p": "fall behind",
+      "forms": [
+        "fall behind",
+        "fell behind",
+        "falling behind"
+      ],
+      "pos": "片語・動詞",
+      "zh": "落後",
+      "ex": "Don't fall behind on the project.",
+      "exzh": "不要讓專案進度落後。"
+    },
+    {
+      "p": "good point",
+      "forms": [
+        "good point"
+      ],
+      "pos": "片語",
+      "zh": "說得好、有道理",
+      "ex": "Good point. I didn't think of that.",
+      "exzh": "說得好，我沒想到這點。"
+    },
+    {
+      "p": "I'm afraid",
+      "forms": [
+        "i'm afraid"
+      ],
+      "pos": "片語",
+      "zh": "恐怕、我擔心",
+      "ex": "I'm afraid the meeting is full today.",
+      "exzh": "恐怕今天的會議已經滿了。"
+    }
+  ]
+}
