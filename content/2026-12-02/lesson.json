@@ -1,0 +1,904 @@
+{
+  "date": "2026-12-02",
+  "weekday": "週三",
+  "theme": "客戶溝通",
+  "title": "Damaged Boxes",
+  "titleZh": "箱子損壞了",
+  "level": "B1",
+  "speed": "慢速",
+  "speakers": {
+    "Kevin": {
+      "voice": "am_eric",
+      "accent": "美式"
+    },
+    "Olivia": {
+      "voice": "bf_emma",
+      "accent": "英式"
+    }
+  },
+  "lines": [
+    {
+      "s": "Kevin",
+      "en": "Hi Olivia. I have a problem with our last delivery.",
+      "zh": "嗨 Olivia，我們上一批貨有問題。",
+      "mood": "sad"
+    },
+    {
+      "s": "Olivia",
+      "en": "Oh no. What's wrong?",
+      "zh": "噢不。怎麼了？",
+      "mood": "surprised"
+    },
+    {
+      "s": "Kevin",
+      "en": "Three boxes arrived with serious damage.",
+      "zh": "有三個箱子到貨時嚴重損壞。",
+      "mood": "sad"
+    },
+    {
+      "s": "Olivia",
+      "en": "I'm so sorry. Can you send me some photos?",
+      "zh": "真的很抱歉。你可以寄一些照片給我嗎？",
+      "mood": "sad"
+    },
+    {
+      "s": "Kevin",
+      "en": "Sure. I'll email them in ten minutes.",
+      "zh": "沒問題。我十分鐘內寄給你。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Olivia",
+      "en": "Thank you. We'll make sure this doesn't happen again.",
+      "zh": "謝謝。我們會確保這種事不再發生。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Kevin",
+      "en": "Will you pay for the damage?",
+      "zh": "你們會賠償損壞嗎？",
+      "mood": "confused"
+    },
+    {
+      "s": "Olivia",
+      "en": "Yes. If the photos show the problem, we'll give you compensation.",
+      "zh": "會的。如果照片顯示有問題，我們會給你賠償。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Kevin",
+      "en": "That sounds fair. How long will it take?",
+      "zh": "聽起來合理。要多久？",
+      "mood": "happy"
+    },
+    {
+      "s": "Olivia",
+      "en": "I need to sort out the details with my manager.",
+      "zh": "我得跟經理把細節處理好。",
+      "mood": "neutral"
+    },
+    {
+      "s": "Kevin",
+      "en": "Okay. When will I hear from you?",
+      "zh": "好的。我什麼時候會收到你的消息？",
+      "mood": "confused"
+    },
+    {
+      "s": "Olivia",
+      "en": "By tomorrow noon. I promise.",
+      "zh": "明天中午前。我保證。",
+      "mood": "happy"
+    },
+    {
+      "s": "Kevin",
+      "en": "Great. Thanks for your help, Olivia.",
+      "zh": "太好了。謝謝你的幫忙，Olivia。",
+      "mood": "happy"
+    },
+    {
+      "s": "Olivia",
+      "en": "You're welcome. Sorry again for the trouble.",
+      "zh": "不客氣。再次為造成的麻煩道歉。",
+      "mood": "sad"
+    }
+  ],
+  "quiz": [
+    {
+      "q": "What problem does Kevin have?",
+      "options": [
+        "The boxes were late.",
+        "The price was wrong.",
+        "Some boxes were damaged.",
+        "The color was wrong."
+      ],
+      "answer": 2,
+      "line": 2,
+      "why": "Kevin 說有三個箱子到貨時嚴重損壞。"
+    },
+    {
+      "q": "What does Olivia ask Kevin to send?",
+      "options": [
+        "Some photos",
+        "A new order",
+        "A bill",
+        "A phone number"
+      ],
+      "answer": 0,
+      "line": 3,
+      "why": "Olivia 問他可不可以寄一些照片。"
+    },
+    {
+      "q": "When will Olivia answer Kevin?",
+      "options": [
+        "In ten minutes",
+        "Today at five",
+        "Next Monday",
+        "By tomorrow noon"
+      ],
+      "answer": 3,
+      "line": 11,
+      "why": "Olivia 說明天中午前會回覆。"
+    }
+  ],
+  "words": [
+    {
+      "w": "make sure",
+      "pos": "片語・動詞",
+      "zh": "確保、務必",
+      "ex1": "Thank you. We'll make sure this doesn't happen again.",
+      "line": 5,
+      "ex2": "Please make sure every box is sealed before shipping.",
+      "ex2zh": "出貨前請確保每個箱子都封好。",
+      "toeic": false,
+      "hook": "make 做＋sure 確定：把事情「做到確定」＝確保",
+      "img": "pic/word_0.png",
+      "pic": "a worker pressing a big tape strip on a cardboard box and giving a thumbs up"
+    },
+    {
+      "w": "sort out",
+      "pos": "片語・動詞",
+      "zh": "解決、處理好",
+      "ex1": "I need to sort out the details with my manager.",
+      "line": 9,
+      "ex2": "We need to sort out the delivery problem today.",
+      "ex2zh": "我們今天需要把交貨問題處理好。",
+      "toeic": false,
+      "hook": "sort 分類＋out 出來：把亂糟糟的東西一樣樣分出來＝理清、解決",
+      "img": "pic/word_1.png",
+      "pic": "a woman putting messy colorful boxes into neat separate piles"
+    },
+    {
+      "w": "hear from",
+      "pos": "片語・動詞",
+      "zh": "收到（某人）的消息",
+      "ex1": "Okay. When will I hear from you?",
+      "line": 10,
+      "ex2": "We hope to hear from the customer by Friday.",
+      "ex2zh": "我們希望週五前收到客戶的回覆。",
+      "toeic": false,
+      "hook": "hear 聽＋from 從：從某人那裡「聽到」消息＝收到對方的來信或回覆",
+      "img": "pic/word_2.png",
+      "pic": "a man at a desk smiling and listening to a ringing phone with a letter floating beside it"
+    },
+    {
+      "w": "damage",
+      "pos": "名詞",
+      "zh": "損壞、損害",
+      "ex1": "Three boxes arrived with serious damage.",
+      "line": 2,
+      "ex2": "The damage happened during transport.",
+      "ex2zh": "損壞發生在運送過程中。",
+      "toeic": true,
+      "hook": "諧音「大罵幾」：東西壞了，客戶大罵幾句＝損壞",
+      "img": "pic/word_3.png",
+      "pic": "a cardboard box crushed and torn in the middle with a worried delivery man looking at it"
+    },
+    {
+      "w": "compensation",
+      "pos": "名詞",
+      "zh": "賠償、補償",
+      "ex1": "Yes. If the photos show the problem, we'll give you compensation.",
+      "line": 7,
+      "ex2": "The company offered compensation for the late delivery.",
+      "ex2zh": "公司為延遲交貨提供了賠償。",
+      "toeic": true,
+      "hook": "com 一起＋pensat（支付，像 pay）＋ion：大家一起把虧損「付」回來＝賠償、補償",
+      "img": "pic/word_4.png",
+      "pic": "a manager handing a thick envelope of money to a customer across a desk"
+    }
+  ],
+  "part2": [
+    {
+      "q": "Who is handling the damaged boxes?",
+      "opts": [
+        "On the second floor.",
+        "Our shipping manager is.",
+        "They arrived yesterday."
+      ],
+      "answer": 1,
+      "why": "問 Who 要回答人。A 是地點，C 是時間。",
+      "zh": "誰在處理損壞的箱子？"
+    },
+    {
+      "q": "Can you send me the photos today?",
+      "opts": [
+        "Yes, I'll do it this afternoon.",
+        "About fifty dollars.",
+        "In the photo studio."
+      ],
+      "answer": 0,
+      "why": "Can you 是請求，答 Yes 並補充時間最自然。B 答價錢、C 重複 photo 都是陷阱。",
+      "zh": "你今天可以寄照片給我嗎？"
+    },
+    {
+      "q": "How should we pack these boards?",
+      "opts": [
+        "At the loading dock.",
+        "Yes, they're packed.",
+        "In bubble wrap, please."
+      ],
+      "answer": 2,
+      "why": "How 問方式，答 In bubble wrap（用氣泡布）。A 是地點，B 用 Yes 回答 How 不通順。",
+      "zh": "這些電路板該怎麼包裝？"
+    },
+    {
+      "q": "Why don't we call the customer now?",
+      "opts": [
+        "Good idea. Let's do it.",
+        "Because of the weather.",
+        "The call was short."
+      ],
+      "answer": 0,
+      "why": "Why don't we 是建議，不是真的問原因，答 Good idea 最自然。B 是 Why 的陷阱、C 重複 call。",
+      "zh": "我們何不現在打給客戶？"
+    },
+    {
+      "q": "Would you like a refund or a new order?",
+      "opts": [
+        "Yes, I'd like an order.",
+        "I'd prefer a new order.",
+        "The refund is on the desk."
+      ],
+      "answer": 1,
+      "why": "選擇問句不能用 Yes 回答。A 重複 order、C 重複 refund 是陷阱。",
+      "zh": "你想要退款還是重新下單？"
+    }
+  ],
+  "scene": "客戶 Kevin 抱怨收到的箱子損壞，品保人員 Olivia 在辦公室處理。",
+  "place": "office",
+  "grammar": {
+    "topic": "cond",
+    "topicZh": "條件句",
+    "tip": "看主要子句：will＋原形＝真實可能的條件，if 子句用現在式；would＋原形＝假設，if 子句用過去式。if 子句裡不放 will。",
+    "items": [
+      {
+        "q": "If the boxes _____ damaged, we will send a replacement.",
+        "opts": [
+          "are",
+          "were",
+          "would be",
+          "have been"
+        ],
+        "answer": 0,
+        "why": "真實條件句：If＋現在式，主要子句用 will＋原形。If 子句不用 will 或 would，所以選 are。",
+        "zh": "如果箱子受損，我們會寄替換品。"
+      },
+      {
+        "q": "If you call us today, we _____ the problem by noon.",
+        "opts": [
+          "fix",
+          "fixed",
+          "will fix",
+          "would fixing"
+        ],
+        "answer": 2,
+        "why": "If＋現在式 (call)，主要子句用 will＋原形動詞：will fix。",
+        "zh": "如果你今天打給我們，我們中午前會解決問題。"
+      },
+      {
+        "q": "If I _____ more time, I would check every box.",
+        "opts": [
+          "have",
+          "had",
+          "will have",
+          "am having"
+        ],
+        "answer": 1,
+        "why": "與現在事實相反的假設：If＋過去式，主要子句用 would＋原形。所以選 had。",
+        "zh": "如果我有更多時間，我會檢查每個箱子。"
+      },
+      {
+        "q": "We would be happy if the customer _____ our offer.",
+        "opts": [
+          "accept",
+          "accepts",
+          "accepted",
+          "will accept"
+        ],
+        "answer": 2,
+        "why": "主要子句用 would，表示假設語氣，if 子句要用過去式 accepted。",
+        "zh": "如果客戶接受我們的提議，我們會很高興。"
+      },
+      {
+        "q": "Please call me if you _____ any questions about the invoice.",
+        "opts": [
+          "has",
+          "have",
+          "having",
+          "will have"
+        ],
+        "answer": 1,
+        "why": "if 子句用現在式代替未來，you 搭配 have。不能用 will have。",
+        "zh": "如果你對發票有任何疑問，請打給我。"
+      }
+    ]
+  },
+  "gloss": {
+    "accept": [
+      "動詞",
+      "接受",
+      "",
+      "Please accept our apology.",
+      "請接受我們的道歉。"
+    ],
+    "accepted": [
+      "動詞",
+      "接受了（accept 的過去式）",
+      "",
+      "He accepted the new offer.",
+      "他接受了新的提議。"
+    ],
+    "accepts": [
+      "動詞",
+      "接受（accept 的第三人稱單數）",
+      "",
+      "She accepts credit cards.",
+      "她們接受信用卡。"
+    ],
+    "again": [
+      "副詞",
+      "再一次",
+      "",
+      "Please try again later.",
+      "請稍後再試一次。"
+    ],
+    "am": [
+      "助動詞",
+      "是、正在（I 專用的 be 動詞）",
+      "",
+      "I am ready for the meeting.",
+      "我準備好開會了。"
+    ],
+    "answer": [
+      "動詞",
+      "回答、回覆",
+      "答案（名詞）",
+      "Please answer my email today.",
+      "請今天回覆我的信。"
+    ],
+    "any": [
+      "形容詞",
+      "任何的",
+      "",
+      "Do you have any questions?",
+      "你有任何問題嗎？"
+    ],
+    "arrived": [
+      "動詞",
+      "抵達了（arrive 的過去式）",
+      "",
+      "The package arrived this morning.",
+      "包裹今天早上到了。"
+    ],
+    "bill": [
+      "名詞",
+      "帳單",
+      "",
+      "Please send me the bill.",
+      "請寄帳單給我。"
+    ],
+    "boards": [
+      "名詞",
+      "電路板（board 的複數）",
+      "",
+      "We tested all the boards.",
+      "我們測過所有電路板。"
+    ],
+    "box": [
+      "名詞",
+      "箱子",
+      "",
+      "The box is too heavy.",
+      "這個箱子太重了。"
+    ],
+    "boxes": [
+      "名詞",
+      "箱子（box 的複數）",
+      "",
+      "We packed ten boxes today.",
+      "我們今天打包了十個箱子。"
+    ],
+    "bubble": [
+      "名詞",
+      "（bubble wrap）氣泡",
+      "泡泡",
+      "Kids love blowing bubbles.",
+      "小孩喜歡吹泡泡。"
+    ],
+    "check": [
+      "動詞",
+      "檢查",
+      "確認",
+      "Please check the label.",
+      "請檢查標籤。"
+    ],
+    "color": [
+      "名詞",
+      "顏色",
+      "",
+      "What color is the case?",
+      "外殼是什麼顏色？"
+    ],
+    "compensation": [
+      "名詞",
+      "賠償、補償",
+      "薪資",
+      "We will pay full compensation.",
+      "我們會全額賠償。"
+    ],
+    "damage": [
+      "名詞",
+      "損壞",
+      "傷害（動詞：損害）",
+      "The rain caused a lot of damage.",
+      "大雨造成很大的損害。"
+    ],
+    "damaged": [
+      "形容詞",
+      "損壞的",
+      "",
+      "The damaged item was returned.",
+      "損壞的商品被退回了。"
+    ],
+    "delivery": [
+      "名詞",
+      "交貨、運送",
+      "",
+      "The delivery is due Monday.",
+      "交貨期限是週一。"
+    ],
+    "desk": [
+      "名詞",
+      "桌子",
+      "",
+      "The file is on my desk.",
+      "檔案在我桌上。"
+    ],
+    "details": [
+      "名詞",
+      "細節（detail 的複數）",
+      "",
+      "Please send me the details.",
+      "請把細節寄給我。"
+    ],
+    "dock": [
+      "名詞",
+      "碼頭、裝卸區（loading dock）",
+      "",
+      "The truck is at the dock.",
+      "卡車在裝卸區。"
+    ],
+    "doesn't": [
+      "縮寫",
+      "does not 的縮寫",
+      "",
+      "He doesn't work here.",
+      "他不在這裡工作。"
+    ],
+    "dollars": [
+      "名詞",
+      "美元（dollar 的複數）",
+      "",
+      "It costs ten dollars.",
+      "這要十美元。"
+    ],
+    "fair": [
+      "形容詞",
+      "合理的、公平的",
+      "",
+      "That is a fair price.",
+      "這是合理的價格。"
+    ],
+    "fifty": [
+      "數字",
+      "五十",
+      "",
+      "We need fifty boxes.",
+      "我們需要五十個箱子。"
+    ],
+    "fix": [
+      "動詞",
+      "修理、解決",
+      "",
+      "We can fix it today.",
+      "我們今天可以修好。"
+    ],
+    "fixed": [
+      "動詞",
+      "修好了（fix 的過去式）",
+      "",
+      "They fixed the machine.",
+      "他們修好了機器。"
+    ],
+    "fixing": [
+      "動詞",
+      "修理（fix 的 -ing 形）",
+      "",
+      "I'm fixing the error now.",
+      "我正在修正錯誤。"
+    ],
+    "handling": [
+      "動詞",
+      "處理（handle 的 -ing 形）",
+      "",
+      "Who is handling this case?",
+      "誰在處理這個案子？"
+    ],
+    "happen": [
+      "動詞",
+      "發生",
+      "",
+      "What will happen next?",
+      "接下來會發生什麼？"
+    ],
+    "happy": [
+      "形容詞",
+      "高興的",
+      "",
+      "We are happy to help.",
+      "我們很樂意幫忙。"
+    ],
+    "having": [
+      "動詞",
+      "有（have 的 -ing 形）",
+      "",
+      "We are having a meeting.",
+      "我們正在開會。"
+    ],
+    "invoice": [
+      "名詞",
+      "發票、請款單",
+      "",
+      "The invoice is attached.",
+      "發票附在信裡。"
+    ],
+    "kevin": [
+      "人名",
+      "凱文（男生名字）",
+      "",
+      "Kevin is our new client.",
+      "Kevin 是我們的新客戶。"
+    ],
+    "loading": [
+      "名詞",
+      "裝貨（loading dock）",
+      "",
+      "Loading takes an hour.",
+      "裝貨要一小時。"
+    ],
+    "make": [
+      "動詞",
+      "（make sure）確保；做",
+      "",
+      "We make boards here.",
+      "我們在這裡製造電路板。"
+    ],
+    "minutes": [
+      "名詞",
+      "分鐘",
+      "",
+      "The call took five minutes.",
+      "通話花了五分鐘。"
+    ],
+    "offer": [
+      "名詞",
+      "提議、報價",
+      "提供（動詞）",
+      "They made us a good offer.",
+      "他們給了我們很好的報價。"
+    ],
+    "offered": [
+      "動詞",
+      "提供了（offer 的過去式）",
+      "",
+      "He offered a discount.",
+      "他提供了折扣。"
+    ],
+    "okay": [
+      "形容詞",
+      "好的",
+      "",
+      "Okay, let's start.",
+      "好的，我們開始吧。"
+    ],
+    "olivia": [
+      "人名",
+      "奧莉薇亞（女生名字）",
+      "",
+      "Olivia works in quality.",
+      "Olivia 在品保部工作。"
+    ],
+    "pack": [
+      "動詞",
+      "打包",
+      "",
+      "Please pack the samples carefully.",
+      "請小心打包樣品。"
+    ],
+    "packed": [
+      "動詞",
+      "打包好了（pack 的過去式）",
+      "",
+      "The boards are packed.",
+      "電路板打包好了。"
+    ],
+    "pay": [
+      "動詞",
+      "支付、賠償",
+      "",
+      "We will pay by bank transfer.",
+      "我們會用轉帳付款。"
+    ],
+    "phone": [
+      "名詞",
+      "電話",
+      "",
+      "Here is my phone number.",
+      "這是我的電話號碼。"
+    ],
+    "photo": [
+      "名詞",
+      "照片",
+      "",
+      "Send me a photo of the label.",
+      "寄一張標籤的照片給我。"
+    ],
+    "photos": [
+      "名詞",
+      "照片（photo 的複數）",
+      "",
+      "The photos are very clear.",
+      "照片很清楚。"
+    ],
+    "prefer": [
+      "動詞",
+      "比較喜歡",
+      "",
+      "I prefer email to phone.",
+      "比起電話，我比較喜歡用電子郵件。"
+    ],
+    "promise": [
+      "動詞",
+      "保證、承諾",
+      "",
+      "I promise to call you back.",
+      "我保證會回電給你。"
+    ],
+    "questions": [
+      "名詞",
+      "問題（question 的複數）",
+      "",
+      "Any questions about the plan?",
+      "對計畫有任何問題嗎？"
+    ],
+    "refund": [
+      "名詞",
+      "退款",
+      "",
+      "I'd like a full refund.",
+      "我想要全額退款。"
+    ],
+    "replacement": [
+      "名詞",
+      "替換品",
+      "",
+      "We'll send a replacement.",
+      "我們會寄替換品。"
+    ],
+    "sealed": [
+      "形容詞",
+      "封好的",
+      "",
+      "The box was not sealed.",
+      "這個箱子沒有封好。"
+    ],
+    "second": [
+      "形容詞",
+      "第二的",
+      "",
+      "The office is on the second floor.",
+      "辦公室在二樓。"
+    ],
+    "serious": [
+      "形容詞",
+      "嚴重的",
+      "認真的",
+      "This is a serious problem.",
+      "這是個嚴重的問題。"
+    ],
+    "shipping": [
+      "名詞",
+      "出貨、運送",
+      "",
+      "Shipping is free today.",
+      "今天運送免費。"
+    ],
+    "short": [
+      "形容詞",
+      "短的",
+      "矮的",
+      "The meeting was short.",
+      "會議很短。"
+    ],
+    "show": [
+      "動詞",
+      "顯示、呈現",
+      "表演（名詞）",
+      "The data shows a problem.",
+      "資料顯示有問題。"
+    ],
+    "so": [
+      "副詞",
+      "非常",
+      "所以（連接詞）",
+      "I'm so tired today.",
+      "我今天好累。"
+    ],
+    "sort": [
+      "動詞",
+      "（sort out）整理、解決",
+      "種類（名詞）",
+      "Let's sort the files first.",
+      "我們先整理檔案吧。"
+    ],
+    "sounds": [
+      "動詞",
+      "聽起來（sound 的第三人稱單數）",
+      "",
+      "That sounds like a plan.",
+      "聽起來是個好計畫。"
+    ],
+    "studio": [
+      "名詞",
+      "攝影棚、工作室",
+      "",
+      "The studio is downtown.",
+      "攝影棚在市中心。"
+    ],
+    "take": [
+      "動詞",
+      "花（時間）",
+      "拿、帶",
+      "It takes two days to ship.",
+      "出貨要花兩天。"
+    ],
+    "thank": [
+      "動詞",
+      "感謝",
+      "",
+      "Thank you for waiting.",
+      "謝謝你的等待。"
+    ],
+    "these": [
+      "代名詞・形容詞",
+      "這些",
+      "",
+      "These parts are new.",
+      "這些零件是新的。"
+    ],
+    "they're": [
+      "縮寫",
+      "they are 的縮寫",
+      "",
+      "They're coming at noon.",
+      "他們中午會來。"
+    ],
+    "transport": [
+      "名詞",
+      "運輸",
+      "",
+      "Damage can happen in transport.",
+      "運輸中可能會損壞。"
+    ],
+    "trouble": [
+      "名詞",
+      "麻煩",
+      "",
+      "Sorry for the trouble.",
+      "為這個麻煩抱歉。"
+    ],
+    "us": [
+      "代名詞",
+      "我們（受格）",
+      "",
+      "Please call us tomorrow.",
+      "請明天打給我們。"
+    ],
+    "what's": [
+      "縮寫",
+      "what is 的縮寫",
+      "",
+      "What's the status?",
+      "目前狀況如何？"
+    ],
+    "wrap": [
+      "名詞",
+      "包裝材料（bubble wrap 氣泡布）",
+      "包裹（動詞）",
+      "Use wrap to protect the glass.",
+      "用包裝材料保護玻璃。"
+    ]
+  },
+  "phrases": [
+    {
+      "p": "make sure",
+      "forms": [
+        "make sure"
+      ],
+      "pos": "片語・動詞",
+      "zh": "確保、務必",
+      "ex": "Make sure the door is locked.",
+      "exzh": "務必把門鎖好。"
+    },
+    {
+      "p": "sort out",
+      "forms": [
+        "sort out"
+      ],
+      "pos": "片語・動詞",
+      "zh": "解決、處理好",
+      "ex": "Let's sort out the schedule first.",
+      "exzh": "我們先把時程處理好。"
+    },
+    {
+      "p": "hear from",
+      "forms": [
+        "hear from"
+      ],
+      "pos": "片語・動詞",
+      "zh": "收到（某人）的消息",
+      "ex": "I hope to hear from you soon.",
+      "exzh": "希望很快收到你的消息。"
+    },
+    {
+      "p": "bubble wrap",
+      "forms": [
+        "bubble wrap"
+      ],
+      "pos": "名詞片語",
+      "zh": "氣泡布",
+      "ex": "Cover the glass in bubble wrap.",
+      "exzh": "用氣泡布包住玻璃。"
+    },
+    {
+      "p": "loading dock",
+      "forms": [
+        "loading dock"
+      ],
+      "pos": "名詞片語",
+      "zh": "裝卸貨區",
+      "ex": "The truck is at the loading dock.",
+      "exzh": "卡車在裝卸貨區。"
+    },
+    {
+      "p": "pay for",
+      "forms": [
+        "pay for"
+      ],
+      "pos": "片語・動詞",
+      "zh": "為……付款、賠償",
+      "ex": "Who will pay for the repair?",
+      "exzh": "誰要負擔修理費？"
+    }
+  ]
+}
