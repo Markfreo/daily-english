@@ -120,7 +120,7 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px soli
 .word{scroll-margin-top:12px}
 .rated{font:600 14px var(--font-body);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums;vertical-align:middle}
 .rated.all{color:var(--good)}
-/* ③ 逐字聽：句子卡片、下面的句子、最下面的播放器 */
+/* 逐字聽：句子卡片、下面的句子、最下面的播放器 */
 .lcard{background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--r);padding:12px 16px 6px;display:flex;flex-direction:column;gap:4px;min-height:132px}
 .lcard .who{font-size:13px;color:var(--muted)}
 .lcard .en{font:600 20px/1.45 var(--font-body);color:color-mix(in srgb,var(--ink) 38%,transparent)}
@@ -198,6 +198,13 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 .rz-chip.bad{border-color:var(--bad);background:var(--bad-bg);color:var(--bad)}
 .rz-chip:disabled{cursor:default}
 /* 卡通舞台：場景背景＋兩個人輪流說話（嘴型跟聲音、手勢、點頭、表情）*/
+.vstage{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#111}
+.vstage iframe,.vstage>div{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vsrc{font-size:13px;color:var(--muted);margin-top:-4px}
+.vsrc a{color:inherit}
+#ytmini{position:fixed;right:12px;bottom:calc(var(--abh,96px) + 12px);width:min(240px,60vw);z-index:40;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#111}
+#ytmini .vstage{border-radius:0}
+#ytmini .x{position:absolute;top:4px;right:4px;z-index:2;width:30px;height:30px;border-radius:50%;border:0;background:rgba(0,0,0,.6);color:#fff;font-size:16px;cursor:pointer}
 .stage{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#ECEAE3 center/cover no-repeat}
 .stage.small{aspect-ratio:2/1}
 .toon{position:absolute;bottom:-5%;left:2%;width:47%;max-width:300px}
@@ -341,12 +348,90 @@ const mdLabel = (s) => { const x = parseD(s); return `${x.getMonth() + 1}/${x.ge
 const TODAY = new URLSearchParams(location.search).get("today") || ymd(new Date());
 
 // ---------- 音檔 ----------
-const dialogue = new Audio();
-dialogue.preload = "auto";
+// 對話音檔（AI 對話課）或 YouTube 影片片段（影片課，L.video）共用同一套介面：dialogue.currentTime 一律從片段開頭算
+const audioEl = new Audio();
+audioEl.preload = "auto";
+const YTS = { p: null, ready: false, state: -1, t: 0, at: 0, rate: 1, wantPlay: false, wantSeek: null };
+const isVideo = () => !!(L && L.video);
+function ytNow() {
+  const V = L.video;
+  if (!YTS.ready) return V.start + (YTS.wantSeek ?? 0);
+  return YTS.t + (YTS.state === 1 ? (performance.now() - YTS.at) / 1000 * YTS.rate : 0);
+}
+function ytSync() { if (!YTS.ready) return; const raw = YTS.p.getCurrentTime(); if (Math.abs(raw - YTS.t) > 0.001) { YTS.t = raw; YTS.at = performance.now(); } }
+function ytSeek(v) {
+  const V = L.video, t = V.start + Math.max(0, Math.min(v, V.end - V.start));
+  if (!YTS.ready) { YTS.wantSeek = t - V.start; return; }
+  YTS.p.seekTo(t, true); YTS.t = t; YTS.at = performance.now();
+}
+function ytPlay() {
+  if (!YTS.ready) { YTS.wantPlay = true; ensureYT(); return; }
+  const now = ytNow(); if (now < L.video.start - 1 || now >= L.video.end - 0.2) ytSeek(0);
+  YTS.p.setPlaybackRate(YTS.rate); YTS.p.playVideo();
+}
+function ytPause() { YTS.wantPlay = false; if (YTS.ready) YTS.p.pauseVideo(); }
+const dialogue = {
+  get src() { return audioEl.src; }, set src(v) { audioEl.src = v; },
+  get paused() { return isVideo() ? !(YTS.state === 1 || YTS.state === 3 || YTS.wantPlay) : audioEl.paused; },
+  get currentTime() { return isVideo() ? ytNow() - L.video.start : audioEl.currentTime; },
+  set currentTime(v) { if (isVideo()) ytSeek(v); else audioEl.currentTime = v; },
+  get playbackRate() { return isVideo() ? YTS.rate : audioEl.playbackRate; },
+  set playbackRate(v) { if (isVideo()) { YTS.rate = v; if (YTS.ready) YTS.p.setPlaybackRate(v); } else audioEl.playbackRate = v; },
+  get duration() { return isVideo() ? L.video.end - L.video.start : audioEl.duration; },
+  play() { if (!isVideo()) return audioEl.play(); ytPlay(); return Promise.resolve(); },
+  pause() { if (isVideo()) ytPause(); else audioEl.pause(); }
+};
+// YouTube 播放器：每個步驟畫面各放一個；沒有畫面的步驟（單字、理解題）要聽某一句時，右下角跳出小視窗
+let ytApi = null;
+const loadYTApi = () => ytApi ||= new Promise((ok) => {
+  window.onYouTubeIframeAPIReady = ok;
+  document.head.append(h("script", { src: "https://www.youtube.com/iframe_api" }));
+});
+function mountYT(box) {
+  ytDestroy(true); YTS.mounting = true;
+  const slot = h("div"); box.append(slot);
+  loadYTApi().then(() => {
+    if (!slot.isConnected) return;
+    const V = L.video;
+    YTS.p = new YT.Player(slot, {
+      videoId: V.id, host: "https://www.youtube-nocookie.com",
+      playerVars: { start: Math.floor(V.start), end: Math.ceil(V.end), playsinline: 1, rel: 0, cc_load_policy: 0, iv_load_policy: 3, fs: 0 },
+      events: {
+        onReady: () => {
+          YTS.ready = true; YTS.t = V.start; YTS.at = performance.now();
+          try { YTS.p.unloadModule("captions"); } catch {}
+          YTS.p.setPlaybackRate(YTS.rate);
+          YTS.p.seekTo(V.start + (YTS.wantSeek ?? 0), true); YTS.t = V.start + (YTS.wantSeek ?? 0); YTS.wantSeek = null;
+          if (YTS.wantPlay) YTS.p.playVideo(); else YTS.p.pauseVideo();
+        },
+        onStateChange: (e) => { YTS.state = e.data; if (e.data === 1) { YTS.wantPlay = false; try { YTS.p.unloadModule("captions"); } catch {} } YTS.t = YTS.p.getCurrentTime(); YTS.at = performance.now(); }
+      }
+    });
+  });
+}
+function ytDestroy(keepWish) {
+  try { YTS.p && YTS.p.destroy(); } catch {}
+  Object.assign(YTS, { p: null, ready: false, state: -1, mounting: false });
+  if (!keepWish) Object.assign(YTS, { wantPlay: false, wantSeek: null });
+  const m = document.getElementById("ytmini"); if (m && !keepWish) m.remove();
+}
+function ensureYT() {
+  if (YTS.p || YTS.mounting) return;
+  const box = h("div", { class: "vstage" });
+  const mini = h("div", { id: "ytmini" }, h("button", { class: "x", "aria-label": "關閉影片", onclick: () => { ytDestroy(); } }, "✕"), box);
+  document.body.append(mini);
+  mountYT(box);
+}
+function videoView() {
+  const V = L.video, box = h("div", { class: "vstage" });
+  setTimeout(() => mountYT(box), 0);
+  return h("div", {}, box, h("p", { class: "vsrc" }, `影片：${V.channel}・${fmt(V.end - V.start)}・`,
+    h("a", { href: `https://www.youtube.com/watch?v=${V.id}`, target: "_blank", rel: "noopener" }, "在 YouTube 看")));
+}
 let clips = {};
 const clip = (name) => (clips[name] ||= new Audio(name.includes("/") ? name : url(DAY, "audio/" + name + ".mp3")));
 let speed = store.get("speed", 1);
-function stopAll() { dialogue.pause(); Object.values(clips).forEach(a => a.pause()); }
+function stopAll() { if (isVideo()) { if (YTS.p || YTS.wantPlay) dialogue.pause(); } else audioEl.pause(); Object.values(clips).forEach(a => a.pause()); }
 function playClip(name) { stopAll(); const a = clip(name); a.currentTime = 0; a.play().catch(() => {}); }
 
 // 播一段（某一句），播完自動停
@@ -360,6 +445,7 @@ function playLine(i, onDone) {
   dialogue.play().catch(() => {});
 }
 function tick() {
+  if (isVideo()) { ytSync(); if (YTS.ready && YTS.state === 1 && ytNow() >= L.video.end - 0.05) dialogue.pause(); }
   if (segEnd != null && dialogue.currentTime >= segEnd) {
     dialogue.pause(); segEnd = null;
     const f = segDone; segDone = null; f && f();
@@ -459,6 +545,7 @@ function toonSVG(female, idx, formal) {
   </g></svg>`;
 }
 function stageView({ small = false } = {}) {
+  if (isVideo()) return videoView();
   const names = Object.keys(L.speakers);
   const place = L.place || PLACE_BY_THEME[L.theme] || "office";
   const formal = FORMAL_THEMES.has(L.theme);
@@ -609,14 +696,11 @@ document.addEventListener("click", (e) => {
 // min：每一步大約要幾分鐘（給「還剩約 X 分鐘」用）
 const STEPS = [
   { id: "words", name: "單字預習", min: 4 },
-  { id: "blind", name: "① 盲聽", min: 2 },
-  { id: "quiz", name: "② 理解題", min: 2 },
-  { id: "lyrics", name: "③ 逐字聽", min: 3 },
-  { id: "shadow", name: "④ 跟讀", min: 6 },
-  { id: "speak", name: "⑤ 文法練習", min: 4 },
-  { id: "toeic", name: "⑥ 多益", min: 3 }
+  { id: "blind", name: "盲聽", min: 2 },
+  { id: "quiz", name: "理解題", min: 2 },
+  { id: "lyrics", name: "逐字聽", min: 3 }
 ];
-const MIN_DONE = 4;   // 一天至少真的做完幾步，才算打卡
+const MIN_DONE = 4;   // 一天至少真的做完幾步，才算打卡（2026-11-26 Frank：4 步全做完才算）
 let prog = {}, cur = 0, MODE = "lesson";
 const progOf = (d) => store.get("prog:" + d, {});
 // prog[id]：true＝做完；"skip"＝略過
@@ -632,7 +716,7 @@ function nextTodo(from = cur) {
   return STEPS.length;
 }
 const firstTodo = () => nextTodo(-1);
-// 某一天算不算「有練」：平日 7 步都做完或略過、而且至少真的做完 4 步；週六複習做完；週日看過週報
+// 某一天算不算「有練」：平日 4 步都做完或略過、而且至少真的做完 4 步；週六複習做完；週日看過週報
 const dayDone = (d) => { const p = progOf(d); if (p.review || p.report) return true;
   return STEPS.every(s => p[s.id]) && STEPS.filter(s => p[s.id] === true).length >= MIN_DONE; };
 const dayStarted = (d) => Object.keys(progOf(d)).length > 0;
@@ -736,7 +820,7 @@ function heardUntilEnd(step) {
 }
 
 function go(i) {
-  stopAll(); listeners.clear(); segEnd = null; segDone = null; refreshBar = null; fitNow = null;
+  stopAll(); ytDestroy(); listeners.clear(); segEnd = null; segDone = null; refreshBar = null; fitNow = null;
   document.querySelector(".actionbar").classList.remove("tall");
   document.body.style.paddingBottom = "";
   cur = Math.max(0, Math.min(i, STEPS.length));
@@ -810,8 +894,8 @@ VIEWS.words = () => {
         h("div", { class: "top" }, h("span", { class: "w" }, w.w), h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
         h("div", { class: "zhm" }, w.zh))),
       hookLine(w),
-      h("div", { class: "ex lk" }, "對話原句：" + w.ex1),
-      h("button", { class: "link", onclick: () => playLine(w.line) }, "▶ 聽對話裡的這一句"),
+      h("div", { class: "ex lk" }, (isVideo() ? "影片原句：" : "對話原句：") + w.ex1),
+      h("button", { class: "link", onclick: () => playLine(w.line) }, isVideo() ? "▶ 聽影片裡的這一句" : "▶ 聽對話裡的這一句"),
       h("div", { class: "ex lk" }, "職場例句：" + w.ex2),
       h("div", { class: "exzh" }, w.ex2zh),
       h("div", { class: "row" }, h("button", { class: "btn", onclick: () => playClip("word_" + i) }, icon("speaker"), "發音＋例句")),
@@ -833,44 +917,14 @@ VIEWS.words = () => {
   return sec;
 };
 
-function playerControls({ showBar = true } = {}) {
-  const playBtn = h("button", { class: "btn primary", onclick: () => {
-    segEnd = null;
-    if (dialogue.paused) { dialogue.playbackRate = speed; dialogue.play().catch(() => {}); } else dialogue.pause();
-  } });
-  const speedBox = h("div", { class: "speed", role: "group", "aria-label": "播放速度" });
-  [0.75, 1, 1.25].forEach(v => speedBox.append(h("button", { class: v === speed ? "on" : "", onclick: (e) => {
-    speed = v; store.set("speed", v); dialogue.playbackRate = v;
-    [...speedBox.children].forEach(b => b.classList.toggle("on", b === e.currentTarget));
-  } }, v + "x")));
-  const total = () => dialogue.duration || T[T.length - 1].end + 0.5;
-  const bar = h("input", { type: "range", class: "seek", id: "seek", min: 0, max: Math.ceil(total() * 10), step: 1, value: 0, "aria-label": "拖曳調整播放位置" });
-  const times = h("div", { class: "times" }, h("span", {}, "0:00"), h("span", {}, fmt(T[T.length - 1].end)));
-  const sync = () => { playBtn.innerHTML = ""; playBtn.append(icon(dialogue.paused ? "play" : "pause"), dialogue.paused ? "播放" : "暫停"); };
-  sync();
-  let dragging = false;
-  const paintBar = (t) => { bar.style.setProperty("--p", (100 * t / total()) + "%"); times.firstChild.textContent = fmt(t); };
-  const seekTo = () => { segEnd = null; const t = bar.value / 10; dialogue.currentTime = t; paintBar(t); };
-  bar.addEventListener("pointerdown", () => { dragging = true; });
-  bar.addEventListener("touchstart", () => { dragging = true; }, { passive: true });
-  bar.addEventListener("input", seekTo);
-  bar.addEventListener("change", () => { seekTo(); dragging = false; });
-  listeners.add((t) => {
-    bar.max = Math.ceil(total() * 10);
-    if (!dragging) { bar.value = Math.round(t * 10); paintBar(t); }
-    if (playBtn.dataset.p !== String(dialogue.paused)) { playBtn.dataset.p = String(dialogue.paused); sync(); }
-  });
-  return h("div", { class: "card player" }, showBar ? bar : null, showBar ? times : null, h("div", { class: "row" }, playBtn, speedBox));
-}
-
 VIEWS.blind = () => {
   heardUntilEnd("blind");
-  stepBar(() => store.get("heard:blind:" + DAY, false), () => "整段聽完就能下一步");
+  bottomPlayer(() => store.get("heard:blind:" + DAY, false), () => "整段聽完就能下一步", { zh: false });
+  setTimeout(() => { document.body.style.paddingBottom = (document.querySelector(".actionbar").offsetHeight + 16) + "px"; }, 0);
   return h("section", { class: "step" },
     h("h2", {}, "先不看字幕，專心聽"),
-    L.scene ? h("p", { class: "lead" }, L.scene.split(/[，。]/)[0]) : null,   // 只留情境的第一句
+    L.scene ? h("p", { class: "lead" }, L.scene.split(/[，。：]/)[0]) : null,   // 只留情境的第一句
     stageView(),
-    playerControls(),
     h("div", { class: "cover" }, "字幕先藏起來了。答完題目後，下一步就會看到。"));
 };
 
@@ -901,6 +955,7 @@ function lyricsList({ onPick }) {
     const parts = ln.en.split(" ");
     const weight = (w) => w.replace(/[^A-Za-z0-9']/g, "").length + 1.5 + (/[,;]$/.test(w) ? 3 : 0) + (/[.!?]$/.test(w) ? 4 : 0);
     const totalW = parts.reduce((s, w) => s + weight(w), 0);
+    if (T[i].w && T[i].w.length === parts.length) return parts.map((w, k) => ({ w, at: T[i].w[k] - (isVideo() ? L.video.start : 0) }));   // 影片字幕有每個字的真實時間
     let acc = 0;
     return parts.map((w) => { const at = T[i].start + (T[i].end - T[i].start) * acc / totalW; acc += weight(w); return { w, at }; });
   });
@@ -936,14 +991,60 @@ function lyricsList({ onPick }) {
   return { box, mark };
 }
 
-// ③ 逐字聽：卡通固定在上面；正在播的句子是一張卡片（可以點單字查意思）；下面是接下來的句子；播放器在最下面
+// 最下面的播放器（逐字聽、盲聽共用）：進度條＋速度、上一句、播放、下一句（、中文翻譯）；ready／need 同 stepBar
+function bottomPlayer(ready, need, { zh = true } = {}) {
+  const playFrom = (i) => { segEnd = null; segDone = null; stopAll(); dialogue.playbackRate = speed; dialogue.currentTime = T[i].start; dialogue.play().catch(() => {}); };
+  const total = () => dialogue.duration || T[T.length - 1].end + 0.5;
+  const seek = h("input", { type: "range", class: "seek", min: 0, max: Math.ceil(total() * 10), step: 1, value: 0, "aria-label": "拖曳調整播放位置" });
+  const times = h("div", { class: "times" }, h("span", {}, "0:00"), h("span", {}, fmt(isVideo() ? dialogue.duration : T[T.length - 1].end)));
+  let dragging = false;
+  const paintBar = (t) => { seek.style.setProperty("--p", (100 * t / total()) + "%"); times.firstChild.textContent = fmt(t); };
+  const seekTo = () => { segEnd = null; const t = seek.value / 10; dialogue.currentTime = t; paintBar(t); };
+  seek.addEventListener("pointerdown", () => { dragging = true; });
+  seek.addEventListener("touchstart", () => { dragging = true; }, { passive: true });
+  seek.addEventListener("input", seekTo);
+  seek.addEventListener("change", () => { seekTo(); dragging = false; });
+  const play = h("button", { class: "round", "aria-label": "播放", onclick: () => {
+    segEnd = null; segDone = null;
+    if (dialogue.paused) { dialogue.playbackRate = speed; dialogue.play().catch(() => {}); } else dialogue.pause();
+  } });
+  const syncPlay = () => { play.innerHTML = ""; play.append(icon(dialogue.paused ? "play" : "pause")); play.setAttribute("aria-label", dialogue.paused ? "播放" : "暫停"); };
+  syncPlay();
+  const cur0 = () => Math.max(0, lineAt(dialogue.currentTime));
+  // 上一句：這句已經播超過 1.5 秒 → 從這句開頭；否則跳到上一句
+  const prev = h("button", { class: "ibtn", onclick: () => { const i = cur0(); playFrom(dialogue.currentTime - T[i].start > 1.5 || i === 0 ? i : i - 1); } }, icon("prev"), h("small", {}, "上一句"));
+  const next = h("button", { class: "ibtn", onclick: () => playFrom(Math.min(cur0() + 1, L.lines.length - 1)) }, icon("next"), h("small", {}, "下一句"));
+  const speeds = [0.75, 1, 1.25];
+  const spd = h("button", { class: "ibtn", "aria-label": "播放速度", onclick: () => {
+    speed = speeds[(speeds.indexOf(speed) + 1) % speeds.length]; store.set("speed", speed); dialogue.playbackRate = speed; spd.firstChild.textContent = speed + "x";
+  } }, h("b", {}, speed + "x"), h("small", {}, "速度"));
+  const zhb = h("button", { class: "ibtn", "aria-pressed": String(zhToggle.checked), onclick: () => {
+    zhToggle.checked = !zhToggle.checked; store.set("zh", zhToggle.checked); applyZh(); zhb.setAttribute("aria-pressed", String(zhToggle.checked));
+  } }, h("b", {}, "中"), h("small", {}, "翻譯"));
+  listeners.add((t) => {
+    seek.max = Math.ceil(total() * 10);
+    if (!dragging) { seek.value = Math.round(t * 10); paintBar(t); }
+    if (play.dataset.p !== String(dialogue.paused)) { play.dataset.p = String(dialogue.paused); syncPlay(); }
+  });
+  stepBar(ready, need, (skip, main) => {
+    skip.className = "link skip-link"; main.classList.add("slim");
+    return h("div", { class: "lplayer" },
+      h("div", { class: "slimrow" }, skip, main),
+      h("div", {}, seek, times),
+      h("div", { class: "ctrl" }, spd, prev, play, next, zh ? zhb : null));
+  });
+  document.querySelector(".actionbar").classList.add("tall");
+}
+
+// 逐字聽：卡通固定在上面；正在播的句子是一張卡片（可以點單字查意思）；下面是接下來的句子；播放器在最下面
 VIEWS.lyrics = () => {
-  dialogue.currentTime = 0;   // 一律從頭播，不接 ① 停下的地方
+  dialogue.currentTime = 0;   // 一律從頭播，不接盲聽停下的地方
   // 每個字估一個開始時間：照字母數分配整句的長度，標點後面多算一點停頓
   const words = L.lines.map((ln, i) => {
     const parts = ln.en.split(" ");
     const weight = (w) => w.replace(/[^A-Za-z0-9']/g, "").length + 1.5 + (/[,;]$/.test(w) ? 3 : 0) + (/[.!?]$/.test(w) ? 4 : 0);
     const totalW = parts.reduce((a, w) => a + weight(w), 0);
+    if (T[i].w && T[i].w.length === parts.length) return parts.map((w, k) => ({ w, at: T[i].w[k] - (isVideo() ? L.video.start : 0) }));   // 影片字幕有每個字的真實時間
     let acc = 0;
     return parts.map((w) => { const at = T[i].start + (T[i].end - T[i].start) * acc / totalW; acc += weight(w); return { w, at }; });
   });
@@ -990,47 +1091,7 @@ VIEWS.lyrics = () => {
   });
   heardUntilEnd("lyrics");
 
-  // 最下面的播放器
-  const total = () => dialogue.duration || T[T.length - 1].end + 0.5;
-  const seek = h("input", { type: "range", class: "seek", min: 0, max: Math.ceil(total() * 10), step: 1, value: 0, "aria-label": "拖曳調整播放位置" });
-  const times = h("div", { class: "times" }, h("span", {}, "0:00"), h("span", {}, fmt(T[T.length - 1].end)));
-  let dragging = false;
-  const paintBar = (t) => { seek.style.setProperty("--p", (100 * t / total()) + "%"); times.firstChild.textContent = fmt(t); };
-  const seekTo = () => { segEnd = null; const t = seek.value / 10; dialogue.currentTime = t; paintBar(t); };
-  seek.addEventListener("pointerdown", () => { dragging = true; });
-  seek.addEventListener("touchstart", () => { dragging = true; }, { passive: true });
-  seek.addEventListener("input", seekTo);
-  seek.addEventListener("change", () => { seekTo(); dragging = false; });
-  const play = h("button", { class: "round", "aria-label": "播放", onclick: () => {
-    segEnd = null; segDone = null;
-    if (dialogue.paused) { dialogue.playbackRate = speed; dialogue.play().catch(() => {}); } else dialogue.pause();
-  } });
-  const syncPlay = () => { play.innerHTML = ""; play.append(icon(dialogue.paused ? "play" : "pause")); play.setAttribute("aria-label", dialogue.paused ? "播放" : "暫停"); };
-  syncPlay();
-  const cur0 = () => Math.max(0, lineAt(dialogue.currentTime));
-  // 上一句：這句已經播超過 1.5 秒 → 從這句開頭；否則跳到上一句
-  const prev = h("button", { class: "ibtn", onclick: () => { const i = cur0(); playFrom(dialogue.currentTime - T[i].start > 1.5 || i === 0 ? i : i - 1); } }, icon("prev"), h("small", {}, "上一句"));
-  const next = h("button", { class: "ibtn", onclick: () => playFrom(Math.min(cur0() + 1, L.lines.length - 1)) }, icon("next"), h("small", {}, "下一句"));
-  const speeds = [0.75, 1, 1.25];
-  const spd = h("button", { class: "ibtn", "aria-label": "播放速度", onclick: () => {
-    speed = speeds[(speeds.indexOf(speed) + 1) % speeds.length]; store.set("speed", speed); dialogue.playbackRate = speed; spd.firstChild.textContent = speed + "x";
-  } }, h("b", {}, speed + "x"), h("small", {}, "速度"));
-  const zhb = h("button", { class: "ibtn", "aria-pressed": String(zhToggle.checked), onclick: () => {
-    zhToggle.checked = !zhToggle.checked; store.set("zh", zhToggle.checked); applyZh(); zhb.setAttribute("aria-pressed", String(zhToggle.checked));
-  } }, h("b", {}, "中"), h("small", {}, "翻譯"));
-  listeners.add((t) => {
-    seek.max = Math.ceil(total() * 10);
-    if (!dragging) { seek.value = Math.round(t * 10); paintBar(t); }
-    if (play.dataset.p !== String(dialogue.paused)) { play.dataset.p = String(dialogue.paused); syncPlay(); }
-  });
-  stepBar(() => store.get("heard:lyrics:" + DAY, false), () => "跟著字幕聽完一遍就能下一步", (skip, main) => {
-    skip.className = "link skip-link"; main.classList.add("slim");
-    return h("div", { class: "lplayer" },
-      h("div", { class: "slimrow" }, skip, main),
-      h("div", {}, seek, times),
-      h("div", { class: "ctrl" }, spd, prev, play, next, zhb));
-  });
-  document.querySelector(".actionbar").classList.add("tall");
+  bottomPlayer(() => store.get("heard:lyrics:" + DAY, false), () => "跟著字幕聽完一遍就能下一步");
 
   showLine(0);
   const sec = h("section", { class: "step lyr" },
@@ -1038,7 +1099,7 @@ VIEWS.lyrics = () => {
     stageView({ small: true }), card, list);
   // 卡通＋句子卡＋下面的句子塞滿一個畫面：畫面捲到卡通上方，句子列表高度剛好到播放器上面
   fitNow = () => {
-    const stage = sec.querySelector(".stage") || sec;
+    const stage = sec.querySelector(".stage, .vstage") || sec;
     const ab = document.querySelector(".actionbar").offsetHeight || 0;
     const stageTop = stage.getBoundingClientRect().top + window.scrollY;
     const off = list.getBoundingClientRect().top - stage.getBoundingClientRect().top;
@@ -1271,11 +1332,8 @@ VIEWS.toeic = () => {
 };
 
 function viewDone() {
-  const quizAns = store.get("quiz:" + DAY, {}), p2 = store.get("p2:" + DAY, {});
+  const quizAns = store.get("quiz:" + DAY, {});
   const qOk = L.quiz.filter((q, i) => quizAns[i] === q.answer).length;
-  const pOk = L.part2.filter((p, i) => p2[i] === p.answer).length;
-  const ga = store.get("gram:" + DAY, {});
-  const gOk = L.grammar ? L.grammar.items.filter((g, i) => ga[i] === g.answer).length : 0;
   const memo = store.get("memo:" + DAY, {});
   const remembered = L.words.filter((w, i) => memo[i] === "r").length;
   const forgot = L.words.filter((w, i) => memo[i] === "f").map(w => w.w);
@@ -1303,7 +1361,7 @@ function viewDone() {
   }
   const n = streakCount();
   const headline = todo.length ? `已完成 ${okN}/${STEPS.length} 步，還剩：${todo.map(s => s.name).join("、")}`
-    : counted ? (skipped.length ? `今天的練習完成了！（略過：${skipped.map(s => s.name).join("、")}）` : "今天 7 步全部完成！")
+    : counted ? (skipped.length ? `今天的練習完成了！（略過：${skipped.map(s => s.name).join("、")}）` : `今天 ${STEPS.length} 步全部完成！`)
     : `今天只做完 ${okN} 步，至少做完 ${MIN_DONE} 步才算打卡。把略過的補做幾步就可以了。`;
   return h("section", { class: "step" },
     h("div", { class: "card done-hero" }, burst,
@@ -1312,10 +1370,7 @@ function viewDone() {
       h("div", {}, headline)),
     h("div", { class: "card" },
       line("quiz", `理解題：答對 ${qOk} / ${L.quiz.length}`),
-      L.grammar ? line("speak", `文法（${L.grammar.topicZh}）：答對 ${gOk} / ${L.grammar.items.length}`) : null,
-      line("toeic", `多益 Part 2：答對 ${pOk} / ${L.part2.length}`),
       h("div", {}, wordLine)),
-    h("button", { class: "link", onclick: () => openTest() }, gtest() ? `重做文法程度測驗（上次 ${gtest().score}/${gtest().total}）` : "做文法程度測驗（13 題）"),
     h("p", { class: "note" }, "練習紀錄只存在這台裝置上，不會傳到網路。換手機或清除瀏覽器資料，紀錄就會不見。"));
 }
 
@@ -1336,27 +1391,6 @@ async function viewSaturday(d) {
     sec.append(reviewCard(e));
   }));
   store.set("wordbank", bank);
-  const weekDates = lessons.map(x => x.d);
-  const wrong = Object.entries(store.get("grambank", {})).filter(([, g]) => weekDates.includes(g.from));
-  if (wrong.length) {
-    sec.append(h("h2", {}, `這週的文法錯題再做一次（${wrong.length} 題）`), h("p", { class: "lead" }, "答對的題目會從錯題本拿掉。"));
-    wrong.forEach(([id, g], i) => sec.append(grammarCard(g, i, "gram-week:" + d, (pick) => {
-      if (pick === g.answer) { const b = store.get("grambank", {}); delete b[id]; store.set("grambank", b); }
-    }, h("div", { class: "note" }, `${g.topicZh}・${mdLabel(g.from)}`))));
-  } else if (lessons.some(x => x.L.grammar)) {
-    sec.append(h("h2", {}, "這週的文法"), h("p", { class: "lead" }, "這週沒有答錯的文法題（或還沒做），很好。"));
-  }
-  if (lessons.some(x => x.L.reorder)) sec.append(h("h2", {}, "這週的句子重組再做一次"), h("p", { class: "lead" }, "排對之後跟著念。"));
-  let n = 0;
-  lessons.forEach(({ d: ld, L: x }) => (x.reorder || []).forEach((item) => {
-    const play = () => playClip(item.audio ? url(ld, `audio/${item.audio}.mp3`) : url(ld, "audio/dialogue.mp3#t=" + 0));
-    // 對話裡的句子：用當天時間軸播那一段
-    const playIt = item.audio ? play : async () => {
-      try { const t = await fetchJSON(url(ld, "timing.json")); const a = clip(url(ld, "audio/dialogue.mp3")); stopAll(); a.currentTime = t[item.line].start; a.play().catch(() => {});
-        const stopAt = t[item.line].end + 0.05; const chk = () => { if (a.currentTime >= stopAt) a.pause(); else if (!a.paused) requestAnimationFrame(chk); }; requestAnimationFrame(chk); } catch {}
-    };
-    sec.append(reorderCard(item, n++, "reorder-week:" + d, playIt));
-  }));
   setBar(h("button", { class: "btn primary", onclick: () => { const p = progOf(d); p.review = true; store.set("prog:" + d, p); renderStatus(); window.scrollTo({ top: 0 }); } }, "完成今天的複習"));
   return sec;
 }
@@ -1365,14 +1399,11 @@ async function viewSunday(d) {
   const p = progOf(d); p.report = true; store.set("prog:" + d, p);
   const mon = monday(d);
   const lessons = await loadLessons(weekLessonDates(d));
-  let qOk = 0, qAll = 0, pOk = 0, pAll = 0, gOk = 0, gAll = 0, learned = 0, remembered = 0;
+  let qOk = 0, qAll = 0, learned = 0, remembered = 0;
   const forgot = [];
   lessons.forEach(({ d: ld, L: x }) => {
-    const qa = store.get("quiz:" + ld, {}), pa = store.get("p2:" + ld, {}), memo = store.get("memo:" + ld, {});
+    const qa = store.get("quiz:" + ld, {}), memo = store.get("memo:" + ld, {});
     x.quiz.forEach((q, i) => { if (qa[i] != null) { qAll++; if (qa[i] === q.answer) qOk++; } });
-    x.part2.forEach((q, i) => { if (pa[i] != null) { pAll++; if (pa[i] === q.answer) pOk++; } });
-    const ga = store.get("gram:" + ld, {});
-    if (x.grammar) x.grammar.items.forEach((g, i) => { if (ga[i] != null) { gAll++; if (ga[i] === g.answer) gOk++; } });
     x.words.forEach((w, i) => { if (memo[i]) { learned++; if (memo[i] === "r") remembered++; else forgot.push(w.w); } });
   });
   const days = [0, 1, 2, 3, 4, 5].filter(i => dayDone(addDays(mon, i))).length;
@@ -1385,8 +1416,6 @@ async function viewSunday(d) {
       h("div", {}, `練習天數：${days} / 6 天（連續 ${streakCount()} 天）`),
       h("div", {}, `單字：學了 ${learned} 個，記住 ${remembered} 個`),
       h("div", {}, `理解題答對率：${pct(qOk, qAll)}`),
-      gAll ? h("div", {}, `文法答對率：${pct(gOk, gAll)}`) : null,
-      h("div", {}, `多益 Part 2 答對率：${pct(pOk, pAll)}`),
       forgot.length ? h("div", {}, `下週會再複習：${forgot.join("、")}`) : null),
     todo.length ? h("div", { class: "card" }, h("div", { class: "q" }, "這週還沒做完，可以補做："),
       h("div", { class: "row" }, ...todo.map(x => h("button", { class: "btn", onclick: () => openDay(x) }, mdLabel(x))))) : h("p", { class: "lead" }, "這週的練習都完成了，好好休息。"),
@@ -1395,7 +1424,7 @@ async function viewSunday(d) {
 
 // ---------- 打開某一天 ----------
 async function openDay(d) {
-  stopAll(); listeners.clear(); segEnd = null; segDone = null; clips = {};
+  stopAll(); ytDestroy(); listeners.clear(); segEnd = null; segDone = null; clips = {};
   $("#settings").hidden = true; gearBtn.setAttribute("aria-expanded", "false");
   VIEW_DAY = d;
   const wd = wdIdx(d);
@@ -1403,7 +1432,7 @@ async function openDay(d) {
   if (wd >= 5) {
     MODE = wd === 5 ? "review" : "report";
     $("#steps").hidden = true; $("#prog-card").hidden = true;
-    renderHeader(wd === 5 ? "Review Day" : "Weekly Report", wd === 5 ? "週六複習日：這週的單字和句子" : "週日：看看這週的成果", [wd === 5 ? "複習" : "週報", ""]);
+    renderHeader(wd === 5 ? "Review Day" : "Weekly Report", wd === 5 ? "週六複習日：這週的單字" : "週日：看看這週的成果", [wd === 5 ? "複習" : "週報", ""]);
     main.innerHTML = ""; main.append(h("p", { class: "lead" }, "載入中…"));
     const view = await (wd === 5 ? viewSaturday(d) : viewSunday(d));
     main.innerHTML = ""; main.append(view); renderStatus(); window.scrollTo({ top: 0 });
@@ -1415,9 +1444,8 @@ async function openDay(d) {
   DAY = entry.date;
   L = await fetchJSON(url(DAY, "lesson.json"));
   T = await fetchJSON(url(DAY, "timing.json"));
-  MOUTH = await fetchJSON(url(DAY, "mouth.json")).catch(() => null);
-  dialogue.src = url(DAY, "audio/dialogue.mp3");
-  STEPS[5].name = L.grammar ? "⑤ 文法練習" : "⑤ 造句練習";
+  MOUTH = L.video ? null : await fetchJSON(url(DAY, "mouth.json")).catch(() => null);
+  if (!L.video) dialogue.src = url(DAY, "audio/dialogue.mp3");
   prog = progOf(DAY); cur = store.get("cur:" + DAY, 0);
   renderHeader(L.title, L.titleZh + (DAY !== d ? `（${mdLabel(DAY)} 的內容）` : ""),
     [L.theme, ""]);
@@ -1430,9 +1458,6 @@ function stepDetail(id) {
   const n = (k, arr) => arr.length - leftCount(arr, store.get(k + DAY, {}));
   if (id === "words") return `已評 ${n("memo:", L.words)}/${L.words.length} 個字`;
   if (id === "quiz") return `答了 ${n("quiz:", L.quiz)}/${L.quiz.length} 題`;
-  if (id === "shadow") { const i = store.get("shadow:" + DAY, 0); return i ? `第 ${i + 1} 句` : ""; }
-  if (id === "speak" && L.grammar) return `答了 ${n("gram:", L.grammar.items)}/${L.grammar.items.length} 題`;
-  if (id === "toeic") return `答了 ${n("p2:", L.part2)}/${L.part2.length} 題`;
   return "";
 }
 function maybeWelcome() {
