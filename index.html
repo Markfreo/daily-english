@@ -111,7 +111,6 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px soli
 .rated{font:600 14px var(--font-body);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums;vertical-align:middle}
 .rated.all{color:var(--good)}
 /* 聽力：句子卡片、下面的句子、最下面的播放器；.nosub＝眼睛鍵把字幕藏起來 */
-.lplayer .ctrl.six{grid-template-columns:1fr 1fr 1fr auto 1fr 1fr}
 .lyr .subcover{display:none}
 .lyr.nosub .subcover{display:block}
 .lyr.nosub .lcard,.lyr.nosub .lnext{display:none}
@@ -135,7 +134,9 @@ section.step.lyr{gap:10px}
 .lplayer .slimrow .btn.slim{flex:1;min-height:40px;padding:6px 12px;font-size:15px}
 .lplayer .seek{height:26px}
 .lplayer .times{margin-top:-4px}
-.lplayer .ctrl{display:grid;grid-template-columns:1fr 1fr auto 1fr 1fr;align-items:center;justify-items:center}
+.lplayer .ctrl{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:4px}
+.lplayer .ctrl .side{display:flex;justify-content:space-around;align-items:center;min-width:0}
+.lplayer .ctrl .side .ibtn{min-width:44px}
 .ibtn{min-width:52px;min-height:52px;border:0;background:transparent;color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:pointer;font:600 16px var(--font-body);border-radius:12px}
 .ibtn small{font-size:13px;font-weight:500;color:var(--muted)}
 .ibtn .icon{width:24px;height:24px}
@@ -197,7 +198,7 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
 /* 卡通舞台：場景背景＋兩個人輪流說話（嘴型跟聲音、手勢、點頭、表情）*/
 .vstage{position:relative;aspect-ratio:16/9;border-radius:var(--r);overflow:hidden;background:#111}
 .vstage iframe,.vstage>div{position:absolute;inset:0;width:100%;height:100%;border:0}
-.vsrc{font-size:13px;color:var(--muted);margin-top:-4px}
+.vsrc{font-size:13px;color:var(--muted);margin-top:8px}
 .vsrc a{color:inherit}
 #ytmini{position:fixed;right:12px;bottom:calc(var(--abh,96px) + 12px);width:min(240px,60vw);z-index:40;border-radius:12px;overflow:hidden;box-shadow:0 6px 24px rgba(0,0,0,.25);background:#111}
 #ytmini .vstage{border-radius:0}
@@ -997,7 +998,7 @@ function bottomPlayer(ready, need, { zh = true, eye = null } = {}) {
     return h("div", { class: "lplayer" },
       h("div", { class: "slimrow" }, skip, main),
       h("div", {}, seek, times),
-      h("div", { class: "ctrl" + (eye ? " six" : "") }, spd, eye, prev, play, next, zh ? zhb : null));
+      h("div", { class: "ctrl" }, h("div", { class: "side" }, spd, eye, prev), play, h("div", { class: "side" }, next, zh ? zhb : null)));   // 播放鍵固定在正中間
   });
   document.querySelector(".actionbar").classList.add("tall");
 }
