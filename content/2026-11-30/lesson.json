@@ -1,837 +1,1840 @@
 {
-  "date": "2026-11-30",
-  "weekday": "週一",
-  "theme": "職場會議",
-  "title": "Choosing a Supplier",
-  "titleZh": "選擇供應商",
-  "level": "B1",
-  "speed": "慢速",
-  "speakers": {
-    "Olivia": {
-      "voice": "af_bella",
-      "accent": "美式"
-    },
-    "Henry": {
-      "voice": "bm_lewis",
-      "accent": "英式"
-    }
+ "date": "2026-11-30",
+ "weekday": "週一",
+ "theme": "國家地理",
+ "title": "Nat Geo 9: Antoni",
+ "titleZh": "安東尼・波羅斯基回答國家地理 9 問",
+ "level": "真實影片",
+ "speed": "原速",
+ "scene": "廚師兼主持人安東尼・波羅斯基在黃色椅子上回答 9 個問題，聊童年建議、想去的地方、最愛的食物和人生感悟。",
+ "video": {
+  "id": "AeYfx70c6eA",
+  "start": 0,
+  "end": 199,
+  "channel": "National Geographic",
+  "title": "Antoni Porowski Answers the Nat Geo 9 | Yellow Chair Interview | National Geographic"
+ },
+ "speakers": {},
+ "lines": [
+  {
+   "s": "Antoni",
+   "en": "I'm Anthony Porowski and I'm the host of Best of the World and I'm here to answer the Nat Geo",
+   "zh": "我是安東尼・波羅斯基，《Best of the World》的主持人，今天來回答國家地理的 9 個問題。"
   },
-  "lines": [
-    {
-      "s": "Henry",
-      "en": "Good morning, Olivia. Let's talk about the new supplier.",
-      "zh": "早安，Olivia。我們來談談新的供應商。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Olivia",
-      "en": "Sure. We have two choices, A and B.",
-      "zh": "好的。我們有兩個選擇，A 和 B。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Henry",
-      "en": "Which one is cheaper?",
-      "zh": "哪一家比較便宜？",
-      "mood": "confused"
-    },
-    {
-      "s": "Olivia",
-      "en": "Supplier A. But Supplier B is more reliable.",
-      "zh": "A 供應商。但 B 供應商比較可靠。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Henry",
-      "en": "How much more reliable?",
-      "zh": "可靠多少？",
-      "mood": "surprised"
-    },
-    {
-      "s": "Olivia",
-      "en": "Their quality is better, and they deliver faster.",
-      "zh": "他們的品質比較好，交貨也比較快。",
-      "mood": "happy"
-    },
-    {
-      "s": "Henry",
-      "en": "Hmm. But our budget is smaller this year.",
-      "zh": "嗯。但我們今年的預算比較少。",
-      "mood": "sad"
-    },
-    {
-      "s": "Olivia",
-      "en": "True. We need to cut down on costs.",
-      "zh": "沒錯。我們需要減少開支。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Henry",
-      "en": "Can you come up with a plan by Wednesday?",
-      "zh": "你能在週三前想出一個方案嗎？",
-      "mood": "neutral"
-    },
-    {
-      "s": "Olivia",
-      "en": "Yes. I'm afraid we may fall behind if we wait.",
-      "zh": "可以。我擔心再等下去我們會落後。",
-      "mood": "sad"
-    },
-    {
-      "s": "Henry",
-      "en": "Good point. Let's not wait too long.",
-      "zh": "說得好。我們不要等太久。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Olivia",
-      "en": "I'll ask both for their best price.",
-      "zh": "我會請兩家都報最好的價格。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Henry",
-      "en": "Perfect. That's the smartest way.",
-      "zh": "太好了。那是最聰明的做法。",
-      "mood": "happy"
-    },
-    {
-      "s": "Olivia",
-      "en": "Okay. I'll send you a summary tomorrow.",
-      "zh": "好的。我明天寄摘要給你。",
-      "mood": "happy"
-    }
-  ],
-  "quiz": [
-    {
-      "q": "Which supplier is cheaper?",
-      "options": [
-        "Supplier B",
-        "Supplier C",
-        "Supplier A",
-        "Both of them"
-      ],
-      "answer": 2,
-      "line": 3,
-      "why": "Olivia 說 Supplier A 比較便宜，B 比較可靠。"
-    },
-    {
-      "q": "What is better about Supplier B?",
-      "options": [
-        "Its quality and delivery",
-        "Its price",
-        "Its office",
-        "Its manager"
-      ],
-      "answer": 0,
-      "line": 5,
-      "why": "Olivia 說 B 的品質比較好，交貨也比較快。"
-    },
-    {
-      "q": "What does Henry ask Olivia to do by Wednesday?",
-      "options": [
-        "Visit a factory",
-        "Hire a new worker",
-        "Cancel the order",
-        "Make a plan"
-      ],
-      "answer": 3,
-      "line": 8,
-      "why": "Henry 問她能不能在週三前 come up with a plan（想出方案）。"
-    }
-  ],
-  "words": [
-    {
-      "w": "cut down on",
-      "pos": "片語・動詞",
-      "zh": "減少、削減",
-      "ex1": "True. We need to cut down on costs.",
-      "line": 7,
-      "ex2": "The factory wants to cut down on waste this year.",
-      "ex2zh": "工廠今年想減少浪費。",
-      "toeic": false,
-      "hook": "cut 剪＋down 往下：把數字剪下去＝減少",
-      "img": "pic/word_0.png",
-      "pic": "a person holding big scissors cutting a tall stack of coins down to a short stack"
-    },
-    {
-      "w": "come up with",
-      "pos": "片語・動詞",
-      "zh": "想出、提出（點子、方案）",
-      "ex1": "Can you come up with a plan by Wednesday?",
-      "line": 8,
-      "ex2": "The QA team came up with a new way to test the boards.",
-      "ex2zh": "品保團隊想出了測試電路板的新方法。",
-      "toeic": false,
-      "hook": "come up 浮上來＋with 帶著：腦中浮上來一個點子，帶著它出現＝想出",
-      "img": "pic/word_1.png",
-      "pic": "a smiling man with a glowing light bulb rising up out of his head"
-    },
-    {
-      "w": "fall behind",
-      "pos": "片語・動詞",
-      "zh": "落後、進度落後",
-      "ex1": "Yes. I'm afraid we may fall behind if we wait.",
-      "line": 9,
-      "ex2": "We will fall behind schedule if the parts arrive late.",
-      "ex2zh": "如果零件晚到，我們的進度會落後。",
-      "toeic": false,
-      "hook": "fall 掉＋behind 後面：賽跑中掉到別人後面＝落後",
-      "img": "pic/word_2.png",
-      "pic": "a tired runner far behind a group of other runners on a track"
-    },
-    {
-      "w": "supplier",
-      "pos": "名詞",
-      "zh": "供應商",
-      "ex1": "Good morning, Olivia. Let's talk about the new supplier.",
-      "line": 0,
-      "ex2": "Our supplier ships the circuit boards every Monday.",
-      "ex2zh": "我們的供應商每週一運送電路板。",
-      "toeic": true,
-      "hook": "supply 供應＋er 人：負責「供應」東西的人＝供應商",
-      "img": "pic/word_3.png",
-      "pic": "a delivery man handing a big box to a factory worker beside a truck"
-    },
-    {
-      "w": "budget",
-      "pos": "名詞",
-      "zh": "預算",
-      "ex1": "Hmm. But our budget is smaller this year.",
-      "line": 6,
-      "ex2": "The training plan is within the budget.",
-      "ex2zh": "這個訓練計畫在預算之內。",
-      "toeic": true,
-      "hook": "諧音「拔雞」：預算有限，只拔得起一隻雞的錢＝要精打細算＝預算（budget）",
-      "img": "pic/word_4.png",
-      "pic": "a woman counting a small pile of coins next to a piggy bank"
-    }
-  ],
-  "part2": [
-    {
-      "q": "Who is the new supplier?",
-      "opts": [
-        "It is a company in Taiwan.",
-        "Next Monday.",
-        "About ten boxes."
-      ],
-      "answer": 0,
-      "why": "Who 問「誰」，答公司名稱或類型。B 是時間，C 是數量。",
-      "zh": "新的供應商是誰？"
-    },
-    {
-      "q": "Could you send me the budget report?",
-      "opts": [
-        "It's under budget.",
-        "Sure, I'll email it now.",
-        "At the meeting room."
-      ],
-      "answer": 1,
-      "why": "Could you 是請求，Sure 是自然的答應。A 重複 budget 是陷阱。",
-      "zh": "你可以把預算報告寄給我嗎？"
-    },
-    {
-      "q": "When does the meeting start?",
-      "opts": [
-        "For about an hour.",
-        "It's in Room 3.",
-        "At ten o'clock."
-      ],
-      "answer": 2,
-      "why": "When 問時間。A 回答長度（How long），B 回答地點。",
-      "zh": "會議什麼時候開始？"
-    },
-    {
-      "q": "Why don't we ask another supplier?",
-      "opts": [
-        "Yes, he is a supplier.",
-        "That's a good idea.",
-        "Because it's far."
-      ],
-      "answer": 1,
-      "why": "Why don't we 是建議，不是真的問原因，所以回答 That's a good idea。C 用 Because 是掉進陷阱。",
-      "zh": "我們何不問問另一家供應商？"
-    },
-    {
-      "q": "Do you want the cheaper one or the faster one?",
-      "opts": [
-        "Yes, I do.",
-        "The faster one, please.",
-        "It was cheaper yesterday."
-      ],
-      "answer": 1,
-      "why": "這是選擇問句（A or B），要直接選一個，不能用 Yes/No。",
-      "zh": "你要比較便宜的還是比較快的？"
-    }
-  ],
-  "scene": "Olivia 和 Henry 在會議室討論要選哪一家新的供應商。",
-  "place": "meeting_room",
-  "grammar": {
-    "topic": "compare",
-    "topicZh": "比較級與最高級",
-    "tip": "看到 than 就用比較級（cheaper than、more reliable than）；看到 the 加「在……之中」就用最高級（the cheapest）；as ... as 中間用原級。短的字加 er／est，長的字用 more／most。",
-    "items": [
-      {
-        "q": "Supplier A is _____ than Supplier B.",
-        "opts": [
-          "cheap",
-          "cheaper",
-          "cheapest",
-          "more cheap"
-        ],
-        "answer": 1,
-        "why": "後面有 than，要用比較級。cheap 是短字，加 er：cheaper。more cheap 是錯的。",
-        "zh": "A 供應商比 B 供應商便宜。"
-      },
-      {
-        "q": "This is the _____ machine in our factory.",
-        "opts": [
-          "fast",
-          "faster",
-          "fastest",
-          "more fast"
-        ],
-        "answer": 2,
-        "why": "前面有 the，又是「在工廠裡」這個範圍，要用最高級 fastest。",
-        "zh": "這是我們工廠裡最快的機器。"
-      },
-      {
-        "q": "The new system is _____ reliable than the old one.",
-        "opts": [
-          "more",
-          "most",
-          "much",
-          "as"
-        ],
-        "answer": 0,
-        "why": "reliable 是長字，比較級用 more＋原形。後面有 than，不能用 most。",
-        "zh": "新系統比舊系統更可靠。"
-      },
-      {
-        "q": "Our delivery time is not as long _____ theirs.",
-        "opts": [
-          "than",
-          "as",
-          "that",
-          "the"
-        ],
-        "answer": 1,
-        "why": "not as ... as 是「不像……那麼……」，後面要接 as，不是 than。",
-        "zh": "我們的交貨時間沒有他們那麼長。"
-      },
-      {
-        "q": "Ms. Lin is the _____ manager in our team.",
-        "opts": [
-          "more experienced",
-          "most experienced",
-          "experienced than",
-          "much experienced"
-        ],
-        "answer": 1,
-        "why": "the 加「在團隊裡」是最高級，長字用 most＋原形：most experienced。",
-        "zh": "林小姐是我們團隊裡最有經驗的經理。"
-      }
-    ]
+  {
+   "s": "",
+   "en": "9.",
+   "zh": "9 個問題。"
   },
-  "gloss": {
-    "afraid": [
-      "形容詞",
-      "（I'm afraid）恐怕、擔心",
-      "害怕",
-      "I'm afraid I can't join the call.",
-      "恐怕我無法參加通話。"
-    ],
-    "another": [
-      "形容詞・代名詞",
-      "另一個",
-      "再一個",
-      "Let's try another method.",
-      "我們試試另一個方法。"
-    ],
-    "arrive": [
-      "動詞",
-      "抵達、送到",
-      "",
-      "The parts will arrive on Friday.",
-      "零件週五會到。"
-    ],
-    "as": [
-      "連接詞・介系詞",
-      "（as ... as）像……一樣",
-      "作為",
-      "This is as good as that one.",
-      "這個跟那個一樣好。"
-    ],
-    "b": [
-      "名詞",
-      "字母 B（B 供應商）",
-      "",
-      "Please choose option B.",
-      "請選 B 選項。"
-    ],
-    "behind": [
-      "副詞・介系詞",
-      "（fall behind）落後",
-      "在……後面",
-      "We are behind schedule.",
-      "我們進度落後。"
-    ],
-    "better": [
-      "形容詞",
-      "更好的（good 的比較級）",
-      "",
-      "This plan is better than the old one.",
-      "這個方案比舊的好。"
-    ],
-    "boards": [
-      "名詞",
-      "電路板（board 的複數）",
-      "",
-      "We tested all the boards.",
-      "我們測過所有電路板。"
-    ],
-    "both": [
-      "代名詞・形容詞",
-      "兩者都",
-      "",
-      "Both reports are ready.",
-      "兩份報告都好了。"
-    ],
-    "boxes": [
-      "名詞",
-      "箱子（box 的複數）",
-      "",
-      "The boxes are in the warehouse.",
-      "箱子在倉庫裡。"
-    ],
-    "budget": [
-      "名詞",
-      "預算",
-      "",
-      "We have a small budget this year.",
-      "我們今年預算很少。"
-    ],
-    "c": [
-      "名詞",
-      "字母 C（C 供應商）",
-      "",
-      "Plan C is the cheapest.",
-      "C 方案最便宜。"
-    ],
-    "cancel": [
-      "動詞",
-      "取消",
-      "",
-      "We had to cancel the meeting.",
-      "我們必須取消會議。"
-    ],
-    "cheap": [
-      "形容詞",
-      "便宜的",
-      "",
-      "This part is cheap but good.",
-      "這個零件便宜又好用。"
-    ],
-    "cheaper": [
-      "形容詞",
-      "比較便宜的（cheap 的比較級）",
-      "",
-      "Air freight is not cheaper.",
-      "空運沒有比較便宜。"
-    ],
-    "cheapest": [
-      "形容詞",
-      "最便宜的（cheap 的最高級）",
-      "",
-      "This is the cheapest option.",
-      "這是最便宜的選項。"
-    ],
-    "choices": [
-      "名詞",
-      "選擇（choice 的複數）",
-      "",
-      "We have three choices.",
-      "我們有三個選擇。"
-    ],
-    "circuit": [
-      "名詞",
-      "電路（circuit board 電路板）",
-      "",
-      "The circuit is overheating.",
-      "電路過熱了。"
-    ],
-    "costs": [
-      "名詞",
-      "成本、開支（cost 的複數）",
-      "",
-      "We need to lower the costs.",
-      "我們需要降低成本。"
-    ],
-    "cut": [
-      "動詞",
-      "（cut down on）減少",
-      "剪、切",
-      "Please cut the extra costs.",
-      "請刪掉多餘的開支。"
-    ],
-    "deliver": [
-      "動詞",
-      "交貨、運送",
-      "",
-      "We deliver within three days.",
-      "我們三天內交貨。"
-    ],
-    "delivery": [
-      "名詞",
-      "交貨、運送",
-      "",
-      "The delivery is on Monday.",
-      "交貨時間是週一。"
-    ],
-    "down": [
-      "副詞",
-      "（cut down on）減少",
-      "向下",
-      "Prices went down last month.",
-      "價格上個月下降了。"
-    ],
-    "experienced": [
-      "形容詞",
-      "有經驗的",
-      "",
-      "She is an experienced engineer.",
-      "她是有經驗的工程師。"
-    ],
-    "fall": [
-      "動詞",
-      "（fall behind）掉到後面、落後",
-      "掉下",
-      "Sales may fall next month.",
-      "下個月業績可能下滑。"
-    ],
-    "far": [
-      "形容詞・副詞",
-      "遠的",
-      "",
-      "The factory is far from here.",
-      "工廠離這裡很遠。"
-    ],
-    "fast": [
-      "形容詞",
-      "快的",
-      "",
-      "This machine is very fast.",
-      "這台機器很快。"
-    ],
-    "faster": [
-      "形容詞・副詞",
-      "更快（fast 的比較級）",
-      "",
-      "Can you ship it faster?",
-      "你能更快出貨嗎？"
-    ],
-    "fastest": [
-      "形容詞",
-      "最快的（fast 的最高級）",
-      "",
-      "This is the fastest route.",
-      "這是最快的路線。"
-    ],
-    "henry": [
-      "人名",
-      "亨利（男生名字）",
-      "",
-      "Henry leads the weekly meeting.",
-      "Henry 主持每週會議。"
-    ],
-    "hire": [
-      "動詞",
-      "僱用",
-      "",
-      "We plan to hire two engineers.",
-      "我們打算僱用兩位工程師。"
-    ],
-    "hmm": [
-      "感嘆詞",
-      "嗯（思考時的聲音）",
-      "",
-      "Hmm, let me think about it.",
-      "嗯，讓我想一想。"
-    ],
-    "its": [
-      "代名詞",
-      "它的",
-      "",
-      "The company changed its plan.",
-      "公司改了它的計畫。"
-    ],
-    "lin": [
-      "人名",
-      "林（姓氏）",
-      "",
-      "Ms. Lin is our new manager.",
-      "林小姐是我們的新經理。"
-    ],
-    "make": [
-      "動詞",
-      "做、制定",
-      "",
-      "Let's make a decision today.",
-      "我們今天做決定吧。"
-    ],
-    "most": [
-      "副詞・形容詞",
-      "最（最高級用字）",
-      "大多數",
-      "This is the most useful tool.",
-      "這是最有用的工具。"
-    ],
-    "okay": [
-      "感嘆詞・形容詞",
-      "好的",
-      "",
-      "Okay, let's begin.",
-      "好，我們開始吧。"
-    ],
-    "olivia": [
-      "人名",
-      "奧莉維亞（女生名字）",
-      "",
-      "Olivia manages the supplier list.",
-      "Olivia 負責供應商名單。"
-    ],
-    "parts": [
-      "名詞",
-      "零件（part 的複數）",
-      "",
-      "The parts are out of stock.",
-      "零件缺貨了。"
-    ],
-    "plan": [
-      "名詞",
-      "計畫、方案",
-      "",
-      "We need a new plan.",
-      "我們需要新的方案。"
-    ],
-    "point": [
-      "名詞",
-      "論點、重點",
-      "點；分數",
-      "That's a good point.",
-      "那是個好論點。"
-    ],
-    "qa": [
-      "名詞",
-      "品保（quality assurance）",
-      "",
-      "QA will check the samples.",
-      "品保會檢查樣品。"
-    ],
-    "reliable": [
-      "形容詞",
-      "可靠的",
-      "",
-      "He is a reliable partner.",
-      "他是可靠的夥伴。"
-    ],
-    "ships": [
-      "動詞",
-      "運送、出貨（主詞是單數）",
-      "船（名詞複數）",
-      "She ships orders every day.",
-      "她每天出貨。"
-    ],
-    "smaller": [
-      "形容詞",
-      "比較小的（small 的比較級）",
-      "",
-      "This room is smaller than that one.",
-      "這個房間比那個小。"
-    ],
-    "smartest": [
-      "形容詞",
-      "最聰明的（smart 的最高級）",
-      "",
-      "That is the smartest choice.",
-      "那是最聰明的選擇。"
-    ],
-    "start": [
-      "動詞",
-      "開始",
-      "",
-      "The meeting will start soon.",
-      "會議快開始了。"
-    ],
-    "summary": [
-      "名詞",
-      "摘要",
-      "",
-      "Please send me a short summary.",
-      "請寄給我簡短的摘要。"
-    ],
-    "system": [
-      "名詞",
-      "系統",
-      "",
-      "The system is down.",
-      "系統當機了。"
-    ],
-    "taiwan": [
-      "地名",
-      "台灣",
-      "",
-      "Our factory is in Taiwan.",
-      "我們的工廠在台灣。"
-    ],
-    "talk": [
-      "動詞",
-      "談、討論",
-      "",
-      "Can we talk about the schedule?",
-      "我們可以談談時程嗎？"
-    ],
-    "test": [
-      "動詞",
-      "測試",
-      "測試（名詞）",
-      "We test every product.",
-      "我們測試每個產品。"
-    ],
-    "that's": [
-      "縮寫",
-      "那是（that is）",
-      "",
-      "That's a great idea.",
-      "那是個好主意。"
-    ],
-    "their": [
-      "代名詞",
-      "他們的",
-      "",
-      "Their price is lower.",
-      "他們的價格比較低。"
-    ],
-    "theirs": [
-      "代名詞",
-      "他們的（東西）",
-      "",
-      "Our plan is simpler than theirs.",
-      "我們的方案比他們的簡單。"
-    ],
-    "true": [
-      "形容詞",
-      "真的、沒錯",
-      "",
-      "That's true.",
-      "沒錯。"
-    ],
-    "visit": [
-      "動詞",
-      "參觀、拜訪",
-      "",
-      "We will visit the factory.",
-      "我們會參觀工廠。"
-    ],
-    "wants": [
-      "動詞",
-      "想要（主詞是單數）",
-      "",
-      "He wants a quick reply.",
-      "他想要快點回覆。"
-    ],
-    "waste": [
-      "名詞",
-      "浪費、廢料",
-      "",
-      "We must reduce waste.",
-      "我們必須減少浪費。"
-    ],
-    "way": [
-      "名詞",
-      "方法、做法",
-      "路",
-      "This is a better way to work.",
-      "這是比較好的工作方法。"
-    ],
-    "wednesday": [
-      "名詞",
-      "星期三",
-      "",
-      "The review is on Wednesday.",
-      "檢討會在週三。"
-    ],
-    "which": [
-      "代名詞・形容詞",
-      "哪一個",
-      "",
-      "Which option do you prefer?",
-      "你比較喜歡哪個選項？"
-    ],
-    "worker": [
-      "名詞",
-      "工人、員工",
-      "",
-      "Each worker wears a helmet.",
-      "每位工人都戴安全帽。"
-    ]
+  {
+   "s": "",
+   "en": "You won't be lactose intolerant forever.",
+   "zh": "你不會一輩子都乳糖不耐。"
   },
-  "phrases": [
-    {
-      "p": "cut down on",
-      "forms": [
-        "cut down on",
-        "cutting down on",
-        "cut down"
-      ],
-      "pos": "片語・動詞",
-      "zh": "減少、削減",
-      "ex": "We should cut down on overtime hours.",
-      "exzh": "我們應該減少加班時數。"
-    },
-    {
-      "p": "come up with",
-      "forms": [
-        "come up with",
-        "came up with",
-        "coming up with"
-      ],
-      "pos": "片語・動詞",
-      "zh": "想出、提出",
-      "ex": "Can you come up with a better idea?",
-      "exzh": "你能想出更好的點子嗎？"
-    },
-    {
-      "p": "fall behind",
-      "forms": [
-        "fall behind",
-        "fell behind",
-        "falling behind"
-      ],
-      "pos": "片語・動詞",
-      "zh": "落後",
-      "ex": "Don't fall behind on the project.",
-      "exzh": "不要讓專案進度落後。"
-    },
-    {
-      "p": "good point",
-      "forms": [
-        "good point"
-      ],
-      "pos": "片語",
-      "zh": "說得好、有道理",
-      "ex": "Good point. I didn't think of that.",
-      "exzh": "說得好，我沒想到這點。"
-    },
-    {
-      "p": "I'm afraid",
-      "forms": [
-        "i'm afraid"
-      ],
-      "pos": "片語",
-      "zh": "恐怕、我擔心",
-      "ex": "I'm afraid the meeting is full today.",
-      "exzh": "恐怕今天的會議已經滿了。"
-    }
+  {
+   "s": "",
+   "en": "It's okay if you cry at songs like Don't Look Back in Anger by Oasis.",
+   "zh": "聽到綠洲合唱團的〈Don't Look Back in Anger〉會哭，沒關係。"
+  },
+  {
+   "s": "",
+   "en": "Your sensitivity will serve you later in life.",
+   "zh": "你的敏感，以後在人生裡會派上用場。"
+  },
+  {
+   "s": "",
+   "en": "Even if all of your classmates make fun of you right now.",
+   "zh": "就算現在全班同學都在取笑你。"
+  },
+  {
+   "s": "",
+   "en": "Okay, first would be Joan Didion followed by Jack Kerouac, Saint-Exupéry, James Dean, my partner, my dog Neon, my best friend Remo who I haven't seen in a really long time.",
+   "zh": "好，第一個是瓊・蒂蒂安，接著是傑克・凱魯亞克、聖修伯里、詹姆斯・狄恩、我的伴侶、我的狗 Neon、還有我很久沒見的摯友雷莫。"
+  },
+  {
+   "s": "",
+   "en": "Oh, oh, and my dog Carbo who I had when I lived in West Virginia when I was a kid.",
+   "zh": "喔，還有我的狗 Carbo，我小時候住在西維吉尼亞時養的。"
+  },
+  {
+   "s": "",
+   "en": "I've barely scratched the surface on Africa.",
+   "zh": "非洲我連皮毛都還沒摸到。"
+  },
+  {
+   "s": "",
+   "en": "I've only been to Senegal, South Africa, and Botswana.",
+   "zh": "我只去過塞內加爾、南非和波札那。"
+  },
+  {
+   "s": "",
+   "en": "So, I have a lot to explore.",
+   "zh": "所以還有很多地方可以探索。"
+  },
+  {
+   "s": "",
+   "en": "And then Asia, I mean there's so much to see.",
+   "zh": "還有亞洲，我是說真的有太多可以看了。"
+  },
+  {
+   "s": "",
+   "en": "But then also I've never been to the Nordic countries.",
+   "zh": "但我也從沒去過北歐國家。"
+  },
+  {
+   "s": "",
+   "en": "So, I need to go visit there.",
+   "zh": "所以我得去那邊走走。"
+  },
+  {
+   "s": "",
+   "en": "And I have to go to Antarctica, obviously.",
+   "zh": "當然，我也一定要去南極。"
+  },
+  {
+   "s": "",
+   "en": "It's a very hard answer.",
+   "zh": "這很難回答。"
+  },
+  {
+   "s": "",
+   "en": "I just finished taking my dog on a walk and then I come home and dinner's ready.",
+   "zh": "我剛帶狗散完步，回到家晚餐就準備好了。"
+  },
+  {
+   "s": "",
+   "en": "Maybe like a nice bolognese with some fresh pappardelle.",
+   "zh": "也許是一份不錯的波隆那肉醬，配上新鮮的寬麵條。"
+  },
+  {
+   "s": "",
+   "en": "And then get on the couch, watch some like really good animal doc or some natural history show or something",
+   "zh": "然後窩在沙發上，看一部很棒的動物紀錄片，或自然史節目之類的，"
+  },
+  {
+   "s": "",
+   "en": "historical and light up all the candles and I'm nice and cozy and I have my blanket on me and then I'm just waiting for it to hit 8:00 p.m.",
+   "zh": "或歷史類的輕鬆節目，把所有蠟燭點亮，舒舒服服地蓋著毯子，然後就等著晚上 8 點到來，"
+  },
+  {
+   "s": "",
+   "en": "so I can start to get ready for bed.",
+   "zh": "這樣我就能開始準備上床睡覺。"
+  },
+  {
+   "s": "",
+   "en": "Don't Look Back in Anger.",
+   "zh": "〈Don't Look Back in Anger〉。"
+  },
+  {
+   "s": "",
+   "en": "Any and all cheese.",
+   "zh": "任何一種起司都好。"
+  },
+  {
+   "s": "",
+   "en": "Maine blueberries when they're in season with whipped cream, not too sweet, maybe a little bit of mint on top,",
+   "zh": "緬因州的藍莓，當季的時候，配上鮮奶油，不要太甜，上面也許放一點薄荷，"
+  },
+  {
+   "s": "",
+   "en": "why not?",
+   "zh": "為什麼不呢？"
+  },
+  {
+   "s": "",
+   "en": "This Polish hunter's stew called bigos.",
+   "zh": "這道波蘭獵人燉肉，叫做 bigos。"
+  },
+  {
+   "s": "",
+   "en": "And that's like with some rye bread and maybe like spread with a bit of marrow, maybe some like sautéed",
+   "zh": "配上黑麥麵包，也許再抹一點骨髓，旁邊也許放些香煎"
+  },
+  {
+   "s": "",
+   "en": "chanterelles on the side.",
+   "zh": "雞油菌菇。"
+  },
+  {
+   "s": "",
+   "en": "A really good risotto Milanese.",
+   "zh": "一份很棒的米蘭燉飯。"
+  },
+  {
+   "s": "",
+   "en": "It's just loads of saffron in there with some osso buco in the middle.",
+   "zh": "裡面放了大量的番紅花，中間再放一塊燉牛膝。"
+  },
+  {
+   "s": "",
+   "en": "I'm not terminally unique.",
+   "zh": "我沒有那麼獨一無二。"
+  },
+  {
+   "s": "",
+   "en": "So, like whatever I'm going through, I'm not the only one in the world who's ever experienced it.",
+   "zh": "所以不管我正在經歷什麼，我都不是世上唯一經歷過的人。"
+  },
+  {
+   "s": "",
+   "en": "The way I feel now is not how I'm going to feel forever.",
+   "zh": "我現在的感受，不會是我永遠的感受。"
+  },
+  {
+   "s": "",
+   "en": "And one I've learned more recently is having difficult conversations with people who view the world very differently than me.",
+   "zh": "而我最近學到的一件事，是跟世界觀和我非常不同的人進行困難的對話。"
+  },
+  {
+   "s": "",
+   "en": "It's not about adopting their belief system or even agreeing with them, but it's more about understanding where they are coming",
+   "zh": "重點不是接受他們的信念，甚至不是同意他們，而是去理解他們是從哪裡來的，"
+  },
+  {
+   "s": "",
+   "en": "from and why they are the way they are.",
+   "zh": "還有他們為什麼會是現在這個樣子。"
+  },
+  {
+   "s": "",
+   "en": "One of the My dogs, I haven't seen her in six whole hours.",
+   "zh": "其中一個是，我的狗，我已經整整六個小時沒看到她了。"
+  },
+  {
+   "s": "",
+   "en": "The second would be I've never seen a cheetah in the wild.",
+   "zh": "第二個是，我從來沒在野外看過獵豹。"
+  },
+  {
+   "s": "",
+   "en": "And I was obsessed with cheetahs as a kid, cuz they're the fastest land animal.",
+   "zh": "我小時候超迷獵豹，因為牠們是跑最快的陸上動物。"
+  },
+  {
+   "s": "",
+   "en": "So, I really want to see one.",
+   "zh": "所以我真的很想看到一隻。"
+  },
+  {
+   "s": "",
+   "en": "Ooh.",
+   "zh": "喔。"
+  },
+  {
+   "s": "",
+   "en": "Actual person would be Saint Antoine de Saint-Exupéry, the author of The Little Prince.",
+   "zh": "真實存在的人，會是聖修伯里，《小王子》的作者。"
+  },
+  {
+   "s": "",
+   "en": "That book was read to me in Polish when I was a little kid.",
+   "zh": "小時候有人用波蘭文唸那本書給我聽。"
+  },
+  {
+   "s": "",
+   "en": "And then when I learned French in school, I read it in French.",
+   "zh": "後來我在學校學了法文，就用法文讀了它。"
+  },
+  {
+   "s": "",
+   "en": "And then in English, I've read it maybe like a dozen times.",
+   "zh": "然後英文版，我大概讀過十幾次。"
+  },
+  {
+   "s": "",
+   "en": "Whenever I'm really going through something in life, I go back and I'm reminded of what actually matters in life.",
+   "zh": "每當我人生遇到難關，我就回頭去讀，提醒自己人生真正重要的是什麼。"
+  },
+  {
+   "s": "",
+   "en": "This is unreal.",
+   "zh": "這太不真實了。"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "What does Antoni say about his sensitivity?",
+   "options": [
+    "It will help him later in life",
+    "It made him lose friends",
+    "He wants to hide it",
+    "It stopped when he grew up"
+   ],
+   "answer": 0,
+   "line": 4,
+   "why": "他說你的敏感以後在人生裡會派上用場。"
+  },
+  {
+   "q": "What would be his perfect evening at home?",
+   "options": [
+    "Going out to a loud party",
+    "Cooking all night for guests",
+    "Dinner, a nature show, candles and a blanket",
+    "Working late at the office"
+   ],
+   "answer": 2,
+   "line": 19,
+   "why": "他描述的是吃晚餐、看自然節目、點蠟燭、蓋毯子的舒服夜晚。"
+  },
+  {
+   "q": "Why does he want to see a cheetah in the wild?",
+   "options": [
+    "He was afraid of them as a kid",
+    "He was obsessed with them as a kid",
+    "He works with animals",
+    "His dog looks like one"
+   ],
+   "answer": 1,
+   "line": 38,
+   "why": "他說小時候很迷獵豹，因為牠們是跑最快的陸上動物。"
+  }
+ ],
+ "words": [
+  {
+   "w": "sensitivity",
+   "pos": "名詞",
+   "zh": "敏感度、靈敏度",
+   "ex1": "Your sensitivity will serve you later in life.",
+   "line": 4,
+   "ex2": "The sensitivity of this sensor is too low for the test.",
+   "ex2zh": "這個感測器的靈敏度太低，不適用於這項測試。",
+   "toeic": true,
+   "hook": "sense 感覺＋itive 的性質：感覺很細膩的程度＝敏感度",
+   "pic": "a person gently touching a small flower and smiling softly",
+   "img": "pic/word_0.png"
+  },
+  {
+   "w": "obsessed",
+   "pos": "形容詞",
+   "zh": "著迷的、癡迷的",
+   "ex1": "And I was obsessed with cheetahs as a kid, cuz they're the fastest land animal.",
+   "line": 38,
+   "ex2": "Our manager is obsessed with zero defects.",
+   "ex2zh": "我們經理對零缺點非常執著。",
+   "toeic": false,
+   "hook": "ob 在前面擋住＋sess 坐：整個人坐著不走＝被一件事纏住、著迷",
+   "pic": "a boy staring at a toy race car with wide shining eyes",
+   "img": "pic/word_1.png"
+  },
+  {
+   "w": "cozy",
+   "pos": "形容詞",
+   "zh": "舒適溫暖的",
+   "ex1": "…I'm nice and cozy and I have my blanket on me…",
+   "line": 19,
+   "ex2": "The break room is small but cozy in winter.",
+   "ex2zh": "休息室雖小，但冬天很溫暖舒適。",
+   "toeic": false,
+   "hook": "諧音「口自」：口袋裡自己暖暖的＝舒服",
+   "pic": "a woman wrapped in a blanket on a couch holding a warm cup",
+   "img": "pic/word_2.png"
+  },
+  {
+   "w": "explore",
+   "pos": "動詞",
+   "zh": "探索、探勘",
+   "ex1": "So, I have a lot to explore.",
+   "line": 10,
+   "ex2": "We need to explore other suppliers for this part.",
+   "ex2zh": "我們需要為這個零件探索其他供應商。",
+   "toeic": true,
+   "hook": "ex 向外＋plore 大喊：往外邊走邊喊＝探索",
+   "pic": "a hiker with a backpack looking out over a wide valley",
+   "img": "pic/word_3.png"
+  },
+  {
+   "w": "barely",
+   "pos": "副詞",
+   "zh": "幾乎不、勉強",
+   "ex1": "I've barely scratched the surface on Africa.",
+   "line": 8,
+   "ex2": "We barely finished the order before the deadline.",
+   "ex2zh": "我們勉強在期限前完成了訂單。",
+   "toeic": true,
+   "hook": "bare 光禿禿的：剩下光禿禿的一點點＝幾乎沒有",
+   "pic": "a runner crossing a finish line just as a clock hits zero",
+   "img": "pic/word_4.png"
+  }
+ ],
+ "gloss": {
+  "actual": [
+   "形容詞",
+   "真實存在的",
+   "",
+   "The actual cost was higher.",
+   "實際成本比較高。"
+  ],
+  "actually": [
+   "副詞",
+   "實際上、真正地",
+   "",
+   "What actually went wrong?",
+   "到底是哪裡出了問題？"
+  ],
+  "adopting": [
+   "動詞",
+   "接受、採用（adopt 的進行式）",
+   "收養",
+   "We are adopting a new process.",
+   "我們正在採用新流程。"
+  ],
+  "afraid": [
+   "形容詞",
+   "害怕的",
+   "恐怕（客氣說法）",
+   "I'm afraid we are late.",
+   "恐怕我們晚了。"
+  ],
+  "africa": [
+   "地名",
+   "非洲",
+   "",
+   "He travels to Africa for work.",
+   "他因工作去非洲出差。"
+  ],
+  "agreeing": [
+   "動詞",
+   "同意（agree 的進行式）",
+   "",
+   "She is agreeing with the plan.",
+   "她同意這個計畫。"
+  ],
+  "also": [
+   "副詞",
+   "也、還有",
+   "",
+   "We also need a report.",
+   "我們也需要一份報告。"
+  ],
+  "anger": [
+   "名詞",
+   "憤怒",
+   "",
+   "He spoke without anger.",
+   "他說話沒有帶怒氣。"
+  ],
+  "animal": [
+   "名詞",
+   "動物",
+   "",
+   "A cat is a small animal.",
+   "貓是小動物。"
+  ],
+  "animals": [
+   "名詞",
+   "動物（複數）",
+   "",
+   "We saw many animals at the zoo.",
+   "我們在動物園看到很多動物。"
+  ],
+  "answer": [
+   "動詞",
+   "回答",
+   "名詞：答案",
+   "Please answer the phone.",
+   "請接電話。"
+  ],
+  "antarctica": [
+   "地名",
+   "南極洲",
+   "",
+   "Antarctica is very cold.",
+   "南極洲非常冷。"
+  ],
+  "anthony": [
+   "人名",
+   "安東尼（人名）",
+   "",
+   "Anthony joined the meeting.",
+   "安東尼加入了會議。"
+  ],
+  "antoine": [
+   "人名",
+   "安托萬（人名）",
+   "",
+   "Antoine wrote a famous book.",
+   "安托萬寫了一本有名的書。"
+  ],
+  "antoni": [
+   "人名",
+   "安東尼（人名）",
+   "",
+   "Antoni is a chef.",
+   "安東尼是廚師。"
+  ],
+  "any": [
+   "形容詞",
+   "任何的",
+   "也可作疑問、否定用",
+   "Any question is welcome.",
+   "歡迎任何問題。"
+  ],
+  "as": [
+   "連接詞",
+   "因為、當…的時候",
+   "像…一樣",
+   "He left early as he was sick.",
+   "他生病所以提早走了。"
+  ],
+  "asia": [
+   "地名",
+   "亞洲",
+   "",
+   "Asia has many big cities.",
+   "亞洲有很多大城市。"
+  ],
+  "author": [
+   "名詞",
+   "作者",
+   "",
+   "The author signed my book.",
+   "作者在我的書上簽名。"
+  ],
+  "back": [
+   "副詞",
+   "回頭、回去（Don't Look Back 裡的 back）",
+   "名詞：背部",
+   "Please come back soon.",
+   "請早點回來。"
+  ],
+  "barely": [
+   "副詞",
+   "幾乎沒有、勉強",
+   "",
+   "I barely slept last night.",
+   "我昨晚幾乎沒睡。"
+  ],
+  "bed": [
+   "名詞",
+   "床",
+   "",
+   "I go to bed at ten.",
+   "我十點上床睡覺。"
+  ],
+  "belief": [
+   "名詞",
+   "信念、信仰",
+   "",
+   "Trust is a basic belief here.",
+   "信任是這裡的基本信念。"
+  ],
+  "bigos": [
+   "名詞",
+   "bigos（波蘭獵人燉肉）",
+   "",
+   "Bigos is a Polish stew.",
+   "Bigos 是波蘭的燉菜。"
+  ],
+  "bit": [
+   "名詞",
+   "一點點（a bit of）",
+   "bite 的過去式",
+   "Add a bit of salt.",
+   "加一點點鹽。"
+  ],
+  "blanket": [
+   "名詞",
+   "毯子",
+   "",
+   "She put a blanket on the bed.",
+   "她在床上放了一條毯子。"
+  ],
+  "blueberries": [
+   "名詞",
+   "藍莓（複數）",
+   "",
+   "I like blueberries in yogurt.",
+   "我喜歡優格加藍莓。"
+  ],
+  "bolognese": [
+   "名詞",
+   "波隆那肉醬",
+   "",
+   "The bolognese was delicious.",
+   "波隆那肉醬很好吃。"
+  ],
+  "book": [
+   "名詞",
+   "書",
+   "動詞：預訂",
+   "I read this book twice.",
+   "我讀過這本書兩次。"
+  ],
+  "botswana": [
+   "地名",
+   "波札那（國名）",
+   "",
+   "Botswana is in southern Africa.",
+   "波札那在非洲南部。"
+  ],
+  "bread": [
+   "名詞",
+   "麵包",
+   "",
+   "We bought fresh bread.",
+   "我們買了新鮮的麵包。"
+  ],
+  "break": [
+   "名詞",
+   "休息",
+   "",
+   "Let's take a break.",
+   "我們休息一下。"
+  ],
+  "buco": [
+   "名詞",
+   "buco（osso buco 燉牛膝的一部分）",
+   "",
+   "Osso buco is an Italian dish.",
+   "Osso buco 是義大利菜。"
+  ],
+  "candles": [
+   "名詞",
+   "蠟燭（複數）",
+   "",
+   "She lit two candles.",
+   "她點了兩根蠟燭。"
+  ],
+  "carbo": [
+   "人名",
+   "Carbo（狗的名字）",
+   "",
+   "Carbo is a friendly dog.",
+   "Carbo 是一隻親人的狗。"
+  ],
+  "chanterelles": [
+   "名詞",
+   "雞油菌（一種菇）",
+   "",
+   "Chanterelles are yellow mushrooms.",
+   "雞油菌是黃色的蘑菇。"
+  ],
+  "cheese": [
+   "名詞",
+   "起司",
+   "",
+   "I put cheese on my pasta.",
+   "我在義大利麵上放起司。"
+  ],
+  "cheetah": [
+   "名詞",
+   "獵豹",
+   "",
+   "A cheetah can run very fast.",
+   "獵豹可以跑得非常快。"
+  ],
+  "cheetahs": [
+   "名詞",
+   "獵豹（複數）",
+   "",
+   "Cheetahs live in Africa.",
+   "獵豹住在非洲。"
+  ],
+  "classmates": [
+   "名詞",
+   "同班同學（複數）",
+   "",
+   "My classmates were kind.",
+   "我的同學們都很親切。"
+  ],
+  "coming": [
+   "動詞",
+   "來（come 的進行式，where they are coming from 指立場）",
+   "",
+   "He is coming to the meeting.",
+   "他要來參加會議。"
+  ],
+  "conversations": [
+   "名詞",
+   "對話（複數）",
+   "",
+   "Hard conversations take courage.",
+   "困難的對話需要勇氣。"
+  ],
+  "cooking": [
+   "名詞・動詞",
+   "煮菜（cook 的進行式）",
+   "",
+   "Cooking relaxes me.",
+   "做菜讓我放鬆。"
+  ],
+  "couch": [
+   "名詞",
+   "沙發",
+   "",
+   "He sleeps on the couch.",
+   "他睡在沙發上。"
+  ],
+  "countries": [
+   "名詞",
+   "國家（複數）",
+   "",
+   "We ship to many countries.",
+   "我們出貨到很多國家。"
+  ],
+  "cozy": [
+   "形容詞",
+   "舒適溫暖的",
+   "",
+   "This room is warm and cozy.",
+   "這個房間溫暖又舒適。"
+  ],
+  "cream": [
+   "名詞",
+   "鮮奶油",
+   "",
+   "I like cream in my coffee.",
+   "我喜歡咖啡加奶精。"
+  ],
+  "cry": [
+   "動詞",
+   "哭",
+   "名詞：叫喊",
+   "The baby began to cry.",
+   "寶寶開始哭了。"
+  ],
+  "cuz": [
+   "連接詞",
+   "因為（because 的口語縮寫）",
+   "",
+   "I'm late cuz of traffic.",
+   "我遲到是因為塞車。"
+  ],
+  "de": [
+   "介系詞",
+   "de（法文的「的」，用在人名裡）",
+   "",
+   "Saint-Exupéry's full name includes de.",
+   "聖修伯里的全名裡有 de。"
+  ],
+  "deadline": [
+   "名詞",
+   "截止期限",
+   "",
+   "The deadline is Friday.",
+   "截止日是星期五。"
+  ],
+  "dean": [
+   "人名",
+   "狄恩（人名，James Dean）",
+   "",
+   "James Dean was a famous actor.",
+   "詹姆斯・狄恩是有名的演員。"
+  ],
+  "defects": [
+   "名詞",
+   "瑕疵、缺陷（複數）",
+   "",
+   "We found two defects.",
+   "我們發現兩個瑕疵。"
+  ],
+  "didion": [
+   "人名",
+   "蒂蒂安（人名，Joan Didion）",
+   "",
+   "Didion was a famous writer.",
+   "蒂蒂安是有名的作家。"
+  ],
+  "differently": [
+   "副詞",
+   "不同地",
+   "",
+   "We see it differently.",
+   "我們的看法不同。"
+  ],
+  "dinner's": [
+   "縮寫",
+   "dinner is（晚餐已經…）",
+   "",
+   "Dinner's on the table.",
+   "晚餐已經上桌了。"
+  ],
+  "doc": [
+   "名詞",
+   "紀錄片（documentary 的簡稱）",
+   "文件、醫生",
+   "I watched a nature doc.",
+   "我看了一部自然紀錄片。"
+  ],
+  "dog": [
+   "名詞",
+   "狗",
+   "",
+   "My dog likes the park.",
+   "我的狗喜歡公園。"
+  ],
+  "dogs": [
+   "名詞",
+   "狗（複數）",
+   "",
+   "Dogs need daily walks.",
+   "狗每天都需要散步。"
+  ],
+  "dozen": [
+   "名詞",
+   "十二個、一打",
+   "",
+   "I bought a dozen eggs.",
+   "我買了一打雞蛋。"
+  ],
+  "ed": [
+   "人名",
+   "Ed（人名）",
+   "",
+   "Ed joined the call.",
+   "Ed 加入了通話。"
+  ],
+  "english": [
+   "名詞",
+   "英文",
+   "",
+   "I study English every day.",
+   "我每天學英文。"
+  ],
+  "even": [
+   "副詞",
+   "甚至",
+   "",
+   "Even he was surprised.",
+   "連他都很驚訝。"
+  ],
+  "ever": [
+   "副詞",
+   "曾經、有史以來",
+   "",
+   "Have you ever been to Japan?",
+   "你去過日本嗎？"
+  ],
+  "experienced": [
+   "動詞",
+   "經歷過（experience 的過去分詞）",
+   "形容詞：有經驗的",
+   "She has experienced this before.",
+   "她以前經歷過這種事。"
+  ],
+  "explore": [
+   "動詞",
+   "探索",
+   "",
+   "Let's explore new ideas.",
+   "我們來探索新想法。"
+  ],
+  "exup": [
+   "名詞",
+   "Exup（Exupéry 的字尾片段）",
+   "",
+   "Exup is part of his name.",
+   "Exup 是他名字的一部分。"
+  ],
+  "fastest": [
+   "形容詞",
+   "最快的（fast 的最高級）",
+   "",
+   "This is the fastest route.",
+   "這是最快的路線。"
+  ],
+  "feel": [
+   "動詞",
+   "感覺",
+   "",
+   "I feel tired today.",
+   "我今天覺得累。"
+  ],
+  "finished": [
+   "動詞",
+   "完成（finish 的過去式）",
+   "",
+   "She finished the report.",
+   "她完成了報告。"
+  ],
+  "followed": [
+   "動詞",
+   "接著、跟隨（follow 的過去式）",
+   "",
+   "A short talk followed the lunch.",
+   "午餐後接著有一場短講。"
+  ],
+  "forever": [
+   "副詞",
+   "永遠",
+   "",
+   "Nothing lasts forever.",
+   "沒有東西能永遠存在。"
+  ],
+  "french": [
+   "名詞",
+   "法文",
+   "形容詞：法國的",
+   "She speaks French well.",
+   "她法文說得很好。"
+  ],
+  "fresh": [
+   "形容詞",
+   "新鮮的",
+   "",
+   "We need fresh air.",
+   "我們需要新鮮空氣。"
+  ],
+  "friend": [
+   "名詞",
+   "朋友",
+   "",
+   "He is my best friend.",
+   "他是我最好的朋友。"
+  ],
+  "friends": [
+   "名詞",
+   "朋友（複數）",
+   "",
+   "I met friends for lunch.",
+   "我跟朋友吃午餐。"
+  ],
+  "fun": [
+   "名詞",
+   "樂趣（make fun of：取笑）",
+   "",
+   "The trip was a lot of fun.",
+   "這趟旅行非常好玩。"
+  ],
+  "geo": [
+   "名詞",
+   "Geo（Geographic 的縮寫，Nat Geo）",
+   "",
+   "Nat Geo makes nature films.",
+   "國家地理拍自然影片。"
+  ],
+  "get": [
+   "動詞",
+   "得到、到達（get on：坐上）",
+   "",
+   "Get on the train now.",
+   "現在上火車。"
+  ],
+  "grew": [
+   "動詞",
+   "長大（grow 的過去式）",
+   "",
+   "She grew up in Taipei.",
+   "她在台北長大。"
+  ],
+  "guests": [
+   "名詞",
+   "客人（複數）",
+   "",
+   "The guests arrived early.",
+   "客人提早到了。"
+  ],
+  "hard": [
+   "形容詞",
+   "困難的",
+   "硬的、努力地",
+   "This test is hard.",
+   "這個測驗很難。"
+  ],
+  "haven't": [
+   "縮寫",
+   "have not（還沒有）",
+   "",
+   "I haven't finished yet.",
+   "我還沒做完。"
+  ],
+  "having": [
+   "動詞",
+   "有、進行（have 的進行式）",
+   "",
+   "We are having a meeting.",
+   "我們正在開會。"
+  ],
+  "hide": [
+   "動詞",
+   "隱藏",
+   "",
+   "Don't hide the problem.",
+   "不要隱瞞問題。"
+  ],
+  "historical": [
+   "形容詞",
+   "歷史的",
+   "",
+   "This is a historical building.",
+   "這是一棟歷史建築。"
+  ],
+  "history": [
+   "名詞",
+   "歷史",
+   "",
+   "I like reading history.",
+   "我喜歡讀歷史。"
+  ],
+  "hit": [
+   "動詞",
+   "到達、打到（hit 8:00：到了八點）",
+   "",
+   "Sales hit a new high.",
+   "銷售額創新高。"
+  ],
+  "home": [
+   "名詞",
+   "家",
+   "",
+   "I work from home today.",
+   "我今天在家工作。"
+  ],
+  "host": [
+   "名詞",
+   "主持人",
+   "",
+   "The host welcomed everyone.",
+   "主持人歡迎大家。"
+  ],
+  "hunter's": [
+   "名詞",
+   "獵人的（所有格）",
+   "",
+   "A hunter's hat is warm.",
+   "獵人的帽子很保暖。"
+  ],
+  "i've": [
+   "縮寫",
+   "I have（我已經…）",
+   "",
+   "I've finished the task.",
+   "我已經完成任務了。"
+  ],
+  "intolerant": [
+   "形容詞",
+   "不耐受的（lactose intolerant：乳糖不耐）",
+   "不寬容的",
+   "He is lactose intolerant.",
+   "他有乳糖不耐症。"
+  ],
+  "jack": [
+   "人名",
+   "傑克（人名）",
+   "",
+   "Jack is on the team.",
+   "傑克在這個團隊裡。"
+  ],
+  "james": [
+   "人名",
+   "詹姆斯（人名）",
+   "",
+   "James called me today.",
+   "詹姆斯今天打電話給我。"
+  ],
+  "joan": [
+   "人名",
+   "瓊（人名）",
+   "",
+   "Joan wrote the report.",
+   "瓊寫了報告。"
+  ],
+  "kerouac": [
+   "人名",
+   "凱魯亞克（人名，作家）",
+   "",
+   "Kerouac wrote On the Road.",
+   "凱魯亞克寫了《在路上》。"
+  ],
+  "kid": [
+   "名詞",
+   "小孩",
+   "",
+   "I loved cartoons as a kid.",
+   "我小時候愛看卡通。"
+  ],
+  "lactose": [
+   "名詞",
+   "乳糖",
+   "",
+   "Milk has lactose.",
+   "牛奶含有乳糖。"
+  ],
+  "land": [
+   "名詞",
+   "陸地",
+   "土地",
+   "Cheetahs are fast on land.",
+   "獵豹在陸地上很快。"
+  ],
+  "later": [
+   "副詞",
+   "之後、以後",
+   "",
+   "I'll call you later.",
+   "我晚點打給你。"
+  ],
+  "learned": [
+   "動詞",
+   "學會（learn 的過去式）",
+   "",
+   "I learned a lot today.",
+   "我今天學到很多。"
+  ],
+  "life": [
+   "名詞",
+   "人生、生活",
+   "",
+   "Life is short.",
+   "人生很短。"
+  ],
+  "light": [
+   "動詞",
+   "點亮（light up）",
+   "名詞：光、形容詞：輕的",
+   "Please light the candle.",
+   "請點亮蠟燭。"
+  ],
+  "lived": [
+   "動詞",
+   "居住（live 的過去式）",
+   "",
+   "He lived in Texas.",
+   "他以前住在德州。"
+  ],
+  "loads": [
+   "名詞",
+   "大量（loads of）",
+   "",
+   "We have loads of work.",
+   "我們有一大堆工作。"
+  ],
+  "looks": [
+   "動詞",
+   "看起來（look 的第三人稱）",
+   "",
+   "This looks easy.",
+   "這看起來很簡單。"
+  ],
+  "lose": [
+   "動詞",
+   "失去",
+   "",
+   "Don't lose the receipt.",
+   "別弄丟收據。"
+  ],
+  "lot": [
+   "名詞",
+   "很多（a lot of）",
+   "",
+   "I have a lot to do.",
+   "我有很多事要做。"
+  ],
+  "loud": [
+   "形容詞",
+   "吵的、大聲的",
+   "",
+   "The machine is too loud.",
+   "這台機器太吵了。"
+  ],
+  "low": [
+   "形容詞",
+   "低的",
+   "",
+   "The battery is low.",
+   "電量很低。"
+  ],
+  "m": [
+   "縮寫",
+   "I'm 的 m（I am）",
+   "",
+   "I'm ready now.",
+   "我現在準備好了。"
+  ],
+  "made": [
+   "動詞",
+   "做、造成（make 的過去式）",
+   "",
+   "She made a good plan.",
+   "她做了一個好計畫。"
+  ],
+  "maine": [
+   "地名",
+   "緬因州（美國）",
+   "",
+   "Maine is in the northeast.",
+   "緬因州在美國東北部。"
+  ],
+  "make": [
+   "動詞",
+   "做、使（make fun of：取笑）",
+   "",
+   "Make a list first.",
+   "先列一張清單。"
+  ],
+  "marrow": [
+   "名詞",
+   "骨髓",
+   "",
+   "Bone marrow is rich in flavor.",
+   "骨髓味道很濃郁。"
+  ],
+  "matters": [
+   "動詞",
+   "重要（matter 的第三人稱）",
+   "名詞：事情",
+   "Quality matters most.",
+   "品質最重要。"
+  ],
+  "mean": [
+   "動詞",
+   "意思是、意指（I mean：我是說）",
+   "",
+   "What do you mean?",
+   "你是什麼意思？"
+  ],
+  "middle": [
+   "名詞",
+   "中間",
+   "",
+   "Put it in the middle.",
+   "放在中間。"
+  ],
+  "milanese": [
+   "形容詞",
+   "米蘭風味的",
+   "",
+   "Risotto Milanese uses saffron.",
+   "米蘭燉飯用番紅花。"
+  ],
+  "mint": [
+   "名詞",
+   "薄荷",
+   "",
+   "Add mint to the tea.",
+   "在茶裡加薄荷。"
+  ],
+  "nat": [
+   "名詞",
+   "Nat（National 的縮寫，Nat Geo）",
+   "",
+   "Nat Geo is a famous brand.",
+   "Nat Geo 是知名品牌。"
+  ],
+  "natural": [
+   "形容詞",
+   "自然的",
+   "",
+   "This is a natural material.",
+   "這是天然材料。"
+  ],
+  "nature": [
+   "名詞",
+   "大自然",
+   "",
+   "I love nature shows.",
+   "我愛看自然節目。"
+  ],
+  "neon": [
+   "人名",
+   "Neon（狗的名字）",
+   "名詞：霓虹燈",
+   "Neon is my dog.",
+   "Neon 是我的狗。"
+  ],
+  "never": [
+   "副詞",
+   "從來沒有",
+   "",
+   "I never drink soda.",
+   "我從不喝汽水。"
+  ],
+  "nice": [
+   "形容詞",
+   "不錯的、舒服的",
+   "",
+   "That is a nice idea.",
+   "那是個不錯的點子。"
+  ],
+  "nordic": [
+   "形容詞",
+   "北歐的",
+   "",
+   "Nordic design is simple.",
+   "北歐設計很簡約。"
+  ],
+  "oasis": [
+   "名詞",
+   "Oasis（綠洲合唱團）",
+   "綠洲",
+   "Oasis is a British band.",
+   "綠洲合唱團是英國樂團。"
+  ],
+  "obsessed": [
+   "形容詞",
+   "著迷的",
+   "",
+   "He is obsessed with cars.",
+   "他對車子很著迷。"
+  ],
+  "obviously": [
+   "副詞",
+   "顯然、當然",
+   "",
+   "Obviously, we need more time.",
+   "很明顯，我們需要更多時間。"
+  ],
+  "okay": [
+   "形容詞",
+   "沒關係、可以",
+   "",
+   "It's okay to ask for help.",
+   "請人幫忙沒關係。"
+  ],
+  "ooh": [
+   "感嘆詞",
+   "喔（驚嘆聲）",
+   "",
+   "Ooh, that smells good.",
+   "喔，聞起來好香。"
+  ],
+  "osso": [
+   "名詞",
+   "osso（osso buco：燉牛膝）",
+   "",
+   "Osso means bone in Italian.",
+   "Osso 在義大利文是骨頭。"
+  ],
+  "other": [
+   "形容詞",
+   "其他的",
+   "",
+   "Ask the other team.",
+   "問問其他團隊。"
+  ],
+  "p": [
+   "縮寫",
+   "p.m.（下午）的 p",
+   "",
+   "The meeting is at 3 p.m.",
+   "會議在下午 3 點。"
+  ],
+  "pappardelle": [
+   "名詞",
+   "寬麵條（義大利麵）",
+   "",
+   "Pappardelle is a wide pasta.",
+   "Pappardelle 是一種寬麵。"
+  ],
+  "part": [
+   "名詞",
+   "部分",
+   "",
+   "This part is broken.",
+   "這個零件壞了。"
+  ],
+  "partner": [
+   "名詞",
+   "伴侶、合作夥伴",
+   "",
+   "My partner cooks well.",
+   "我的伴侶很會做菜。"
+  ],
+  "party": [
+   "名詞",
+   "派對",
+   "",
+   "We had a small party.",
+   "我們辦了小派對。"
+  ],
+  "person": [
+   "名詞",
+   "人",
+   "",
+   "He is a kind person.",
+   "他是個善良的人。"
+  ],
+  "polish": [
+   "形容詞",
+   "波蘭的",
+   "動詞：擦亮",
+   "She makes Polish soup.",
+   "她做波蘭湯。"
+  ],
+  "porowski": [
+   "人名",
+   "波羅斯基（姓）",
+   "",
+   "Porowski hosts a show.",
+   "波羅斯基主持一個節目。"
+  ],
+  "prince": [
+   "名詞",
+   "王子",
+   "",
+   "The prince lived on a small star.",
+   "王子住在一顆小星星上。"
+  ],
+  "ready": [
+   "形容詞",
+   "準備好的",
+   "",
+   "The report is ready.",
+   "報告準備好了。"
+  ],
+  "recently": [
+   "副詞",
+   "最近",
+   "",
+   "I recently changed jobs.",
+   "我最近換了工作。"
+  ],
+  "reminded": [
+   "動詞",
+   "提醒（remind 的過去式／被動）",
+   "",
+   "I was reminded of my goal.",
+   "我被提醒了我的目標。"
+  ],
+  "remo": [
+   "人名",
+   "雷莫（人名）",
+   "",
+   "Remo is his best friend.",
+   "雷莫是他最好的朋友。"
+  ],
+  "risotto": [
+   "名詞",
+   "燉飯",
+   "",
+   "Risotto takes patience.",
+   "燉飯需要耐心。"
+  ],
+  "ry": [
+   "名詞",
+   "ry（Exupéry 字尾片段）",
+   "",
+   "Ry is part of a name.",
+   "Ry 是名字的一部分。"
+  ],
+  "rye": [
+   "名詞",
+   "黑麥",
+   "",
+   "Rye bread is dark.",
+   "黑麥麵包顏色很深。"
+  ],
+  "saffron": [
+   "名詞",
+   "番紅花（香料）",
+   "",
+   "Saffron makes rice yellow.",
+   "番紅花讓飯變成黃色。"
+  ],
+  "saint": [
+   "名詞",
+   "聖（人名前的頭銜）",
+   "聖人",
+   "Saint Paul is a city.",
+   "聖保羅是一座城市。"
+  ],
+  "saut": [
+   "名詞",
+   "saut（sautéed 的片段）",
+   "",
+   "Saut comes from sautéed.",
+   "Saut 來自 sautéed。"
+  ],
+  "school": [
+   "名詞",
+   "學校",
+   "",
+   "The school is near here.",
+   "學校就在這附近。"
+  ],
+  "scratched": [
+   "動詞",
+   "刮、抓（scratch 的過去式；scratch the surface：只是淺嘗）",
+   "",
+   "He scratched his head.",
+   "他抓了抓頭。"
+  ],
+  "season": [
+   "名詞",
+   "季節（in season：當季）",
+   "",
+   "Strawberries are in season.",
+   "草莓正當季。"
+  ],
+  "second": [
+   "名詞・形容詞",
+   "第二個",
+   "",
+   "The second step is testing.",
+   "第二步是測試。"
+  ],
+  "seen": [
+   "動詞",
+   "看過（see 的過去分詞）",
+   "",
+   "I haven't seen him today.",
+   "我今天沒看到他。"
+  ],
+  "senegal": [
+   "地名",
+   "塞內加爾（國名）",
+   "",
+   "Senegal is in West Africa.",
+   "塞內加爾在西非。"
+  ],
+  "sensitivity": [
+   "名詞",
+   "敏感度、靈敏度",
+   "",
+   "The sensitivity is very high.",
+   "靈敏度非常高。"
+  ],
+  "sensor": [
+   "名詞",
+   "感測器",
+   "",
+   "The sensor detects heat.",
+   "感測器可以偵測熱度。"
+  ],
+  "serve": [
+   "動詞",
+   "對…有用、服務",
+   "",
+   "This skill will serve you well.",
+   "這項技能會對你很有幫助。"
+  ],
+  "show": [
+   "名詞",
+   "節目",
+   "動詞：展示",
+   "We watched a cooking show.",
+   "我們看了一個料理節目。"
+  ],
+  "side": [
+   "名詞",
+   "旁邊（on the side：配菜）",
+   "",
+   "Put the sauce on the side.",
+   "醬料放旁邊。"
+  ],
+  "small": [
+   "形容詞",
+   "小的",
+   "",
+   "This is a small problem.",
+   "這是個小問題。"
+  ],
+  "so": [
+   "副詞・連接詞",
+   "所以、這麼",
+   "",
+   "It was late, so we left.",
+   "時間晚了，所以我們走了。"
+  ],
+  "something": [
+   "代名詞",
+   "某事、某物",
+   "",
+   "I need something to drink.",
+   "我想要喝點什麼。"
+  ],
+  "songs": [
+   "名詞",
+   "歌曲（複數）",
+   "",
+   "She sings old songs.",
+   "她唱老歌。"
+  ],
+  "south": [
+   "名詞",
+   "南方（South Africa：南非）",
+   "",
+   "The factory is in the south.",
+   "工廠在南部。"
+  ],
+  "spread": [
+   "動詞",
+   "塗抹",
+   "名詞：擴散",
+   "Spread butter on the bread.",
+   "在麵包上抹奶油。"
+  ],
+  "start": [
+   "動詞",
+   "開始",
+   "",
+   "Let's start the meeting.",
+   "我們開始開會吧。"
+  ],
+  "stew": [
+   "名詞",
+   "燉菜",
+   "",
+   "My mom makes beef stew.",
+   "我媽媽做燉牛肉。"
+  ],
+  "stopped": [
+   "動詞",
+   "停止（stop 的過去式）",
+   "",
+   "The machine stopped.",
+   "機器停了。"
+  ],
+  "suppliers": [
+   "名詞",
+   "供應商（複數）",
+   "",
+   "We have three suppliers.",
+   "我們有三家供應商。"
+  ],
+  "surface": [
+   "名詞",
+   "表面",
+   "",
+   "The surface is smooth.",
+   "表面很平滑。"
+  ],
+  "sweet": [
+   "形容詞",
+   "甜的",
+   "",
+   "The cake is too sweet.",
+   "蛋糕太甜了。"
+  ],
+  "system": [
+   "名詞",
+   "系統",
+   "",
+   "The system is down.",
+   "系統掛了。"
+  ],
+  "taking": [
+   "動詞",
+   "帶（take 的進行式；taking my dog on a walk：帶狗散步）",
+   "",
+   "He is taking a call.",
+   "他正在接電話。"
+  ],
+  "terminally": [
+   "副詞",
+   "無可救藥地（terminally unique：獨一無二到無藥可救）",
+   "",
+   "The patient was terminally ill.",
+   "病人已病入膏肓。"
+  ],
+  "test": [
+   "名詞",
+   "測試",
+   "",
+   "We ran a test yesterday.",
+   "我們昨天做了測試。"
+  ],
+  "that's": [
+   "縮寫",
+   "that is（那是）",
+   "",
+   "That's a good point.",
+   "那是個好觀點。"
+  ],
+  "their": [
+   "代名詞",
+   "他們的",
+   "",
+   "Their team won.",
+   "他們的團隊贏了。"
+  ],
+  "there's": [
+   "縮寫",
+   "there is（有）",
+   "",
+   "There's a problem here.",
+   "這裡有個問題。"
+  ],
+  "they're": [
+   "縮寫",
+   "they are（他們是）",
+   "",
+   "They're in a meeting.",
+   "他們正在開會。"
+  ],
+  "through": [
+   "介系詞",
+   "經歷、通過（going through something：正在經歷某事）",
+   "",
+   "We went through a hard time.",
+   "我們經歷過一段艱難時期。"
+  ],
+  "top": [
+   "名詞",
+   "頂部（on top：在上面）",
+   "",
+   "Put the lid on top.",
+   "把蓋子放在上面。"
+  ],
+  "understanding": [
+   "動詞",
+   "理解（understand 的進行式）",
+   "名詞：理解、體諒",
+   "I'm understanding it better.",
+   "我越來越理解了。"
+  ],
+  "unique": [
+   "形容詞",
+   "獨特的",
+   "",
+   "Every design is unique.",
+   "每個設計都是獨一無二的。"
+  ],
+  "unreal": [
+   "形容詞",
+   "不真實的、難以置信的",
+   "",
+   "The view was unreal.",
+   "那景色美得不真實。"
+  ],
+  "view": [
+   "動詞",
+   "看待",
+   "名詞：景色",
+   "Do you view it differently?",
+   "你的看法不同嗎？"
+  ],
+  "virginia": [
+   "地名",
+   "維吉尼亞（West Virginia：西維吉尼亞州）",
+   "",
+   "Virginia is on the east coast.",
+   "維吉尼亞州在東岸。"
+  ],
+  "visit": [
+   "動詞",
+   "拜訪、造訪",
+   "",
+   "I want to visit Norway.",
+   "我想造訪挪威。"
+  ],
+  "waiting": [
+   "動詞",
+   "等待（wait 的進行式）",
+   "",
+   "I'm waiting for the bus.",
+   "我在等公車。"
+  ],
+  "walk": [
+   "名詞",
+   "散步",
+   "動詞：走",
+   "We took a walk after lunch.",
+   "午餐後我們去散步。"
+  ],
+  "wants": [
+   "動詞",
+   "想要（want 的第三人稱）",
+   "",
+   "She wants a new job.",
+   "她想要一份新工作。"
+  ],
+  "watch": [
+   "動詞",
+   "看（節目）",
+   "名詞：手錶",
+   "Let's watch a movie.",
+   "我們來看電影吧。"
+  ],
+  "way": [
+   "名詞",
+   "方式、方法",
+   "",
+   "This is a better way.",
+   "這是比較好的方法。"
+  ],
+  "west": [
+   "名詞",
+   "西方（West Virginia：西維吉尼亞）",
+   "",
+   "The sun sets in the west.",
+   "太陽在西邊下山。"
+  ],
+  "whatever": [
+   "代名詞",
+   "無論什麼",
+   "",
+   "Do whatever works.",
+   "用什麼方法有效就用。"
+  ],
+  "whenever": [
+   "連接詞",
+   "每當",
+   "",
+   "Call me whenever you're free.",
+   "你有空隨時打給我。"
+  ],
+  "whipped": [
+   "形容詞",
+   "打發的（whipped cream：鮮奶油）",
+   "",
+   "She added whipped cream.",
+   "她加了打發鮮奶油。"
+  ],
+  "who's": [
+   "縮寫",
+   "who is（是誰）",
+   "",
+   "Who's in charge here?",
+   "這裡誰負責？"
+  ],
+  "whole": [
+   "形容詞",
+   "整個的",
+   "",
+   "I waited a whole hour.",
+   "我等了整整一個小時。"
+  ],
+  "wild": [
+   "名詞・形容詞",
+   "野外（in the wild）",
+   "形容詞：野生的",
+   "We saw bears in the wild.",
+   "我們在野外看到熊。"
+  ],
+  "winter": [
+   "名詞",
+   "冬天",
+   "",
+   "Winter is cold here.",
+   "這裡冬天很冷。"
+  ],
+  "won't": [
+   "縮寫",
+   "will not（不會）",
+   "",
+   "It won't take long.",
+   "不會花很久。"
+  ],
+  "working": [
+   "動詞",
+   "工作（work 的進行式）",
+   "",
+   "I'm working on a report.",
+   "我正在寫報告。"
+  ],
+  "works": [
+   "動詞",
+   "工作、運作（work 的第三人稱）",
+   "名詞：作品",
+   "The machine works well.",
+   "這台機器運作良好。"
+  ],
+  "world": [
+   "名詞",
+   "世界",
+   "",
+   "He travels around the world.",
+   "他環遊世界。"
+  ],
+  "zero": [
+   "數字",
+   "零",
+   "",
+   "We want zero defects.",
+   "我們要零缺陷。"
   ]
+ },
+ "phrases": []
 }

@@ -1,939 +1,1460 @@
 {
-  "date": "2026-12-01",
-  "weekday": "週二",
-  "theme": "日常閒聊",
-  "title": "New Puppy Plans",
-  "titleZh": "小狗見面計畫",
-  "level": "B1",
-  "speed": "慢速",
-  "speakers": {
-    "Nina": {
-      "voice": "bf_emma",
-      "accent": "英式"
-    },
-    "Jake": {
-      "voice": "am_eric",
-      "accent": "美式"
-    }
+ "date": "2026-12-01",
+ "weekday": "週二",
+ "theme": "Doobydobap",
+ "title": "Our New Madrid Home",
+ "titleZh": "我的馬德里新家導覽",
+ "level": "真實影片",
+ "speed": "原速",
+ "scene": "Doobydobap 搬到馬德里，帶大家參觀還是空屋的新公寓，從客廳、臥室一路看到廚房，聊她打算怎麼布置。",
+ "video": {
+  "id": "VS6QQYalGfg",
+  "start": 0,
+  "end": 793,
+  "channel": "Doobydobap",
+  "title": "my new home :)"
+ },
+ "speakers": {},
+ "lines": [
+  {
+   "s": "",
+   "en": "and without further ado, let me get straight",
+   "zh": "廢話不多說，我直接"
   },
-  "lines": [
-    {
-      "s": "Nina",
-      "en": "Hi Jake, I heard you got a dog!",
-      "zh": "嗨 Jake，我聽說你養了一隻狗！",
-      "mood": "happy"
-    },
-    {
-      "s": "Jake",
-      "en": "Yes! His name is Mochi. I went to pick up Mochi last Saturday.",
-      "zh": "對！牠叫 Mochi。我上週六去把 Mochi 接回來。",
-      "mood": "happy"
-    },
-    {
-      "s": "Nina",
-      "en": "Really? Was he scared?",
-      "zh": "真的嗎？牠會怕嗎？",
-      "mood": "surprised"
-    },
-    {
-      "s": "Jake",
-      "en": "A little. He hid under my bed all night.",
-      "zh": "有一點。牠整晚躲在我的床底下。",
-      "mood": "sad"
-    },
-    {
-      "s": "Nina",
-      "en": "Poor thing! Does he like you now?",
-      "zh": "可憐的小東西！現在牠喜歡你了嗎？",
-      "mood": "sad"
-    },
-    {
-      "s": "Jake",
-      "en": "Yes. He follows me everywhere.",
-      "zh": "喜歡。牠到哪都跟著我。",
-      "mood": "happy"
-    },
-    {
-      "s": "Nina",
-      "en": "I'd love to meet him!",
-      "zh": "我好想見見牠！",
-      "mood": "happy"
-    },
-    {
-      "s": "Jake",
-      "en": "I suggest we hang out at the park on Sunday.",
-      "zh": "我建議我們星期天去公園玩。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Nina",
-      "en": "Great idea. I'll invite my sister. She loves dogs.",
-      "zh": "好主意。我會邀我姊姊。她很愛狗。",
-      "mood": "happy"
-    },
-    {
-      "s": "Jake",
-      "en": "Perfect. She and Mochi will be best friends.",
-      "zh": "太好了。她和 Mochi 會變成最好的朋友。",
-      "mood": "happy"
-    },
-    {
-      "s": "Nina",
-      "en": "I look forward to it. What time?",
-      "zh": "我很期待。幾點？",
-      "mood": "neutral"
-    },
-    {
-      "s": "Jake",
-      "en": "Ten o'clock. Mochi wakes up early.",
-      "zh": "十點。Mochi 很早就醒。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Nina",
-      "en": "Ten is fine. Should I bring anything?",
-      "zh": "十點可以。我需要帶什麼嗎？",
-      "mood": "confused"
-    },
-    {
-      "s": "Jake",
-      "en": "Just yourselves. I have everything.",
-      "zh": "人來就好。東西我都有。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Nina",
-      "en": "See you on Sunday!",
-      "zh": "星期天見！",
-      "mood": "happy"
-    }
-  ],
-  "quiz": [
-    {
-      "q": "What is the dog's name?",
-      "options": [
-        "Mocha",
-        "Mochi",
-        "Milo",
-        "Max"
-      ],
-      "answer": 1,
-      "line": 1,
-      "why": "Jake 說牠叫 Mochi。"
-    },
-    {
-      "q": "Where did the dog hide at night?",
-      "options": [
-        "Under the bed",
-        "Under the table",
-        "In the garden",
-        "In a box"
-      ],
-      "answer": 0,
-      "line": 3,
-      "why": "He hid under my bed all night."
-    },
-    {
-      "q": "When will they meet at the park?",
-      "options": [
-        "On Friday",
-        "On Saturday",
-        "On Monday",
-        "On Sunday"
-      ],
-      "answer": 3,
-      "line": 7,
-      "why": "Jake 建議星期天去公園。"
-    }
-  ],
-  "words": [
-    {
-      "w": "pick up",
-      "pos": "片語・動詞",
-      "zh": "接（人）、去拿",
-      "ex1": "Yes! His name is Mochi. I went to pick up Mochi last Saturday.",
-      "line": 1,
-      "ex2": "I need to pick up the samples from the supplier.",
-      "ex2zh": "我得去供應商那裡拿樣品。",
-      "toeic": false,
-      "hook": "pick 撿＋up 起來：把東西或人從地上「撿起來」帶走＝去接、去拿",
-      "img": "pic/word_0.png",
-      "pic": "a smiling man crouching to lift a small puppy into his arms outside a house"
-    },
-    {
-      "w": "hang out",
-      "pos": "片語・動詞",
-      "zh": "閒晃、一起玩",
-      "ex1": "I suggest we hang out at the park on Sunday.",
-      "line": 7,
-      "ex2": "The team likes to hang out after the monthly meeting.",
-      "ex2zh": "團隊喜歡在月會後聚在一起玩。",
-      "toeic": false,
-      "hook": "hang 掛＋out 外面：像衣服掛在外面晾，輕鬆待著＝閒晃、一起玩",
-      "img": "pic/word_1.png",
-      "pic": "three friends sitting on a park bench laughing together under a tree"
-    },
-    {
-      "w": "look forward to",
-      "pos": "片語・動詞",
-      "zh": "期待",
-      "ex1": "I look forward to it. What time?",
-      "line": 10,
-      "ex2": "We look forward to working with your team.",
-      "ex2zh": "我們期待與貴團隊合作。",
-      "toeic": false,
-      "hook": "look 看＋forward 向前：眼睛一直往前看未來的好事＝期待（to 後面接名詞或 V-ing）",
-      "img": "pic/word_2.png",
-      "pic": "a happy woman standing at a window looking far ahead with sparkling eyes"
-    },
-    {
-      "w": "suggest",
-      "pos": "動詞",
-      "zh": "建議、提議",
-      "ex1": "I suggest we hang out at the park on Sunday.",
-      "line": 7,
-      "ex2": "I suggest we test the boards again tomorrow.",
-      "ex2zh": "我建議明天再測試一次電路板。",
-      "toeic": true,
-      "hook": "拆字：sug（在下面）＋gest（帶來）＝把想法從下面端上桌＝提議",
-      "img": "pic/word_3.png",
-      "pic": "a man raising one hand with a light bulb above his head while friends listen"
-    },
-    {
-      "w": "invite",
-      "pos": "動詞",
-      "zh": "邀請",
-      "ex1": "Great idea. I'll invite my sister. She loves dogs.",
-      "line": 8,
-      "ex2": "We will invite the customer to visit our factory.",
-      "ex2zh": "我們會邀請客戶來參觀我們的工廠。",
-      "toeic": true,
-      "hook": "拆字：in（進來）＋vite（看起來像 vit，活力）＝請你進來一起熱鬧＝邀請",
-      "img": "pic/word_4.png",
-      "pic": "a woman opening her front door and waving a friend inside with a big smile"
-    }
-  ],
-  "part2": [
-    {
-      "q": "Where did you park your car?",
-      "opts": [
-        "Yes, I have a new one.",
-        "In the lot behind the office.",
-        "At nine o'clock."
-      ],
-      "answer": 1,
-      "why": "問 Where（哪裡），要回答地點。A 重複 car 的聯想是陷阱，C 是時間。",
-      "zh": "你把車停在哪裡？"
-    },
-    {
-      "q": "Would you like to join us for lunch?",
-      "opts": [
-        "Sure, I'd love to.",
-        "It was delicious.",
-        "At the cafeteria."
-      ],
-      "answer": 0,
-      "why": "Would you like to 是邀請，答 Sure 最自然。B 是過去式的感想，C 回答地點，都沒有回應邀請。",
-      "zh": "你想跟我們一起吃午餐嗎？"
-    },
-    {
-      "q": "How long is the training?",
-      "opts": [
-        "In the conference room.",
-        "Yes, every Monday.",
-        "About two hours."
-      ],
-      "answer": 2,
-      "why": "How long 問時間長度。A 是地點，B 用 Yes 回答 Wh 問句是錯的。",
-      "zh": "這個教育訓練要多久？"
-    },
-    {
-      "q": "Shall we start the meeting now?",
-      "opts": [
-        "The meeting was long.",
-        "Let's wait for Ms. Lee.",
-        "It's next to the elevator."
-      ],
-      "answer": 1,
-      "why": "Shall we 是提議，回答要表達同意或不同意。B 說再等一下，合理。A 重複 meeting 是陷阱。",
-      "zh": "我們現在開始開會好嗎？"
-    },
-    {
-      "q": "Who left this umbrella on my desk?",
-      "opts": [
-        "It looks like rain.",
-        "On my desk.",
-        "I think it's Jenny's."
-      ],
-      "answer": 2,
-      "why": "問 Who（誰），要回答人。A 的 rain 是 umbrella 的聯想陷阱，B 重複 desk。",
-      "zh": "誰把這把傘放在我桌上？"
-    }
-  ],
-  "scene": "Jake 養了一隻小狗，Nina 在咖啡店聽他分享，兩人約好週日去公園見面。",
-  "place": "cafe",
-  "grammar": {
-    "topic": "pronoun",
-    "topicZh": "代名詞",
-    "tip": "先看空格在句中的位置：主詞位置用 I/we/he/she；動詞或介系詞後面的受詞用 me/us/him/her；名詞前面用 my/our/his/her；沒有名詞時用 mine/yours；動作回到自己身上用 -self。",
-    "items": [
-      {
-        "q": "Please send the samples to _____ by Friday.",
-        "opts": [
-          "we",
-          "our",
-          "us",
-          "ours"
-        ],
-        "answer": 2,
-        "why": "介系詞 to 後面要受詞，we 的受詞形是 us。",
-        "zh": "請在週五前把樣品寄給我們。"
-      },
-      {
-        "q": "The manager asked Tom and _____ to join the audit.",
-        "opts": [
-          "I",
-          "me",
-          "my",
-          "mine"
-        ],
-        "answer": 1,
-        "why": "asked 的受詞是 Tom and me，受詞位置要用 me，不是 I。",
-        "zh": "經理請 Tom 和我參加稽核。"
-      },
-      {
-        "q": "Is this laptop yours or _____?",
-        "opts": [
-          "I",
-          "me",
-          "my",
-          "mine"
-        ],
-        "answer": 3,
-        "why": "yours or 後面沒有名詞，要用所有格代名詞 mine（我的）。my 後面一定要接名詞。",
-        "zh": "這台筆電是你的還是我的？"
-      },
-      {
-        "q": "_____ checked every board before shipping.",
-        "opts": [
-          "We",
-          "Us",
-          "Our",
-          "Ours"
-        ],
-        "answer": 0,
-        "why": "空格在句首當主詞，要用主格 We。",
-        "zh": "我們在出貨前檢查了每一片電路板。"
-      },
-      {
-        "q": "He fixed the printer by _____.",
-        "opts": [
-          "him",
-          "he",
-          "himself",
-          "his"
-        ],
-        "answer": 2,
-        "why": "動作是他自己做的，強調「靠自己」，用反身代名詞 himself。",
-        "zh": "他自己把印表機修好了。"
-      }
-    ]
+  {
+   "s": "",
+   "en": "to the point: I moved to",
+   "zh": "說重點：我搬到了"
   },
-  "gloss": {
-    "again": [
-      "副詞",
-      "再一次",
-      "",
-      "Please try again later.",
-      "請稍後再試一次。"
-    ],
-    "anything": [
-      "代名詞",
-      "任何東西",
-      "",
-      "Do you need anything from the store?",
-      "你需要店裡的什麼東西嗎？"
-    ],
-    "asked": [
-      "動詞",
-      "請（asked 是 ask 的過去式）",
-      "問",
-      "She asked me to send the file.",
-      "她請我寄檔案。"
-    ],
-    "audit": [
-      "名詞",
-      "稽核",
-      "",
-      "The audit starts at nine.",
-      "稽核九點開始。"
-    ],
-    "bed": [
-      "名詞",
-      "床",
-      "",
-      "The cat sleeps on my bed.",
-      "貓睡在我的床上。"
-    ],
-    "behind": [
-      "介系詞",
-      "在……後面",
-      "",
-      "The parking lot is behind the building.",
-      "停車場在大樓後面。"
-    ],
-    "board": [
-      "名詞",
-      "電路板",
-      "木板；董事會",
-      "Each board passes a final test.",
-      "每片電路板都會過最終測試。"
-    ],
-    "boards": [
-      "名詞",
-      "電路板（複數）",
-      "",
-      "We tested ten boards today.",
-      "我們今天測了十片電路板。"
-    ],
-    "box": [
-      "名詞",
-      "箱子、盒子",
-      "",
-      "Put the parts in the box.",
-      "把零件放進箱子裡。"
-    ],
-    "bring": [
-      "動詞",
-      "帶來、帶去",
-      "",
-      "Please bring your ID card.",
-      "請帶你的識別證。"
-    ],
-    "cafeteria": [
-      "名詞",
-      "員工餐廳",
-      "",
-      "We eat lunch in the cafeteria.",
-      "我們在員工餐廳吃午餐。"
-    ],
-    "car": [
-      "名詞",
-      "車子",
-      "",
-      "My car is in the garage.",
-      "我的車在車庫裡。"
-    ],
-    "checked": [
-      "動詞",
-      "檢查了（check 的過去式）",
-      "",
-      "He checked the report twice.",
-      "他把報告檢查了兩次。"
-    ],
-    "conference": [
-      "名詞",
-      "會議（conference room＝大會議室）",
-      "",
-      "The conference starts on Monday.",
-      "會議星期一開始。"
-    ],
-    "delicious": [
-      "形容詞",
-      "好吃的",
-      "",
-      "The soup was delicious.",
-      "那碗湯很好吃。"
-    ],
-    "desk": [
-      "名詞",
-      "書桌、辦公桌",
-      "",
-      "Leave the form on my desk.",
-      "把表格放在我桌上。"
-    ],
-    "dog": [
-      "名詞",
-      "狗",
-      "",
-      "The dog runs in the park every day.",
-      "那隻狗每天在公園跑。"
-    ],
-    "dog's": [
-      "名詞",
-      "狗的（所有格）",
-      "",
-      "The dog's tail is very long.",
-      "這隻狗的尾巴很長。"
-    ],
-    "dogs": [
-      "名詞",
-      "狗（複數）",
-      "",
-      "Many dogs play in the park.",
-      "很多狗在公園玩。"
-    ],
-    "elevator": [
-      "名詞",
-      "電梯",
-      "",
-      "Take the elevator to the fifth floor.",
-      "搭電梯到五樓。"
-    ],
-    "everywhere": [
-      "副詞",
-      "到處、每個地方",
-      "",
-      "I looked everywhere for my keys.",
-      "我到處找我的鑰匙。"
-    ],
-    "fine": [
-      "形容詞",
-      "可以的、很好的",
-      "罰款（名詞）",
-      "Friday is fine for me.",
-      "星期五我可以。"
-    ],
-    "fixed": [
-      "動詞",
-      "修好了（fix 的過去式）",
-      "",
-      "They fixed the machine this morning.",
-      "他們今天早上把機器修好了。"
-    ],
-    "follows": [
-      "動詞",
-      "跟著（follow 的第三人稱）",
-      "",
-      "The dog follows him to work.",
-      "那隻狗跟著他去上班。"
-    ],
-    "forward": [
-      "副詞",
-      "向前",
-      "",
-      "Please move forward.",
-      "請往前走。"
-    ],
-    "friends": [
-      "名詞",
-      "朋友（複數）",
-      "",
-      "We became good friends.",
-      "我們成了好朋友。"
-    ],
-    "garden": [
-      "名詞",
-      "花園",
-      "",
-      "They have a small garden.",
-      "他們有一個小花園。"
-    ],
-    "got": [
-      "動詞",
-      "得到（get 的過去式）",
-      "",
-      "I got your message.",
-      "我收到你的訊息了。"
-    ],
-    "hang": [
-      "動詞",
-      "（hang out）閒晃",
-      "掛",
-      "Let's hang out this weekend.",
-      "這個週末一起玩吧。"
-    ],
-    "heard": [
-      "動詞",
-      "聽說、聽到（hear 的過去式）",
-      "",
-      "I heard the meeting is canceled.",
-      "我聽說會議取消了。"
-    ],
-    "hid": [
-      "動詞",
-      "躲了（hide 的過去式）",
-      "",
-      "The child hid behind the door.",
-      "小孩躲在門後面。"
-    ],
-    "hide": [
-      "動詞",
-      "躲藏",
-      "",
-      "Where did the cat hide?",
-      "那隻貓躲去哪了？"
-    ],
-    "himself": [
-      "代名詞",
-      "他自己",
-      "",
-      "He built the table himself.",
-      "他自己做了這張桌子。"
-    ],
-    "invite": [
-      "動詞",
-      "邀請",
-      "",
-      "We invite you to our event.",
-      "我們邀請你參加活動。"
-    ],
-    "jake": [
-      "人名",
-      "傑克（男生名字）",
-      "",
-      "Jake works in sales.",
-      "Jake 在業務部工作。"
-    ],
-    "jenny's": [
-      "人名",
-      "Jenny 的（所有格）",
-      "",
-      "This is Jenny's phone.",
-      "這是 Jenny 的手機。"
-    ],
-    "join": [
-      "動詞",
-      "加入、參加",
-      "",
-      "Please join us for the meeting.",
-      "請來參加我們的會議。"
-    ],
-    "laptop": [
-      "名詞",
-      "筆記型電腦",
-      "",
-      "I left my laptop at the office.",
-      "我把筆電忘在辦公室。"
-    ],
-    "lee": [
-      "人名",
-      "李（姓氏）",
-      "",
-      "Ms. Lee is our manager.",
-      "李小姐是我們的經理。"
-    ],
-    "left": [
-      "動詞",
-      "留下（leave 的過去式）",
-      "離開",
-      "She left her bag here.",
-      "她把包包留在這裡。"
-    ],
-    "likes": [
-      "動詞",
-      "喜歡（like 的第三人稱）",
-      "",
-      "He likes strong coffee.",
-      "他喜歡濃咖啡。"
-    ],
-    "looks": [
-      "動詞",
-      "看起來（look 的第三人稱）",
-      "",
-      "The plan looks good.",
-      "這個計畫看起來不錯。"
-    ],
-    "lot": [
-      "名詞",
-      "停車場",
-      "很多（a lot）",
-      "The lot is full today.",
-      "今天停車場客滿了。"
-    ],
-    "love": [
-      "動詞",
-      "很想、很愛（I'd love to＝我很樂意）",
-      "",
-      "I'd love to join you.",
-      "我很樂意加入你們。"
-    ],
-    "loves": [
-      "動詞",
-      "很愛（love 的第三人稱）",
-      "",
-      "She loves her new job.",
-      "她很愛她的新工作。"
-    ],
-    "max": [
-      "人名",
-      "麥克斯（男生名字）",
-      "",
-      "Max is a popular dog name.",
-      "Max 是很常見的狗名。"
-    ],
-    "meet": [
-      "動詞",
-      "見面、認識",
-      "",
-      "Nice to meet you.",
-      "很高興認識你。"
-    ],
-    "milo": [
-      "人名",
-      "米羅（寵物名字）",
-      "",
-      "Milo is a very quiet cat.",
-      "Milo 是一隻很安靜的貓。"
-    ],
-    "mine": [
-      "代名詞",
-      "我的（東西）",
-      "",
-      "That seat is mine.",
-      "那個座位是我的。"
-    ],
-    "mocha": [
-      "名詞",
-      "摩卡（咖啡）",
-      "",
-      "I'd like a hot mocha, please.",
-      "我要一杯熱摩卡。"
-    ],
-    "mochi": [
-      "人名",
-      "Mochi（小狗的名字）",
-      "",
-      "Mochi likes to play outside.",
-      "Mochi 喜歡在外面玩。"
-    ],
-    "monthly": [
-      "形容詞",
-      "每月的",
-      "",
-      "We have a monthly report.",
-      "我們有每月報告。"
-    ],
-    "name": [
-      "名詞",
-      "名字",
-      "",
-      "What is your name?",
-      "你叫什麼名字？"
-    ],
-    "ours": [
-      "代名詞",
-      "我們的（東西）",
-      "",
-      "The blue car is ours.",
-      "那台藍色車是我們的。"
-    ],
-    "park": [
-      "名詞",
-      "公園",
-      "停車（動詞）",
-      "We walk in the park after dinner.",
-      "我們晚飯後在公園散步。"
-    ],
-    "pick": [
-      "動詞",
-      "（pick up）接、去拿",
-      "挑選",
-      "I'll pick up the package at noon.",
-      "我中午去拿包裹。"
-    ],
-    "poor": [
-      "形容詞",
-      "可憐的",
-      "貧窮的",
-      "Poor boy, he lost his phone.",
-      "可憐的孩子，他手機丟了。"
-    ],
-    "printer": [
-      "名詞",
-      "印表機",
-      "",
-      "The printer is out of paper.",
-      "印表機沒紙了。"
-    ],
-    "rain": [
-      "名詞",
-      "雨",
-      "",
-      "We may have rain tomorrow.",
-      "明天可能下雨。"
-    ],
-    "samples": [
-      "名詞",
-      "樣品（複數）",
-      "",
-      "The samples arrived yesterday.",
-      "樣品昨天到了。"
-    ],
-    "saturday": [
-      "名詞",
-      "星期六",
-      "",
-      "We close early on Saturday.",
-      "我們星期六提早關門。"
-    ],
-    "scared": [
-      "形容詞",
-      "害怕的",
-      "",
-      "The puppy was scared of thunder.",
-      "小狗怕打雷。"
-    ],
-    "shall": [
-      "助動詞",
-      "（Shall we…?）我們……好嗎？",
-      "",
-      "Shall we take a short break?",
-      "我們休息一下好嗎？"
-    ],
-    "shipping": [
-      "名詞",
-      "出貨、運送",
-      "",
-      "Shipping takes three days.",
-      "運送要三天。"
-    ],
-    "sister": [
-      "名詞",
-      "姊姊、妹妹",
-      "",
-      "My sister works in Taipei.",
-      "我姊姊在台北工作。"
-    ],
-    "start": [
-      "動詞",
-      "開始",
-      "",
-      "The class will start soon.",
-      "課程快開始了。"
-    ],
-    "suggest": [
-      "動詞",
-      "建議、提議",
-      "",
-      "I suggest we leave early.",
-      "我建議我們早點走。"
-    ],
-    "sunday": [
-      "名詞",
-      "星期天",
-      "",
-      "The store opens at ten on Sunday.",
-      "商店星期天十點開門。"
-    ],
-    "table": [
-      "名詞",
-      "桌子",
-      "",
-      "The menu is on the table.",
-      "菜單在桌上。"
-    ],
-    "test": [
-      "動詞・名詞",
-      "測試",
-      "",
-      "We test every product.",
-      "我們測試每一項產品。"
-    ],
-    "thing": [
-      "名詞",
-      "東西、小傢伙（Poor thing＝可憐的小東西）",
-      "",
-      "This thing is very useful.",
-      "這東西很好用。"
-    ],
-    "tom": [
-      "人名",
-      "湯姆（男生名字）",
-      "",
-      "Tom is in the next room.",
-      "Tom 在隔壁房間。"
-    ],
-    "umbrella": [
-      "名詞",
-      "雨傘",
-      "",
-      "Take an umbrella with you.",
-      "帶把傘去吧。"
-    ],
-    "us": [
-      "代名詞",
-      "我們（受詞）",
-      "",
-      "Please call us tomorrow.",
-      "請明天打電話給我們。"
-    ],
-    "visit": [
-      "動詞",
-      "參觀、拜訪",
-      "",
-      "They will visit our office.",
-      "他們會來參觀我們的辦公室。"
-    ],
-    "wakes": [
-      "動詞",
-      "醒來（wake 的第三人稱；wake up）",
-      "",
-      "He wakes up at six.",
-      "他六點醒來。"
-    ],
-    "working": [
-      "動詞",
-      "工作（work 的 -ing 形）",
-      "",
-      "She is working on the report.",
-      "她正在寫報告。"
-    ],
-    "yours": [
-      "代名詞",
-      "你的（東西）",
-      "",
-      "Is this pen yours?",
-      "這支筆是你的嗎？"
-    ],
-    "yourselves": [
-      "代名詞",
-      "你們自己",
-      "",
-      "Please help yourselves to coffee.",
-      "請自己取用咖啡。"
-    ]
+  {
+   "s": "",
+   "en": "Madrid I left the last video in a",
+   "zh": "馬德里。上一支影片我停在一個"
   },
-  "phrases": [
-    {
-      "p": "pick up",
-      "forms": [
-        "pick up"
-      ],
-      "pos": "片語・動詞",
-      "zh": "接（人）、去拿",
-      "ex": "I'll pick up the visitors at the station.",
-      "exzh": "我會去車站接訪客。"
-    },
-    {
-      "p": "hang out",
-      "forms": [
-        "hang out"
-      ],
-      "pos": "片語・動詞",
-      "zh": "閒晃、一起玩",
-      "ex": "We often hang out on weekends.",
-      "exzh": "我們週末常常一起玩。"
-    },
-    {
-      "p": "look forward to",
-      "forms": [
-        "look forward to"
-      ],
-      "pos": "片語・動詞",
-      "zh": "期待",
-      "ex": "I look forward to your reply.",
-      "exzh": "我期待你的回覆。"
-    },
-    {
-      "p": "poor thing",
-      "forms": [
-        "poor thing"
-      ],
-      "pos": "片語",
-      "zh": "可憐的小東西",
-      "ex": "Poor thing, he missed the last train.",
-      "exzh": "可憐的傢伙，他錯過了末班車。"
-    }
+  {
+   "s": "",
+   "en": "cliffhanger so this time I'll give you a proper",
+   "zh": "懸念，所以這次我要好好帶大家"
+  },
+  {
+   "s": "",
+   "en": "empty house tour I think everyone's wondering",
+   "zh": "參觀空屋。我想大家都在好奇"
+  },
+  {
+   "s": "",
+   "en": "why Madrid well I have some qualifications to a city that I was looking for",
+   "zh": "為什麼是馬德里？嗯，我對想住的城市有幾個條件，"
+  },
+  {
+   "s": "",
+   "en": "number one safety coming from Korea",
+   "zh": "第一是安全。從韓國來的我，"
+  },
+  {
+   "s": "",
+   "en": "safety is something that I didn't really think about safety",
+   "zh": "從來沒認真想過安全這件事，"
+  },
+  {
+   "s": "",
+   "en": "It's Like Oxygen you don't see it but when it's not there",
+   "zh": "它就像氧氣，你看不到它，但它不在的時候，"
+  },
+  {
+   "s": "",
+   "en": "it's suffocating number two good food",
+   "zh": "就會讓你喘不過氣。第二是好吃的食物，"
+  },
+  {
+   "s": "",
+   "en": "number three walkability and good transportation",
+   "zh": "第三是適合走路、交通方便，"
+  },
+  {
+   "s": "",
+   "en": "and Madrid was all of that and much more",
+   "zh": "而馬德里這些全都有，還有更多。"
+  },
+  {
+   "s": "",
+   "en": "Kevin and I have been looking to live in a new place for a while",
+   "zh": "Kevin 和我想搬到新地方已經想了一陣子，"
+  },
+  {
+   "s": "",
+   "en": "and last year we traveled to Madrid for the first time we fell in love with the food first and the ingredients",
+   "zh": "去年我們第一次去馬德里，先愛上了那裡的食物和食材，"
+  },
+  {
+   "s": "",
+   "en": "and the produce that's coming from this region and then we went back to Denmark and looked at a ton of places to live",
+   "zh": "還有這個地區產的蔬果。後來我們回到丹麥，看了一大堆房子，"
+  },
+  {
+   "s": "",
+   "en": "and found our Dream apartment we put a bid on the place and we got the freaking",
+   "zh": "找到了我們的夢想公寓。我們出價，結果真的"
+  },
+  {
+   "s": "",
+   "en": "bid everything was moving really fast and it was a little scary",
+   "zh": "得標了！一切進展得非常快，有點嚇人，"
+  },
+  {
+   "s": "",
+   "en": "but we knew that we would regret it if we didn't take this opportunity",
+   "zh": "但我們知道，如果不把握這個機會，一定會後悔。"
+  },
+  {
+   "s": "",
+   "en": "went back to Korea filled out all the paperwork",
+   "zh": "我們回到韓國，填完所有文件，"
+  },
+  {
+   "s": "",
+   "en": "it took 6 months to complete it and then we came back in November to sign the papers",
+   "zh": "花了 6 個月才辦完，然後 11 月回來簽約，"
+  },
+  {
+   "s": "",
+   "en": "and got the keys to this place",
+   "zh": "拿到這裡的鑰匙。"
+  },
+  {
+   "s": "",
+   "en": "I can't wait to show you",
+   "zh": "我等不及要帶你們"
+  },
+  {
+   "s": "",
+   "en": "around the apartment is 80 s m indoors",
+   "zh": "參觀了，這間公寓室內 80 平方公尺，"
+  },
+  {
+   "s": "",
+   "en": "and 20 5 square m outdoors",
+   "zh": "室外 25 平方公尺。"
+  },
+  {
+   "s": "",
+   "en": "I love my balcony and Garden area",
+   "zh": "我很愛我的陽台和花園區，"
+  },
+  {
+   "s": "",
+   "en": "in my apartment and soul rest in peace so having a balcony was something that we were looking for",
+   "zh": "在我（首爾）的公寓，願它安息，所以有陽台是我們一直想要的。"
+  },
+  {
+   "s": "",
+   "en": "and look at this isn't it",
+   "zh": "你看，是不是"
+  },
+  {
+   "s": "",
+   "en": "beautiful although right now it's used mostly",
+   "zh": "很美？不過現在它大部分被當成"
+  },
+  {
+   "s": "",
+   "en": "as our refrigerator because we don't have a fridge right now and thankfully the weather is kind of",
+   "zh": "我們的冰箱，因為我們還沒有冰箱，幸好天氣有點"
+  },
+  {
+   "s": "",
+   "en": "cold oh and for this our previous owner",
+   "zh": "冷。喔還有這個，前任屋主"
+  },
+  {
+   "s": "",
+   "en": "left a little bit of rash",
+   "zh": "留下了一點垃圾。"
+  },
+  {
+   "s": "",
+   "en": "so this is our living room area",
+   "zh": "這裡是我們的客廳。"
+  },
+  {
+   "s": "",
+   "en": "what I really like about this place is that all the radiators",
+   "zh": "我真的很喜歡這裡的一點，是所有的暖氣"
+  },
+  {
+   "s": "",
+   "en": "and the AC are hidden in this this",
+   "zh": "和冷氣都藏在這個、這個、"
+  },
+  {
+   "s": "",
+   "en": "this and this I would love to have a big bookshelf",
+   "zh": "這個和這個裡面。我很想要一個大書櫃，"
+  },
+  {
+   "s": "",
+   "en": "with lots of cookbooks having a large library and the living room area is something that we're very sure about",
+   "zh": "放滿食譜書，客廳要有一個大藏書區，這點我們非常確定。"
+  },
+  {
+   "s": "",
+   "en": "and then here I'm thinking like a long",
+   "zh": "然後這裡，我在想放一張長的"
+  },
+  {
+   "s": "",
+   "en": "wooden table with like a Voss in the center and I'll go out to the flower market and get some",
+   "zh": "木頭桌子，中間放個花瓶，我會去花市買一些"
+  },
+  {
+   "s": "",
+   "en": "fresh flowers and be a wifey",
+   "zh": "新鮮的花，當個賢妻。"
+  },
+  {
+   "s": "",
+   "en": "this $30 desk SL chair area",
+   "zh": "這個 30 塊美金的書桌加椅子區，"
+  },
+  {
+   "s": "",
+   "en": "has been our office for the past few days and it has produced the North Korean video",
+   "zh": "這幾天一直是我們的辦公室，還做出了北韓那支影片"
+  },
+  {
+   "s": "",
+   "en": "amongst other videos so it is an important workstation for us I think I'm going to keep it pretty open",
+   "zh": "和其他影片，所以它是我們很重要的工作站。我想讓這裡保持開闊，"
+  },
+  {
+   "s": "",
+   "en": "here I like sitting on the floor because duh I'm freaking",
+   "zh": "我喜歡坐在地上，因為廢話，我就是個"
+  },
+  {
+   "s": "",
+   "en": "Asian so I want to put a carpet and maybe meditate in the mornings",
+   "zh": "亞洲人，所以我想鋪地毯，也許早上在這裡冥想，"
+  },
+  {
+   "s": "",
+   "en": "have my little green tea or have a coffee station",
+   "zh": "喝我的綠茶，或弄個咖啡角。"
+  },
+  {
+   "s": "",
+   "en": "Kevin making faces and when you walk in you're in this",
+   "zh": "Kevin 在扮鬼臉。一走進來，你會看到這個"
+  },
+  {
+   "s": "",
+   "en": "Solarium Atrium Greenhouse anyways we have the glass wall facing towards the inner atrium",
+   "zh": "日光室、中庭、溫室，總之我們有一面玻璃牆，面向"
+  },
+  {
+   "s": "",
+   "en": "of the apartment complex this is a very standard",
+   "zh": "公寓社區的中庭。這在西班牙住家是很常見的"
+  },
+  {
+   "s": "",
+   "en": "structure for a lot of Spanish homes what I do really really love is",
+   "zh": "格局。我真的、真的很愛的是"
+  },
+  {
+   "s": "",
+   "en": "this ding ding ding ding ding ding ding ding",
+   "zh": "這個，叮叮叮叮叮叮叮叮，"
+  },
+  {
+   "s": "",
+   "en": "it's a laundry line and I",
+   "zh": "是一條晾衣繩，我"
+  },
+  {
+   "s": "",
+   "en": "love the feeling of laundry being dried out in the sun because it makes it",
+   "zh": "很愛衣服在太陽下曬乾的感覺，因為它會讓衣服"
+  },
+  {
+   "s": "",
+   "en": "hard drying your clothes in the sun is just infinitely better",
+   "zh": "變得硬挺。在太陽下曬衣服就是比"
+  },
+  {
+   "s": "",
+   "en": "than putting it in the dryer",
+   "zh": "用烘衣機好太多了，"
+  },
+  {
+   "s": "",
+   "en": "like it has a certain crispness to it that",
+   "zh": "它有一種說不出來的"
+  },
+  {
+   "s": "",
+   "en": "I cannot explain like your clothes just become really like",
+   "zh": "清脆感，就像你的衣服會變得很"
+  },
+  {
+   "s": "",
+   "en": "and so when you cold it it's like",
+   "zh": "然後你一折，就像是"
+  },
+  {
+   "s": "",
+   "en": "hard and that we can achieve",
+   "zh": "硬硬的，這種感覺我們可以"
+  },
+  {
+   "s": "",
+   "en": "with the laundry line I don't know why it's small things like this that makes me happy and on this side",
+   "zh": "靠晾衣繩做到。我也不知道為什麼，就是這種小事讓我很開心。這一邊"
+  },
+  {
+   "s": "",
+   "en": "is our bedroom come on in right now we've been living in it it's a little bit messy but I want to show",
+   "zh": "是我們的臥室，進來吧。我們現在住在這裡，有點亂，但我想給你們看"
+  },
+  {
+   "s": "",
+   "en": "you the real Raw Deal instead of the super polished",
+   "zh": "真實的樣子，而不是超級精修過的樣子。"
+  },
+  {
+   "s": "",
+   "en": "limes everywhere Adie Vlog come on",
+   "zh": "到處都是萊姆，日常 Vlog，來吧。"
+  },
+  {
+   "s": "",
+   "en": "so as you can see from all the grease marks on the mirror Kevin is not very happy about it",
+   "zh": "所以，從鏡子上所有的油漬你可以看出來，Kevin 不太開心。"
+  },
+  {
+   "s": "",
+   "en": "right now so we have a double vanity",
+   "zh": "我們現在有雙洗手台，"
+  },
+  {
+   "s": "",
+   "en": "and there is plenty and plenty of storage space it is not organized at all I did bring a couple of the Muji",
+   "zh": "而且有非常非常多的收納空間，完全還沒整理。我帶了幾個無印良品的"
+  },
+  {
+   "s": "",
+   "en": "containers but I do need to buy more",
+   "zh": "收納盒，但還需要買更多。"
+  },
+  {
+   "s": "",
+   "en": "by the way Tik Tok influenced me to buy these sleep",
+   "zh": "對了，TikTok 害我買了這種睡眠"
+  },
+  {
+   "s": "",
+   "en": "strips I look absolutely crazy and gives Kevin a heart attack every night when I put these",
+   "zh": "貼條，我看起來超瘋，每天晚上我貼上去，Kevin 都會被嚇到心臟病發。"
+  },
+  {
+   "s": "",
+   "en": "on you can never stop me from",
+   "zh": "你們永遠阻止不了我"
+  },
+  {
+   "s": "",
+   "en": "mapping so this is is the bathroom",
+   "zh": "貼嘴巴。這裡是浴室，"
+  },
+  {
+   "s": "",
+   "en": "right here clouded by all our towels",
+   "zh": "就在這裡，被我們所有的毛巾擋住的，"
+  },
+  {
+   "s": "",
+   "en": "is a ladder for mice I'm sure everyone in Europe knows what this is but it's a towel dryer",
+   "zh": "是給老鼠用的梯子。我想歐洲人都知道這是什麼，其實它是毛巾烘乾架。"
+  },
+  {
+   "s": "",
+   "en": "so basically there's gas going in through the there's gas or hot water hot water",
+   "zh": "基本上就是有瓦斯經過，是瓦斯還是熱水，熱水，"
+  },
+  {
+   "s": "",
+   "en": "okay is not really hot I don't know",
+   "zh": "好吧，其實不太熱，我也不確定。"
+  },
+  {
+   "s": "",
+   "en": "so basically there's hot water running through these pipes and you hang your wet towels on here and it becomes",
+   "zh": "總之就是有熱水在這些管子裡流，你把濕毛巾掛在上面，它就會"
+  },
+  {
+   "s": "",
+   "en": "comes really nice and dry this is our",
+   "zh": "變得很舒服、很乾。這是我們的"
+  },
+  {
+   "s": "",
+   "en": "toilet and here is the shower",
+   "zh": "馬桶，這裡是淋浴間。"
+  },
+  {
+   "s": "",
+   "en": "you'll see in a minute why our priorities are not straight",
+   "zh": "你等一下就會知道，為什麼我們的優先順序有點歪，"
+  },
+  {
+   "s": "",
+   "en": "with buying things for the apartment",
+   "zh": "買公寓用品的時候，"
+  },
+  {
+   "s": "",
+   "en": "but this was one of the first purchases we did",
+   "zh": "但這是我們最早買的東西之一，"
+  },
+  {
+   "s": "",
+   "en": "and it's a dispenser for shampoo",
+   "zh": "是一個給洗髮精、"
+  },
+  {
+   "s": "",
+   "en": "conditioner and body wash that we got from",
+   "zh": "潤髮乳和沐浴乳用的按壓器，是在"
+  },
+  {
+   "s": "",
+   "en": "Amazon this gives me hella Joy",
+   "zh": "亞馬遜買的。這個讓我超級開心，"
+  },
+  {
+   "s": "",
+   "en": "you can also do sexy mode",
+   "zh": "你還可以開「性感模式」，"
+  },
+  {
+   "s": "",
+   "en": "if you know what I mean",
+   "zh": "如果你懂我的意思。"
+  },
+  {
+   "s": "",
+   "en": "I ain't no Matilda okay our bed situation I'm a little ashamed to show this we've been sleeping on a mattress",
+   "zh": "我可不是瑪蒂達。好，我們的床的狀況，我有點不好意思給你們看，我們一直睡在床墊"
+  },
+  {
+   "s": "",
+   "en": "topper with the original packaging aka the Ikea plastic packaging that it came in it's taking a little bit of time for everything to come",
+   "zh": "薄墊上，還包著原本的包裝，也就是 IKEA 的塑膠包裝。所有東西都要一點時間才會送到，"
+  },
+  {
+   "s": "",
+   "en": "so we've been living like we are living in a",
+   "zh": "所以我們現在活得像住在"
+  },
+  {
+   "s": "",
+   "en": "Kracken this is Kevin's side very black",
+   "zh": "海怪巢穴裡。這是 Kevin 那邊，很黑，"
+  },
+  {
+   "s": "",
+   "en": "my side and then this is",
+   "zh": "這是我這邊，然後這是"
+  },
+  {
+   "s": "",
+   "en": "our most contentious area we both want this side",
+   "zh": "我們最有爭議的地方，我們都想要這一邊，"
+  },
+  {
+   "s": "",
+   "en": "So currently we're sharing half and half but I think I should have it because I'm a woman",
+   "zh": "所以我們現在一人一半，但我覺得應該歸我，因為我是女生。"
+  },
+  {
+   "s": "",
+   "en": "and then this side is kind of like a shoe cabinet situation",
+   "zh": "然後這一邊算是放鞋的櫃子，"
+  },
+  {
+   "s": "",
+   "en": "shoes but maybe we'll use it for something else",
+   "zh": "放鞋子，不過也許我們會拿來放別的東西，"
+  },
+  {
+   "s": "",
+   "en": "I don't know more storage more storage",
+   "zh": "我也不知道，更多收納、更多收納、"
+  },
+  {
+   "s": "",
+   "en": "more storage and more St storage",
+   "zh": "更多收納、還有更多收納。"
+  },
+  {
+   "s": "",
+   "en": "actually the AC and the radiators are also hidden behind the closet space which is why there's holes in all of these",
+   "zh": "其實冷氣和暖氣也藏在衣櫃後面，所以這些上面都有洞。"
+  },
+  {
+   "s": "",
+   "en": "very nice and now to my first ever",
+   "zh": "很好，現在來看我人生第一間"
+  },
+  {
+   "s": "",
+   "en": "walk-in closet it's a small walk-in closet but still a walk-in closet",
+   "zh": "更衣室。它是個小更衣室，但還是更衣室，"
+  },
+  {
+   "s": "",
+   "en": "nonetheless am my first one I'm very happy for this I think I want to make a color coded and really do",
+   "zh": "畢竟是我的第一間，我很開心。我想照顏色排好，也真的去拍"
+  },
+  {
+   "s": "",
+   "en": "those really nice like cleaning Tik Tok videos I'm going to be in my Marie condo",
+   "zh": "那種很療癒的整理 TikTok 影片，我要進入我的近藤麻理惠"
+  },
+  {
+   "s": "",
+   "en": "Arc so follow me out to",
+   "zh": "階段了。好，跟我出去，來到"
+  },
+  {
+   "s": "",
+   "en": "room number two it's going to be our office slash",
+   "zh": "第二個房間，這會是我們的辦公室兼"
+  },
+  {
+   "s": "",
+   "en": "guest bedroom bathroom on this side and then here we have a single unit vanity",
+   "zh": "客房。浴室在這一邊，這裡有一個單人洗手台。"
+  },
+  {
+   "s": "",
+   "en": "all the bathrooms are inside the room so when we have guests over we're not sharing a bathroom and it feels",
+   "zh": "所有浴室都在房間裡面，所以有客人來的時候，我們不用共用浴室，感覺"
+  },
+  {
+   "s": "",
+   "en": "almost like a hotel in a sense and this is our office space SL guest bedroom more storage",
+   "zh": "有點像飯店。這是我們的辦公室兼客房，更多收納"
+  },
+  {
+   "s": "",
+   "en": "going on in the backside same thing pretty small",
+   "zh": "在後面，一樣，滿小的，"
+  },
+  {
+   "s": "",
+   "en": "but it's cute isn't it and then to our most awaited",
+   "zh": "但很可愛吧？接下來是我們最期待的"
+  },
+  {
+   "s": "",
+   "en": "space the kitchen and this is the kitchen that made me fall in love with this place",
+   "zh": "空間：廚房。就是這間廚房讓我愛上這個地方。"
+  },
+  {
+   "s": "",
+   "en": "there are definitely a couple things that we are going to change about this",
+   "zh": "我們一定會改幾個地方，"
+  },
+  {
+   "s": "",
+   "en": "kitchen just because it's not the most ideal setup",
+   "zh": "這間廚房，因為它不是最理想的配置，"
+  },
+  {
+   "s": "",
+   "en": "with the sink being in the middle when we're doing cooking videos and we don't have a separate studio",
+   "zh": "水槽在中間，而我們要拍料理影片，又沒有獨立的攝影棚，"
+  },
+  {
+   "s": "",
+   "en": "so we need this setup to be functional",
+   "zh": "所以這個配置必須好用，"
+  },
+  {
+   "s": "",
+   "en": "as somewhere we film a lot of the meal prep video or the banan",
+   "zh": "因為我們會在這裡拍很多備餐影片，或是 Banchan 系列。"
+  },
+  {
+   "s": "",
+   "en": "so a couple things will be tweaked we're thinking of extending this island it all the way to that side",
+   "zh": "所以會微調幾個地方，我們在想把中島一路延伸到那一邊，"
+  },
+  {
+   "s": "",
+   "en": "just so that we have a little more counter space",
+   "zh": "這樣就能多一點檯面空間，"
+  },
+  {
+   "s": "",
+   "en": "moving the sink to the back",
+   "zh": "把水槽移到後面，"
+  },
+  {
+   "s": "",
+   "en": "making small adjustments right now there's also no",
+   "zh": "做些小調整。現在也還沒有"
+  },
+  {
+   "s": "",
+   "en": "appliances so this cabinet is where the fridge/freezer",
+   "zh": "家電，所以這個櫃子是冰箱兼冷凍庫"
+  },
+  {
+   "s": "",
+   "en": "will be we're looking for a 2 m one right now like a built-in fridge so that it can go all the way to the top",
+   "zh": "要放的地方。我們在找一台 2 公尺高的，像嵌入式冰箱，這樣就能一路頂到上面。"
+  },
+  {
+   "s": "",
+   "en": "additional storage pull out drawers this is with all our junk at the moment because we don't have any shelving",
+   "zh": "還有額外的收納抽屜，現在裡面都是我們的雜物，因為我們沒有任何置物"
+  },
+  {
+   "s": "",
+   "en": "units of any sort storage above",
+   "zh": "架。上面是收納，"
+  },
+  {
+   "s": "",
+   "en": "but I don't know about you",
+   "zh": "但我不知道你們覺得怎樣，"
+  },
+  {
+   "s": "",
+   "en": "but having these cabinets right here instead of it being all the way to the top kind of makes this",
+   "zh": "這些櫃子在這裡，而不是一路頂到天花板，有點讓這間"
+  },
+  {
+   "s": "",
+   "en": "kitchen feel a lot smaller than it actually is one of the biggest perks about this apartment is that it has really high ceilings",
+   "zh": "廚房感覺比實際小很多。這間公寓最大的優點之一，就是天花板很高，"
+  },
+  {
+   "s": "",
+   "en": "and I want to preserve that feeling so we'll probably be moving those",
+   "zh": "我想保留那種感覺，所以我們大概會把那些移到"
+  },
+  {
+   "s": "",
+   "en": "above and have some additional shelving units here and then",
+   "zh": "上面，在這裡加一些置物架，然後"
+  },
+  {
+   "s": "",
+   "en": "above is the hood kind of hidden inside",
+   "zh": "上面是抽油煙機，算是藏在裡面。"
+  },
+  {
+   "s": "",
+   "en": "I don't know why um they did that but I'll probably take this off and just have some exposed shelving",
+   "zh": "我不知道他們為什麼那樣做，但我大概會拆掉，改成開放式的置物"
+  },
+  {
+   "s": "",
+   "en": "units because I like that and then this is just some stuff that we have stored",
+   "zh": "架，因為我喜歡那樣。然後這裡是一些我們現在收著的東西，"
+  },
+  {
+   "s": "",
+   "en": "right now we're we have one pot where we're",
+   "zh": "我們現在只有一個鍋子，所以我們"
+  },
+  {
+   "s": "",
+   "en": "eating hardboiled eggs every single day and then",
+   "zh": "每天都在吃水煮蛋。然後"
+  },
+  {
+   "s": "",
+   "en": "over here is additional shelving unit with Kevin's Zara",
+   "zh": "這邊是另一個置物架，上面是 Kevin 的 Zara"
+  },
+  {
+   "s": "",
+   "en": "packaging anyway so we'll probably put like flowers",
+   "zh": "包裝。總之，我們大概會放一些花，"
+  },
+  {
+   "s": "",
+   "en": "and ferment and all the interesting projects that going on",
+   "zh": "還有發酵食物，各種正在進行的有趣計畫，"
+  },
+  {
+   "s": "",
+   "en": "in here nothing much that will change here really",
+   "zh": "放在這裡。這裡其實沒什麼要改的，"
+  },
+  {
+   "s": "",
+   "en": "um and then underneath is space for a washer SL drawer",
+   "zh": "嗯，下面是放洗衣機兼烘衣機的位置，"
+  },
+  {
+   "s": "",
+   "en": "but it's been very hastily pulled out so a little bit of repairing to do",
+   "zh": "但它被很匆忙地拆掉了，所以要修一下。"
+  },
+  {
+   "s": "",
+   "en": "I'm really excited to decorate this place into my home because because",
+   "zh": "我真的很期待把這裡裝飾成我的家，因為"
+  },
+  {
+   "s": "",
+   "en": "it's my first home ever I'm a homeowner now with Kevin",
+   "zh": "這是我人生第一個家，我現在跟 Kevin 一起當屋主了，"
+  },
+  {
+   "s": "",
+   "en": "and I can't wait to make this place feel like ours and add our touches to it and I hope you",
+   "zh": "我等不及要讓這裡變成我們的樣子，加上我們的風格，希望你們"
+  },
+  {
+   "s": "",
+   "en": "follow along and give me some tips honestly I'm so new to this I'll be learning a lot throughout the",
+   "zh": "一起追蹤，給我一些建議。老實說我對這個很陌生，一路上"
+  },
+  {
+   "s": "",
+   "en": "way that's it I hope you enjoyed this uh home tour",
+   "zh": "會學到很多。就這樣，希望你們喜歡這支居家導覽"
+  },
+  {
+   "s": "",
+   "en": "video bye do",
+   "zh": "影片，掰掰。"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "What was the first thing she wanted in a new city?",
+   "options": [
+    "Cheap rent",
+    "Safety",
+    "A big airport",
+    "Cold weather"
+   ],
+   "answer": 1,
+   "line": 6,
+   "why": "她列的第一個條件是安全，並說安全像氧氣，不在的時候才會發現。"
+  },
+  {
+   "q": "Why does she love the laundry line?",
+   "options": [
+    "It saves money on soap",
+    "It looks modern",
+    "It is easy to clean",
+    "Clothes dried in the sun feel crisp"
+   ],
+   "answer": 3,
+   "line": 54,
+   "why": "她說用太陽曬乾衣服比烘乾機好，衣服會有一種挺挺的清爽感。"
+  },
+  {
+   "q": "What does she want to change in the kitchen?",
+   "options": [
+    "Extend the island and move the sink",
+    "Paint the walls white",
+    "Make the ceiling lower",
+    "Add a second bedroom"
+   ],
+   "answer": 0,
+   "line": 114,
+   "why": "她想把中島延伸、把水槽移到後面，增加檯面空間。"
+  },
+  {
+   "q": "Why did they decide to buy the apartment even though it was scary?",
+   "options": [
+    "The price was very low.",
+    "Their friends lived nearby.",
+    "They knew they would regret it if they didn't.",
+    "Kevin's job was in Madrid."
+   ],
+   "answer": 2,
+   "line": 17,
+   "why": "她說一切進展很快有點嚇人，但知道不把握這個機會一定會後悔。"
+  },
+  {
+   "q": "What does she love most about the apartment's ceilings?",
+   "options": [
+    "They are painted blue.",
+    "They are really high, and she wants to keep that feeling.",
+    "They hide the TV.",
+    "They are made of glass."
+   ],
+   "answer": 1,
+   "line": 124,
+   "why": "她說這間公寓最大的優點之一是天花板很高，想保留那種寬敞的感覺。"
+  }
+ ],
+ "words": [
+  {
+   "w": "regret",
+   "pos": "動詞",
+   "zh": "後悔",
+   "ex1": "…we knew that we would regret it if we didn't take this opportunity",
+   "line": 17,
+   "ex2": "We regret the delay in your shipment.",
+   "ex2zh": "對於貨物延遲，我們深感抱歉。",
+   "toeic": true,
+   "hook": "re 再＋gret 哭泣（像 greet 諧音「葛瑞」）：事後一再哭＝後悔",
+   "pic": "a man sitting alone looking sadly at a missed train leaving",
+   "img": "pic/word_0.png"
+  },
+  {
+   "w": "storage",
+   "pos": "名詞",
+   "zh": "儲存、收納空間",
+   "ex1": "…there is plenty and plenty of storage space…",
+   "line": 64,
+   "ex2": "Please keep the parts in cold storage.",
+   "ex2zh": "請把零件放在冷藏儲存區。",
+   "toeic": true,
+   "hook": "store 儲藏＋age 狀態：儲藏的狀態＝收納",
+   "pic": "a woman putting boxes onto a tall shelf",
+   "img": "pic/word_1.png"
+  },
+  {
+   "w": "ideal",
+   "pos": "形容詞",
+   "zh": "理想的",
+   "ex1": "…because it's not the most ideal setup",
+   "line": 110,
+   "ex2": "This is an ideal time to run the audit.",
+   "ex2zh": "這是進行稽核的理想時機。",
+   "toeic": true,
+   "hook": "諧音「愛的兒」：愛的兒子＝心中最理想的樣子",
+   "pic": "a smiling person looking at a perfect sunny house in a thought bubble",
+   "img": "pic/word_2.png"
+  },
+  {
+   "w": "appliances",
+   "pos": "名詞",
+   "zh": "家電、電器",
+   "ex1": "appliances so this cabinet is where the fridge/freezer",
+   "line": 118,
+   "ex2": "We repair kitchen appliances in this factory.",
+   "ex2zh": "我們在這間工廠維修廚房電器。",
+   "toeic": true,
+   "hook": "apply 應用＋ance：拿來應用在家事的東西＝家電",
+   "pic": "a family standing proudly next to a fridge, a washer, and an oven",
+   "img": "pic/word_3.png"
+  },
+  {
+   "w": "preserve",
+   "pos": "動詞",
+   "zh": "保存、保留",
+   "ex1": "and I want to preserve that feeling",
+   "line": 125,
+   "ex2": "We must preserve the samples for testing.",
+   "ex2zh": "我們必須保存樣品以供測試。",
+   "toeic": false,
+   "hook": "pre 事先＋serve 服務、保管：事先收好留著＝保存",
+   "pic": "a person placing fruit into a glass jar carefully",
+   "img": "pic/word_4.png"
+  }
+ ],
+ "gloss": {
+  "add": [
+   "動詞",
+   "增加、加上",
+   "",
+   "Please add your name.",
+   "請加上你的名字。"
+  ],
+  "airport": [
+   "名詞",
+   "機場",
+   "",
+   "The airport is far from here.",
+   "機場離這裡很遠。"
+  ],
+  "also": [
+   "副詞",
+   "也、還有",
+   "",
+   "We also need a report.",
+   "我們也需要一份報告。"
+  ],
+  "appliances": [
+   "名詞",
+   "家電（複數）",
+   "",
+   "The store sells home appliances.",
+   "這家店賣家電。"
+  ],
+  "audit": [
+   "名詞",
+   "稽核",
+   "",
+   "The audit starts on Monday.",
+   "稽核星期一開始。"
+  ],
+  "bedroom": [
+   "名詞",
+   "臥室",
+   "",
+   "The bedroom is on the second floor.",
+   "臥室在二樓。"
+  ],
+  "ceiling": [
+   "名詞",
+   "天花板",
+   "",
+   "The ceiling is very high.",
+   "天花板很高。"
+  ],
+  "change": [
+   "動詞",
+   "改變",
+   "名詞：零錢",
+   "We will change the design.",
+   "我們會修改設計。"
+  ],
+  "cheap": [
+   "形容詞",
+   "便宜的",
+   "",
+   "This part is cheap.",
+   "這個零件很便宜。"
+  ],
+  "clean": [
+   "動詞",
+   "打掃",
+   "形容詞：乾淨的",
+   "Please clean the table.",
+   "請擦桌子。"
+  ],
+  "clothes": [
+   "名詞",
+   "衣服",
+   "",
+   "I washed my clothes.",
+   "我洗了衣服。"
+  ],
+  "cold": [
+   "形容詞",
+   "冷的",
+   "",
+   "The room is cold.",
+   "房間很冷。"
+  ],
+  "crisp": [
+   "形容詞",
+   "挺的、清脆的",
+   "",
+   "The shirt feels crisp.",
+   "這件襯衫摸起來很挺。"
+  ],
+  "delay": [
+   "名詞",
+   "延遲",
+   "",
+   "We apologize for the delay.",
+   "我們為延遲致歉。"
+  ],
+  "didn't": [
+   "縮寫",
+   "did not（沒有）",
+   "",
+   "I didn't see the email.",
+   "我沒看到那封郵件。"
+  ],
+  "dried": [
+   "動詞",
+   "曬乾、晾乾（dry 的過去分詞）",
+   "",
+   "The towels are dried.",
+   "毛巾已經乾了。"
+  ],
+  "extend": [
+   "動詞",
+   "延伸、延長",
+   "",
+   "Can we extend the deadline?",
+   "我們可以延長期限嗎？"
+  ],
+  "feel": [
+   "動詞",
+   "感覺",
+   "",
+   "I feel happy today.",
+   "我今天覺得開心。"
+  ],
+  "feeling": [
+   "名詞",
+   "感覺",
+   "",
+   "I know the feeling.",
+   "我懂那種感覺。"
+  ],
+  "ideal": [
+   "形容詞",
+   "理想的",
+   "",
+   "This is an ideal location.",
+   "這是理想的地點。"
+  ],
+  "island": [
+   "名詞",
+   "中島（廚房中間的檯面）",
+   "島嶼",
+   "The kitchen has a big island.",
+   "這間廚房有個大中島。"
+  ],
+  "keep": [
+   "動詞",
+   "保持、保留",
+   "",
+   "Keep the receipt.",
+   "請留著收據。"
+  ],
+  "kitchen": [
+   "名詞",
+   "廚房",
+   "",
+   "The kitchen is clean.",
+   "廚房很乾淨。"
+  ],
+  "knew": [
+   "動詞",
+   "知道（know 的過去式）",
+   "",
+   "I knew the answer.",
+   "我知道答案。"
+  ],
+  "laundry": [
+   "名詞",
+   "待洗衣物、洗衣",
+   "",
+   "I do laundry on Sunday.",
+   "我星期天洗衣服。"
+  ],
+  "line": [
+   "名詞",
+   "繩子、線",
+   "",
+   "Hang it on the line.",
+   "把它掛在繩子上。"
+  ],
+  "looks": [
+   "動詞",
+   "看起來（look 的第三人稱）",
+   "",
+   "It looks great.",
+   "看起來很棒。"
+  ],
+  "love": [
+   "動詞",
+   "愛、很喜歡",
+   "",
+   "I love this design.",
+   "我很喜歡這個設計。"
+  ],
+  "lower": [
+   "動詞",
+   "降低",
+   "形容詞：較低的",
+   "We will lower the price.",
+   "我們會降價。"
+  ],
+  "make": [
+   "動詞",
+   "做、使",
+   "",
+   "Make sure it works.",
+   "確認它能用。"
+  ],
+  "modern": [
+   "形容詞",
+   "現代的",
+   "",
+   "The office is modern.",
+   "辦公室很現代。"
+  ],
+  "most": [
+   "副詞",
+   "最",
+   "",
+   "This is the most important step.",
+   "這是最重要的一步。"
+  ],
+  "opportunity": [
+   "名詞",
+   "機會",
+   "",
+   "It is a great opportunity.",
+   "這是個很好的機會。"
+  ],
+  "paint": [
+   "動詞",
+   "油漆、畫",
+   "名詞：油漆",
+   "We will paint the wall.",
+   "我們要粉刷牆壁。"
+  ],
+  "parts": [
+   "名詞",
+   "零件（複數）",
+   "",
+   "We ordered new parts.",
+   "我們訂了新零件。"
+  ],
+  "plenty": [
+   "名詞",
+   "很多（plenty of）",
+   "",
+   "We have plenty of time.",
+   "我們有很多時間。"
+  ],
+  "preserve": [
+   "動詞",
+   "保存、保留",
+   "",
+   "We preserve the old records.",
+   "我們保存舊紀錄。"
+  ],
+  "regret": [
+   "動詞",
+   "後悔",
+   "名詞：遺憾",
+   "I regret my choice.",
+   "我後悔我的選擇。"
+  ],
+  "rent": [
+   "名詞",
+   "房租",
+   "",
+   "The rent is due Friday.",
+   "房租星期五到期。"
+  ],
+  "repair": [
+   "動詞",
+   "修理",
+   "名詞：維修",
+   "We need to repair the door.",
+   "我們得修門。"
+  ],
+  "run": [
+   "動詞",
+   "執行、跑",
+   "",
+   "Let's run the test.",
+   "我們來跑測試。"
+  ],
+  "safety": [
+   "名詞",
+   "安全",
+   "",
+   "Safety comes first.",
+   "安全第一。"
+  ],
+  "samples": [
+   "名詞",
+   "樣品（複數）",
+   "",
+   "We tested three samples.",
+   "我們測試了三個樣品。"
+  ],
+  "saves": [
+   "動詞",
+   "節省、拯救（save 的第三人稱）",
+   "",
+   "This tool saves time.",
+   "這個工具省時間。"
+  ],
+  "second": [
+   "形容詞",
+   "第二的",
+   "",
+   "The second floor is quiet.",
+   "二樓很安靜。"
+  ],
+  "setup": [
+   "名詞",
+   "配置、設置",
+   "",
+   "The setup takes an hour.",
+   "設置要花一小時。"
+  ],
+  "sink": [
+   "名詞",
+   "水槽",
+   "",
+   "The sink is full of dishes.",
+   "水槽裡都是碗盤。"
+  ],
+  "soap": [
+   "名詞",
+   "肥皂、皂液",
+   "",
+   "Use soap to wash your hands.",
+   "用肥皂洗手。"
+  ],
+  "space": [
+   "名詞",
+   "空間",
+   "",
+   "We need more space.",
+   "我們需要更多空間。"
+  ],
+  "storage": [
+   "名詞",
+   "收納、儲存",
+   "",
+   "The storage room is full.",
+   "儲藏室滿了。"
+  ],
+  "sun": [
+   "名詞",
+   "太陽",
+   "",
+   "The sun is bright today.",
+   "今天太陽很大。"
+  ],
+  "take": [
+   "動詞",
+   "拿、花（時間）",
+   "",
+   "It takes ten minutes.",
+   "這要花十分鐘。"
+  ],
+  "testing": [
+   "名詞",
+   "測試",
+   "",
+   "Testing starts tomorrow.",
+   "測試明天開始。"
+  ],
+  "there's": [
+   "縮寫",
+   "there is（有）",
+   "",
+   "There's a problem.",
+   "有個問題。"
+  ],
+  "thing": [
+   "名詞",
+   "東西、事情",
+   "",
+   "One thing is missing.",
+   "少了一樣東西。"
+  ],
+  "walls": [
+   "名詞",
+   "牆壁（複數）",
+   "",
+   "The walls are white.",
+   "牆壁是白色的。"
+  ],
+  "wanted": [
+   "動詞",
+   "想要（want 的過去式）",
+   "",
+   "She wanted a bigger desk.",
+   "她想要一張更大的桌子。"
+  ],
+  "white": [
+   "形容詞",
+   "白色的",
+   "",
+   "I like the white box.",
+   "我喜歡白色的盒子。"
+  ],
+  "cabinet": [
+   "名詞",
+   "櫃子",
+   "",
+   "The files are in the cabinet.",
+   "檔案在櫃子裡。"
+  ],
+  "freezer": [
+   "名詞",
+   "冷凍庫",
+   "",
+   "Keep the samples in the freezer.",
+   "把樣品放在冷凍庫。"
+  ],
+  "fridge": [
+   "名詞",
+   "冰箱",
+   "",
+   "The milk is in the fridge.",
+   "牛奶在冰箱裡。"
+  ],
+  "so": [
+   "連接詞",
+   "所以",
+   "",
+   "It was late, so we left.",
+   "時間晚了，所以我們走了。"
+  ],
+  "apartment": [
+   "名詞",
+   "公寓",
+   "",
+   "They rent a small apartment.",
+   "他們租了一間小公寓。"
+  ],
+  "apartment's": [
+   "縮寫",
+   "公寓的",
+   "",
+   "The apartment's kitchen is big.",
+   "這間公寓的廚房很大。"
+  ],
+  "blue": [
+   "形容詞",
+   "藍色的",
+   "",
+   "She has a blue car.",
+   "她有一台藍色的車。"
+  ],
+  "ceilings": [
+   "名詞",
+   "天花板（複數）",
+   "",
+   "The rooms have high ceilings.",
+   "這些房間天花板很高。"
+  ],
+  "decide": [
+   "動詞",
+   "決定",
+   "",
+   "Did you decide where to go?",
+   "你決定去哪裡了嗎？"
+  ],
+  "even": [
+   "副詞",
+   "即使（even though）",
+   "甚至",
+   "I went out even though it was raining.",
+   "雖然在下雨，我還是出門了。"
+  ],
+  "friends": [
+   "名詞",
+   "朋友（複數）",
+   "",
+   "I met my friends for lunch.",
+   "我跟朋友吃午餐。"
+  ],
+  "glass": [
+   "名詞",
+   "玻璃",
+   "杯子",
+   "The table is made of glass.",
+   "這張桌子是玻璃做的。"
+  ],
+  "hide": [
+   "動詞",
+   "藏、遮住",
+   "",
+   "Where did you hide the key?",
+   "你把鑰匙藏在哪？"
+  ],
+  "high": [
+   "形容詞",
+   "高的",
+   "",
+   "The shelf is too high for me.",
+   "這個架子對我來說太高了。"
+  ],
+  "job": [
+   "名詞",
+   "工作",
+   "",
+   "He found a new job.",
+   "他找到新工作了。"
+  ],
+  "kevin's": [
+   "人名",
+   "Kevin 的",
+   "",
+   "Kevin's desk is next to mine.",
+   "Kevin 的桌子在我旁邊。"
+  ],
+  "lived": [
+   "動詞",
+   "住（live 的過去式）",
+   "",
+   "We lived in Taipei for ten years.",
+   "我們在台北住了十年。"
+  ],
+  "low": [
+   "形容詞",
+   "低的",
+   "",
+   "The price is very low.",
+   "價格很低。"
+  ],
+  "made": [
+   "動詞",
+   "做成（be made of 由……做成）",
+   "做（make 的過去式）",
+   "This bag is made of leather.",
+   "這個包是皮做的。"
+  ],
+  "madrid": [
+   "地名",
+   "馬德里（西班牙首都）",
+   "",
+   "Madrid is the capital of Spain.",
+   "馬德里是西班牙的首都。"
+  ],
+  "painted": [
+   "動詞",
+   "漆上、塗（paint 的過去分詞）",
+   "畫",
+   "The wall is painted white.",
+   "牆漆成白色。"
+  ],
+  "scary": [
+   "形容詞",
+   "可怕的、嚇人的",
+   "",
+   "The movie was too scary.",
+   "這部電影太恐怖了。"
+  ],
+  "their": [
+   "代名詞",
+   "他們的",
+   "",
+   "Their house is near the park.",
+   "他們家在公園附近。"
+  ],
+  "though": [
+   "連接詞",
+   "雖然（even though）",
+   "副詞：不過",
+   "Though it was late, she kept working.",
+   "雖然很晚了，她還是繼續工作。"
+  ],
+  "tv": [
+   "名詞",
+   "電視",
+   "",
+   "We watched TV after dinner.",
+   "我們晚餐後看電視。"
+  ],
+  "wants": [
+   "動詞",
+   "想要（want 的第三人稱）",
+   "",
+   "She wants a cup of coffee.",
+   "她想要一杯咖啡。"
   ]
+ },
+ "phrases": []
 }

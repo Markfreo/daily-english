@@ -53,16 +53,6 @@ nav.steps button.cur{border-color:var(--accent);color:var(--accent)}
 nav.steps button.ok{background:var(--good-bg);border-color:transparent;color:var(--good)}
 nav.steps button.skip{border-style:dashed;color:var(--muted);background:transparent}
 /* 今日進度卡：做到第幾步、還剩多久、一鍵繼續 */
-.prog-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:12px 14px;display:flex;flex-direction:column;gap:10px}
-.prog-card .trow{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
-.prog-card .trow b{font-weight:700;font-variant-numeric:tabular-nums}
-.prog-card .trow span{font-size:14px;color:var(--muted)}
-.tbar{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.tbar i{height:8px;border-radius:4px;background:var(--line)}
-.tbar i.ok{background:var(--good)}
-.tbar i.skip{background:repeating-linear-gradient(90deg,var(--muted) 0 4px,transparent 4px 7px);opacity:.5}
-.tbar i.cur{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--accent)}
-.prog-card .btn{width:100%;justify-content:center}
 .skip-link{align-self:center;color:var(--muted)}
 /* 完成頁的小慶祝 */
 .done-hero{position:relative;overflow:hidden}
@@ -120,7 +110,11 @@ button:focus-visible,textarea:focus-visible,input:focus-visible{outline:3px soli
 .word{scroll-margin-top:12px}
 .rated{font:600 14px var(--font-body);color:var(--muted);margin-left:8px;font-variant-numeric:tabular-nums;vertical-align:middle}
 .rated.all{color:var(--good)}
-/* 逐字聽：句子卡片、下面的句子、最下面的播放器 */
+/* 聽力：句子卡片、下面的句子、最下面的播放器；.nosub＝眼睛鍵把字幕藏起來 */
+.lplayer .ctrl.six{grid-template-columns:1fr 1fr 1fr auto 1fr 1fr}
+.lyr .subcover{display:none}
+.lyr.nosub .subcover{display:block}
+.lyr.nosub .lcard,.lyr.nosub .lnext{display:none}
 .lcard{background:var(--surface);border:1.5px solid var(--accent);border-radius:var(--r);padding:12px 16px 6px;display:flex;flex-direction:column;gap:4px;min-height:132px}
 .lcard .who{font-size:13px;color:var(--muted)}
 .lcard .en{font:600 20px/1.45 var(--font-body);color:color-mix(in srgb,var(--ink) 38%,transparent)}
@@ -146,6 +140,7 @@ section.step.lyr{gap:10px}
 .ibtn small{font-size:13px;font-weight:500;color:var(--muted)}
 .ibtn .icon{width:24px;height:24px}
 .ibtn[aria-pressed="false"] b{color:var(--muted);text-decoration:line-through}
+.ibtn[aria-pressed="false"] .icon{color:var(--muted)}
 .round{width:60px;height:60px;border-radius:50%;border:0;background:var(--accent);color:var(--accent-ink);display:grid;place-items:center;cursor:pointer}
 .round .icon{width:28px;height:28px}
 /* 回來接續的小視窗 */
@@ -162,6 +157,8 @@ dialog.welcome .link{display:block;margin:6px auto 0;text-align:center;color:var
 .word{display:flex;flex-direction:column;gap:8px}
 .word .top{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
 .word .w{font:700 24px var(--font-display)}
+.wsay{align-self:center;border:1.5px solid var(--line);background:var(--surface);border-radius:999px;width:44px;height:44px;display:grid;place-items:center;color:var(--accent);cursor:pointer;flex:0 0 auto}
+.wsay .icon{width:22px;height:22px}
 .word .pos{font-size:14px;color:var(--muted)}
 .tag{font-size:13px;font-weight:600;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--accent) 14%,transparent);color:var(--accent)}
 .word .zhm{font-weight:600}
@@ -293,12 +290,6 @@ textarea{width:100%;min-height:120px;border:1.5px solid var(--line);border-radiu
     <h1 id="h-title"></h1>
     <div class="settings" id="settings" hidden>
       <div class="srow"><span>本週練習<small>點一下可以打開那一天補做</small></span><div class="week" id="week" aria-label="本週練習"></div></div>
-      <div class="srow"><span>顯示中文翻譯</span><label class="toggle" for="zh-toggle"><input type="checkbox" id="zh-toggle" aria-label="顯示中文翻譯"></label></div>
-    </div>
-    <div class="prog-card" id="prog-card">
-      <div class="trow"><b id="t-count"></b><span id="t-left"></span></div>
-      <div class="tbar" id="tbar" aria-hidden="true"></div>
-      <button class="btn primary" id="t-go" hidden></button>
     </div>
     <nav class="steps" id="steps" aria-label="今日步驟"></nav>
   </header>
@@ -329,6 +320,8 @@ const ICON = {
   speaker: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 9v6h4l5 4V5L8 9z" fill="currentColor"/><path d="M16 9a4 4 0 0 1 0 6M18.5 6.5a8 8 0 0 1 0 11"/></svg>',
   prev: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg>',
   next: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>',
+  eye: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
+  eyeoff: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-2.2 3.1M6.6 6.6C3.9 8.4 2 12 2 12s3.5 7 10 7a9.7 9.7 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/><path d="M3 3l18 18"/></svg>',
   again: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/></svg>'
 };
 const icon = (name) => { const s = document.createElement("span"); s.innerHTML = ICON[name]; return s.firstChild; };
@@ -696,11 +689,10 @@ document.addEventListener("click", (e) => {
 // min：每一步大約要幾分鐘（給「還剩約 X 分鐘」用）
 const STEPS = [
   { id: "words", name: "單字預習", min: 4 },
-  { id: "blind", name: "盲聽", min: 2 },
-  { id: "quiz", name: "理解題", min: 2 },
-  { id: "lyrics", name: "逐字聽", min: 3 }
+  { id: "lyrics", name: "聽力", min: 4 },
+  { id: "quiz", name: "理解題", min: 2 }
 ];
-const MIN_DONE = 4;   // 一天至少真的做完幾步，才算打卡（2026-11-26 Frank：4 步全做完才算）
+const MIN_DONE = 3;   // 一天至少真的做完幾步，才算打卡（2026-11-27 Frank：盲聽拿掉，3 步全做完才算）
 let prog = {}, cur = 0, MODE = "lesson";
 const progOf = (d) => store.get("prog:" + d, {});
 // prog[id]：true＝做完；"skip"＝略過
@@ -739,10 +731,9 @@ const lessonFor = (d) => { let e = null; for (const x of INDEX) if (x.date <= d)
 
 const gearBtn = $("#gear");
 gearBtn.addEventListener("click", () => { const open = $("#settings").hidden; $("#settings").hidden = !open; gearBtn.setAttribute("aria-expanded", String(open)); });
-const zhToggle = $("#zh-toggle");
-zhToggle.checked = store.get("zh", false);
+// 中文翻譯：只在聽力播放器的「中」鍵開關（設定裡的開關 2026-11-27 拿掉），預設不顯示、記住上次的選擇
+const zhToggle = { checked: store.get("zh", false) };
 const applyZh = () => document.body.classList.toggle("hidezh", !zhToggle.checked);
-zhToggle.addEventListener("change", () => { store.set("zh", zhToggle.checked); applyZh(); });
 applyZh();
 
 let VIEW_DAY = TODAY;
@@ -777,23 +768,8 @@ function renderNav() {
   renderProgress();
 }
 // 今日進度卡
-function renderProgress() {
-  const card = $("#prog-card");
-  card.hidden = MODE !== "lesson";
-  if (card.hidden) return;
-  const ok = STEPS.filter(s => isOk(s.id)).length;
-  const left = STEPS.filter(s => !isHandled(s.id));
-  const mins = left.reduce((a, s) => a + s.min, 0);
-  $("#t-count").textContent = `今日進度 ${ok}/${STEPS.length}`;
-  $("#t-left").textContent = left.length ? `還剩 ${left.length} 步・約 ${mins} 分鐘` : (ok >= MIN_DONE ? "今天完成了" : `至少做完 ${MIN_DONE} 步才算打卡`);
-  const bar = $("#tbar"); bar.innerHTML = "";
-  STEPS.forEach((s, i) => bar.append(h("i", { class: [isOk(s.id) ? "ok" : prog[s.id] === "skip" ? "skip" : "", i === cur ? "cur" : ""].join(" ").trim() })));
-  // 「繼續」按鈕：目前畫面不是下一個該做的步驟時才出現（例如回頭看做過的步驟、或在完成頁）
-  const t = firstTodo(), btn = $("#t-go");
-  btn.hidden = !(t < STEPS.length && t !== cur && (cur >= STEPS.length || isHandled(STEPS[cur].id)));
-  btn.textContent = t < STEPS.length ? `繼續：${STEPS[t].name}` : "";
-  btn.onclick = () => go(t);
-}
+// 「今日進度」卡已拿掉（2026-11-27 Frank）：進度看上面的步驟按鈕就好
+function renderProgress() {}
 function setBar(...btns) { const bar = $("#actionbar"); bar.innerHTML = ""; btns.forEach(b => bar.append(b)); }
 // 每一步底部的按鈕：ready()＝這步做完了沒；need()＝還差什麼（顯示在按鈕上）
 let refreshBar = null;
@@ -869,13 +845,16 @@ function wordPic(w, day) {
   return null;
 }
 const hookLine = (w) => w.hook ? h("div", { class: "hook" }, h("b", {}, "記憶法　"), w.hook) : null;
+// 單字旁邊的喇叭：先唸單字、再唸職場例句（2026-11-27 Frank：拿掉「發音＋例句」字樣，喇叭放在單字旁邊）
+const sayBtn = (w, play) => h("button", { class: "wsay", "aria-label": `播放 ${w} 的發音和例句`, onclick: play }, icon("speaker"));
 function reviewCard(e) {
   return h("div", { class: "card word" },
-    h("div", { class: "top" }, h("span", { class: "w" }, e.w), h("span", { class: "pos" }, e.pos), e.toeic ? h("span", { class: "tag" }, "多益") : null),
+    h("div", { class: "top" }, h("span", { class: "w" }, e.w),
+      sayBtn(e.w, () => e.audio ? playClip(e.audio) : e.audioSeq ? playSeq(e.audioSeq, [e.w, e.ex2]) : speak(e.w + ". " + e.ex2)),
+      h("span", { class: "pos" }, e.pos), e.toeic ? h("span", { class: "tag" }, "多益") : null),
     h("details", {}, h("summary", { class: "link" }, "想一下意思，再點這裡看答案"),
       h("div", { class: "wtop" }, wordPic(e, e.from), h("div", { class: "wtext" }, h("div", { class: "zhm" }, e.zh), hookLine(e))),
       h("div", { class: "ex lk" }, e.ex2), h("div", { class: "exzh" }, e.ex2zh)),
-    h("div", { class: "row" }, h("button", { class: "btn", onclick: () => e.audio ? playClip(e.audio) : e.audioSeq ? playSeq(e.audioSeq, [e.w, e.ex2]) : speak(e.w + ". " + e.ex2) }, icon("speaker"), "發音＋例句")),
     memoButtons(null, (v) => rateWord(e.w, v)));
 }
 
@@ -891,14 +870,12 @@ VIEWS.words = () => {
   L.words.forEach((w, i) => {
     sec.append(cards[i] = h("div", { class: "card word" },
       h("div", { class: "wtop" }, wordPic(w, DAY), h("div", { class: "wtext" },
-        h("div", { class: "top" }, h("span", { class: "w" }, w.w), h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
+        h("div", { class: "top" }, h("span", { class: "w" }, w.w), sayBtn(w.w, () => playClip("word_" + i)),
+          h("span", { class: "pos" }, w.pos), w.toeic ? h("span", { class: "tag" }, "多益") : null),
         h("div", { class: "zhm" }, w.zh))),
       hookLine(w),
-      h("div", { class: "ex lk" }, (isVideo() ? "影片原句：" : "對話原句：") + w.ex1),
-      h("button", { class: "link", onclick: () => playLine(w.line) }, isVideo() ? "▶ 聽影片裡的這一句" : "▶ 聽對話裡的這一句"),
       h("div", { class: "ex lk" }, "職場例句：" + w.ex2),
       h("div", { class: "exzh" }, w.ex2zh),
-      h("div", { class: "row" }, h("button", { class: "btn", onclick: () => playClip("word_" + i) }, icon("speaker"), "發音＋例句")),
       memoButtons(memo[i], (v) => {
         const first = memo[i] == null;
         memo[i] = v; store.set("memo:" + DAY, memo); rateWord(w.w, v); paintRated(); refreshBar && refreshBar();
@@ -915,17 +892,6 @@ VIEWS.words = () => {
   }
   stepBar(() => leftCount(L.words, memo) === 0, () => `還有 ${leftCount(L.words, memo)} 個字沒評`);
   return sec;
-};
-
-VIEWS.blind = () => {
-  heardUntilEnd("blind");
-  bottomPlayer(() => store.get("heard:blind:" + DAY, false), () => "整段聽完就能下一步", { zh: false });
-  setTimeout(() => { document.body.style.paddingBottom = (document.querySelector(".actionbar").offsetHeight + 16) + "px"; }, 0);
-  return h("section", { class: "step" },
-    h("h2", {}, "先不看字幕，專心聽"),
-    L.scene ? h("p", { class: "lead" }, L.scene.split(/[，。：]/)[0]) : null,   // 只留情境的第一句
-    stageView(),
-    h("div", { class: "cover" }, "字幕先藏起來了。答完題目後，下一步就會看到。"));
 };
 
 VIEWS.quiz = () => {
@@ -991,8 +957,8 @@ function lyricsList({ onPick }) {
   return { box, mark };
 }
 
-// 最下面的播放器（逐字聽、盲聽共用）：進度條＋速度、上一句、播放、下一句（、中文翻譯）；ready／need 同 stepBar
-function bottomPlayer(ready, need, { zh = true } = {}) {
+// 最下面的播放器（聽力頁）：進度條＋速度、字幕開關（眼睛）、上一句、播放、下一句、中文翻譯；ready／need 同 stepBar
+function bottomPlayer(ready, need, { zh = true, eye = null } = {}) {
   const playFrom = (i) => { segEnd = null; segDone = null; stopAll(); dialogue.playbackRate = speed; dialogue.currentTime = T[i].start; dialogue.play().catch(() => {}); };
   const total = () => dialogue.duration || T[T.length - 1].end + 0.5;
   const seek = h("input", { type: "range", class: "seek", min: 0, max: Math.ceil(total() * 10), step: 1, value: 0, "aria-label": "拖曳調整播放位置" });
@@ -1031,14 +997,14 @@ function bottomPlayer(ready, need, { zh = true } = {}) {
     return h("div", { class: "lplayer" },
       h("div", { class: "slimrow" }, skip, main),
       h("div", {}, seek, times),
-      h("div", { class: "ctrl" }, spd, prev, play, next, zh ? zhb : null));
+      h("div", { class: "ctrl" + (eye ? " six" : "") }, spd, eye, prev, play, next, zh ? zhb : null));
   });
   document.querySelector(".actionbar").classList.add("tall");
 }
 
-// 逐字聽：卡通固定在上面；正在播的句子是一張卡片（可以點單字查意思）；下面是接下來的句子；播放器在最下面
+// 聽力（原「逐字聽」，2026-11-27 併入盲聽：眼睛鍵可以把字幕藏起來）：影片固定在上面；正在播的句子是一張卡片（可以點單字查意思）；下面是接下來的句子；播放器在最下面
 VIEWS.lyrics = () => {
-  dialogue.currentTime = 0;   // 一律從頭播，不接盲聽停下的地方
+  dialogue.currentTime = 0;   // 一律從頭播
   // 每個字估一個開始時間：照字母數分配整句的長度，標點後面多算一點停頓
   const words = L.lines.map((ln, i) => {
     const parts = ln.en.split(" ");
@@ -1091,12 +1057,33 @@ VIEWS.lyrics = () => {
   });
   heardUntilEnd("lyrics");
 
-  bottomPlayer(() => store.get("heard:lyrics:" + DAY, false), () => "跟著字幕聽完一遍就能下一步");
+  // 字幕開關（眼睛）：每次打開預設顯示字幕（Frank 2026-11-27）
+  const subcover = h("div", { class: "cover subcover" }, "字幕藏起來了，先專心聽。想看字幕就按下面的眼睛。");
+  let subOn = true;
+  const eye = h("button", { class: "ibtn", "aria-pressed": "true", "aria-label": "字幕開關", onclick: () => {
+    subOn = !subOn; sec.classList.toggle("nosub", !subOn); eye.setAttribute("aria-pressed", String(subOn));
+    eye.firstChild.replaceWith(icon(subOn ? "eye" : "eyeoff"));
+    if (subOn) { needScroll = true; setTimeout(() => fitNow && fitNow(), 0); }
+  } }, icon("eye"), h("small", {}, "字幕"));
+  // 完成條件：看到最後，或實際看滿 15 分鐘（長影片不用整部看完，2026-11-27 Frank）
+  const WATCH_OK = 15 * 60, wkey = "watch:" + DAY;
+  let watched = store.get(wkey, 0), lastTick = performance.now(), lastSave = 0, lastMin = Math.floor(watched / 60);
+  listeners.add(() => {
+    const now = performance.now(), dt = Math.min((now - lastTick) / 1000, 1); lastTick = now;
+    if (dialogue.paused) return;
+    watched += dt;
+    if (now - lastSave > 5000) { lastSave = now; store.set(wkey, Math.round(watched)); }
+    const m = Math.floor(watched / 60);
+    if (m !== lastMin) { lastMin = m; store.set(wkey, Math.round(watched)); refreshBar && refreshBar(); }
+  });
+  const longVideo = (dialogue.duration || 0) > WATCH_OK + 30;
+  bottomPlayer(() => store.get("heard:lyrics:" + DAY, false) || watched >= WATCH_OK,
+    () => longVideo ? `看完或看滿 15 分鐘就能下一步（已看 ${Math.floor(watched / 60)} 分）` : "整部看完就能下一步", { eye });
 
   showLine(0);
   const sec = h("section", { class: "step lyr" },
-    h("h2", {}, "看字幕再聽一次"),
-    stageView({ small: true }), card, list);
+    h("h2", {}, "看影片練聽力"),
+    stageView({ small: true }), subcover, card, list);
   // 卡通＋句子卡＋下面的句子塞滿一個畫面：畫面捲到卡通上方，句子列表高度剛好到播放器上面
   fitNow = () => {
     const stage = sec.querySelector(".stage, .vstage") || sec;
@@ -1254,7 +1241,7 @@ function viewGrammar() {
 async function openTest() {
   stopAll(); listeners.clear();
   MODE = "test";
-  $("#steps").hidden = true; $("#prog-card").hidden = true;
+  $("#steps").hidden = true;
   renderHeader("Grammar Check", "文法程度測驗：每個主題 1 題，找出弱項", ["測驗", ""]);
   const main = $("#main"); main.innerHTML = ""; main.append(h("p", { class: "lead" }, "載入中…"));
   let G;
@@ -1352,7 +1339,7 @@ function viewDone() {
   const firstSkipped = STEPS.findIndex(s => prog[s.id] === "skip");
   if (t < STEPS.length) setBar(h("button", { class: "btn primary", onclick: () => go(t) }, `繼續：${STEPS[t].name}`));
   else if (firstSkipped >= 0) setBar(h("button", { class: "btn primary", onclick: () => go(firstSkipped) }, `補做：${STEPS[firstSkipped].name}`));
-  else setBar(h("button", { class: "btn", onclick: () => go(3) }, "再聽一次今天的對話"));
+  else setBar(h("button", { class: "btn", onclick: () => go(STEPS.findIndex(x => x.id === "lyrics")) }, "再看一次今天的影片"));
   const burst = h("div", { class: "burst", "aria-hidden": "true" });
   if (counted) {
     const colors = ["var(--good)", "var(--accent)", "var(--marker)", "#E2B45A", "#D9826F"];
@@ -1399,9 +1386,11 @@ async function viewSunday(d) {
   const p = progOf(d); p.report = true; store.set("prog:" + d, p);
   const mon = monday(d);
   const lessons = await loadLessons(weekLessonDates(d));
-  let qOk = 0, qAll = 0, learned = 0, remembered = 0;
+  let qOk = 0, qAll = 0, learned = 0, remembered = 0, vids = 0, watchSec = 0;
   const forgot = [];
   lessons.forEach(({ d: ld, L: x }) => {
+    const ws = store.get("watch:" + ld, 0);
+    if (x.video && (ws > 0 || store.get("heard:lyrics:" + ld, false))) { vids++; watchSec += ws; }
     const qa = store.get("quiz:" + ld, {}), memo = store.get("memo:" + ld, {});
     x.quiz.forEach((q, i) => { if (qa[i] != null) { qAll++; if (qa[i] === q.answer) qOk++; } });
     x.words.forEach((w, i) => { if (memo[i]) { learned++; if (memo[i] === "r") remembered++; else forgot.push(w.w); } });
@@ -1415,6 +1404,7 @@ async function viewSunday(d) {
     h("div", { class: "card" },
       h("div", {}, `練習天數：${days} / 6 天（連續 ${streakCount()} 天）`),
       h("div", {}, `單字：學了 ${learned} 個，記住 ${remembered} 個`),
+      vids ? h("div", {}, `影片：看了 ${vids} 部，共 ${Math.max(1, Math.round(watchSec / 60))} 分鐘`) : null,
       h("div", {}, `理解題答對率：${pct(qOk, qAll)}`),
       forgot.length ? h("div", {}, `下週會再複習：${forgot.join("、")}`) : null),
     todo.length ? h("div", { class: "card" }, h("div", { class: "q" }, "這週還沒做完，可以補做："),
@@ -1431,7 +1421,7 @@ async function openDay(d) {
   const main = $("#main");
   if (wd >= 5) {
     MODE = wd === 5 ? "review" : "report";
-    $("#steps").hidden = true; $("#prog-card").hidden = true;
+    $("#steps").hidden = true;
     renderHeader(wd === 5 ? "Review Day" : "Weekly Report", wd === 5 ? "週六複習日：這週的單字" : "週日：看看這週的成果", [wd === 5 ? "複習" : "週報", ""]);
     main.innerHTML = ""; main.append(h("p", { class: "lead" }, "載入中…"));
     const view = await (wd === 5 ? viewSaturday(d) : viewSunday(d));

@@ -1,904 +1,2129 @@
 {
-  "date": "2026-12-02",
-  "weekday": "週三",
-  "theme": "客戶溝通",
-  "title": "Damaged Boxes",
-  "titleZh": "箱子損壞了",
-  "level": "B1",
-  "speed": "慢速",
-  "speakers": {
-    "Kevin": {
-      "voice": "am_eric",
-      "accent": "美式"
-    },
-    "Olivia": {
-      "voice": "bf_emma",
-      "accent": "英式"
-    }
+ "date": "2026-12-02",
+ "weekday": "週三",
+ "theme": "gabbyreads",
+ "title": "Summerween Announcement",
+ "titleZh": "Summerween 讀書活動公告",
+ "level": "真實影片",
+ "speed": "原速",
+ "scene": "BookTube 頻道主 Gabby 公布第七屆 Summerween 夏日驚悚讀書馬拉松的日期、五個閱讀題目與周邊商品，也聊接下來幾個月想讀的書。",
+ "video": {
+  "id": "GV4mGeDD-L8",
+  "start": 0,
+  "end": 1028,
+  "channel": "gabbyreads",
+  "title": "SUMMERWEEN readathon announcement! 👻🌞 (May TBR, announcing Book Troop book club picks!)"
+ },
+ "speakers": {},
+ "lines": [
+  {
+   "s": "",
+   "en": "Hey, how's it going?",
+   "zh": "嘿，你好嗎？"
   },
-  "lines": [
-    {
-      "s": "Kevin",
-      "en": "Hi Olivia. I have a problem with our last delivery.",
-      "zh": "嗨 Olivia，我們上一批貨有問題。",
-      "mood": "sad"
-    },
-    {
-      "s": "Olivia",
-      "en": "Oh no. What's wrong?",
-      "zh": "噢不。怎麼了？",
-      "mood": "surprised"
-    },
-    {
-      "s": "Kevin",
-      "en": "Three boxes arrived with serious damage.",
-      "zh": "有三個箱子到貨時嚴重損壞。",
-      "mood": "sad"
-    },
-    {
-      "s": "Olivia",
-      "en": "I'm so sorry. Can you send me some photos?",
-      "zh": "真的很抱歉。你可以寄一些照片給我嗎？",
-      "mood": "sad"
-    },
-    {
-      "s": "Kevin",
-      "en": "Sure. I'll email them in ten minutes.",
-      "zh": "沒問題。我十分鐘內寄給你。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Olivia",
-      "en": "Thank you. We'll make sure this doesn't happen again.",
-      "zh": "謝謝。我們會確保這種事不再發生。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Kevin",
-      "en": "Will you pay for the damage?",
-      "zh": "你們會賠償損壞嗎？",
-      "mood": "confused"
-    },
-    {
-      "s": "Olivia",
-      "en": "Yes. If the photos show the problem, we'll give you compensation.",
-      "zh": "會的。如果照片顯示有問題，我們會給你賠償。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Kevin",
-      "en": "That sounds fair. How long will it take?",
-      "zh": "聽起來合理。要多久？",
-      "mood": "happy"
-    },
-    {
-      "s": "Olivia",
-      "en": "I need to sort out the details with my manager.",
-      "zh": "我得跟經理把細節處理好。",
-      "mood": "neutral"
-    },
-    {
-      "s": "Kevin",
-      "en": "Okay. When will I hear from you?",
-      "zh": "好的。我什麼時候會收到你的消息？",
-      "mood": "confused"
-    },
-    {
-      "s": "Olivia",
-      "en": "By tomorrow noon. I promise.",
-      "zh": "明天中午前。我保證。",
-      "mood": "happy"
-    },
-    {
-      "s": "Kevin",
-      "en": "Great. Thanks for your help, Olivia.",
-      "zh": "太好了。謝謝你的幫忙，Olivia。",
-      "mood": "happy"
-    },
-    {
-      "s": "Olivia",
-      "en": "You're welcome. Sorry again for the trouble.",
-      "zh": "不客氣。再次為造成的麻煩道歉。",
-      "mood": "sad"
-    }
-  ],
-  "quiz": [
-    {
-      "q": "What problem does Kevin have?",
-      "options": [
-        "The boxes were late.",
-        "The price was wrong.",
-        "Some boxes were damaged.",
-        "The color was wrong."
-      ],
-      "answer": 2,
-      "line": 2,
-      "why": "Kevin 說有三個箱子到貨時嚴重損壞。"
-    },
-    {
-      "q": "What does Olivia ask Kevin to send?",
-      "options": [
-        "Some photos",
-        "A new order",
-        "A bill",
-        "A phone number"
-      ],
-      "answer": 0,
-      "line": 3,
-      "why": "Olivia 問他可不可以寄一些照片。"
-    },
-    {
-      "q": "When will Olivia answer Kevin?",
-      "options": [
-        "In ten minutes",
-        "Today at five",
-        "Next Monday",
-        "By tomorrow noon"
-      ],
-      "answer": 3,
-      "line": 11,
-      "why": "Olivia 說明天中午前會回覆。"
-    }
-  ],
-  "words": [
-    {
-      "w": "make sure",
-      "pos": "片語・動詞",
-      "zh": "確保、務必",
-      "ex1": "Thank you. We'll make sure this doesn't happen again.",
-      "line": 5,
-      "ex2": "Please make sure every box is sealed before shipping.",
-      "ex2zh": "出貨前請確保每個箱子都封好。",
-      "toeic": false,
-      "hook": "make 做＋sure 確定：把事情「做到確定」＝確保",
-      "img": "pic/word_0.png",
-      "pic": "a worker pressing a big tape strip on a cardboard box and giving a thumbs up"
-    },
-    {
-      "w": "sort out",
-      "pos": "片語・動詞",
-      "zh": "解決、處理好",
-      "ex1": "I need to sort out the details with my manager.",
-      "line": 9,
-      "ex2": "We need to sort out the delivery problem today.",
-      "ex2zh": "我們今天需要把交貨問題處理好。",
-      "toeic": false,
-      "hook": "sort 分類＋out 出來：把亂糟糟的東西一樣樣分出來＝理清、解決",
-      "img": "pic/word_1.png",
-      "pic": "a woman putting messy colorful boxes into neat separate piles"
-    },
-    {
-      "w": "hear from",
-      "pos": "片語・動詞",
-      "zh": "收到（某人）的消息",
-      "ex1": "Okay. When will I hear from you?",
-      "line": 10,
-      "ex2": "We hope to hear from the customer by Friday.",
-      "ex2zh": "我們希望週五前收到客戶的回覆。",
-      "toeic": false,
-      "hook": "hear 聽＋from 從：從某人那裡「聽到」消息＝收到對方的來信或回覆",
-      "img": "pic/word_2.png",
-      "pic": "a man at a desk smiling and listening to a ringing phone with a letter floating beside it"
-    },
-    {
-      "w": "damage",
-      "pos": "名詞",
-      "zh": "損壞、損害",
-      "ex1": "Three boxes arrived with serious damage.",
-      "line": 2,
-      "ex2": "The damage happened during transport.",
-      "ex2zh": "損壞發生在運送過程中。",
-      "toeic": true,
-      "hook": "諧音「大罵幾」：東西壞了，客戶大罵幾句＝損壞",
-      "img": "pic/word_3.png",
-      "pic": "a cardboard box crushed and torn in the middle with a worried delivery man looking at it"
-    },
-    {
-      "w": "compensation",
-      "pos": "名詞",
-      "zh": "賠償、補償",
-      "ex1": "Yes. If the photos show the problem, we'll give you compensation.",
-      "line": 7,
-      "ex2": "The company offered compensation for the late delivery.",
-      "ex2zh": "公司為延遲交貨提供了賠償。",
-      "toeic": true,
-      "hook": "com 一起＋pensat（支付，像 pay）＋ion：大家一起把虧損「付」回來＝賠償、補償",
-      "img": "pic/word_4.png",
-      "pic": "a manager handing a thick envelope of money to a customer across a desk"
-    }
-  ],
-  "part2": [
-    {
-      "q": "Who is handling the damaged boxes?",
-      "opts": [
-        "On the second floor.",
-        "Our shipping manager is.",
-        "They arrived yesterday."
-      ],
-      "answer": 1,
-      "why": "問 Who 要回答人。A 是地點，C 是時間。",
-      "zh": "誰在處理損壞的箱子？"
-    },
-    {
-      "q": "Can you send me the photos today?",
-      "opts": [
-        "Yes, I'll do it this afternoon.",
-        "About fifty dollars.",
-        "In the photo studio."
-      ],
-      "answer": 0,
-      "why": "Can you 是請求，答 Yes 並補充時間最自然。B 答價錢、C 重複 photo 都是陷阱。",
-      "zh": "你今天可以寄照片給我嗎？"
-    },
-    {
-      "q": "How should we pack these boards?",
-      "opts": [
-        "At the loading dock.",
-        "Yes, they're packed.",
-        "In bubble wrap, please."
-      ],
-      "answer": 2,
-      "why": "How 問方式，答 In bubble wrap（用氣泡布）。A 是地點，B 用 Yes 回答 How 不通順。",
-      "zh": "這些電路板該怎麼包裝？"
-    },
-    {
-      "q": "Why don't we call the customer now?",
-      "opts": [
-        "Good idea. Let's do it.",
-        "Because of the weather.",
-        "The call was short."
-      ],
-      "answer": 0,
-      "why": "Why don't we 是建議，不是真的問原因，答 Good idea 最自然。B 是 Why 的陷阱、C 重複 call。",
-      "zh": "我們何不現在打給客戶？"
-    },
-    {
-      "q": "Would you like a refund or a new order?",
-      "opts": [
-        "Yes, I'd like an order.",
-        "I'd prefer a new order.",
-        "The refund is on the desk."
-      ],
-      "answer": 1,
-      "why": "選擇問句不能用 Yes 回答。A 重複 order、C 重複 refund 是陷阱。",
-      "zh": "你想要退款還是重新下單？"
-    }
-  ],
-  "scene": "客戶 Kevin 抱怨收到的箱子損壞，品保人員 Olivia 在辦公室處理。",
-  "place": "office",
-  "grammar": {
-    "topic": "cond",
-    "topicZh": "條件句",
-    "tip": "看主要子句：will＋原形＝真實可能的條件，if 子句用現在式；would＋原形＝假設，if 子句用過去式。if 子句裡不放 will。",
-    "items": [
-      {
-        "q": "If the boxes _____ damaged, we will send a replacement.",
-        "opts": [
-          "are",
-          "were",
-          "would be",
-          "have been"
-        ],
-        "answer": 0,
-        "why": "真實條件句：If＋現在式，主要子句用 will＋原形。If 子句不用 will 或 would，所以選 are。",
-        "zh": "如果箱子受損，我們會寄替換品。"
-      },
-      {
-        "q": "If you call us today, we _____ the problem by noon.",
-        "opts": [
-          "fix",
-          "fixed",
-          "will fix",
-          "would fixing"
-        ],
-        "answer": 2,
-        "why": "If＋現在式 (call)，主要子句用 will＋原形動詞：will fix。",
-        "zh": "如果你今天打給我們，我們中午前會解決問題。"
-      },
-      {
-        "q": "If I _____ more time, I would check every box.",
-        "opts": [
-          "have",
-          "had",
-          "will have",
-          "am having"
-        ],
-        "answer": 1,
-        "why": "與現在事實相反的假設：If＋過去式，主要子句用 would＋原形。所以選 had。",
-        "zh": "如果我有更多時間，我會檢查每個箱子。"
-      },
-      {
-        "q": "We would be happy if the customer _____ our offer.",
-        "opts": [
-          "accept",
-          "accepts",
-          "accepted",
-          "will accept"
-        ],
-        "answer": 2,
-        "why": "主要子句用 would，表示假設語氣，if 子句要用過去式 accepted。",
-        "zh": "如果客戶接受我們的提議，我們會很高興。"
-      },
-      {
-        "q": "Please call me if you _____ any questions about the invoice.",
-        "opts": [
-          "has",
-          "have",
-          "having",
-          "will have"
-        ],
-        "answer": 1,
-        "why": "if 子句用現在式代替未來，you 搭配 have。不能用 will have。",
-        "zh": "如果你對發票有任何疑問，請打給我。"
-      }
-    ]
+  {
+   "s": "",
+   "en": "Welcome back to my channel.",
+   "zh": "歡迎回到我的頻道。"
   },
-  "gloss": {
-    "accept": [
-      "動詞",
-      "接受",
-      "",
-      "Please accept our apology.",
-      "請接受我們的道歉。"
-    ],
-    "accepted": [
-      "動詞",
-      "接受了（accept 的過去式）",
-      "",
-      "He accepted the new offer.",
-      "他接受了新的提議。"
-    ],
-    "accepts": [
-      "動詞",
-      "接受（accept 的第三人稱單數）",
-      "",
-      "She accepts credit cards.",
-      "她們接受信用卡。"
-    ],
-    "again": [
-      "副詞",
-      "再一次",
-      "",
-      "Please try again later.",
-      "請稍後再試一次。"
-    ],
-    "am": [
-      "助動詞",
-      "是、正在（I 專用的 be 動詞）",
-      "",
-      "I am ready for the meeting.",
-      "我準備好開會了。"
-    ],
-    "answer": [
-      "動詞",
-      "回答、回覆",
-      "答案（名詞）",
-      "Please answer my email today.",
-      "請今天回覆我的信。"
-    ],
-    "any": [
-      "形容詞",
-      "任何的",
-      "",
-      "Do you have any questions?",
-      "你有任何問題嗎？"
-    ],
-    "arrived": [
-      "動詞",
-      "抵達了（arrive 的過去式）",
-      "",
-      "The package arrived this morning.",
-      "包裹今天早上到了。"
-    ],
-    "bill": [
-      "名詞",
-      "帳單",
-      "",
-      "Please send me the bill.",
-      "請寄帳單給我。"
-    ],
-    "boards": [
-      "名詞",
-      "電路板（board 的複數）",
-      "",
-      "We tested all the boards.",
-      "我們測過所有電路板。"
-    ],
-    "box": [
-      "名詞",
-      "箱子",
-      "",
-      "The box is too heavy.",
-      "這個箱子太重了。"
-    ],
-    "boxes": [
-      "名詞",
-      "箱子（box 的複數）",
-      "",
-      "We packed ten boxes today.",
-      "我們今天打包了十個箱子。"
-    ],
-    "bubble": [
-      "名詞",
-      "（bubble wrap）氣泡",
-      "泡泡",
-      "Kids love blowing bubbles.",
-      "小孩喜歡吹泡泡。"
-    ],
-    "check": [
-      "動詞",
-      "檢查",
-      "確認",
-      "Please check the label.",
-      "請檢查標籤。"
-    ],
-    "color": [
-      "名詞",
-      "顏色",
-      "",
-      "What color is the case?",
-      "外殼是什麼顏色？"
-    ],
-    "compensation": [
-      "名詞",
-      "賠償、補償",
-      "薪資",
-      "We will pay full compensation.",
-      "我們會全額賠償。"
-    ],
-    "damage": [
-      "名詞",
-      "損壞",
-      "傷害（動詞：損害）",
-      "The rain caused a lot of damage.",
-      "大雨造成很大的損害。"
-    ],
-    "damaged": [
-      "形容詞",
-      "損壞的",
-      "",
-      "The damaged item was returned.",
-      "損壞的商品被退回了。"
-    ],
-    "delivery": [
-      "名詞",
-      "交貨、運送",
-      "",
-      "The delivery is due Monday.",
-      "交貨期限是週一。"
-    ],
-    "desk": [
-      "名詞",
-      "桌子",
-      "",
-      "The file is on my desk.",
-      "檔案在我桌上。"
-    ],
-    "details": [
-      "名詞",
-      "細節（detail 的複數）",
-      "",
-      "Please send me the details.",
-      "請把細節寄給我。"
-    ],
-    "dock": [
-      "名詞",
-      "碼頭、裝卸區（loading dock）",
-      "",
-      "The truck is at the dock.",
-      "卡車在裝卸區。"
-    ],
-    "doesn't": [
-      "縮寫",
-      "does not 的縮寫",
-      "",
-      "He doesn't work here.",
-      "他不在這裡工作。"
-    ],
-    "dollars": [
-      "名詞",
-      "美元（dollar 的複數）",
-      "",
-      "It costs ten dollars.",
-      "這要十美元。"
-    ],
-    "fair": [
-      "形容詞",
-      "合理的、公平的",
-      "",
-      "That is a fair price.",
-      "這是合理的價格。"
-    ],
-    "fifty": [
-      "數字",
-      "五十",
-      "",
-      "We need fifty boxes.",
-      "我們需要五十個箱子。"
-    ],
-    "fix": [
-      "動詞",
-      "修理、解決",
-      "",
-      "We can fix it today.",
-      "我們今天可以修好。"
-    ],
-    "fixed": [
-      "動詞",
-      "修好了（fix 的過去式）",
-      "",
-      "They fixed the machine.",
-      "他們修好了機器。"
-    ],
-    "fixing": [
-      "動詞",
-      "修理（fix 的 -ing 形）",
-      "",
-      "I'm fixing the error now.",
-      "我正在修正錯誤。"
-    ],
-    "handling": [
-      "動詞",
-      "處理（handle 的 -ing 形）",
-      "",
-      "Who is handling this case?",
-      "誰在處理這個案子？"
-    ],
-    "happen": [
-      "動詞",
-      "發生",
-      "",
-      "What will happen next?",
-      "接下來會發生什麼？"
-    ],
-    "happy": [
-      "形容詞",
-      "高興的",
-      "",
-      "We are happy to help.",
-      "我們很樂意幫忙。"
-    ],
-    "having": [
-      "動詞",
-      "有（have 的 -ing 形）",
-      "",
-      "We are having a meeting.",
-      "我們正在開會。"
-    ],
-    "invoice": [
-      "名詞",
-      "發票、請款單",
-      "",
-      "The invoice is attached.",
-      "發票附在信裡。"
-    ],
-    "kevin": [
-      "人名",
-      "凱文（男生名字）",
-      "",
-      "Kevin is our new client.",
-      "Kevin 是我們的新客戶。"
-    ],
-    "loading": [
-      "名詞",
-      "裝貨（loading dock）",
-      "",
-      "Loading takes an hour.",
-      "裝貨要一小時。"
-    ],
-    "make": [
-      "動詞",
-      "（make sure）確保；做",
-      "",
-      "We make boards here.",
-      "我們在這裡製造電路板。"
-    ],
-    "minutes": [
-      "名詞",
-      "分鐘",
-      "",
-      "The call took five minutes.",
-      "通話花了五分鐘。"
-    ],
-    "offer": [
-      "名詞",
-      "提議、報價",
-      "提供（動詞）",
-      "They made us a good offer.",
-      "他們給了我們很好的報價。"
-    ],
-    "offered": [
-      "動詞",
-      "提供了（offer 的過去式）",
-      "",
-      "He offered a discount.",
-      "他提供了折扣。"
-    ],
-    "okay": [
-      "形容詞",
-      "好的",
-      "",
-      "Okay, let's start.",
-      "好的，我們開始吧。"
-    ],
-    "olivia": [
-      "人名",
-      "奧莉薇亞（女生名字）",
-      "",
-      "Olivia works in quality.",
-      "Olivia 在品保部工作。"
-    ],
-    "pack": [
-      "動詞",
-      "打包",
-      "",
-      "Please pack the samples carefully.",
-      "請小心打包樣品。"
-    ],
-    "packed": [
-      "動詞",
-      "打包好了（pack 的過去式）",
-      "",
-      "The boards are packed.",
-      "電路板打包好了。"
-    ],
-    "pay": [
-      "動詞",
-      "支付、賠償",
-      "",
-      "We will pay by bank transfer.",
-      "我們會用轉帳付款。"
-    ],
-    "phone": [
-      "名詞",
-      "電話",
-      "",
-      "Here is my phone number.",
-      "這是我的電話號碼。"
-    ],
-    "photo": [
-      "名詞",
-      "照片",
-      "",
-      "Send me a photo of the label.",
-      "寄一張標籤的照片給我。"
-    ],
-    "photos": [
-      "名詞",
-      "照片（photo 的複數）",
-      "",
-      "The photos are very clear.",
-      "照片很清楚。"
-    ],
-    "prefer": [
-      "動詞",
-      "比較喜歡",
-      "",
-      "I prefer email to phone.",
-      "比起電話，我比較喜歡用電子郵件。"
-    ],
-    "promise": [
-      "動詞",
-      "保證、承諾",
-      "",
-      "I promise to call you back.",
-      "我保證會回電給你。"
-    ],
-    "questions": [
-      "名詞",
-      "問題（question 的複數）",
-      "",
-      "Any questions about the plan?",
-      "對計畫有任何問題嗎？"
-    ],
-    "refund": [
-      "名詞",
-      "退款",
-      "",
-      "I'd like a full refund.",
-      "我想要全額退款。"
-    ],
-    "replacement": [
-      "名詞",
-      "替換品",
-      "",
-      "We'll send a replacement.",
-      "我們會寄替換品。"
-    ],
-    "sealed": [
-      "形容詞",
-      "封好的",
-      "",
-      "The box was not sealed.",
-      "這個箱子沒有封好。"
-    ],
-    "second": [
-      "形容詞",
-      "第二的",
-      "",
-      "The office is on the second floor.",
-      "辦公室在二樓。"
-    ],
-    "serious": [
-      "形容詞",
-      "嚴重的",
-      "認真的",
-      "This is a serious problem.",
-      "這是個嚴重的問題。"
-    ],
-    "shipping": [
-      "名詞",
-      "出貨、運送",
-      "",
-      "Shipping is free today.",
-      "今天運送免費。"
-    ],
-    "short": [
-      "形容詞",
-      "短的",
-      "矮的",
-      "The meeting was short.",
-      "會議很短。"
-    ],
-    "show": [
-      "動詞",
-      "顯示、呈現",
-      "表演（名詞）",
-      "The data shows a problem.",
-      "資料顯示有問題。"
-    ],
-    "so": [
-      "副詞",
-      "非常",
-      "所以（連接詞）",
-      "I'm so tired today.",
-      "我今天好累。"
-    ],
-    "sort": [
-      "動詞",
-      "（sort out）整理、解決",
-      "種類（名詞）",
-      "Let's sort the files first.",
-      "我們先整理檔案吧。"
-    ],
-    "sounds": [
-      "動詞",
-      "聽起來（sound 的第三人稱單數）",
-      "",
-      "That sounds like a plan.",
-      "聽起來是個好計畫。"
-    ],
-    "studio": [
-      "名詞",
-      "攝影棚、工作室",
-      "",
-      "The studio is downtown.",
-      "攝影棚在市中心。"
-    ],
-    "take": [
-      "動詞",
-      "花（時間）",
-      "拿、帶",
-      "It takes two days to ship.",
-      "出貨要花兩天。"
-    ],
-    "thank": [
-      "動詞",
-      "感謝",
-      "",
-      "Thank you for waiting.",
-      "謝謝你的等待。"
-    ],
-    "these": [
-      "代名詞・形容詞",
-      "這些",
-      "",
-      "These parts are new.",
-      "這些零件是新的。"
-    ],
-    "they're": [
-      "縮寫",
-      "they are 的縮寫",
-      "",
-      "They're coming at noon.",
-      "他們中午會來。"
-    ],
-    "transport": [
-      "名詞",
-      "運輸",
-      "",
-      "Damage can happen in transport.",
-      "運輸中可能會損壞。"
-    ],
-    "trouble": [
-      "名詞",
-      "麻煩",
-      "",
-      "Sorry for the trouble.",
-      "為這個麻煩抱歉。"
-    ],
-    "us": [
-      "代名詞",
-      "我們（受格）",
-      "",
-      "Please call us tomorrow.",
-      "請明天打給我們。"
-    ],
-    "what's": [
-      "縮寫",
-      "what is 的縮寫",
-      "",
-      "What's the status?",
-      "目前狀況如何？"
-    ],
-    "wrap": [
-      "名詞",
-      "包裝材料（bubble wrap 氣泡布）",
-      "包裹（動詞）",
-      "Use wrap to protect the glass.",
-      "用包裝材料保護玻璃。"
-    ]
+  {
+   "s": "",
+   "en": "My name is Gabby, and today we have a very exciting video because in this video, I'm not only going to be talking",
+   "zh": "我是 Gabby，今天的影片非常令人興奮，因為在這支影片裡，我不只要聊"
   },
-  "phrases": [
-    {
-      "p": "make sure",
-      "forms": [
-        "make sure"
-      ],
-      "pos": "片語・動詞",
-      "zh": "確保、務必",
-      "ex": "Make sure the door is locked.",
-      "exzh": "務必把門鎖好。"
-    },
-    {
-      "p": "sort out",
-      "forms": [
-        "sort out"
-      ],
-      "pos": "片語・動詞",
-      "zh": "解決、處理好",
-      "ex": "Let's sort out the schedule first.",
-      "exzh": "我們先把時程處理好。"
-    },
-    {
-      "p": "hear from",
-      "forms": [
-        "hear from"
-      ],
-      "pos": "片語・動詞",
-      "zh": "收到（某人）的消息",
-      "ex": "I hope to hear from you soon.",
-      "exzh": "希望很快收到你的消息。"
-    },
-    {
-      "p": "bubble wrap",
-      "forms": [
-        "bubble wrap"
-      ],
-      "pos": "名詞片語",
-      "zh": "氣泡布",
-      "ex": "Cover the glass in bubble wrap.",
-      "exzh": "用氣泡布包住玻璃。"
-    },
-    {
-      "p": "loading dock",
-      "forms": [
-        "loading dock"
-      ],
-      "pos": "名詞片語",
-      "zh": "裝卸貨區",
-      "ex": "The truck is at the loading dock.",
-      "exzh": "卡車在裝卸貨區。"
-    },
-    {
-      "p": "pay for",
-      "forms": [
-        "pay for"
-      ],
-      "pos": "片語・動詞",
-      "zh": "為……付款、賠償",
-      "ex": "Who will pay for the repair?",
-      "exzh": "誰要負擔修理費？"
-    }
+  {
+   "s": "",
+   "en": "about some of my TBR plans for the upcoming months, but it's also going to include the Summerween readathon announcement.",
+   "zh": "我接下來幾個月的待讀書單計畫，也會公布 Summerween 讀書馬拉松的消息。"
+  },
+  {
+   "s": "",
+   "en": "If you're new to my channel, you might not know, but I host this readathon called Summerween every single July.",
+   "zh": "如果你是新來的，可能不知道，我每年七月都會主辦一個叫 Summerween 的讀書馬拉松。"
+  },
+  {
+   "s": "",
+   "en": "This is an annual spooky readathon that I love to host because the main goal of this readathon is to bring the spooky",
+   "zh": "這是一年一度的驚悚讀書活動，我很愛主辦，因為這個活動的主要目標，是把萬聖節的驚悚"
+  },
+  {
+   "s": "",
+   "en": "vibes of Halloween into the summer, and this is going to be the seventh round of Summerween.",
+   "zh": "氛圍帶進夏天，而今年是第七屆 Summerween。"
+  },
+  {
+   "s": "",
+   "en": "Can you believe that we've been here this long doing this together?",
+   "zh": "你能相信我們已經一起做了這麼久嗎？"
+  },
+  {
+   "s": "",
+   "en": "I just love Summerween so much.",
+   "zh": "我真的太愛 Summerween 了。"
+  },
+  {
+   "s": "",
+   "en": "Like this readathon is truly my pride and joy on this channel.",
+   "zh": "這個讀書活動真的是我在這個頻道上的驕傲和喜悅。"
+  },
+  {
+   "s": "",
+   "en": "And so, let's talk about all of the details because I'm very excited to let you know everything.",
+   "zh": "所以，來聊聊所有細節吧，因為我超興奮要讓你們知道一切。"
+  },
+  {
+   "s": "",
+   "en": "So, the official dates for this readathon, this readathon's going to be happening in the month of July as it always does.",
+   "zh": "官方日期方面，這次活動一如往常，會在七月舉行。"
+  },
+  {
+   "s": "",
+   "en": "We're going to be kicking things off on Friday, July 3rd, and this readathon is going to be going for a week",
+   "zh": "我們會在 7 月 3 日星期五開跑，活動會進行一個星期，"
+  },
+  {
+   "s": "",
+   "en": "until July 9th.",
+   "zh": "到 7 月 9 日。"
+  },
+  {
+   "s": "",
+   "en": "So, the official dates are going to be Friday, July 3rd through the 9th.",
+   "zh": "所以官方日期是 7 月 3 日星期五到 9 日。"
+  },
+  {
+   "s": "",
+   "en": "And if you were wondering, we do kind of have a theme again for this year's Summerween, you know, because if you recall",
+   "zh": "如果你在好奇，今年的 Summerween 一樣有個主題，因為如果你還記得，"
+  },
+  {
+   "s": "",
+   "en": "last year, we did kind of like the space desert, you know, almost like sci-fi UFO kind of a vibe.",
+   "zh": "去年我們做的是太空沙漠風，有點像科幻、幽浮的感覺。"
+  },
+  {
+   "s": "",
+   "en": "And this year, we're mixing it up once again because this time, the theme is going to be kind of like a summer",
+   "zh": "今年我們又要換個花樣，因為這次的主題是類似夏日"
+  },
+  {
+   "s": "",
+   "en": "fair carnival type of vibe as you might have noticed on the shirt that I'm wearing.",
+   "zh": "園遊會、嘉年華的氛圍，你可能已經從我穿的這件上衣注意到了。"
+  },
+  {
+   "s": "",
+   "en": "My sister designed this incredible logo for this round of Summerween, which I think is so cute.",
+   "zh": "我妹妹為這一屆 Summerween 設計了一個很棒的標誌，我覺得超可愛。"
+  },
+  {
+   "s": "",
+   "en": "I really love this one because I really enjoy the like vintage look to it.",
+   "zh": "我特別喜歡這個，因為我很喜歡它的復古感。"
+  },
+  {
+   "s": "",
+   "en": "And this time around, we have a lot of pinks and blues that just really complement each other really well, and we have our staple",
+   "zh": "這次我們用了很多粉紅色和藍色，兩種顏色搭起來非常好看，還有我們的招牌"
+  },
+  {
+   "s": "",
+   "en": "ghosty front and center.",
+   "zh": "小鬼魂站在正中間。"
+  },
+  {
+   "s": "",
+   "en": "Just adore everything about this logo, and I think my sister just knocks it out of the park every single time.",
+   "zh": "我就是愛這個標誌的一切，我覺得我妹妹每一次都做得太棒了。"
+  },
+  {
+   "s": "",
+   "en": "So, for this readathon, we do have the five different reading prompts as always.",
+   "zh": "這次的讀書活動，一如往常有五個不同的閱讀題目。"
+  },
+  {
+   "s": "",
+   "en": "You don't have to complete any of these reading prompts to participate in Summerween if you don't want to.",
+   "zh": "如果你不想，完全不用完成任何一個題目也能參加 Summerween。"
+  },
+  {
+   "s": "",
+   "en": "The prompts are completely optional, but I do think they add so much fun to the readathon.",
+   "zh": "這些題目完全是選擇性的，但我覺得它們讓活動更有趣。"
+  },
+  {
+   "s": "",
+   "en": "So, the first prompt is going to be the one that is our staple for this readathon, and that is to either read a book in the dark",
+   "zh": "第一個題目是我們這個活動的招牌題目，就是在黑暗中讀一本書"
+  },
+  {
+   "s": "",
+   "en": "or reading a book at night.",
+   "zh": "或在夜晚讀一本書。"
+  },
+  {
+   "s": "",
+   "en": "This one is such a staple to me because I think it's so much fun to like read a horror",
+   "zh": "這一題對我來說是招牌，因為我覺得在黑暗中讀恐怖"
+  },
+  {
+   "s": "",
+   "en": "book in the dark.",
+   "zh": "小說超級好玩。"
+  },
+  {
+   "s": "",
+   "en": "And however you want to do that is fine.",
+   "zh": "你想怎麼做都可以。"
+  },
+  {
+   "s": "",
+   "en": "If you want to just like read your Kindle in the dark, if you want to listen to an audiobook",
+   "zh": "你可以只是在黑暗中看你的 Kindle，也可以在黑暗中聽有聲書，"
+  },
+  {
+   "s": "",
+   "en": "in the dark, if you want to actually like take a flashlight and go under your blankets and read a physical",
+   "zh": "也可以真的拿手電筒躲進被窩裡，讀一本紙本"
+  },
+  {
+   "s": "",
+   "en": "book, you can do that.",
+   "zh": "書，都行。"
+  },
+  {
+   "s": "",
+   "en": "You can adjust this prompt to however it works best for you, but this is definitely one of my favorite",
+   "zh": "你可以把這個題目調整成對你最適合的方式，但這絕對是我最愛放進這類"
+  },
+  {
+   "s": "",
+   "en": "things to include for these read-a-thons.",
+   "zh": "活動的題目之一。"
+  },
+  {
+   "s": "",
+   "en": "The second prompt is going to be another easy one because it's going to be to read a thriller or a horror book.",
+   "zh": "第二個題目也很簡單，就是讀一本驚悚或恐怖小說。"
+  },
+  {
+   "s": "",
+   "en": "I like to keep these pretty broad, you know, because I like to have a prompt where you can just check it off right away.",
+   "zh": "我喜歡讓這些題目範圍寬一點，因為我想要有一個你馬上就能打勾的題目。"
+  },
+  {
+   "s": "",
+   "en": "And because the whole goal of this read-a-thon is to bring the spooky vibes of Halloween into the summer, I feel like reading horror",
+   "zh": "而且因為這個活動的整個目標，是把萬聖節的驚悚氛圍帶進夏天，我覺得讀恐怖"
+  },
+  {
+   "s": "",
+   "en": "and thriller books is a good way to do that.",
+   "zh": "和驚悚小說是個很好的方法。"
+  },
+  {
+   "s": "",
+   "en": "The third one is a new prompt and I really, really love this one because it's to read a new",
+   "zh": "第三個是新題目，我真的非常喜歡，因為它是要讀一位對你來說"
+  },
+  {
+   "s": "",
+   "en": "to you author.",
+   "zh": "很新的作者。"
+  },
+  {
+   "s": "",
+   "en": "So, this is just to read an author that you've never read from before.",
+   "zh": "也就是讀一位你以前從沒讀過的作者。"
+  },
+  {
+   "s": "",
+   "en": "I think this is a great way to like experiment and like try somebody new.",
+   "zh": "我覺得這是個很棒的方式，讓你嘗試、試試新的人。"
+  },
+  {
+   "s": "",
+   "en": "Maybe there's a debut author this year who just published their first ever thriller or horror book.",
+   "zh": "也許今年有位新人作者剛出版了他的第一本驚悚或恐怖小說。"
+  },
+  {
+   "s": "",
+   "en": "Or maybe there's an author that you've been wanting to try for a long time and now this is your chance.",
+   "zh": "或者也許有位作者你想試很久了，現在正是機會。"
+  },
+  {
+   "s": "",
+   "en": "The fourth prompt is going to be to read a book with pink on the cover because since we do have so much pink",
+   "zh": "第四個題目是讀一本封面有粉紅色的書，因為我們的標誌裡"
+  },
+  {
+   "s": "",
+   "en": "in this logo, I thought it would be really cute to like tie that in to one of the prompts.",
+   "zh": "有這麼多粉紅色，我覺得把它放進題目裡會很可愛。"
+  },
+  {
+   "s": "",
+   "en": "Now, I also feel like there's been a surge of pink book covers lately, especially in like the horror genre.",
+   "zh": "而且我覺得最近粉紅色封面的書變多了，尤其是在恐怖類型裡。"
+  },
+  {
+   "s": "",
+   "en": "So, I feel like this one will actually be pretty easy to check off.",
+   "zh": "所以我覺得這一題其實很容易打勾。"
+  },
+  {
+   "s": "",
+   "en": "It doesn't matter how much pink is on the cover as long as it's there.",
+   "zh": "只要封面上有粉紅色就行，多少都沒關係。"
+  },
+  {
+   "s": "",
+   "en": "And then the fifth and final prompt is going to be to read a book that's less than 250 pages.",
+   "zh": "第五個也是最後一個題目，是讀一本少於 250 頁的書。"
+  },
+  {
+   "s": "",
+   "en": "So, this could be a novella, this could be a manga, this can be a graphic novel.",
+   "zh": "所以可以是中篇小說、漫畫，或圖像小說。"
+  },
+  {
+   "s": "",
+   "en": "I think having a prompt like this is so great for a read-a-thon because I know that I like to have ones that I can check off easily.",
+   "zh": "我覺得讀書活動有這樣的題目很棒，因為我知道我喜歡有些題目可以輕鬆打勾。"
+  },
+  {
+   "s": "",
+   "en": "And reading something short is a really great way to do that.",
+   "zh": "而讀短的東西正是很棒的方法。"
+  },
+  {
+   "s": "",
+   "en": "So, those are our five official prompts for the read-a-thon and I'm so excited about those.",
+   "zh": "這就是我們的五個官方題目，我對它們超興奮。"
+  },
+  {
+   "s": "",
+   "en": "But like I was saying earlier, you don't have to complete all the prompts to participate.",
+   "zh": "但就像我前面說的，你不需要完成所有題目才能參加。"
+  },
+  {
+   "s": "",
+   "en": "You can only do one of them if you want to.",
+   "zh": "你可以只做其中一個，如果你想的話。"
+  },
+  {
+   "s": "",
+   "en": "Or I know a lot of people in the past have always tried to like find one book that completes",
+   "zh": "或者我知道過去很多人會試著找一本書，同時完成"
+  },
+  {
+   "s": "",
+   "en": "all five prompts, so you can do that.",
+   "zh": "全部五個題目，你也可以這樣做。"
+  },
+  {
+   "s": "",
+   "en": "Whatever floats your boat, floats mine.",
+   "zh": "你覺得怎樣開心就怎樣，我也開心。"
+  },
+  {
+   "s": "",
+   "en": "I'm not going to be policing anybody's TBRs.",
+   "zh": "我不會去管任何人的待讀書單。"
+  },
+  {
+   "s": "",
+   "en": "And if you're over on Instagram, we do have an Instagram for the read-a-thon that is called @thisissummerween.",
+   "zh": "如果你在 Instagram 上，我們有這個活動的 Instagram，叫 @thisissummerween。"
+  },
+  {
+   "s": "",
+   "en": "And over there, we have a lot of other really fun challenge things going on.",
+   "zh": "那裡還有很多其他很好玩的挑戰。"
+  },
+  {
+   "s": "",
+   "en": "We do have an Instagram prompts daily challenge.",
+   "zh": "我們有 Instagram 每日題目挑戰。"
+  },
+  {
+   "s": "",
+   "en": "So, these are like different things that you can be posting daily to Instagram during the read-a-thon.",
+   "zh": "就是活動期間你可以每天發到 Instagram 的不同東西。"
+  },
+  {
+   "s": "",
+   "en": "It's like a mix of of photos or different reels that you could be making that I think are going to be so much fun.",
+   "zh": "有照片和各種短影片可以拍，我覺得會超好玩。"
+  },
+  {
+   "s": "",
+   "en": "And then on Instagram, we also do have a bingo board.",
+   "zh": "然後在 Instagram 上，我們也有賓果板。"
+  },
+  {
+   "s": "",
+   "en": "The bingo board includes so many different things like some of the reading prompts, but then also like different activities",
+   "zh": "賓果板上有很多不同的項目，像是一些閱讀題目，還有不同的活動，"
+  },
+  {
+   "s": "",
+   "en": "like listening to a spooky playlist or like watching a scary movie, different stuff like that.",
+   "zh": "像是聽驚悚歌單，或看恐怖電影之類的。"
+  },
+  {
+   "s": "",
+   "en": "So, if you're interested in either the bingo board or the Instagram daily challenges, I will highly recommend to check out our Instagram.",
+   "zh": "所以如果你對賓果板或 Instagram 每日挑戰有興趣，我強烈推薦去看看我們的 Instagram。"
+  },
+  {
+   "s": "",
+   "en": "I'll have that linked down below.",
+   "zh": "連結會放在下面。"
+  },
+  {
+   "s": "",
+   "en": "All right, and now let's talk about the merch because we do have so much merch for this read-a-thon that is so",
+   "zh": "好，接下來聊聊周邊商品，因為這次活動有超多周邊，真的超"
+  },
+  {
+   "s": "",
+   "en": "cute.",
+   "zh": "可愛。"
+  },
+  {
+   "s": "",
+   "en": "So, as you can see for this main logo for Summerween, we are offering it on all unisex t-shirts that we usually",
+   "zh": "如你所見，這次 Summerween 的主標誌，我們做在所有我們通常會做的"
+  },
+  {
+   "s": "",
+   "en": "offer them on.",
+   "zh": "男女通用 T 恤上。"
+  },
+  {
+   "s": "",
+   "en": "We're having them in a few different colors like this Carolina blue, we have heather pink, and heather neutral.",
+   "zh": "有幾種不同的顏色，像是這個卡羅萊納藍，還有麻花粉紅和麻花中性色。"
+  },
+  {
+   "s": "",
+   "en": "We also are offering them on the tie-dyes this year, which I also think are absolutely gorgeous.",
+   "zh": "今年我們也做了紮染款，我也覺得美到不行。"
+  },
+  {
+   "s": "",
+   "en": "I love a good tie-dye shirt.",
+   "zh": "我超愛紮染衣。"
+  },
+  {
+   "s": "",
+   "en": "They will be available on these pullover hoodies in a few different colors as well as the crew neck in a few different colors.",
+   "zh": "還有連帽上衣，有幾種不同顏色，也有圓領大學 T，同樣有幾種顏色。"
+  },
+  {
+   "s": "",
+   "en": "And then what I'm most excited about is this women's heavyweight tee.",
+   "zh": "而我最興奮的是這件女版厚磅 T 恤。"
+  },
+  {
+   "s": "",
+   "en": "This is a new style of shirt that we're offering for the first time, and we're offering them in a few different colors.",
+   "zh": "這是我們第一次推出的新款式，有幾種不同的顏色。"
+  },
+  {
+   "s": "",
+   "en": "As you can see this vintage navy, that's the color that I'm currently wearing right now.",
+   "zh": "如你所見這個復古海軍藍，就是我現在穿的顏色。"
+  },
+  {
+   "s": "",
+   "en": "And then we also have a soft pink, we have a natural, we have a vintage white and a vintage",
+   "zh": "另外還有柔粉色、原色、復古白和復古"
+  },
+  {
+   "s": "",
+   "en": "black.",
+   "zh": "黑。"
+  },
+  {
+   "s": "",
+   "en": "I asked Bonfire if they could send a sample of this shirt so I could see how it fits compared",
+   "zh": "我請 Bonfire 寄一件樣品，讓我看看它跟 Bonfire 一般的"
+  },
+  {
+   "s": "",
+   "en": "to the regular shirts from Bonfire.",
+   "zh": "T 恤比起來合不合身。"
+  },
+  {
+   "s": "",
+   "en": "And something that I really love about this shirt is the kind of like boxy fit of the t-shirt.",
+   "zh": "我真的很喜歡這件的一點，就是方方正正的寬版剪裁。"
+  },
+  {
+   "s": "",
+   "en": "And I don't know if you can tell, but it does have a little bit of a slight crop compared",
+   "zh": "我不知道你看不看得出來，但它比其他衣服稍微"
+  },
+  {
+   "s": "",
+   "en": "to the other shirts.",
+   "zh": "短一點點，有點小短版。"
+  },
+  {
+   "s": "",
+   "en": "I will do a side-by-side comparison so that you can see the difference between the way that this shirt fits compared",
+   "zh": "我會做並排比較，讓你們看到這件跟我們過去推出的其他衣服"
+  },
+  {
+   "s": "",
+   "en": "to the other shirts that we've had in the past, but I really love this women's heavyweight tee.",
+   "zh": "合身度的差別，但我真的很愛這件女版厚磅 T。"
+  },
+  {
+   "s": "",
+   "en": "I just really love the style of this one so much, and I was actually really surprised by how nice",
+   "zh": "我真的好愛這個款式，而且我其實很驚訝它穿在復古海軍藍上"
+  },
+  {
+   "s": "",
+   "en": "it looks on the vintage navy.",
+   "zh": "這麼好看。"
+  },
+  {
+   "s": "",
+   "en": "And then we are offering a second design for the merch, and this one for the first time ever, it's going to be kind of like a collage",
+   "zh": "然後我們還有第二個周邊設計，這個是史上第一次，有點像拼貼，"
+  },
+  {
+   "s": "",
+   "en": "of some of the stickers for my sister's sticker set.",
+   "zh": "用了我妹妹貼紙組裡的一些貼紙。"
+  },
+  {
+   "s": "",
+   "en": "And I think this turned out so cute.",
+   "zh": "我覺得做出來超可愛。"
+  },
+  {
+   "s": "",
+   "en": "So, as you can see at the top of this collage, we have the little like Summerween banner with like the little different colored flags,",
+   "zh": "如你所見，這個拼貼的上方，有小小的 Summerween 旗幟，還有各種不同顏色的小旗子，"
+  },
+  {
+   "s": "",
+   "en": "which I think looks so cute.",
+   "zh": "我覺得好可愛。"
+  },
+  {
+   "s": "",
+   "en": "We have this girl that's like leaning against the wall with her book with like the pumpkin head.",
+   "zh": "有這個女孩靠著牆拿著書，頭是南瓜頭。"
+  },
+  {
+   "s": "",
+   "en": "We have these little ghosty slushies, and we have a ghost with a cotton candy and like the summerween movie ticket",
+   "zh": "有這些小小的鬼魂冰沙，還有拿著棉花糖的鬼魂，還有 Summerween 電影票，"
+  },
+  {
+   "s": "",
+   "en": "with the ghost and the ghost like reading on the park bench which I think looks so cute.",
+   "zh": "還有鬼魂坐在公園長椅上讀書，我覺得好可愛。"
+  },
+  {
+   "s": "",
+   "en": "But in this design we're offering the shirt on a few different colors as well.",
+   "zh": "這個設計我們也做了幾種不同的顏色。"
+  },
+  {
+   "s": "",
+   "en": "I really like this heather autumn.",
+   "zh": "我很喜歡這個麻花秋色。"
+  },
+  {
+   "s": "",
+   "en": "I feel like that looks so fall coated and I love that heather orchid pink.",
+   "zh": "我覺得那個很有秋天的感覺，我也愛那個麻花蘭花粉。"
+  },
+  {
+   "s": "",
+   "en": "Oh my god, it's so beautiful.",
+   "zh": "我的天，真的太美了。"
+  },
+  {
+   "s": "",
+   "en": "We also are offering these ones on the women's heavyweight tee.",
+   "zh": "這些我們也做在女版厚磅 T 上。"
+  },
+  {
+   "s": "",
+   "en": "So you can get this one in these different shirt styles as well with like the more boxy fit which I really like.",
+   "zh": "所以你也可以用這些不同款式買到這個設計，一樣是我很喜歡的寬版剪裁。"
+  },
+  {
+   "s": "",
+   "en": "And then we also have the pullover hoodies for this one in a few different as well.",
+   "zh": "然後這個設計也有連帽上衣，有幾種不同顏色。"
+  },
+  {
+   "s": "",
+   "en": "We are also going to have this specific collage design available on the tote bags because I thought it would look really cute on a tote bag",
+   "zh": "這個特定的拼貼設計也會做成托特包，因為我覺得做在托特包上會很可愛，"
+  },
+  {
+   "s": "",
+   "en": "and it really does.",
+   "zh": "結果真的很可愛。"
+  },
+  {
+   "s": "",
+   "en": "So we have the tote bags in three different colors.",
+   "zh": "托特包有三種顏色。"
+  },
+  {
+   "s": "",
+   "en": "We have black, we have pumice and then we also have natural which I feel like it looks really good",
+   "zh": "有黑色、浮石灰，還有原色，我覺得做在這三種顏色上都很好看，"
+  },
+  {
+   "s": "",
+   "en": "on all three of those colors and I just thought that logo and like that specific collage looks adorable on a tote bag.",
+   "zh": "而且我就是覺得那個標誌和那個特定的拼貼放在托特包上超迷人。"
+  },
+  {
+   "s": "",
+   "en": "And then also we are going to be selling these large coffee mugs if you wanted to get the original,",
+   "zh": "另外我們還會賣這些大咖啡杯，如果你想要原始的"
+  },
+  {
+   "s": "",
+   "en": "you know, like summerween design on a mug you can do that.",
+   "zh": "Summerween 設計放在杯子上，你可以買。"
+  },
+  {
+   "s": "",
+   "en": "We are going to have those available as well.",
+   "zh": "這些我們也會有。"
+  },
+  {
+   "s": "",
+   "en": "I am so excited about these different merch options.",
+   "zh": "我對這些不同的周邊選項超興奮。"
+  },
+  {
+   "s": "",
+   "en": "I mean, look at how cute this one looks in person as well.",
+   "zh": "我是說，看看這件實體看起來有多可愛。"
+  },
+  {
+   "s": "",
+   "en": "I ended up getting this design on one of the normal t-shirts so that you can see the difference between like the boxy",
+   "zh": "我最後把這個設計印在一件普通 T 恤上，這樣你們可以看到寬版"
+  },
+  {
+   "s": "",
+   "en": "shirt versus like the regular shirts.",
+   "zh": "T 恤和一般 T 恤的差別。"
+  },
+  {
+   "s": "",
+   "en": "And this one's on the Carolina blue color I think but like look at how beautiful that print is.",
+   "zh": "這件是卡羅萊納藍，我想，但你看那個印花多漂亮。"
+  },
+  {
+   "s": "",
+   "en": "The colors are just so vibrant on these shirts.",
+   "zh": "這些衣服上的顏色就是這麼鮮豔。"
+  },
+  {
+   "s": "",
+   "en": "Like I can't even deal with it.",
+   "zh": "我真的受不了，太美了。"
+  },
+  {
+   "s": "",
+   "en": "I just really love the way that this print turned out in general and I was thinking that I might have to get this collage",
+   "zh": "我就是很愛這個印花整體做出來的樣子，而且我在想我可能得把這個拼貼"
+  },
+  {
+   "s": "",
+   "en": "design on one of these like boxy t-shirts because of how much I love the fit with this t-shirt.",
+   "zh": "設計也印在這種寬版 T 恤上，因為我太愛這件的版型了。"
+  },
+  {
+   "s": "",
+   "en": "We've been selling merch through Bonfire pretty much ever since we started summerween and I absolutely love Bonfire because their quality",
+   "zh": "我們從開始辦 Summerween 以來，周邊幾乎都是透過 Bonfire 賣的，我超愛 Bonfire，因為他們的品質"
+  },
+  {
+   "s": "",
+   "en": "is so good.",
+   "zh": "很好。"
+  },
+  {
+   "s": "",
+   "en": "The prints look so vibrant and they last such a long time.",
+   "zh": "印花看起來很鮮豔，而且可以維持很久。"
+  },
+  {
+   "s": "",
+   "en": "I still have merch that I wear almost every single day from like one of the very first rounds of summerween.",
+   "zh": "我現在還有一些周邊，是從最早幾屆 Summerween 留下來的，我幾乎每天都穿。"
+  },
+  {
+   "s": "",
+   "en": "So you can guarantee that the quality is going to be so good on these t-shirts.",
+   "zh": "所以你可以放心，這些 T 恤的品質會非常好。"
+  },
+  {
+   "s": "",
+   "en": "And if you've never ordered from Bonfire before, Bonfire prints everything in different campaigns.",
+   "zh": "如果你以前沒在 Bonfire 訂購過，Bonfire 是用不同的檔期集體印製的。"
+  },
+  {
+   "s": "",
+   "en": "So if you order right now, the campaign is going to last for about two weeks before they print all of those orders",
+   "zh": "所以如果你現在訂，這個檔期會持續大約兩週，之後他們才會把所有訂單印出來，"
+  },
+  {
+   "s": "",
+   "en": "and then they're going to ship them out after.",
+   "zh": "然後再寄出。"
+  },
+  {
+   "s": "",
+   "en": "And Bonfire does ship internationally, but I would recommend that if you want the merch in time for the readathon,",
+   "zh": "Bonfire 有寄國際，但我建議，如果你想在活動前拿到周邊，"
+  },
+  {
+   "s": "",
+   "en": "I would recommend ordering as soon as possible.",
+   "zh": "我建議盡快訂購。"
+  },
+  {
+   "s": "",
+   "en": "And that's why I try to announce these readathons like 2 months in advance so that you have the time to get the merch",
+   "zh": "這就是為什麼我會提前大約 2 個月公布這些活動，讓你有時間把周邊"
+  },
+  {
+   "s": "",
+   "en": "in your hands because it will be at least 2 weeks before they even print the orders.",
+   "zh": "拿到手上，因為至少要 2 週他們才會開始印訂單。"
+  },
+  {
+   "s": "",
+   "en": "So, just a heads-up about that.",
+   "zh": "所以，先提醒一下這點。"
+  },
+  {
+   "s": "",
+   "en": "And if you were wondering, my sister is doing the sticker sets once again.",
+   "zh": "如果你在好奇，我妹妹今年又要推出貼紙組。"
+  },
+  {
+   "s": "",
+   "en": "I mean, as you already saw, some of the stickers made it onto the collage, but I'll show you a close-up",
+   "zh": "我是說，你剛剛已經看到有些貼紙出現在拼貼裡了，但我會讓你們近距離看看"
+  },
+  {
+   "s": "",
+   "en": "of the sticker set that my sister's going to be offering through her Etsy.",
+   "zh": "我妹妹要在她的 Etsy 上賣的貼紙組。"
+  },
+  {
+   "s": "",
+   "en": "I mean, as you can see, the freaking colors are so vibrant.",
+   "zh": "你看，這些顏色真的超鮮豔。"
+  },
+  {
+   "s": "",
+   "en": "I'm obsessed with the sticker set.",
+   "zh": "我超迷這組貼紙。"
+  },
+  {
+   "s": "",
+   "en": "I think it's so cute.",
+   "zh": "我覺得超可愛。"
+  },
+  {
+   "s": "",
+   "en": "I love that it all kind of matches the theme of this like little carnival.",
+   "zh": "我愛它整體都符合這個小嘉年華的主題。"
+  },
+  {
+   "s": "",
+   "en": "There's like little tents and like little ghosts and slurpees and slushies.",
+   "zh": "有小帳篷、小鬼魂，還有思樂冰和冰沙。"
+  },
+  {
+   "s": "",
+   "en": "I just think it's so cute and I'm especially a big fan of this girl with like the pumpkin head.",
+   "zh": "我就是覺得好可愛，尤其我是這個南瓜頭女孩的超級粉絲。"
+  },
+  {
+   "s": "",
+   "en": "Like, are you kidding me?",
+   "zh": "真的假的？"
+  },
+  {
+   "s": "",
+   "en": "That is so adorable.",
+   "zh": "太可愛了吧。"
+  },
+  {
+   "s": "",
+   "en": "The stickers are also a pretty good size as well.",
+   "zh": "這些貼紙的大小也剛剛好。"
+  },
+  {
+   "s": "",
+   "en": "Like, you can see how big they are compared to my hand.",
+   "zh": "你可以看到它們跟我的手比起來有多大。"
+  },
+  {
+   "s": "",
+   "en": "So, I think these stickers would be really great for like a reading journal if you have something like that.",
+   "zh": "所以我覺得這些貼紙很適合貼在閱讀日誌上，如果你有的話。"
+  },
+  {
+   "s": "",
+   "en": "Or, I know that I love to put them on the back of my Kindle during the readathon because I think that's so fun.",
+   "zh": "或者，我知道我喜歡在讀書活動期間貼在我的 Kindle 背面，我覺得這樣超好玩。"
+  },
+  {
+   "s": "",
+   "en": "But, I will have my sister's Etsy shop linked down below.",
+   "zh": "不過，我會把我妹妹的 Etsy 商店連結放在下面。"
+  },
+  {
+   "s": "",
+   "en": "She'll have two different links.",
+   "zh": "她會有兩個不同的連結。"
+  },
+  {
+   "s": "",
+   "en": "One of them is one where you can order them and she'll print them off and send them to you.",
+   "zh": "其中一個可以訂購，她會印出來寄給你。"
+  },
+  {
+   "s": "",
+   "en": "And then the other Etsy link is going to be one that's like a digital download.",
+   "zh": "另一個 Etsy 連結是數位下載版。"
+  },
+  {
+   "s": "",
+   "en": "So, for that one, it'll just let you download the stickers and you can print them off yourself if you want to do that.",
+   "zh": "這個連結會讓你下載貼紙，如果你想的話可以自己印出來。"
+  },
+  {
+   "s": "",
+   "en": "But, yeah, I think that is all of the information for this round of Summerween.",
+   "zh": "好，我想這就是這一屆 Summerween 的所有資訊了。"
+  },
+  {
+   "s": "",
+   "en": "I cannot wait to kick things off on July 3rd.",
+   "zh": "我等不及七月 3 日開跑。"
+  },
+  {
+   "s": "",
+   "en": "This is a readathon that I look forward to so much every single year.",
+   "zh": "這是我每年都超級期待的活動。"
+  },
+  {
+   "s": "",
+   "en": "And like, thank you so much for your enthusiasm and your support for Summerween.",
+   "zh": "還有，非常謝謝你們對 Summerween 的熱情和支持。"
+  },
+  {
+   "s": "",
+   "en": "It really means the world to me and it really has become my favorite thing that I do here on the internet.",
+   "zh": "這對我來說意義非凡，它真的成了我在網路上做的事裡我最愛的一件。"
+  },
+  {
+   "s": "",
+   "en": "So, thank you.",
+   "zh": "所以，謝謝你們。"
+  },
+  {
+   "s": "",
+   "en": "If you're planning to participate, definitely let me know.",
+   "zh": "如果你打算參加，一定要讓我知道。"
+  },
+  {
+   "s": "",
+   "en": "I would love to know any of your feedback.",
+   "zh": "我很想知道你們的任何回饋。"
+  },
+  {
+   "s": "",
+   "en": "And now, let's jump into my TBR.",
+   "zh": "現在，我們來進入我的待讀書單。"
+  },
+  {
+   "s": "",
+   "en": "I do have some exciting news about the Book Troop.",
+   "zh": "我有關於 Book Troop 的一些令人興奮的消息。"
+  },
+  {
+   "s": "",
+   "en": "The Book Troop is my book club here on YouTube and since 2026 has started, we have changed from a monthly",
+   "zh": "Book Troop 是我在 YouTube 上的讀書會，自從 2026 年開始，我們從每月"
+  },
+  {
+   "s": "",
+   "en": "book club to a quarterly book club.",
+   "zh": "讀書會改成每季讀書會。"
+  },
+  {
+   "s": "",
+   "en": "And so, I'm excited to share with you that The Caretaker by Marcus Clewer, this one is going to be our spring",
+   "zh": "所以我很高興告訴你們，Marcus Clewer 的《The Caretaker》，會是我們的春季"
+  },
+  {
+   "s": "",
+   "en": "Book Troop pick.",
+   "zh": "Book Troop 選書。"
+  },
+  {
+   "s": "",
+   "en": "It's the one that's currently happening right now.",
+   "zh": "也就是現在正在進行的這一本。"
+  },
+  {
+   "s": "",
+   "en": "This is a new horror book that I'm so excited to read because of how much I loved We Used to Live Here by this author.",
+   "zh": "這是一本新的恐怖小說，我超期待要讀，因為我超愛這位作者的《We Used to Live Here》。"
+  },
+  {
+   "s": "",
+   "en": "This book actually just published in the month of April and I'm hoping that we're going to have a live show for this towards",
+   "zh": "這本書四月才剛出版，我希望五月底"
+  },
+  {
+   "s": "",
+   "en": "the end of May and I'm really excited that for this live show, I'm going to be joined by two",
+   "zh": "能為它辦一場直播，我很興奮，因為這場直播我會邀請兩位"
+  },
+  {
+   "s": "",
+   "en": "of my BookTube friends.",
+   "zh": "BookTube 朋友一起。"
+  },
+  {
+   "s": "",
+   "en": "We're going to be joined by not only Ashley from Ashley's Little Library as well as Kayla from Books and Lala",
+   "zh": "不只有 Ashley's Little Library 的 Ashley，還有 Books and Lala 的 Kayla，"
+  },
+  {
+   "s": "",
+   "en": "and I'm so happy to have them both back on.",
+   "zh": "我很開心她們兩位都能再來。"
+  },
+  {
+   "s": "",
+   "en": "They've both been on the BookTube a number of times before and I've just been really dying to read this book.",
+   "zh": "她們兩位以前都上過 BookTube 好幾次，而我一直超想讀這本書。"
+  },
+  {
+   "s": "",
+   "en": "So, I cannot wait.",
+   "zh": "所以我等不及了。"
+  },
+  {
+   "s": "",
+   "en": "I hope that you can join us in reading along with this book this month.",
+   "zh": "希望你這個月也能加入我們一起讀這本書。"
+  },
+  {
+   "s": "",
+   "en": "And then I'm also excited to let you know that I have decided that for this summer BookTube pick, it's going to be The Unknown",
+   "zh": "另外我也很高興告訴你們，我決定夏季 BookTube 選書是 Riley Sager 的"
+  },
+  {
+   "s": "",
+   "en": "by Riley Sager.",
+   "zh": "《The Unknown》。"
+  },
+  {
+   "s": "",
+   "en": "I mean, this is probably not a big surprise because the BookTube, like we pretty much read Riley Sager together",
+   "zh": "我是說，這大概也不意外，因為 BookTube 我們幾乎每個夏天"
+  },
+  {
+   "s": "",
+   "en": "every single summer and this summer is going to be no different.",
+   "zh": "都會一起讀 Riley Sager，而今年夏天也不例外。"
+  },
+  {
+   "s": "",
+   "en": "The only thing about this book is that it's actually going to be publishing in early August, which is kind of late for Riley Sager, you know, because I know that in",
+   "zh": "這本書唯一的問題是，它其實要八月初才出版，對 Riley Sager 來說算晚的，因為我知道"
+  },
+  {
+   "s": "",
+   "en": "the past he's always published in like June or July because I know that I've always been reading Riley Sager for Summerween.",
+   "zh": "過去他總是在六月或七月出版，而我一直都是為了 Summerween 讀 Riley Sager。"
+  },
+  {
+   "s": "",
+   "en": "So, like that's going to be weird and it is going to be our summer pick.",
+   "zh": "所以這會有點怪，但它會是我們的夏季選書。"
+  },
+  {
+   "s": "",
+   "en": "So, we're probably going to have a live show for this one like towards of August or like early September",
+   "zh": "所以我們大概會在八月底或九月初為這本辦直播，"
+  },
+  {
+   "s": "",
+   "en": "and I'm hoping that for this live show we'll continue the tradition of having my mom and my sister join.",
+   "zh": "而我希望這場直播能延續傳統，邀請我媽媽和我妹妹加入。"
+  },
+  {
+   "s": "",
+   "en": "So, I'm really looking forward to that and I hope that you can join us this summer reading Riley Sager",
+   "zh": "所以我很期待，也希望你能今年夏天加入我們一起讀 Riley Sager，"
+  },
+  {
+   "s": "",
+   "en": "for the BookTube like our tradition.",
+   "zh": "為了 BookTube 的傳統。"
+  },
+  {
+   "s": "",
+   "en": "I think it's going to be so much fun and I think this book especially sounds more promising because it sounds like it's going to have some like creepy,",
+   "zh": "我覺得會超好玩，而且我覺得這本書聽起來特別有前景，因為它聽起來有一些詭異，"
+  },
+  {
+   "s": "",
+   "en": "almost like paranormal, supernatural vibes to this one.",
+   "zh": "幾乎像是超自然的氛圍。"
+  },
+  {
+   "s": "",
+   "en": "And then coming up pretty soon here in the month of May, I'm planning on doing another reading vlog where I read",
+   "zh": "然後很快就到五月了，我打算再做一支閱讀 Vlog，讀"
+  },
+  {
+   "s": "",
+   "en": "books that you think that I'm going to give five stars.",
+   "zh": "那些你們覺得我會打五顆星的書。"
+  },
+  {
+   "s": "",
+   "en": "This is a video that I've done at least two times in the past now and it went really well both of those times",
+   "zh": "這是我過去至少做過兩次的影片，兩次反應都很好，"
+  },
+  {
+   "s": "",
+   "en": "and I don't want to reveal like my entire TBR for this video because I want to keep some things",
+   "zh": "而我不想透露整份待讀書單，因為我想保留一些東西"
+  },
+  {
+   "s": "",
+   "en": "a surprise.",
+   "zh": "當作驚喜。"
+  },
+  {
+   "s": "",
+   "en": "But, the book that got mentioned the most is this one called This Book Made Me Think of You by Libby Page,",
+   "zh": "不過，被提到最多次的書是 Libby Page 的《This Book Made Me Think of You》，"
+  },
+  {
+   "s": "",
+   "en": "which is really cool because, you know, before doing this video concept, I had never even heard of this book.",
+   "zh": "這很有趣，因為在做這個影片企劃之前，我甚至從沒聽過這本書。"
+  },
+  {
+   "s": "",
+   "en": "But, I ended up buying it when I was on my solo trip because I saw it in the bookstore",
+   "zh": "但我在獨自旅行時買了它，因為我在書店看到"
+  },
+  {
+   "s": "",
+   "en": "and I was like, \"You know what?",
+   "zh": "然後我就想：「你知道嗎？"
+  },
+  {
+   "s": "",
+   "en": "Let's just give it a go because everybody thinks that I'm going to love this.\"",
+   "zh": "就試試看吧，因為大家都覺得我會愛上它。」"
+  },
+  {
+   "s": "",
+   "en": "So, I will be reading this book this month for for video and I hope that it's amazing.",
+   "zh": "所以這個月我會為這支影片讀這本書，希望它很棒。"
+  },
+  {
+   "s": "",
+   "en": "I'm also going to be doing another like 24-hour reading vlog type of video and I'm hoping to be doing this with my friend Britney",
+   "zh": "我也打算再做一支類似 24 小時閱讀的 Vlog，我希望能跟我朋友 Britney 一起做，"
+  },
+  {
+   "s": "",
+   "en": "and I'm hoping to be able to get through at least a few books during that reading vlog.",
+   "zh": "而且我希望在那支閱讀 Vlog 裡至少讀完幾本書。"
+  },
+  {
+   "s": "",
+   "en": "Some of the books that I'm thinking about reading during that reading vlog are some of the horror books that have been piling",
+   "zh": "我考慮在那支 Vlog 裡讀的書，有一些是堆積已久的恐怖"
+  },
+  {
+   "s": "",
+   "en": "up.",
+   "zh": "小說。"
+  },
+  {
+   "s": "",
+   "en": "I mean, I do have this one called Abyss by Nicholas Binge and this one is a sci-fi horror novella.",
+   "zh": "我是說，我有這本 Nicholas Binge 的《Abyss》，這是一本科幻恐怖中篇小說。"
+  },
+  {
+   "s": "",
+   "en": "This is one that I'm hoping to get through because it's so short.",
+   "zh": "這是我希望能讀完的一本，因為它很短。"
+  },
+  {
+   "s": "",
+   "en": "It's only like 140 pages so I feel like this would be really good to read during a 24-hour read-a-thon",
+   "zh": "只有 140 頁左右，所以我覺得很適合在 24 小時的讀書活動裡讀，"
+  },
+  {
+   "s": "",
+   "en": "and then same with this one Wretch by Eric LaRocca.",
+   "zh": "還有同樣的是 Eric LaRocca 的《Wretch》。"
+  },
+  {
+   "s": "",
+   "en": "This one's been on my TBR for such a long time.",
+   "zh": "這本在我的待讀書單上放了很久。"
+  },
+  {
+   "s": "",
+   "en": "This one's on the shorter side, too.",
+   "zh": "這本也算比較短的。"
+  },
+  {
+   "s": "",
+   "en": "It's about like 275 pages and this one published in March and I've just been so curious to check it out.",
+   "zh": "大約 275 頁，三月出版，我一直很好奇想看看。"
+  },
+  {
+   "s": "",
+   "en": "So this one is a potential one for me.",
+   "zh": "所以這本對我來說是個可能的選項。"
+  },
+  {
+   "s": "",
+   "en": "I also have some romance books that I'm dying to get to.",
+   "zh": "我也有一些愛情小說迫不及待想讀。"
+  },
+  {
+   "s": "",
+   "en": "This one's Stranger Things Have Happened by KC West.",
+   "zh": "這本是 KC West 的《Stranger Things Have Happened》。"
+  },
+  {
+   "s": "",
+   "en": "I just really love that KC West has been writing more adult romance books and I need to know if this one's going to be good.",
+   "zh": "我真的很喜歡 KC West 開始寫更多成人愛情小說，我一定要知道這本好不好看。"
+  },
+  {
+   "s": "",
+   "en": "So this is one that's at the top of my TBR as well as this one called Love and Other Brain Experiments.",
+   "zh": "所以這本在我的待讀書單最前面，另外還有這本《Love and Other Brain Experiments》。"
+  },
+  {
+   "s": "",
+   "en": "I've heard this one recommended for fans of Ali Hazelwood which just really has me intrigued.",
+   "zh": "我聽說這本被推薦給 Ali Hazelwood 的粉絲，這讓我很感興趣。"
+  },
+  {
+   "s": "",
+   "en": "And so this is definitely a possibility for something I could read.",
+   "zh": "所以這絕對是我有可能會讀的書。"
+  },
+  {
+   "s": "",
+   "en": "I'm also excited that in the month of May I'm finally going to be working on this video concept that I've had for a while",
+   "zh": "我也很興奮，五月我終於要來做這個我構想了一陣子的影片企劃，"
+  },
+  {
+   "s": "",
+   "en": "and that's basically going to be like a battle of the celebrity book clubs kind of a video.",
+   "zh": "基本上就是名人讀書會大對決之類的影片。"
+  },
+  {
+   "s": "",
+   "en": "I know I mentioned this at the start of this year that I was going to be doing this in April",
+   "zh": "我記得今年初我提過，我打算四月做這個，"
+  },
+  {
+   "s": "",
+   "en": "but then I felt really discouraged because I feel like they were picking a lot of books that I just was not",
+   "zh": "但後來我覺得很洩氣，因為我覺得他們選了很多我完全沒"
+  },
+  {
+   "s": "",
+   "en": "interested in reading at all for like most of this year and I was just like, \"Okay, like I'm not excited",
+   "zh": "興趣讀的書，今年大部分時間都是這樣，我就想：「好吧，我對"
+  },
+  {
+   "s": "",
+   "en": "about doing this video project anymore.\"",
+   "zh": "做這個影片企劃不再興奮了。」"
+  },
+  {
+   "s": "",
+   "en": "So I felt like I was just going to scrap it.",
+   "zh": "所以我覺得我大概要放棄它了。"
+  },
+  {
+   "s": "",
+   "en": "But then in the month of April, I feel like all of the celebrity book clubs ended up picking books that I was actually",
+   "zh": "但到了四月，我覺得所有名人讀書會最後選的書，我其實"
+  },
+  {
+   "s": "",
+   "en": "really interested in.",
+   "zh": "都很有興趣。"
+  },
+  {
+   "s": "",
+   "en": "So I got really excited about this video concept all over again and so it's finally going to be happening",
+   "zh": "所以我對這個影片概念又重新興奮起來，它終於要在"
+  },
+  {
+   "s": "",
+   "en": "in the month of May.",
+   "zh": "五月實現了。"
+  },
+  {
+   "s": "",
+   "en": "Like I'm going to make this work and I decided that I'm going to be reading the April book club picks for Reese's",
+   "zh": "我要讓它成真，我決定要讀 Reese's"
+  },
+  {
+   "s": "",
+   "en": "Book Club, Read With Jenna, Good Morning America as well as Oprah because when Reese Witherspoon announced that Into the Blue",
+   "zh": "Book Club、Read With Jenna、Good Morning America 還有 Oprah 的四月讀書會選書，因為當 Reese Witherspoon 宣布 Emma Brodie 的《Into the Blue》"
+  },
+  {
+   "s": "",
+   "en": "by Emma Brodie was going to be her book club pick for the month of April, I was like, \"Bitch,",
+   "zh": "是她四月的讀書會選書時，我當時想：「天啊，"
+  },
+  {
+   "s": "",
+   "en": "shut up.\"",
+   "zh": "不會吧！」"
+  },
+  {
+   "s": "",
+   "en": "Because this was already like one of my most anticipated books of the year.",
+   "zh": "因為這本本來就是我今年最期待的書之一。"
+  },
+  {
+   "s": "",
+   "en": "This is one that I've heard being described as kind of like a literary fiction romance novel.",
+   "zh": "我聽到的描述是，有點像文學小說加愛情小說。"
+  },
+  {
+   "s": "",
+   "en": "It's kind of like one of those epic love stories that takes place over decades of time.",
+   "zh": "有點像那種橫跨幾十年的史詩愛情故事。"
+  },
+  {
+   "s": "",
+   "en": "And I've just been dying like I've been absolutely dying to read this.",
+   "zh": "我一直超想讀，真的是想死了。"
+  },
+  {
+   "s": "",
+   "en": "So I'm really excited that this book is going to be included in that vlog.",
+   "zh": "所以我很興奮這本書會被放進那支 Vlog。"
+  },
+  {
+   "s": "",
+   "en": "And then Read With Jenna announced that this one Upward Bound by Woody Brown was going to be her book club pick and I've been really",
+   "zh": "然後 Read With Jenna 宣布 Woody Brown 的《Upward Bound》是她的讀書會選書，我也一直很"
+  },
+  {
+   "s": "",
+   "en": "excited and curious to read this one as well.",
+   "zh": "興奮、好奇想讀這本。"
+  },
+  {
+   "s": "",
+   "en": "And then Oprah Winfrey announced that the book Kin was going to be her book club pick and this is another",
+   "zh": "接著 Oprah Winfrey 宣布《Kin》是她的讀書會選書，這是另一本"
+  },
+  {
+   "s": "",
+   "en": "one that I've had on my radar.",
+   "zh": "我早就在關注的書。"
+  },
+  {
+   "s": "",
+   "en": "I think this one's like a literary fiction book that involves this like family.",
+   "zh": "我想這是一本文學小說，內容跟一個家庭有關。"
+  },
+  {
+   "s": "",
+   "en": "I think it's like family drama type of story.",
+   "zh": "我想是家庭劇類型的故事。"
+  },
+  {
+   "s": "",
+   "en": "And so I'm going to be reading Kin for this video.",
+   "zh": "所以這支影片我會讀《Kin》。"
+  },
+  {
+   "s": "",
+   "en": "And then Good Morning America announced that Yesteryear was going to be its pick for April.",
+   "zh": "然後 Good Morning America 宣布《Yesteryear》是它四月的選書。"
+  },
+  {
+   "s": "",
+   "en": "And I was like, \"Holy crap.\"",
+   "zh": "我當時想：「天哪！」"
+  },
+  {
+   "s": "",
+   "en": "Because Yesteryear is another one of those books that is like one of my most anticipated books of this year.",
+   "zh": "因為《Yesteryear》是我今年最期待的書之一。"
+  },
+  {
+   "s": "",
+   "en": "I don't even really know that much about Yesteryear except for the fact that it involves like this girl who's like an influencer.",
+   "zh": "我對《Yesteryear》其實知道得不多，只知道內容跟一個像是網紅的女孩有關。"
+  },
+  {
+   "s": "",
+   "en": "She's like a traditional housewife influencer.",
+   "zh": "她是那種傳統家庭主婦型網紅。"
+  },
+  {
+   "s": "",
+   "en": "And then it's about how she gets sent back in time to like the 1800s.",
+   "zh": "然後內容是她被送回過去，回到 1800 年代。"
+  },
+  {
+   "s": "",
+   "en": "And then she actually has to be like a tradwife.",
+   "zh": "然後她真的得當個傳統主婦。"
+  },
+  {
+   "s": "",
+   "en": "Oh my god, it sounds like it's going to be unhinged and ridiculous.",
+   "zh": "我的天，聽起來會很失控又荒謬。"
+  },
+  {
+   "s": "",
+   "en": "And I know a lot of people are already saying that this is their favorite book of 2026.",
+   "zh": "我知道很多人已經說這是他們 2026 年最愛的書。"
+  },
+  {
+   "s": "",
+   "en": "And it already got picked up to be a movie with Anne Hathaway.",
+   "zh": "而且它已經被買下版權，要拍成電影，由安・海瑟薇主演。"
+  },
+  {
+   "s": "",
+   "en": "I'm just so excited to read Yesteryear.",
+   "zh": "我真的超期待讀《Yesteryear》。"
+  },
+  {
+   "s": "",
+   "en": "So I'm so glad that Good Morning America picked that for the book club pick so that I could read it for this video.",
+   "zh": "所以我很高興 Good Morning America 選了它當讀書會選書，這樣我就能為這支影片讀它。"
+  },
+  {
+   "s": "",
+   "en": "So I think it'll be really fun to finally see this video come to light that I've had in mind",
+   "zh": "所以我覺得終於能看到這支我構想了"
+  },
+  {
+   "s": "",
+   "en": "for a while.",
+   "zh": "很久的影片問世，會很有趣。"
+  },
+  {
+   "s": "",
+   "en": "And then I don't know what other video plans that I might have coming up in these next couple of weeks.",
+   "zh": "然後接下來這幾週我還有沒有其他影片計畫，我還不知道。"
+  },
+  {
+   "s": "",
+   "en": "Like I'm kind of torn between doing a few different things.",
+   "zh": "我有點在幾件不同的事之間猶豫。"
+  },
+  {
+   "s": "",
+   "en": "I have a lot of ARCs that are piling up that I really want to get to.",
+   "zh": "我有很多試讀本堆積著，很想讀。"
+  },
+  {
+   "s": "",
+   "en": "So I'm hoping that at some point in these next couple of weeks I can read the new Lisa Jewell,",
+   "zh": "所以我希望這幾週內某個時候，能讀到 Lisa Jewell 的新書，"
+  },
+  {
+   "s": "",
+   "en": "which is called It Could Have Been Her.",
+   "zh": "叫做《It Could Have Been Her》。"
+  },
+  {
+   "s": "",
+   "en": "This one is definitely like top of my TBR list for things that I'm hoping to get to because this one publishes",
+   "zh": "這本絕對是我待讀書單的最前面，因為它"
+  },
+  {
+   "s": "",
+   "en": "in June.",
+   "zh": "六月出版。"
+  },
+  {
+   "s": "",
+   "en": "I also have another horror ARC that I'm so curious about called These Familiar Walls.",
+   "zh": "我還有另一本恐怖試讀本很好奇，叫《These Familiar Walls》。"
+  },
+  {
+   "s": "",
+   "en": "This one just published in April.",
+   "zh": "這本四月才剛出版。"
+  },
+  {
+   "s": "",
+   "en": "So I'm really hoping to get to this one soon.",
+   "zh": "所以我真的希望很快能讀到這本。"
+  },
+  {
+   "s": "",
+   "en": "But this one sounds like it's going to be like haunted house horror.",
+   "zh": "這本聽起來是鬼屋恐怖類型。"
+  },
+  {
+   "s": "",
+   "en": "Oh my gosh, also the new Nat Cassidy short story collection is publishing in the month of May.",
+   "zh": "天啊，還有 Nat Cassidy 的新短篇小說集五月要出版了。"
+  },
+  {
+   "s": "",
+   "en": "It's called I Know a Place or like I know places or something like that.",
+   "zh": "書名叫《I Know a Place》，或是「我知道一些地方」之類的。"
+  },
+  {
+   "s": "",
+   "en": "I'm definitely going to be reading this one in the month of May, like guaranteed.",
+   "zh": "我絕對會在五月讀這本，保證。"
+  },
+  {
+   "s": "",
+   "en": "Because Nat Cassidy is like one of my top favorite horror authors, and I've really, really been looking forward to the short story collection.",
+   "zh": "因為 Nat Cassidy 是我最喜歡的恐怖小說作家之一，我一直非常期待這本短篇小說集。"
+  },
+  {
+   "s": "",
+   "en": "One of the romance books that I'm dying to get to is In Stormy Weather.",
+   "zh": "我迫不及待想讀的愛情小說之一是《In Stormy Weather》。"
+  },
+  {
+   "s": "",
+   "en": "I'm really hoping that I can include this in some kind of video this month.",
+   "zh": "我真的希望這個月能把它放進某支影片。"
+  },
+  {
+   "s": "",
+   "en": "Like maybe I'll try to read it for that 24-hour reading challenge, or maybe I'll try to include it somewhere.",
+   "zh": "像是也許我會試著在那個 24 小時閱讀挑戰裡讀它，或者也許會想辦法放進別的地方。"
+  },
+  {
+   "s": "",
+   "en": "I might actually just need to do a video dedicated to like catching up on some of the arcs that I'm excited",
+   "zh": "我可能真的需要做一支專門的影片，來補完一些我很期待的"
+  },
+  {
+   "s": "",
+   "en": "about because I have so many that I'm looking forward to.",
+   "zh": "試讀本，因為我有太多想看的了。"
+  },
+  {
+   "s": "",
+   "en": "This is a romance that I'm so positive is going to be five stars for me, like why?",
+   "zh": "這是一本我很確定會給五顆星的愛情小說，為什麼呢？"
+  },
+  {
+   "s": "",
+   "en": "I don't know.",
+   "zh": "我不知道。"
+  },
+  {
+   "s": "",
+   "en": "But it's an academic rivals-to-lovers romance about storm-chasing meteorologists.",
+   "zh": "但這是一本學術宿敵變戀人的愛情小說，主角是追風暴的氣象學家。"
+  },
+  {
+   "s": "",
+   "en": "And it says for fans of Ali Hazelwood and B.K.",
+   "zh": "而且說是適合 Ali Hazelwood 和 B.K."
+  },
+  {
+   "s": "",
+   "en": "Borison, which I am a fan.",
+   "zh": "Borison 的粉絲，而我就是粉絲。"
+  },
+  {
+   "s": "",
+   "en": "And then some other books that I'm really hoping to get to very soon is Annie Knows Everything, as well as I Leave It Up to You.",
+   "zh": "然後我很希望很快讀到的其他書，有《Annie Knows Everything》，還有《I Leave It Up to You》。"
+  },
+  {
+   "s": "",
+   "en": "I don't know if I'm necessarily going to be vlogging, you know, my experiences with these books.",
+   "zh": "我不確定我會不會把讀這些書的經驗拍成 Vlog。"
+  },
+  {
+   "s": "",
+   "en": "I put both of the audiobooks on hold at my library, and so these ones might just be like books that I'm like listening",
+   "zh": "我在圖書館預約了兩本有聲書，所以這幾本也許只會是我在"
+  },
+  {
+   "s": "",
+   "en": "to in the background whenever I get some free time.",
+   "zh": "有空閒時間時，在背景聽的書。"
+  },
+  {
+   "s": "",
+   "en": "But these books are both, you know, like contemporary fiction books that I've just been so interested in reading recently.",
+   "zh": "但這兩本都是當代小說，我最近一直很有興趣讀。"
+  },
+  {
+   "s": "",
+   "en": "Those are all of my TBR plans, all of the Summerween announcement, everything that you need to know.",
+   "zh": "這就是我所有的待讀書單計畫、所有 Summerween 公告，你需要知道的一切。"
+  },
+  {
+   "s": "",
+   "en": "Thank you so much for watching.",
+   "zh": "非常感謝你們收看。"
+  },
+  {
+   "s": "",
+   "en": "I really do appreciate it.",
+   "zh": "我真的很感激。"
+  },
+  {
+   "s": "",
+   "en": "You'll have to let me know, are you planning on participating in Summerween?",
+   "zh": "請讓我知道，你打算參加 Summerween 嗎？"
+  },
+  {
+   "s": "",
+   "en": "Have you read any of these books that I just talked about, and if so, what are your thoughts on them?",
+   "zh": "你有讀過我剛剛提到的任何書嗎？如果有，你覺得怎麼樣？"
+  },
+  {
+   "s": "",
+   "en": "Thank you so much for watching me here on YouTube.",
+   "zh": "非常感謝你們在 YouTube 上看我。"
+  },
+  {
+   "s": "",
+   "en": "It literally means the world to me.",
+   "zh": "這對我來說真的意義非凡。"
+  },
+  {
+   "s": "",
+   "en": "You have no idea.",
+   "zh": "你們不知道這有多重要。"
+  },
+  {
+   "s": "",
+   "en": "I always feel so lucky and so grateful that so many of you are still tuning in to watch my videos",
+   "zh": "我總是覺得好幸運、好感激，這麼多人這麼多年後"
+  },
+  {
+   "s": "",
+   "en": "all these years later.",
+   "zh": "還在看我的影片。"
+  },
+  {
+   "s": "",
+   "en": "It really does mean the world to me.",
+   "zh": "這真的對我意義非凡。"
+  },
+  {
+   "s": "",
+   "en": "So, thank you so much for being here, and I'll see you next time with another video.",
+   "zh": "所以，非常謝謝你們來這裡，我們下次影片見。"
+  },
+  {
+   "s": "",
+   "en": "Bye.",
+   "zh": "掰掰。"
+  }
+ ],
+ "quiz": [
+  {
+   "q": "When does this year's Summerween take place?",
+   "options": [
+    "June 3 to June 9",
+    "August 3 to August 9",
+    "July 3 to July 9",
+    "July 13 to July 19"
+   ],
+   "answer": 2,
+   "line": 14,
+   "why": "她說官方日期是 7 月 3 日星期五到 9 日，為期一週。"
+  },
+  {
+   "q": "What does she say about the reading prompts?",
+   "options": [
+    "You can skip them and still join",
+    "You must finish all five",
+    "You must pick only two",
+    "They are only for Instagram"
+   ],
+   "answer": 0,
+   "line": 57,
+   "why": "她說不需要完成所有題目也能參加，甚至可以只做一個。"
+  },
+  {
+   "q": "How did the Book Troop change in 2026?",
+   "options": [
+    "It moved to a weekly meeting",
+    "It stopped meeting",
+    "It became a podcast",
+    "It changed from monthly to quarterly"
+   ],
+   "answer": 3,
+   "line": 170,
+   "why": "她說 2026 年開始，讀書會從每月一次改成每季一次。"
+  },
+  {
+   "q": "How many times has Gabby hosted Summerween, including this year?",
+   "options": [
+    "This is the first time.",
+    "This is the third time.",
+    "This is the fifth time.",
+    "This is the seventh time."
+   ],
+   "answer": 3,
+   "line": 6,
+   "why": "她說今年是第七屆 Summerween。"
+  },
+  {
+   "q": "Who does Gabby hope will join the live show?",
+   "options": [
+    "Her mom and her sister",
+    "Her best friend from school",
+    "A famous author",
+    "Her boyfriend"
+   ],
+   "answer": 0,
+   "line": 192,
+   "why": "她希望直播延續傳統，邀請媽媽和妹妹一起加入。"
+  }
+ ],
+ "words": [
+  {
+   "w": "annual",
+   "pos": "形容詞",
+   "zh": "一年一度的、年度的",
+   "ex1": "This is an annual spooky readathon…",
+   "line": 5,
+   "ex2": "The annual audit starts next week.",
+   "ex2zh": "年度稽核下週開始。",
+   "toeic": true,
+   "hook": "諧音「安扭兒」：每年都安安扭一次（舉行一次）＝年度的",
+   "pic": "a happy family blowing out candles on a birthday cake together",
+   "img": "pic/word_0.png"
+  },
+  {
+   "w": "optional",
+   "pos": "形容詞",
+   "zh": "可選擇的、非必要的",
+   "ex1": "The prompts are completely optional…",
+   "line": 26,
+   "ex2": "The extra inspection is optional for this order.",
+   "ex2zh": "這張訂單的額外檢驗是可選的。",
+   "toeic": true,
+   "hook": "option 選擇＋al：可以選擇的＝非必要的",
+   "pic": "a person choosing from two doors with a relaxed smile",
+   "img": "pic/word_1.png"
+  },
+  {
+   "w": "vibrant",
+   "pos": "形容詞",
+   "zh": "鮮豔的、充滿活力的",
+   "ex1": "The colors are just so vibrant on these shirts.",
+   "line": 123,
+   "ex2": "The printed colors are vibrant and do not fade.",
+   "ex2zh": "印出來的顏色鮮豔而且不會褪色。",
+   "toeic": false,
+   "hook": "vibr 震動＋ant：色彩在眼前震動跳躍＝鮮豔",
+   "pic": "a painter smiling next to a bright rainbow-colored canvas",
+   "img": "pic/word_2.png"
+  },
+  {
+   "w": "guarantee",
+   "pos": "動詞",
+   "zh": "保證",
+   "ex1": "So you can guarantee that the quality is going to be so good…",
+   "line": 131,
+   "ex2": "We guarantee delivery within five days.",
+   "ex2zh": "我們保證五天內送達。",
+   "toeic": true,
+   "hook": "諧音「蓋爾安替」：蓋章安心地提供＝保證",
+   "pic": "a person shaking hands with a smiling customer over a box",
+   "img": "pic/word_3.png"
+  },
+  {
+   "w": "enthusiasm",
+   "pos": "名詞",
+   "zh": "熱情、熱忱",
+   "ex1": "…thank you so much for your enthusiasm and your support for Summerween.",
+   "line": 163,
+   "ex2": "The team showed great enthusiasm for the new project.",
+   "ex2zh": "團隊對新專案展現了極大的熱情。",
+   "toeic": false,
+   "hook": "en 在裡面＋theos 神：神在心裡＝滿腔熱情",
+   "pic": "a cheering crowd with raised arms and big smiles",
+   "img": "pic/word_4.png"
+  }
+ ],
+ "gloss": {
+  "annual": [
+   "形容詞",
+   "一年一度的",
+   "",
+   "We have an annual meeting.",
+   "我們有年度會議。"
+  ],
+  "audit": [
+   "名詞",
+   "稽核",
+   "",
+   "The audit starts Monday.",
+   "稽核星期一開始。"
+  ],
+  "august": [
+   "名詞",
+   "八月",
+   "",
+   "The new model ships in August.",
+   "新機型八月出貨。"
+  ],
+  "became": [
+   "動詞",
+   "變成（become 的過去式）",
+   "",
+   "It became our favorite thing.",
+   "它變成我們最愛的事。"
+  ],
+  "book": [
+   "名詞",
+   "書",
+   "",
+   "I read this book twice.",
+   "我讀過這本書兩次。"
+  ],
+  "change": [
+   "動詞",
+   "改變",
+   "名詞：零錢",
+   "We will change the design.",
+   "我們會修改設計。"
+  ],
+  "changed": [
+   "動詞",
+   "改變（change 的過去式）",
+   "",
+   "The plan changed last week.",
+   "計畫上週改了。"
+  ],
+  "colors": [
+   "名詞",
+   "顏色（複數）",
+   "",
+   "The colors look bright.",
+   "顏色看起來很鮮豔。"
+  ],
+  "completely": [
+   "副詞",
+   "完全地",
+   "",
+   "The task is completely done.",
+   "這項工作已完全做完。"
+  ],
+  "delivery": [
+   "名詞",
+   "交貨、送達",
+   "",
+   "Delivery takes two days.",
+   "送貨需要兩天。"
+  ],
+  "enthusiasm": [
+   "名詞",
+   "熱情",
+   "",
+   "She works with enthusiasm.",
+   "她很有熱情地工作。"
+  ],
+  "extra": [
+   "形容詞",
+   "額外的",
+   "",
+   "We need an extra copy.",
+   "我們需要多一份。"
+  ],
+  "fade": [
+   "動詞",
+   "褪色",
+   "",
+   "The print will not fade.",
+   "印花不會褪色。"
+  ],
+  "finish": [
+   "動詞",
+   "完成",
+   "",
+   "Please finish the report.",
+   "請完成報告。"
+  ],
+  "guarantee": [
+   "動詞",
+   "保證",
+   "名詞：保固",
+   "We guarantee the quality.",
+   "我們保證品質。"
+  ],
+  "inspection": [
+   "名詞",
+   "檢驗",
+   "",
+   "The inspection passed.",
+   "檢驗通過了。"
+  ],
+  "instagram": [
+   "名詞",
+   "Instagram（社群平台）",
+   "",
+   "She posts on Instagram daily.",
+   "她每天在 Instagram 發文。"
+  ],
+  "join": [
+   "動詞",
+   "加入",
+   "",
+   "Please join our meeting.",
+   "請加入我們的會議。"
+  ],
+  "july": [
+   "名詞",
+   "七月",
+   "",
+   "The event is in July.",
+   "活動在七月。"
+  ],
+  "june": [
+   "名詞",
+   "六月",
+   "",
+   "The book comes out in June.",
+   "這本書六月出版。"
+  ],
+  "monthly": [
+   "形容詞",
+   "每月的",
+   "",
+   "We hold a monthly review.",
+   "我們每月檢討一次。"
+  ],
+  "optional": [
+   "形容詞",
+   "可選擇的",
+   "",
+   "The extra test is optional.",
+   "額外測試是可選的。"
+  ],
+  "pick": [
+   "名詞",
+   "選擇、選書",
+   "動詞：挑選",
+   "This is my pick for lunch.",
+   "這是我午餐的選擇。"
+  ],
+  "podcast": [
+   "名詞",
+   "播客",
+   "",
+   "I listen to a podcast daily.",
+   "我每天聽播客。"
+  ],
+  "printed": [
+   "動詞",
+   "印刷（print 的過去式）",
+   "",
+   "The labels were printed today.",
+   "標籤今天印好了。"
+  ],
+  "project": [
+   "名詞",
+   "專案",
+   "",
+   "The project ends in May.",
+   "專案五月結束。"
+  ],
+  "prompts": [
+   "名詞",
+   "題目、提示（複數）",
+   "",
+   "The prompts are easy to follow.",
+   "題目很容易照著做。"
+  ],
+  "quarterly": [
+   "形容詞",
+   "每季的",
+   "",
+   "We send a quarterly report.",
+   "我們寄出每季報告。"
+  ],
+  "readathon": [
+   "名詞",
+   "讀書馬拉松（read＋marathon）",
+   "",
+   "The readathon lasts one week.",
+   "讀書馬拉松持續一週。"
+  ],
+  "reading": [
+   "動詞",
+   "閱讀（read 的進行式）",
+   "名詞：閱讀",
+   "I'm reading a new book.",
+   "我正在讀一本新書。"
+  ],
+  "shirts": [
+   "名詞",
+   "襯衫、T 恤（複數）",
+   "",
+   "The shirts are on sale.",
+   "襯衫在特價。"
+  ],
+  "showed": [
+   "動詞",
+   "展示（show 的過去式）",
+   "",
+   "She showed us the sample.",
+   "她給我們看了樣品。"
+  ],
+  "skip": [
+   "動詞",
+   "跳過",
+   "",
+   "You can skip this step.",
+   "你可以跳過這一步。"
+  ],
+  "so": [
+   "副詞・連接詞",
+   "這麼、所以",
+   "",
+   "It was so cute.",
+   "它真的好可愛。"
+  ],
+  "spooky": [
+   "形容詞",
+   "毛骨悚然的",
+   "",
+   "The old house is spooky.",
+   "這棟老房子很陰森。"
+  ],
+  "starts": [
+   "動詞",
+   "開始（start 的第三人稱）",
+   "",
+   "The meeting starts at nine.",
+   "會議九點開始。"
+  ],
+  "stopped": [
+   "動詞",
+   "停止（stop 的過去式）",
+   "",
+   "The machine stopped.",
+   "機器停了。"
+  ],
+  "summerween": [
+   "名詞",
+   "Summerween（夏天的萬聖節活動名）",
+   "",
+   "Summerween happens in July.",
+   "Summerween 在七月舉行。"
+  ],
+  "support": [
+   "名詞",
+   "支持",
+   "動詞：支持",
+   "Thanks for your support.",
+   "謝謝你的支持。"
+  ],
+  "take": [
+   "動詞",
+   "拿、參加（take place：舉行）",
+   "",
+   "The event takes place in July.",
+   "活動在七月舉行。"
+  ],
+  "thank": [
+   "動詞",
+   "感謝",
+   "",
+   "Thank you for coming.",
+   "謝謝你來。"
+  ],
+  "these": [
+   "代名詞",
+   "這些",
+   "",
+   "These are new samples.",
+   "這些是新樣品。"
+  ],
+  "troop": [
+   "名詞",
+   "團體、一群人（Book Troop：讀書會名稱）",
+   "",
+   "The troop meets every week.",
+   "這個團體每週聚會。"
+  ],
+  "vibrant": [
+   "形容詞",
+   "鮮豔的",
+   "",
+   "The colors are vibrant.",
+   "顏色很鮮豔。"
+  ],
+  "weekly": [
+   "形容詞",
+   "每週的",
+   "",
+   "We have a weekly meeting.",
+   "我們每週開會。"
+  ],
+  "year's": [
+   "名詞",
+   "今年的（year 的所有格）",
+   "",
+   "This year's goal is clear.",
+   "今年的目標很明確。"
+  ],
+  "author": [
+   "名詞",
+   "作者",
+   "",
+   "Who is the author of this book?",
+   "這本書的作者是誰？"
+  ],
+  "boyfriend": [
+   "名詞",
+   "男朋友",
+   "",
+   "Her boyfriend lives in Japan.",
+   "她男朋友住在日本。"
+  ],
+  "famous": [
+   "形容詞",
+   "有名的",
+   "",
+   "He is a famous singer.",
+   "他是有名的歌手。"
+  ],
+  "fifth": [
+   "數字",
+   "第五",
+   "",
+   "This is my fifth trip to Tokyo.",
+   "這是我第五次去東京。"
+  ],
+  "friend": [
+   "名詞",
+   "朋友",
+   "",
+   "She is my best friend.",
+   "她是我最好的朋友。"
+  ],
+  "gabby": [
+   "人名",
+   "Gabby（影片主角）",
+   "",
+   "Gabby loves reading.",
+   "Gabby 很愛看書。"
+  ],
+  "hosted": [
+   "動詞",
+   "主辦（host 的過去式）",
+   "",
+   "We hosted a party last night.",
+   "我們昨晚辦了一場派對。"
+  ],
+  "including": [
+   "介系詞",
+   "包括",
+   "",
+   "Ten people came, including my boss.",
+   "來了十個人，包括我老闆。"
+  ],
+  "live": [
+   "形容詞",
+   "現場的、直播的",
+   "動詞：住",
+   "We watched the live show online.",
+   "我們在網路上看現場直播。"
+  ],
+  "mom": [
+   "名詞",
+   "媽媽",
+   "",
+   "My mom is a teacher.",
+   "我媽是老師。"
+  ],
+  "school": [
+   "名詞",
+   "學校",
+   "",
+   "My son walks to school.",
+   "我兒子走路上學。"
+  ],
+  "seventh": [
+   "數字",
+   "第七",
+   "",
+   "It's the seventh day of the trip.",
+   "這是旅程的第七天。"
+  ],
+  "show": [
+   "名詞",
+   "節目、直播",
+   "動詞：展示",
+   "The show starts at eight.",
+   "節目八點開始。"
+  ],
+  "sister": [
+   "名詞",
+   "姊妹",
+   "",
+   "My sister lives in Tainan.",
+   "我姊姊住在台南。"
+  ],
+  "third": [
+   "數字",
+   "第三",
+   "",
+   "Turn left at the third street.",
+   "在第三條街左轉。"
   ]
+ },
+ "phrases": []
 }
