@@ -136,7 +136,24 @@ section.step.lyr{gap:10px}
 .lplayer .times{margin-top:-4px}
 .lplayer .ctrl{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:4px}
 .lplayer .ctrl .side{display:flex;justify-content:space-around;align-items:center;min-width:0}
-.lplayer .ctrl .side .ibtn{min-width:44px}
+.lplayer .ctrl .side .ibtn{min-width:40px}
+.lplayer .ctrl .ibtn.big{min-width:48px}
+.lplayer .ctrl .ibtn.big .icon{width:32px;height:32px}
+.lplayer .ctrl .round{width:68px;height:68px}
+.lplayer .ctrl .round .icon{width:34px;height:34px}
+/* 播放清單：從下面滑上來，每句英文＋中文，右邊播放鍵只播那一句（練口說用） */
+.plist .top{position:sticky;top:-18px;z-index:1;background:var(--surface);padding:6px 0 10px;margin-top:-6px}
+.plist .hd{justify-content:center;position:relative}
+.plist .grip{width:44px;height:5px;border-radius:3px;background:var(--line);margin:0 auto 4px}
+.plist h3{margin:0;font:700 19px var(--font-body)}
+.plist .rows{display:flex;flex-direction:column}
+.plist .prow{display:flex;align-items:center;gap:12px;padding:12px 2px;border-top:1px solid var(--line)}
+.plist .prow .tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.plist .prow .pen{font-size:17px;line-height:1.45;color:var(--ink)}
+.plist .prow .pzh{font-size:14px;color:var(--muted)}
+.plist .prow.on .pen{color:var(--accent);font-weight:600}
+.plist .pplay{flex:0 0 auto;width:44px;height:44px;border-radius:50%;border:0;background:color-mix(in srgb,var(--accent) 12%,transparent);color:var(--accent);display:grid;place-items:center;cursor:pointer}
+.plist .pplay .icon{width:20px;height:20px}
 .ibtn{min-width:52px;min-height:52px;border:0;background:transparent;color:var(--ink);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;cursor:pointer;font:600 16px var(--font-body);border-radius:12px}
 .ibtn small{font-size:13px;font-weight:500;color:var(--muted)}
 .ibtn .icon{width:24px;height:24px}
@@ -323,6 +340,7 @@ const ICON = {
   next: '<svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg>',
   eye: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg>',
   eyeoff: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.6 5.1A10.4 10.4 0 0 1 12 5c6.5 0 10 7 10 7a17 17 0 0 1-2.2 3.1M6.6 6.6C3.9 8.4 2 12 2 12s3.5 7 10 7a9.7 9.7 0 0 0 5.4-1.6"/><path d="M9.9 9.9a3 3 0 0 0 4.2 4.2"/><path d="M3 3l18 18"/></svg>',
+  list: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13"/><circle cx="3.5" cy="6" r="1" fill="currentColor"/><circle cx="3.5" cy="12" r="1" fill="currentColor"/><circle cx="3.5" cy="18" r="1" fill="currentColor"/></svg>',
   again: '<svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/></svg>'
 };
 const icon = (name) => { const s = document.createElement("span"); s.innerHTML = ICON[name]; return s.firstChild; };
@@ -774,13 +792,13 @@ function renderProgress() {}
 function setBar(...btns) { const bar = $("#actionbar"); bar.innerHTML = ""; btns.forEach(b => bar.append(b)); }
 // 每一步底部的按鈕：ready()＝這步做完了沒；need()＝還差什麼（顯示在按鈕上）
 let refreshBar = null;
-function stepBar(ready, need, wrap) {
+function stepBar(ready, need, wrap, manual = false) {   // manual：按「下一步」才算做完（聽力用）
   const id = STEPS[cur].id;
   const skip = h("button", { class: "btn", onclick: () => { markSkip(id); go(nextTodo()); } }, "跳過這步");
   const main = h("button", { class: "btn primary", onclick: () => { if (!(ready() || isOk(id))) return; markDone(id); go(nextTodo()); } });
   refreshBar = () => {
     const ok = isOk(id) || ready();
-    if (ok && !isOk(id)) markDone(id);
+    if (ok && !isOk(id) && !manual) markDone(id);
     const n = nextTodo();
     main.disabled = !ok;
     main.textContent = ok ? (n >= STEPS.length ? "完成今天的練習" : `下一步：${STEPS[n].name}`) : need();
@@ -797,7 +815,7 @@ function heardUntilEnd(step) {
 }
 
 function go(i) {
-  stopAll(); ytDestroy(); listeners.clear(); segEnd = null; segDone = null; refreshBar = null; fitNow = null;
+  stopAll(); ytDestroy(); closeSheet(); listeners.clear(); segEnd = null; segDone = null; refreshBar = null; fitNow = null;
   document.querySelector(".actionbar").classList.remove("tall");
   document.body.style.paddingBottom = "";
   cur = Math.max(0, Math.min(i, STEPS.length));
@@ -958,8 +976,53 @@ function lyricsList({ onPick }) {
   return { box, mark };
 }
 
+// 播放清單：打開時影片暫停；每句右邊的播放鍵只播那一句（2026-11-27 Frank：用來練口說）
+function openPlaylist() {
+  dialogue.pause(); segEnd = null; segDone = null;
+  const rows = L.lines.map((ln, i) => h("div", { class: "prow" },
+    h("div", { class: "tx" }, h("span", { class: "pen" }, ln.en), h("span", { class: "pzh" }, ln.zh)),
+    h("button", { class: "pplay", "aria-label": `播放第 ${i + 1} 句`, onclick: () => sayLine(i) }, icon("play"))));
+  // 影片課：唸 AI 語音（跟單字預習同一個聲音，audio/line_<i>.mp3）；舊的 AI 對話課：播對話裡那一句
+  let saying = -1;
+  const sayLine = (i) => {
+    if (!isVideo()) { playLine(i); return; }
+    stopAll(); try { speechSynthesis.cancel(); } catch {}
+    if (saying >= 0 && rows[saying]) rows[saying].classList.remove("on");
+    saying = i; rows[i].classList.add("on");
+    const a = clip(url(DAY, `audio/line_${i}.mp3`));
+    const off = () => { if (saying === i) { rows[i].classList.remove("on"); saying = -1; } };
+    a.onended = off; a.onpause = off;
+    a.onerror = () => { off(); speak(L.lines[i].en); };
+    a.currentTime = 0; a.play().catch(() => { off(); speak(L.lines[i].en); });
+  };
+  const bg = h("div", { class: "sheet-bg", onclick: () => close() });
+  const grip = h("div", { class: "grip" });
+  const sheet = h("div", { class: "sheet plist", role: "dialog", "aria-label": "播放清單" },
+    h("div", { class: "in" }, h("div", { class: "top" }, grip, h("div", { class: "hd" }, h("h3", {}, "播放清單"))), h("div", { class: "rows" }, ...rows)));
+  let open = true, last = -1;
+  const close = () => { open = false; closeSheet(); };
+  // 正在播的那一句變色
+  const mark = (t) => {
+    if (!open) return;
+    const i = dialogue.paused ? -1 : lineAt(t);
+    if (i === last) return;
+    if (last >= 0 && rows[last]) rows[last].classList.remove("on");
+    if (i >= 0 && rows[i]) rows[i].classList.add("on");
+    last = i;
+  };
+  if (!isVideo()) listeners.add(mark);
+  // 往下滑關掉（從清單最上面或把手往下拉）
+  let y0 = null;
+  sheet.addEventListener("touchstart", (e) => { y0 = sheet.scrollTop <= 0 ? e.touches[0].clientY : null; }, { passive: true });
+  sheet.addEventListener("touchend", (e) => { if (y0 != null && e.changedTouches[0].clientY - y0 > 70) close(); y0 = null; }, { passive: true });
+  document.body.append(bg, sheet);
+  const cur = rows[Math.max(0, lineAt(dialogue.currentTime))];   // 捲到目前播到的那一句
+  if (cur) sheet.scrollTop = Math.max(0, cur.offsetTop - 64);
+  requestAnimationFrame(() => { bg.classList.add("on"); sheet.classList.add("on"); });
+}
+
 // 最下面的播放器（聽力頁）：進度條＋速度、字幕開關（眼睛）、上一句、播放、下一句、中文翻譯；ready／need 同 stepBar
-function bottomPlayer(ready, need, { zh = true, eye = null } = {}) {
+function bottomPlayer(ready, need, { zh = true, eye = null, manual = false } = {}) {
   const playFrom = (i) => { segEnd = null; segDone = null; stopAll(); dialogue.playbackRate = speed; dialogue.currentTime = T[i].start; dialogue.play().catch(() => {}); };
   const total = () => dialogue.duration || T[T.length - 1].end + 0.5;
   const seek = h("input", { type: "range", class: "seek", min: 0, max: Math.ceil(total() * 10), step: 1, value: 0, "aria-label": "拖曳調整播放位置" });
@@ -979,8 +1042,8 @@ function bottomPlayer(ready, need, { zh = true, eye = null } = {}) {
   syncPlay();
   const cur0 = () => Math.max(0, lineAt(dialogue.currentTime));
   // 上一句：這句已經播超過 1.5 秒 → 從這句開頭；否則跳到上一句
-  const prev = h("button", { class: "ibtn", onclick: () => { const i = cur0(); playFrom(dialogue.currentTime - T[i].start > 1.5 || i === 0 ? i : i - 1); } }, icon("prev"), h("small", {}, "上一句"));
-  const next = h("button", { class: "ibtn", onclick: () => playFrom(Math.min(cur0() + 1, L.lines.length - 1)) }, icon("next"), h("small", {}, "下一句"));
+  const prev = h("button", { class: "ibtn big", onclick: () => { const i = cur0(); playFrom(dialogue.currentTime - T[i].start > 1.5 || i === 0 ? i : i - 1); } }, icon("prev"), h("small", {}, "上一句"));
+  const next = h("button", { class: "ibtn big", onclick: () => playFrom(Math.min(cur0() + 1, L.lines.length - 1)) }, icon("next"), h("small", {}, "下一句"));
   const speeds = [0.75, 1, 1.25];
   const spd = h("button", { class: "ibtn", "aria-label": "播放速度", onclick: () => {
     speed = speeds[(speeds.indexOf(speed) + 1) % speeds.length]; store.set("speed", speed); dialogue.playbackRate = speed; spd.firstChild.textContent = speed + "x";
@@ -988,6 +1051,7 @@ function bottomPlayer(ready, need, { zh = true, eye = null } = {}) {
   const zhb = h("button", { class: "ibtn", "aria-pressed": String(zhToggle.checked), onclick: () => {
     zhToggle.checked = !zhToggle.checked; store.set("zh", zhToggle.checked); applyZh(); zhb.setAttribute("aria-pressed", String(zhToggle.checked));
   } }, h("b", {}, "中"), h("small", {}, "翻譯"));
+  const listBtn = h("button", { class: "ibtn", "aria-label": "播放清單", onclick: openPlaylist }, icon("list"), h("small", {}, "清單"));
   listeners.add((t) => {
     seek.max = Math.ceil(total() * 10);
     if (!dragging) { seek.value = Math.round(t * 10); paintBar(t); }
@@ -998,8 +1062,8 @@ function bottomPlayer(ready, need, { zh = true, eye = null } = {}) {
     return h("div", { class: "lplayer" },
       h("div", { class: "slimrow" }, skip, main),
       h("div", {}, seek, times),
-      h("div", { class: "ctrl" }, h("div", { class: "side" }, spd, eye, prev), play, h("div", { class: "side" }, next, zh ? zhb : null)));   // 播放鍵固定在正中間
-  });
+      h("div", { class: "ctrl" }, h("div", { class: "side" }, spd, eye, prev), play, h("div", { class: "side" }, next, zh ? zhb : null, listBtn)));   // 播放鍵固定在正中間
+  }, manual);
   document.querySelector(".actionbar").classList.add("tall");
 }
 
@@ -1066,8 +1130,7 @@ VIEWS.lyrics = () => {
     eye.firstChild.replaceWith(icon(subOn ? "eye" : "eyeoff"));
     if (subOn) { needScroll = true; setTimeout(() => fitNow && fitNow(), 0); }
   } }, icon("eye"), h("small", {}, "字幕"));
-  // 完成條件：看到最後，或實際看滿 15 分鐘（長影片不用整部看完，2026-11-27 Frank）
-  const WATCH_OK = 15 * 60, wkey = "watch:" + DAY;
+  const wkey = "watch:" + DAY;   // 實際看了幾秒（週報用）
   let watched = store.get(wkey, 0), lastTick = performance.now(), lastSave = 0, lastMin = Math.floor(watched / 60);
   listeners.add(() => {
     const now = performance.now(), dt = Math.min((now - lastTick) / 1000, 1); lastTick = now;
@@ -1077,9 +1140,8 @@ VIEWS.lyrics = () => {
     const m = Math.floor(watched / 60);
     if (m !== lastMin) { lastMin = m; store.set(wkey, Math.round(watched)); refreshBar && refreshBar(); }
   });
-  const longVideo = (dialogue.duration || 0) > WATCH_OK + 30;
-  bottomPlayer(() => store.get("heard:lyrics:" + DAY, false) || watched >= WATCH_OK,
-    () => longVideo ? `看完或看滿 15 分鐘就能下一步（已看 ${Math.floor(watched / 60)} 分）` : "整部看完就能下一步", { eye });
+  // 2026-11-27 Frank：不用看完，按鈕一直是「下一步」，按了就算做完（看了幾分鐘仍記下來給週報用）
+  bottomPlayer(() => true, () => "下一步", { eye, manual: true });
 
   showLine(0);
   const sec = h("section", { class: "step lyr" },
